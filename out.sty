@@ -1,0 +1,40 @@
+\newcommand\abstract{\@ifstar{\@abstract}{\@@abstract}}
+\newcommand\@abstract[1]{\subparagraph{Zusammenfassung} #1}
+\newcommand\@@abstract[1]{}
+
+\def\midrule{\noalign{\smallskip}\hline\noalign{\smallskip}}
+
+\def\belowtable#1{\bgroup\footnotesize\vskip2mm\noindent{#1}\egroup}
+\def\newEQ{\\}
+\def\EQbreak{\nonumber\\}
+
+\def\zb{z.\,B.}
+\def\su{s.\,u.}
+\def\dsh{d.\,h.}
+
+\usepackage{rotating}
+\usepackage{textcomp}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
+\definecolor{shadecolor}{gray}{0.8}%
+\newcolumntype{P}{>{\RaggedRight\hspace{0pt}\arraybackslash}p}
+\newcolumntype{Q}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}p}%
+\newcolumntype{q}{>{\RaggedLeft}X}
+
+%\def\&{\ampersand}
+\def\umu{\textmu}
+
+\newenvironment{overview}[1][]{%
+  \par\addvspace\bigskipamount
+  \def\FrameCommand{\colorbox{shadecolor}}%
+  \fboxsep\baselineskip%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \hangindent0mm\ifx#1""\noindent\else\noindent\textup{\sbseries\mathversion{bold}#1}\par\@afterheading\fi%
+}{%
+  \removelastskip%
+  \endMakeFramed%
+  \par\vskip\bigskipamount
+}%

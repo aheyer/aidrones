@@ -1,0 +1,1286 @@
+pdflatex book.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./book.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2020/09/21 v3.32 KOMA-Script document class (book)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)))
+
+Class scrbook Warning: Usage of package `tocloft' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use options like `listof=entryprefix',
+(scrbook)              commands like `\listoflofentryname' or
+(scrbook)              `\listoflotentryname', and `\DeclareTOCStyleEntry' or
+(scrbook)              `\RedeclareSectionCommand' instead of this package,
+(scrbook)              because it breaks several KOMA-Script features of
+(scrbook)              the list of figures, list of tables and table of
+(scrbook)              contents, i.e., options like `listof=numbered',
+(scrbook)              `listof=flat or `toc=flat', commands like
+(scrbook)              `\BeforeTOCHead{...}' and `\AfterTOCHead{...}',
+(scrbook)              `\BeforeStartingTOC{...}' and \AfterStartingTOC{...}',
+(scrbook)              all features of `\DeclareTOCStyleEntry',
+(scrbook)              and the ToC entry features of `\DeclareSecionCommand'
+(scrbook)              and `\RedeclareSectionCommand' of levels
+(scrbook)              `part', `section', `subsection',
+(scrbook)              `subsubsection', `paragraph' and `subparagraph'.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `tocloft' on input line 47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/verbatimbox/verbatimbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/readarray/readarray.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex))
+readarray: bounds checking OFF
+)) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/everysel/everysel.sty
+(/usr/share/texlive/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-koma.sto))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty) (./out.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+Writing index file de.idx
+Writing index file book.idx
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./book.aux (./A_0_001_Preface.aux) (./M_0_001_bilingual.aux)
+(./M_0_002_bilingual.aux) (./M_0_003_bilingual.aux) (./M_0_004_bilingual.aux)
+(./M_0_005_bilingual.aux) (./M_0_006_bilingual.aux) (./M_0_007_bilingual.aux)
+(./M_0_008_bilingual.aux) (./M_0_009_bilingual.aux) (./M_0_010_bilingual.aux)
+(./Z_0_001_Glossary.aux) (./Z_0_002_Bibliography.aux))
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(./book.out) (./book.out)
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+ABD: EverySelectfont initializing macros (./A_0_001_Preface.tex
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd)
+(/usr/share/texmf/tex/latex/lm/omllmm.fd)
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd)
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg) [5{/var/lib/texm
+f/fonts/map/pdftex/updmap/pdftex.map}] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd) [7]) [8] (./book.toc [9] [10]
+[11]) [12] (./book.deutschestoc [13] [14] [15]) [16] (./M_0_001_bilingual.tex
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+[1]) [2] (./M_0_002_bilingual.tex
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd)
+Underfull \hbox (badness 1817) in paragraph at lines 91--92
+[]\T1/lmr/m/n/10 (+20) Das Vor-han-den-sein ei-ner elek-tri-schen
+[3] [4]
+Underfull \vbox (badness 10000) has occurred while \output is active [5]
+[6]
+Underfull \hbox (badness 1297) in paragraph at lines 403--404
+\T1/lmr/m/n/10 (+20) Das He-xa-de-zi-mal-sys-tem ver-wen-det als Ba-
+
+Underfull \hbox (badness 6876) in paragraph at lines 403--404
+\T1/lmr/m/n/10 (+20) sis die Zahl 16. Die Dar-stel-lung po-si-
+
+Underfull \hbox (badness 4060) in paragraph at lines 403--404
+\T1/lmr/m/n/10 (+20) ti-ver na-tür-li-cher Zah-len er-folgt mit den
+
+Underfull \hbox (badness 1735) in paragraph at lines 403--404
+\T1/lmr/m/n/10 (+20) 16 Zif-fern und Buch-sta-ben aus der Men-
+[7] [8] [9] [10] [11]
+Underfull \hbox (badness 1917) in paragraph at lines 773--774
+\T1/lmr/m/n/10 (+20) chen-ko-die-run-gen zu ver-mei-den, wur-de die
+[12]
+Underfull \hbox (badness 1248) in paragraph at lines 832--833
+\T1/lmr/m/n/10 (+20) Um einen fort-lau-fen-den Text zu ko-die-ren,
+) [13] (./M_0_003_bilingual.tex [14]
+chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+[15]
+Underfull \hbox (badness 1728) in paragraph at lines 102--103
+\T1/lmr/m/n/10 (+20) Auf je-dem Com-pu-ter ist di-rekt über der
+[16 <./figures//Informatik_Landschaft_Details_Buch_en.pdf>]
+Underfull \hbox (badness 1137) in paragraph at lines 107--108
+[]\T1/lmr/m/n/10 (+20) One ex-cep-tion to the prin-ci-ple that an
+[17 <./figures//Wo_liegt_das_Betriebssystem_englisch.pdf>] [18 <./figures//BTS_
+Vorlesung_Theman_Uebersicht_SS2015_en_einfarbig.pdf>] [19] [20] [21 <./figures/
+/Lochkarte_SW_WS1617_eigener_Scan.pdf>]
+Underfull \hbox (badness 2253) in paragraph at lines 413--414
+\T1/lmr/m/n/10 (+20) spei-cher (meist auf Fest-plat-ten oder
+[22] [23]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active [24 <./fig
+ures//singleusermode_neu_englisch.pdf> <./figures//Lochkarten_Rechner_englisch_
+Buch_sw.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+[]\T1/lmr/m/n/10 (+20) Auch mo-der-ne Com-pu-ter-sys-te-me ha-
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+\T1/lmr/m/n/10 (+20) ben ne-ben dem Haupt-pro-zes-sor spe-zi-el-
+
+Underfull \hbox (badness 7030) in paragraph at lines 584--585
+\T1/lmr/m/n/10 (+20) le, DMA-fähige (\T1/lmr/m/it/10 (+20) Di-rect Me-mo-ry Ac-
+cess[][]\T1/lmr/m/n/10 (+20) )
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+[]\T1/lmr/m/n/10 (+20) Ausgabeprozessoren. Die-se schrei-ben
+
+Underfull \hbox (badness 4403) in paragraph at lines 618--619
+\T1/lmr/m/n/10 (+20) The \T1/lmr/m/it/10 (+20) sin-gle-task-ing[] \T1/lmr/m/n/1
+0 (+20) mode only al-lows the
+
+Underfull \hbox (badness 3590) in paragraph at lines 653--654
+\T1/lmr/m/n/10 (+20) sen häu-fig auf äu-ÿe-re Er-eig-nis-se war-ten.
+[25]
+Underfull \hbox (badness 1158) in paragraph at lines 705--706
+[]\T1/lmr/m/n/10 (+20) Tabelle []3.2[] ent-hält ei-ne Ein-ord-nung be-
+
+Underfull \hbox (badness 1303) in paragraph at lines 719--719
+[]|\T1/lmr/m/n/10 (+20) OS/2[], Win-dows[] 3x/95/98[][][], BeOS[],
+
+Underfull \hbox (badness 3590) in paragraph at lines 724--725
+[]\T1/lmr/m/n/10 (+20) Particularly in-ter-est-ing is the so-called
+
+Underfull \hbox (badness 4144) in paragraph at lines 724--725
+\T1/lmr/m/it/10 (+20) half multi-user operating sys-tems\T1/lmr/m/n/10 (+20) . 
+The
+
+Underfull \hbox (badness 1688) in paragraph at lines 729--730
+[]\T1/lmr/m/n/10 (+20) Eine Be-son-der-heit sind die so-ge-nann-ten
+
+Underfull \hbox (badness 3098) in paragraph at lines 729--730
+\T1/lmr/m/it/10 (+20) hal-b-en Multi-User-Betriebssysteme\T1/lmr/m/n/10 (+20) .
+ Zu die-
+
+Underfull \hbox (badness 6842) in paragraph at lines 729--730
+\T1/lmr/m/n/10 (+20) ser Ka-te-go-rie ge-hö-ren bei-spiels-wei-se die
+[26]
+Underfull \hbox (badness 1859) in paragraph at lines 754--755
+[]\T1/lmr/m/n/10 (+20) 8-bit operating sys-tems can address $\OT1/lmr/m/n/10 (+
+20) 2[]$
+
+Underfull \hbox (badness 1231) in paragraph at lines 779--780
+[]\T1/lmr/m/n/10 (+20) 32 Bit-Betriebssysteme kön-nen $\OT1/lmr/m/n/10 (+20) 2[
+]$ \T1/lmr/m/n/10 (+20) Spei-
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
+\T1/lmr/m/n/10 (+20) che-rein-hei-ten adres-sie-ren. Bei-spie-le für
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
+\T1/lmr/m/n/10 (+20) sol-che Be-triebs-sys-te-me sind Win-dows
+[27]
+Underfull \hbox (badness 1210) in paragraph at lines 807--808
+\T1/lmr/m/n/10 (+20) die Mehr-pro-gramm-be-trieb mit zu-sätz-li-chen
+
+Underfull \hbox (badness 1028) in paragraph at lines 817--818
+[]\T1/lmr/m/n/10 (+20) Die exis-tie-ren-den Echt-zeit-be-triebs-sys-te-me
+[28] [29] [30 <./figures//Thin_und_Nano_Kernel_Buch_en.pdf> <./figures//Distrib
+uted_Operating_System_SS2016_en.pdf>] [31] [32] [33 <./figures//Distributed_Ope
+rating_System_heute_SS2016_en.pdf>] [34] [35 <./figures//Betriebssystem_kerne_B
+uch_englisch.pdf>]
+Underfull \hbox (badness 1715) in paragraph at lines 1218--1219
+\T1/lmr/m/n/10 (+20) das Echt-zeit-be-triebs-sys-tem QNX Neu-tri-no[],
+[36] [37 <./figures//hierarchische_systeme_neu2_englisch.pdf>]) [38 <./figures/
+/UNIX-Schale_englisch_WS1314.pdf>] (./M_0_004_bilingual.tex
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+[39]
+Underfull \hbox (badness 1377) in paragraph at lines 106--107
+\T1/lmr/m/n/10 (+20) sen, in-dem es die lo-gi-schen (NOT, AND,
+[40 <./figures//vonneumann_simpel_SS2014_en.pdf>]
+Underfull \hbox (badness 1184) in paragraph at lines 136--137
+\T1/lmr/m/n/10 (+20) Den \T1/lmr/m/it/10 (+20) Von-Neumann-Zyklus \T1/lmr/m/n/1
+0 (+20) (eng-lisch: \T1/lmr/m/sl/10 (+20) Fetch-
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+[][][]\T1/lmtt/m/n/10 FETCH OPERANDS[]\T1/lmr/m/n/10 (+20) : If pa-ram-e-ters
+
+Underfull \hbox (badness 6910) in paragraph at lines 173--174
+\T1/lmr/m/n/10 (+20) (operands) for the com-mand ex-ist,
+
+Underfull \hbox (badness 1142) in paragraph at lines 181--182
+[][][]\T1/lmtt/m/n/10 FETCH OPERANDS[]\T1/lmr/m/n/10 (+20) : Even-tu-ell ver-fü
+g-ba-re
+[41pdfTeX warning (ext4): destination with the same identifier (name{Item.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.244 \end{paracol}
+                   ]
+Overfull \hbox (4.3174pt too wide) in alignment at lines 299--299
+[][][][] 
+[42] [43 <./figures//Northbridge_Sourbridge_FSB_SS2014_en.pdf>] [44 <./figures/
+/frontsidebus_SS2014_v2_en.pdf>] [45pdfTeX warning (ext4): destination with the
+ same identifier (name{Item.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.466 \selectlanguage
+                     {english} <./figures//Intel_I5_CPU_2009_keine_Northbridge_
+mehr_eigenes_Werk_en_neu-eps-converted-to.pdf>] [46pdfTeX warning (ext4): desti
+nation with the same identifier (name{Item.8}) has been already used, duplicate
+ ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.563 \end{itemize}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.563 \end{itemize}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{Item.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.563 \end{itemize}
+                   ] [47]
+Underfull \hbox (badness 7012) in paragraph at lines 650--651
+\T1/lmr/m/n/10 (+20) an-ders als bei-spiels-wei-se die so-ge-nann-te
+
+Underfull \hbox (badness 1383) in paragraph at lines 660--661
+[]\T1/lmr/m/n/10 (+20) Im Ver-gleich da-zu ist bei der Harvard-
+[48 <./figures//DMA_modus_PIO_modus_Buch_2016_en.pdf>]
+Underfull \hbox (badness 10000) in alignment at lines 716--716
+[][][][][][] 
+[49] [50]
+Underfull \vbox (badness 2343) has occurred while \output is active [51 <./figu
+res//Speicherpyramide_neu_SS2014_en.pdf> <./figures//laden_modifikation_en.pdf>
+]
+Underfull \hbox (badness 1248) in paragraph at lines 853--854
+[]\T1/lmr/m/n/10 (+20) Der \T1/lmr/m/it/10 (+20) Be-fehls-zäh-ler[][]\T1/lmr/m/
+n/10 (+20) , der auch \T1/lmr/m/it/10 (+20) Pro-gram
+
+Underfull \hbox (badness 1533) in paragraph at lines 874--875
+[]\T1/lmr/m/n/10 (+20) The \T1/lmr/m/it/10 (+20) stack reg-is-ter[][]\T1/lmr/m/
+n/10 (+20) , also called \T1/lmr/m/it/10 (+20) stack
+[52] [53] [54 <./figures//Write_Though_Buch_eigenes_Werk_2016_en.pdf>] [55 <./f
+igures//Write_Back_Buch_eigenes_Werk_2016_en.pdf>]
+Underfull \hbox (badness 2980) in paragraph at lines 1161--1162
+[]\T1/lmr/m/n/10 (+20) Das BI-OS ver-wen-det 24Bits für CHS-
+[56] [57] [58] [59] [60 <./figures//flash_memory_cell_neu_buch_en.pdf>]
+Underfull \hbox (badness 1097) in paragraph at lines 1510--1511
+\T1/lmr/m/n/10 (+20) je-dem Lösch-vor-gang, und ab ei-nem ge-wis-
+[61 <./figures//flash_memory_cell_neu_buch_speichern_en.pdf>] [62 <./figures//f
+lash_memory_cell_neu_buch_loeschen_en.pdf>]
+Underfull \hbox (badness 1024) in paragraph at lines 1600--1601
+\T1/lmr/m/n/10 (+20) In NAND memory[][], the memory cells are
+
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1626
+[]\T1/lmr/m/n/10 (+20) Typische Ein-satz-be-rei-che von NAND-
+
+Underfull \hbox (badness 1270) in paragraph at lines 1630--1631
+[]\T1/lmr/m/n/10 (+20) Different types of NAND memory ex-ist
+[63]
+Underfull \hbox (badness 1199) in paragraph at lines 1645--1646
+\T1/lmr/m/n/10 (+20) den wer-den müs-sen, da-mit die Funk-tio-na-
+
+Underfull \hbox (badness 1472) in paragraph at lines 1645--1646
+\T1/lmr/m/n/10 (+20) li-tät ge-ge-ben ist, müs-sen bei ei-ner MLC-
+[64 <./figures//SLC_MLC_TLC_buch_en.pdf>]
+Underfull \hbox (badness 1502) in paragraph at lines 1697--1704
+\T1/lmr/m/n/10 (+20) 2006: Max-tor STM320820A, 320GB
+
+Underfull \hbox (badness 10000) in paragraph at lines 1697--1704
+\T1/lmr/m/n/10 (+20) 2018: Sea-gate Bar-raCuda Pro
+
+Underfull \hbox (badness 10000) in paragraph at lines 1697--1704
+\T1/lmr/m/n/10 (+20) ST14000DM001, 14TB ca-pac-ity,
+
+Underfull \hbox (badness 1789) in paragraph at lines 1697--1704
+\T1/lmr/m/n/10 (+20) (ST14000DM001), 4-5ms data access
+
+Underfull \hbox (badness 4328) in paragraph at lines 1710--1717
+\T1/lmr/m/n/10 (+20) 2006: Max-tor STM320820A, 320GB
+
+Underfull \hbox (badness 10000) in paragraph at lines 1710--1717
+\T1/lmr/m/n/10 (+20) 2018: Sea-ga-te Bar-ra-Cu-da Pro
+
+Underfull \hbox (badness 10000) in paragraph at lines 1710--1717
+\T1/lmr/m/n/10 (+20) ST14000DM001, 14TB Ka-pa-zi-tät,
+[65]
+Underfull \hbox (badness 10000) in alignment at lines 1789--1789
+[][][][][][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1798--1800
+
+[66] [67] [68 <./figures//raid0_neu_SS2014_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [69 <./fig
+ures//raid1_SS2014_en.pdf> <./figures//raid2_SS2014_en.pdf>] [70 <./figures//ra
+id3_SS2014_en.pdf>] [71 <./figures//raid4_SS2014_en.pdf>]
+Underfull \hbox (badness 3930) in paragraph at lines 2070--2071
+\T1/lmr/m/n/10 (+20) NAS-Server FAS2020, FAS2050, FAS3040,
+
+Underfull \vbox (badness 10000) has occurred while \output is active [72 <./fig
+ures//raid5_SS2014_en.pdf>] [73 <./figures//raid6_SS2014_en.pdf>]) [74 <./figur
+es//raid10_Buch_en.pdf>] (./M_0_005_bilingual.tex
+chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+[75]
+Underfull \hbox (badness 1603) in paragraph at lines 103--104
+[]\T1/lmr/m/n/10 (+20) Consequently, this memory man-age-ment
+
+Underfull \hbox (badness 1082) in paragraph at lines 103--104
+\T1/lmr/m/n/10 (+20) method is in-ef-fi-cient. With par-ti-tions of
+[76 <./figures//statische_partitionierung_Buch_en.pdf>] [77] [78 <./figures//dy
+namische_partitionierung_Buch_en_groesseres_Format_2023.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+[]\T1/lmr/m/n/10 (+20) Zu Be-ginn be-han-delt die Buddy-
+
+Underfull \hbox (badness 1152) in paragraph at lines 348--349
+\T1/lmr/m/n/10 (+20) groÿen Be-reich. In Schritt (1) for-dert ein
+
+Underfull \hbox (badness 2393) in paragraph at lines 348--349
+\T1/lmr/m/n/10 (+20) Zwei-er-po-tenz ist 128kB. Da kein sol-cher
+[79]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active [80 <./fig
+ures//first_best_next_fit_Buch_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [81]
+[82 <./figures//Buddy_Beispiel_Buch_2016_en.pdf>]
+Underfull \hbox (badness 1845) in paragraph at lines 481--482
+[]\T1/lmr/m/n/10 (+20) Spalte 1 ent-hält die An-zahl der frei-en
+
+Underfull \hbox (badness 3701) in paragraph at lines 481--482
+\T1/lmr/m/n/10 (+20) Blö-cke (^^R\T1/lmr/m/sl/10 (+20) Bud-dies\T1/lmr/m/n/10 (
++20) ^^P) mit der Grö-ÿe $\OT1/lmr/m/n/10 (+20) 2[] \OMS/lmsy/m/n/10 ^^C
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+[]\T1/lmr/m/n/10 (+20) Dementsprechend in-for-miert bei x86-
+
+Underfull \hbox (badness 2922) in paragraph at lines 511--512
+\T1/lmr/m/n/10 (+20) 8kB, die drit-te Spal-te die-je-ni-gen Blö-cke
+
+Underfull \hbox (badness 3375) in paragraph at lines 534--535
+\T1/lmr/m/n/10 (+20) modern com-put-ers with 32-bit or 64-bit
+[83] [84 <./figures//reale_Hauptspeicheradressen_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [85]
+[86 <./figures//RealMode_Adressierung_en.pdf>] [87 <./figures//Segmente_zur_Adr
+essierung_Buch_en.pdf>] [88] [89 <./figures//virtueller_speicher_kompakt_Buch_e
+n.pdf>]
+Underfull \hbox (badness 1946) in paragraph at lines 961--962
+[]\T1/lmr/m/n/10 (+20) An ad-di-tional ad-van-tage of the vir-tual
+[90 <./figures//virtuell_Buch_en.pdf>]
+Underfull \hbox (badness 2781) in paragraph at lines 1069--1070
+[]\T1/lmr/m/n/10 (+20) Virtuelle Spei-cher-adres-sen[][][] über-setzt der
+[91 <./figures//paging_beispiel_SS2016_Buch_en.pdf>] [92 <./figures//mmu_en_SS2
+016.pdf>] [93]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
+[]\T1/lmr/m/n/10 (+20) Einstufiges Pa-ging ist auf 16Bit-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
+\T1/lmr/m/n/10 (+20) Architekturen aus-rei-chend, aber be-reits
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1261.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1272
+[]\T1/lmr/m/n/10 (+20) Modern hard-ware ar-chi-tec-tures allow
+[94 <./figures//paging_struktur_kompakt_Buch_sw_en.pdf>] [95 <./figures//umsetz
+ung_seiten_SS2016_Buch_sw_en.pdf>] [96 <./figures//umsetzung_seiten2stufig_Buch
+_sw_en.pdf>] [97] [98 <./figures//Seitenfehler_2016_Buch_sw_en.pdf>] [99]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1524.
+
+[100 <./figures//segmentierung_struktur_kompakt_Buch_sw_en.pdf>] [101 <./figure
+s//umsetzung_segment_SS2016_kompakter_Buch_sw_en.pdf>] [102 <./figures//Flat_Me
+mory_Model_Buch_sw_en.pdf>]
+Underfull \hbox (badness 3525) in paragraph at lines 1596--1597
+\T1/lmr/m/n/10 (+20) sys-tem with the AMD64 (x86-64) ar-chi-
+
+Underfull \hbox (badness 1635) in paragraph at lines 1596--1597
+\T1/lmr/m/n/10 (+20) tec-ture, i.e., with a 48bits wide address
+
+Underfull \hbox (badness 1231) in paragraph at lines 1596--1597
+\T1/lmr/m/n/10 (+20) the 256TB address space is used as ker-
+
+Underfull \hbox (badness 1205) in paragraph at lines 1596--1597
+\T1/lmr/m/n/10 (+20) nel space by the ker-nel. These are the
+
+Underfull \hbox (badness 7151) in paragraph at lines 1601--1602
+[]\T1/lmr/m/n/10 (+20) Einem 64Bit-Prozess in ei-nem 64Bit-
+
+Underfull \hbox (badness 2564) in paragraph at lines 1601--1602
+\T1/lmr/m/n/10 (+20) bus, steht die \T1/lmr/m/sl/10 (+20) un-te-re Hälf-te \T1/
+lmr/m/n/10 (+20) des 256TB
+
+Underfull \hbox (badness 1348) in paragraph at lines 1601--1602
+\T1/lmr/m/n/10 (+20) Ver-fü-gung. Da-bei han-delt es sich um die
+
+Underfull \hbox (badness 2671) in paragraph at lines 1601--1602
+[][]\T1/lmtt/m/n/10 0x00007FFF FFFFFFFF[]\T1/lmr/m/n/10 (+20) . Die-se Adres-se
+n bil-
+
+Underfull \hbox (badness 2285) in paragraph at lines 1601--1602
+\T1/lmr/m/n/10 (+20) den nun den User-space. Die \T1/lmr/m/sl/10 (+20) obe-re H
+älf-
+
+Underfull \hbox (badness 1371) in paragraph at lines 1601--1602
+\T1/lmr/m/sl/10 (+20) te \T1/lmr/m/n/10 (+20) des 256TB groÿen Ad-dress-raums s
+teht
+
+Underfull \hbox (badness 1348) in paragraph at lines 1601--1602
+\T1/lmr/m/n/10 (+20) Ver-fü-gung. Da-bei han-delt es sich um die
+
+Underfull \hbox (badness 2469) in paragraph at lines 1614--1615
+\T1/lmr/m/n/10 (+20) The ef-fi-ciency of a memory man-age-ment
+
+Underfull \hbox (badness 1796) in paragraph at lines 1621--1622
+\T1/lmr/m/n/10 (+20) Die Ef-fi-zi-enz ei-ner Spei-cher-ver-wal-tung für
+[103]
+Underfull \hbox (badness 3354) in paragraph at lines 1706--1707
+\T1/lmr/m/n/10 (+20) Die \T1/lmr/m/it/10 (+20) op-ti-ma-le Sei-te-n-er-set-zung
+s-stra-te-gie \T1/lmr/m/n/10 (+20) ver-
+[104]
+Underfull \hbox (badness 1337) in paragraph at lines 1766--1767
+[]\T1/lmr/m/n/10 (+20) Abbildung []5.20[] zeigt, dass die aus Ab-
+[105 <./figures//opt_buch_en.pdf>] [106 <./figures//lru_buch_en.pdf> <./figures
+//lfu_buch_en.pdf>]
+Underfull \hbox (badness 1337) in paragraph at lines 1819--1820
+[]\T1/lmr/m/n/10 (+20) Abbildung []5.21[] zeigt, dass die aus Ab-
+
+Underfull \vbox (badness 3989) has occurred while \output is active [107 <./fig
+ures//belady_buch_en.pdf>]
+Underfull \hbox (badness 1337) in paragraph at lines 1915--1916
+[]\T1/lmr/m/n/10 (+20) Abbildung []5.23[] zeigt, dass die aus Ab-
+[108 <./figures//clock_buch_en.pdf>]
+Underfull \hbox (badness 6110) in paragraph at lines 1973--1974
+\T1/lmr/m/n/10 (+20) set-zungs-stra-te-gie Ran-dom ein-set-zen, sind
+
+Underfull \hbox (badness 2717) in paragraph at lines 1973--1974
+\T1/lmr/m/n/10 (+20) IBM OS/390 und Win-dows NT 4.0 auf
+) [109] (./M_0_006_bilingual.tex [110]
+chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+[111] [112] [113] [114 <./figures//ext2ext3_struktur_sw_neu_kompakter_en_SS2014
+.pdf>] [115] [116 <./figures//Struktur_Minix_Dateisystem_Buch_sw_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [117 <./fi
+gures//Blockgruppe_ext_en.pdf>] [118] [119] [120 <./figures//Struktur_FAT_Datei
+system_Buch_sw_en.pdf>]
+Underfull \hbox (badness 2384) in paragraph at lines 608--609
+[]\T1/lmr/m/n/10 (+20) Insbesondere bei ma-gne-ti-schen, ro-tie-ren-
+[121] [122 <./figures//fat_1_en_SS2015.pdf>] [123 <./figures//fat_4_en.pdf>]
+Underfull \hbox (badness 1314) in paragraph at lines 748--749
+[]\T1/lmr/m/n/10 (+20) Bei 12Bits lan-gen Clus-ter-num-mern und
+
+Underfull \hbox (badness 3780) in paragraph at lines 748--749
+\T1/lmr/m/n/10 (+20) 4kB groÿen Clus-tern be-rech-net sich die
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+\T1/lmr/m/n/10 (+20) ma-xi-ma-le Datei-sys-tem-grö-ÿe wie folgt:
+
+Underfull \hbox (badness 6300) in paragraph at lines 748--749
+\OT1/lmr/m/n/10 (+20) 2[] [] \OMS/lmsy/m/n/10 ^^C \OT1/lmr/m/n/10 (+20) 4 [] []
+ =
+[124 <./figures//FAT_Probleme_Buch_sw_en_groessere_Schrift.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 784--785
+[]\T1/lmr/m/n/10 (+20) Tabelle []6.3[] ent-hält die Standard-
+
+Underfull \hbox (badness 10000) in paragraph at lines 784--785
+\T1/lmr/m/n/10 (+20) Clustergröÿen un-ter Win-dows 2000/X-
+
+Underfull \hbox (badness 2134) in paragraph at lines 784--785
+\T1/lmr/m/n/10 (+20) P/Vi-sta/7/8/10 bei un-ter-schied-lich groÿen
+[125] [126] [127] [128 <./figures//Struktur_exFAT_Dateisystem_Buch_sw_en.pdf>]
+Underfull \hbox (badness 2941) in paragraph at lines 1031--1032
+[]\T1/lmr/m/n/10 (+20) Im Boot-sek-tor[] lie-gen aus-führ-ba-rer x86-
+
+Underfull \hbox (badness 3148) in paragraph at lines 1093--1094
+\T1/lmr/m/n/10 (+20) hat im Ge-gen-satz zu den üb-ri-gen FAT-
+[129]
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
+[]\T1/lmr/m/n/10 (+20) Es exis-tie-ren ver-schie-de-ne Journaling-
+
+Underfull \hbox (badness 4279) in paragraph at lines 1188--1189
+\T1/lmr/m/n/10 (+20) (sie-he Ab-schnitt []4.4.2[]). Das Datei-sys-tem
+
+Underfull \hbox (badness 3780) in paragraph at lines 1188--1189
+\T1/lmr/m/n/10 (+20) Me-ta-da-ten (In-o-des). Än-de-run-gen an den
+
+Underfull \hbox (badness 1122) in paragraph at lines 1188--1189
+\T1/lmr/m/n/10 (+20) ei-nem Ab-sturz ga-ran-tiert ist. Da-ten-ver-lust
+[130]
+Underfull \hbox (badness 2197) in paragraph at lines 1216--1217
+[]\T1/lmr/m/n/10 (+20) Die meis-ten Linux-Dateisysteme ver-wen-
+
+Underfull \hbox (badness 1297) in paragraph at lines 1216--1217
+\T1/lmr/m/n/10 (+20) den stan-dard-mä-ÿig einen Kom-pro-miss aus
+
+Underfull \hbox (badness 1694) in paragraph at lines 1236--1237
+\T1/lmr/m/n/10 (+20) One is-sue with file sys-tems that operate
+[131] [132 <./figures//ext3ext4_block_buch_en_schmaleres_Format_2023.pdf>]
+Underfull \hbox (badness 4492) in paragraph at lines 1383--1384
+[]\T1/lmr/m/n/10 (+20) With block address-ing in ext2/3 (see
+[133 <./figures//extents_einfach_en.pdf>]
+Underfull \hbox (badness 2165) in paragraph at lines 1448--1449
+[]\T1/lmr/m/n/10 (+20) Extents can-not be larger than 128MB
+[134 <./figures//ext4_extend_en_schmaleres_Format_2023.pdf>]
+Underfull \hbox (badness 6708) in paragraph at lines 1553--1554
+[]\T1/lmr/m/n/10 (+20) NTFS 3.1: In-cluded in Win-dows
+
+Underfull \hbox (badness 1253) in paragraph at lines 1560--1561
+[]\T1/lmr/m/n/10 (+20) NTFS 3.1: Be-stand-teil von Win-dows
+[135]
+Underfull \hbox (badness 2865) in paragraph at lines 1611--1612
+\T1/lmr/m/n/10 (+20) 64kB groÿ sein. Ta-bel-le []6.6[] ent-hält die
+
+Underfull \hbox (badness 2134) in paragraph at lines 1611--1612
+\T1/lmr/m/n/10 (+20) P/Vi-sta/7/8/10 bei un-ter-schied-lich groÿen
+[136] [137 <./figures//Struktur_NTFS_Dateisystem_en_sw.pdf>] [138 <./figures//C
+opy_on_Write_Arbeitsweise_SS2020_en.pdf>] [139]
+Underfull \hbox (badness 10000) in paragraph at lines 1819--1820
+\T1/lmr/m/n/10 (+20) Windows 8/10 and Win-dows Server
+
+Underfull \hbox (badness 2065) in paragraph at lines 1819--1820
+\T1/lmr/m/n/10 (+20) 2012/2016/2019 in-clude the \T1/lmr/m/it/10 (+20) Re-silie
+nt File
+
+Underfull \hbox (badness 1874) in paragraph at lines 1819--1820
+\T1/lmr/m/it/10 (+20) Sys-tem \T1/lmr/m/n/10 (+20) (ReFS). However, these opera
+ting
+
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1825
+\T1/lmr/m/n/10 (+20) Windows 8/10 und Win-dows Ser-ver
+
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1825
+\T1/lmr/m/n/10 (+20) 2012/2016/2019 ent-hal-ten das \T1/lmr/m/it/10 (+20) Re-si
+-li-ent
+
+Underfull \hbox (badness 2941) in paragraph at lines 1824--1825
+\T1/lmr/m/it/10 (+20) Fi-le Sys-tem \T1/lmr/m/n/10 (+20) (ReFS). Die Be-triebs-
+sys-te-me
+
+Underfull \hbox (badness 1789) in paragraph at lines 1824--1825
+\T1/lmr/m/n/10 (+20) er-lau-ben die Ver-wen-dung von ReFS aber
+
+Underfull \hbox (badness 1946) in paragraph at lines 1824--1825
+\T1/lmr/m/n/10 (+20) ent-we-der 4kB oder 64kB groÿ sein. Die
+[140] [141]
+Underfull \hbox (badness 2302) in paragraph at lines 1929--1930
+[]\T1/lmr/m/n/10 (+20) Operating sys-tems with sin-gle pro-gram
+[142]) [143] (./M_0_007_bilingual.tex [144]
+chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 75--76
+[]\T1/lmr/m/n/10 (+20) Im Ring 0, dem so-ge-nann-ten \T1/lmr/m/it/10 (+20) Ker-
+nelm-
+[145] [146 <./figures//ringe_intel_sw_Buch_en.pdf>] [147 <./figures//schichtenm
+odell_UNIX_en_SS2016_Buch_neues_Format_2023.pdf>]
+Underfull \hbox (badness 3000) in paragraph at lines 249--250
+\T1/lmr/m/n/10 (+20) list of sys-tem calls is ei-ther lo-cated in
+
+Underfull \hbox (badness 1796) in paragraph at lines 249--250
+\T1/lmr/m/n/10 (+20) the files []$\T1/lmtt/m/n/10 arch / x86 / syscalls / sysca
+ll _ [64 |
+
+Underfull \hbox (badness 2608) in paragraph at lines 249--250
+\T1/lmtt/m/n/10 32 ] .tbl$[] \T1/lmr/m/n/10 (+20) or in []$\T1/lmtt/m/n/10 arch
+ / x86 / entry / syscalls /
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+[]$\T1/lmtt/m/n/10 arch / x86 / syscalls / syscall _ [64 | 32 ] .tbl$[]
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+\T1/lmr/m/n/10 (+20) oder []$\T1/lmtt/m/n/10 arch / x86 / entry / syscalls / sy
+scall _
+[148]
+Underfull \hbox (badness 1137) in paragraph at lines 262--263
+[]\T1/lmr/m/n/10 (+20) Invoking sys-tem calls di-rectly from self-
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty) [149] [150 <./fi
+gures//schriitte_systemaufruf_en_Buch_sw.pdf>]) [151] (./M_0_008_bilingual.tex
+[152]
+chapter 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+[153]
+Underfull \hbox (badness 1067) in paragraph at lines 186--187
+[]\T1/lmr/m/n/10 (+20) Page-table base reg-is-ter[] -- stores the
+[154] [155 <./figures//prozesstabelle_SS2016_en.pdf>] [156 <./figures//Prozessw
+echsel_Konzept_SS2020_en_sw.pdf> <./figures//zustaende_zwei_prozesse_sw_Buch_en
+.pdf>]
+Underfull \hbox (badness 7907) in paragraph at lines 500--501
+[]\T1/lmr/m/n/10 (+20) Eine Mög-lich-keit, um ein 3-Zustands-
+[157 <./figures//zwei_prozesse_warteschlange_en.pdf>] [158 <./figures//zustaend
+e_drei_prozesse_sw_Buch_en.pdf> <./figures//drei_prozesse_warteschlange_en.pdf>
+] [159 <./figures//drei_prozesse_warteschlange2_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [160 <./fi
+gures//zustaende_fuenf_prozesse_sw_Buch_en.pdf> <./figures//zustaende_sechs_pro
+zesse_sw_Buch_en_neu.pdf>] [161 <./figures//zustaende_sieben_prozesse_sw_Buch_e
+n.pdf>] [162 <./figures//zustaende_LinuxUNIX_prozesse_sw_Buch_en.pdf>] [163 <./
+figures//Prozess_unter_UNIX_Struktur_en.pdf>] [164] [165 <./figures//Prozess_un
+ter_UNIX_Struktur_Virtueller_Speicher_sw_Buch_en.pdf>]
+Underfull \hbox (badness 2556) in paragraph at lines 834--835
+[]\T1/lmr/m/n/10 (+20) Ein Pro-zess, der auf dem C-Quellcode
+
+Underfull \hbox (badness 1859) in paragraph at lines 834--835
+\T1/lmr/m/n/10 (+20) in Lis-ting []8.1[] ba-siert, ruft die Standard-
+[166]
+Underfull \hbox (badness 1184) in paragraph at lines 934--935
+[]\T1/lmr/m/n/10 (+20) Das Bei-spiel in Lis-ting []8.2[] in der Pro-
+
+Underfull \vbox (badness 6348) has occurred while \output is active [167]
+[168]
+Underfull \vbox (badness 10000) has occurred while \output is active [169]
+[170] [171 <./figures//exec-prinzip_sw_Buch_en.pdf>] [172 <./figures//prozess_e
+rzeugungen_en.pdf>]
+Underfull \vbox (badness 2671) has occurred while \output is active [173]
+[174] [175]
+Underfull \vbox (badness 10000) has occurred while \output is active [176]
+Underfull \hbox (badness 1661) in paragraph at lines 1815--1816
+\T1/lmr/m/n/10 (+20) Beim prio-ri-tä-ten-ge-steu-er-ten Sche-du-ling be-
+[177] [178] [179 <./figures//prioritaeten_warteschlangen_en_SS2014_neu.pdf>]
+Underfull \hbox (badness 3503) in paragraph at lines 1962--1963
+\T1/lmr/m/n/10 (+20) execution times, be-cause the longer the
+[180 <./figures//roundrobin_en_SS2014.pdf>] [181] [182]
+Underfull \hbox (badness 2951) in paragraph at lines 2121--2122
+\T1/lmr/m/n/10 (+20) The schedul-ing method \T1/lmr/m/it/10 (+20) High-est Re-s
+ponse
+
+Underfull \hbox (badness 2027) in paragraph at lines 2121--2122
+\T1/lmr/m/it/10 (+20) Ra-tio Next \T1/lmr/m/n/10 (+20) (HRRN) is a fair vari-an
+t of
+
+Underfull \hbox (badness 10000) in paragraph at lines 2157--2158
+[]\T1/lmr/m/n/10 (+20) Since with HRRN, just like with
+
+Underfull \hbox (badness 10000) in paragraph at lines 2157--2158
+[]\T1/lmr/m/n/10 (+20) , sta-tis-ti-cal record-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2162--2163
+[]\T1/lmr/m/n/10 (+20) Da bei HRRN ge-nau wie bei
+
+Underfull \hbox (badness 4872) in paragraph at lines 2162--2163
+[] \T1/lmr/m/n/10 (+20) die Lauf-zei-ten der
+
+Underfull \hbox (badness 2197) in paragraph at lines 2162--2163
+\T1/lmr/m/n/10 (+20) Ver-gan-gen-heit ab-ge-schätzt wer-den müs-sen,
+
+Underfull \hbox (badness 10000) in paragraph at lines 2194--2195
+[]\T1/lmr/m/n/10 (+20) EDF kann ver-drän-gend oder nicht-
+
+Underfull \hbox (badness 1675) in paragraph at lines 2194--2195
+\T1/lmr/m/n/10 (+20) be-triebs-sys-te-me (sie-he Ab-schnitt []3.6[]) und
+[183] [184 <./figures//fairshare_sw_Buch_en_schmaleres_Forma_2023.pdf>]
+Underfull \hbox (badness 2626) in paragraph at lines 2305--2306
+[]\T1/lmr/m/n/10 (+20) Ein Nach-teil von sta-ti-schem Multilevel-
+
+Underfull \hbox (badness 2343) in paragraph at lines 2318--2319
+\T1/lmr/m/it/10 (+20) Scheduling[]\T1/lmr/m/n/10 (+20) , in-dem es Pro-zes-se, 
+die schon
+
+Underfull \hbox (badness 1009) in paragraph at lines 2318--2319
+\T1/lmr/m/n/10 (+20) län-ger ak-tiv sind, durch ei-ne Re-du-zie-rung
+[185]
+Underfull \hbox (badness 1824) in paragraph at lines 2338--2339
+\T1/lmr/m/n/10 (+20) Round Robin, which elim-i-nates the need
+
+Underfull \hbox (badness 1270) in paragraph at lines 2338--2339
+\T1/lmr/m/n/10 (+20) for com-pli-cated es-ti-ma-tions of (re-main-ing)
+
+Underfull \hbox (badness 7326) in paragraph at lines 2354--2355
+[]\T1/lmr/m/n/10 (+20) Multilevel-Feedback-Scheduling be-vor-zugt
+[186 <./figures//multilevel_feedback_scheduling_Buch_en.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2461--2462
+[]\T1/lmr/m/n/10 (+20) the cur-rently run-ning pro-cess
+[187]
+Underfull \hbox (badness 7186) in paragraph at lines 2522--2523
+[]\T1/lmr/m/n/10 (+20) Da der Linux-Betriebssystemkern auch
+[188] [189 <./figures//scheduling_linux_O_1_prinzip_runqueues_fifos_sw_Buch_en.
+pdf>] [190] [191] [192]
+Underfull \hbox (badness 1303) in paragraph at lines 2886--2887
+\T1/lmr/m/n/10 (+20) Hil-fe ei-nes Rot-Schwarz-Baums[] (al-so ei-nes
+
+Underfull \hbox (badness 7925) in paragraph at lines 2886--2887
+[]\T1/lmr/m/n/10 (+20) ]. Dort wer-den die Pro-zes-se an-hand
+[193]
+Underfull \hbox (badness 4229) in paragraph at lines 2922--2923
+[]\T1/lmr/m/n/10 (+20) Die sta-ti-schen Pro-zess-prio-ri-tä-ten ([][]\T1/lmtt/m
+/n/10 nice[]\T1/lmr/m/n/10 (+20) -
+) [194 <./figures//scheduling_linux_CFS_prinzip_rot_schwarz_baum_sw_Buch_en.pdf
+>] (./M_0_009_bilingual.tex
+chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+[195]
+Underfull \vbox (badness 5504) has occurred while \output is active [196 <./fig
+ures//spooler_SS2014_en.pdf>] [197] [198 <./figures//kooperation_kommuniation_s
+w_Buch_en.pdf>] [199 <./figures//kokosy_en.pdf> <./figures//signalisierung_sw_B
+uch_en.pdf>] [200 <./figures//signal_wait.pdf>] [201 <./figures//signal_block.p
+df>]
+Underfull \hbox (badness 1184) in paragraph at lines 424--425
+[]\T1/lmr/m/n/10 (+20) Auch die bei-den Ope-ra-tio-nen [][]\T1/lmtt/m/n/10 lock
+ []\T1/lmr/m/n/10 (+20) und
+[202 <./figures//sperren_sw_Buch2_en.pdf> <./figures//sperren_freigeben_Buch3-e
+ps-converted-to.pdf>] [203] [204]
+Underfull \hbox (badness 1701) in paragraph at lines 618--619
+\T1/lmr/m/n/10 (+20) Ein Nach-teil der Deadlock-Erkennung[][] mit
+[205 <./figures//deadlock_beispiel_en_SS2014_sw.pdf>]
+Underfull \hbox (badness 3271) in paragraph at lines 652--653
+[]\T1/lmr/m/n/10 (+20) Die Wer-te des fol-gen-den Bei-spiels zur
+[206] [207]
+Underfull \hbox (badness 4036) in paragraph at lines 880--881
+\T1/lmr/m/n/10 (+20) Interprocess commu-ni-ca-tion via a \T1/lmr/m/it/10 (+20) 
+shared
+[208] [209 <./figures//sharedmemory2_en.pdf> <./figures//shared_mem_prinzip_en.
+pdf>] [210] [211] [212]
+Underfull \vbox (badness 10000) has occurred while \output is active [213]
+Underfull \hbox (badness 1308) in paragraph at lines 1231--1232
+[]\T1/lmr/m/n/10 (+20) Writing into the memory seg-ment, and
+
+Underfull \hbox (badness 2285) in paragraph at lines 1290--1291
+[]\T1/lmr/m/n/10 (+20) Tabelle []9.3[] ent-hält die in der Header-
+[214] [215] [216] [217]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1563.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern 1.66702pt
+(hyperref)                removed on input line 1563.
+
+[218]
+Underfull \hbox (badness 5345) in paragraph at lines 1655--1656
+[]\T1/lmr/m/n/10 (+20) Das in die-sem Ab-schnitt be-schrie-be-ne
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
+\T1/lmr/m/n/10 (+20) Kon-zept zur In-ter-pro-zess-kom-mu-ni-ka-ti-on
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
+\T1/lmr/m/n/10 (+20) sind \T1/lmr/m/it/10 (+20) Sys-temV-Nachrichtenwarteschlan
+gen\T1/lmr/m/n/10 (+20) .
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
+\T1/lmr/m/n/10 (+20) Da-ne-ben exis-tie-ren auch POSIX-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
+\T1/lmr/m/n/10 (+20) Nachrichtenwarteschlangen (sie-he Ab-
+[219 <./figures//mess_queue_sw_Buch_en.pdf>] [220] [221] [222]
+Underfull \vbox (badness 10000) has occurred while \output is active [223]
+Underfull \vbox (badness 10000) has occurred while \output is active [224]
+Underfull \vbox (badness 10000) has occurred while \output is active [225]
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+[]\T1/lmr/m/n/10 (+20) Die Na-men von POSIX-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+\T1/lmr/m/n/10 (+20) Nachrichtenwarteschlangen müs-sen wie
+
+Underfull \hbox (badness 3138) in paragraph at lines 2082--2083
+\T1/lmr/m/n/10 (+20) kei-nen wei-te-ren Slash ent-hal-ten [[]]. Im
+[226] [227]
+Underfull \vbox (badness 10000) has occurred while \output is active [228]
+[229]
+Underfull \hbox (badness 1248) in paragraph at lines 2410--2411
+\T1/lmr/m/n/10 (+20) An \T1/lmr/m/it/10 (+20) anony-mous pipe\T1/lmr/m/n/10 (+2
+0) , also called \T1/lmr/m/sl/10 (+20) un-named
+
+Underfull \hbox (badness 1521) in paragraph at lines 2445--2446
+[]\T1/lmr/m/n/10 (+20) Lese- und Schreib-zu-grif-fe auf ei-ne Pi-pe
+[230]
+Underfull \vbox (badness 10000) has occurred while \output is active [231 <./fi
+gures//pipe_prinzip_sw_Buch_en.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [232]
+Underfull \hbox (badness 1708) in paragraph at lines 2658--2659
+\T1/lmr/m/n/10 (+20) na-mi-gen Standard-Bibliotheksfunktion. Das
+[233]
+Underfull \vbox (badness 6348) has occurred while \output is active [234]
+Underfull \vbox (badness 10000) has occurred while \output is active [235]
+[236] [237]
+Underfull \hbox (badness 3803) in paragraph at lines 2949--2950
+[]\T1/lmr/m/it/10 (+20) Connection-oriented sock-ets[]\T1/lmr/m/n/10 (+20) , al
+so called
+
+Underfull \hbox (badness 2158) in paragraph at lines 2954--2955
+[]\T1/lmr/m/it/10 (+20) Verbindungsorientierte Sockets[]\T1/lmr/m/n/10 (+20) , 
+die auch
+
+Underfull \hbox (badness 1661) in paragraph at lines 2998--2999
+[][][]\T1/lmtt/m/n/10 listen []\T1/lmr/m/n/10 (+20) for mak-ing a socket on the
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 3040--3041
+[][][]\T1/lmtt/m/n/10 send []\T1/lmr/m/n/10 (+20) and [][]\T1/lmtt/m/n/10 recv 
+[]\T1/lmr/m/n/10 (+20) for ex-chang-ing data
+[238] [239] [240 <./figures//kommunikation_via_sockets_tcp_englisch.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [241]
+[242] [243]
+Underfull \vbox (badness 10000) has occurred while \output is active [244]
+[245]
+Underfull \hbox (badness 1701) in paragraph at lines 3580--3581
+[]\T1/lmr/m/n/10 (+20) Communication flow with con-nec-tion-less
+
+Underfull \vbox (badness 6348) has occurred while \output is active [246]
+Underfull \vbox (badness 3965) has occurred while \output is active [247 <./fig
+ures//kommunikation_via_sockets_udp_en.pdf>] [248] [249]
+Underfull \vbox (badness 10000) has occurred while \output is active [250]
+[251] [252] [253 <./figures//ZugriffsoperationenSema2_en.pdf>] [254 <./figures/
+/erzeuger_verbraucher_Buch_en.pdf>] [255]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 4384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern 1.66702pt
+(hyperref)                removed on input line 4384.
+
+[256]
+Underfull \hbox (badness 10000) in paragraph at lines 4423--4424
+[]\T1/lmr/m/n/10 (+20) Zudem ver-wal-tet der Linux-
+[257 <./figures//semaphoren_linux_SS2015_en.pdf>] [258]
+Underfull \hbox (badness 10000) in paragraph at lines 4538--4539
+[]\T1/lmr/m/n/10 (+20) Finally, the pro-gram re-moves both
+[259]
+Underfull \vbox (badness 10000) has occurred while \output is active [260]
+Underfull \vbox (badness 10000) has occurred while \output is active [261]
+Underfull \vbox (badness 10000) has occurred while \output is active [262]
+Underfull \hbox (badness 10000) in paragraph at lines 4778--4779
+[]\T1/lmr/m/n/10 (+20) Without mu-tual ex-clu-sion us-ing the
+
+Underfull \hbox (badness 6741) in paragraph at lines 4778--4779
+\T1/lmr/m/n/10 (+20) or [][]\T1/lmtt/m/n/10 ABABABBA[]\T1/lmr/m/n/10 (+20) . Wi
+th-out mu-tual ex-clu-sion
+
+Underfull \hbox (badness 2809) in paragraph at lines 4778--4779
+\T1/lmr/m/n/10 (+20) rare cases [][]\T1/lmtt/m/n/10 BBBBBAAAAA []\T1/lmr/m/n/10
+ (+20) or some-thing like
+
+Underfull \hbox (badness 1178) in paragraph at lines 4778--4779
+\T1/lmr/m/n/10 (+20) con-sump-tion) and the schedul-ing be-hav-ior
+
+Underfull \hbox (badness 1769) in paragraph at lines 4818--4819
+[]\T1/lmr/m/n/10 (+20) In ad-di-tion to the pa-ram-e-ters ([][]\T1/lmtt/m/n/10 
+GETVAL[]\T1/lmr/m/n/10 (+20) ,
+
+Underfull \hbox (badness 1629) in paragraph at lines 4823--4824
+[]\T1/lmr/m/n/10 (+20) Neben den in die-sem Ab-schnitt be-reits
+[263]
+Underfull \hbox (badness 7344) in paragraph at lines 4867--4868
+\T1/lmr/m/n/10 (+20) An al-ter-na-tive method of im-ple-ment-ing
+[264]
+Underfull \hbox (badness 1168) in paragraph at lines 4893--4894
+[]\T1/lmr/m/n/10 (+20) POSIX-Semaphoren kön-nen als \T1/lmr/m/it/10 (+20) be-na
+nn-te
+[265]
+Underfull \hbox (badness 1748) in paragraph at lines 4961--4962
+\T1/lmr/m/n/10 (+20) quests the val-ues of the two semaphores
+[266] [267]
+Underfull \vbox (badness 10000) has occurred while \output is active [268]
+Underfull \vbox (badness 10000) has occurred while \output is active [269]
+Underfull \hbox (badness 1960) in paragraph at lines 5203--5204
+[]\T1/lmr/m/n/10 (+20) Compiling the pro-gram in Linux us-ing
+
+Underfull \hbox (badness 10000) in paragraph at lines 5255--5256
+[]\T1/lmr/m/n/10 (+20) Im Ver-gleich zu be-nann-ten POSIX-
+
+Underfull \hbox (badness 10000) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) Semaphoren, wie im Pro-gramm-bei-spiel
+
+Underfull \hbox (badness 2245) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) in Lis-ting []9.13[], sind un-be-nann-te POSIX-
+
+Underfull \hbox (badness 1565) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) Semaphoren noch leicht-ge-wich-ti-ger, da sie
+
+Underfull \hbox (badness 1215) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) der Bi-blio-theks-funk-ti-on [][]\T1/lmtt/m/n/10 sem_init 
+[]\T1/lmr/m/n/10 (+20) und das
+
+Underfull \hbox (badness 2012) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) sind un-be-nann-te Se-ma-pho-ren zum Schutz
+
+Underfull \hbox (badness 2932) in paragraph at lines 5255--5256
+\T1/lmr/m/n/10 (+20) Pro-zess-über-grei-fen-de Nut-zung un-be-nann-ter
+[270]
+Underfull \hbox (badness 2005) in paragraph at lines 5281--5282
+\T1/lmr/m/n/10 (+20) Semaphores of-fer the fea-ture of count-ing.
+
+Underfull \vbox (badness 10000) has occurred while \output is active [271]
+Underfull \hbox (badness 1259) in paragraph at lines 5390--5391
+[]\T1/lmr/m/n/10 (+20) Tabelle []9.11[] ent-hält die in der Header-
+
+Underfull \hbox (badness 10000) in paragraph at lines 5410--5411
+[]\T1/lmr/m/n/10 (+20) For the two last-mentioned op-tions
+
+Underfull \hbox (badness 1661) in paragraph at lines 5410--5411
+\T1/lmr/m/n/10 (+20) ([][]\T1/lmtt/m/n/10 pthread.h []\T1/lmr/m/n/10 (+20) and 
+[][]\T1/lmtt/m/n/10 threads.h []\T1/lmr/m/n/10 (+20) in So-laris), it
+
+Underfull \hbox (badness 6110) in paragraph at lines 5420--5421
+\T1/lmr/m/n/10 (+20) sec-tion, it calls [][]\T1/lmtt/m/n/10 mtx_lock []\T1/lmr/
+m/n/10 (+20) (al-ter-na-tively:
+
+Underfull \hbox (badness 1038) in paragraph at lines 5429--5430
+[]\T1/lmr/m/n/10 (+20) Will ein Thread auf den kri-ti-schen Ab-
+
+Underfull \hbox (badness 1931) in paragraph at lines 5429--5430
+\T1/lmr/m/n/10 (+20) auf. Ist der kri-ti-sche Ab-schnitt nicht ge-
+[272]
+Underfull \hbox (badness 1466) in paragraph at lines 5484--5485
+\T1/lmr/m/n/10 (+20) thon [[]]. Wenn un-ter Ja-va ei-ne Me-tho-de
+[273]) [274] (./M_0_010_bilingual.tex
+chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+[275]
+Underfull \hbox (badness 1248) in paragraph at lines 87--88
+[]\T1/lmr/m/n/10 (+20) Partitionierung kommt zum Bei-spiel bei
+[276 <./figures//Partitionierung_sw_Buch_en.pdf>] [277 <./figures//emulation_sc
+hema_sw_buch_en.pdf>]
+Underfull \hbox (badness 2418) in paragraph at lines 309--310
+\T1/lmr/m/n/10 (+20) Se-ri-en Sys-tem/360, Sys-tem/370, Sys-
+
+Underfull \hbox (badness 3646) in paragraph at lines 331--332
+[]\T1/lmr/m/n/10 (+20) Virtual PC. Emu-liert in der Ver-si-
+
+Underfull \hbox (badness 1552) in paragraph at lines 331--332
+\T1/lmr/m/n/10 (+20) on für Ma-cOS X auf der []-
+[278]
+Underfull \hbox (badness 1194) in paragraph at lines 434--435
+\T1/lmr/m/n/10 (+20) operating sys-tem has its own vir-tual ma-
+[279 <./figures//javavm_sw_buch_en.pdf>] [280 <./figures//Vollstaendige_Virtual
+isierung_VMM_sw_Buch_en.pdf>] [281 <./figures//Keine_Virtualisieg_sw_Buch_en.pd
+f>] [282] [283 <./figures//Hypercalls_Paravialisierung_neu_sw_buch_en_neu.pdf>]
+
+Underfull \hbox (badness 1048) in paragraph at lines 668--669
+\T1/lmr/m/n/10 (+20) Hardware-Virtualisierung un-ter-stüt-zen, sind
+[284 <./figures//Hardware_Virtualirung_kompakt_sw_buch_en_neu.pdf>]
+Underfull \hbox (badness 2443) in paragraph at lines 730--731
+\T1/lmr/m/n/10 (+20) Vir-tuoz-zo (die kom-mer-zi-el-le Va-ri-an-te von
+[285 <./figures//jails_architekturur_sw_buch_en.pdf>]) [286]
+(./Z_0_001_Glossary.tex
+chapter without number
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 27--28
+[]\T1/lmr/m/n/10 (+20) Speicheradressen und Peripherie-
+
+Underfull \hbox (badness 1490) in paragraph at lines 34--35
+[]\T1/lmr/m/n/10 (+20) The sym-met-ric Ad-vanced En-cryp-tion
+
+Underfull \hbox (badness 1460) in paragraph at lines 51--52
+[]\T1/lmr/m/n/10 (+20) American Stan-dard Code for Infor-
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+[]\T1/lmr/m/n/10 (+20) Ein Speicher-be-reich
+
+Underfull \hbox (badness 5133) in paragraph at lines 73--74
+\T1/lmr/m/n/10 (+20) bei vol-lem Haupt-spei-cher die-je-ni-gen
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/lmr/m/n/10 (+20) Pro-zes-se aus-la-gert, die ge-gen-wär-tig
+
+Underfull \hbox (badness 1259) in paragraph at lines 82--83
+[]\T1/lmr/m/n/10 (+20) is an operation mode in
+[287] [288] [289]
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+[]\T1/lmr/m/n/10 (+20) Daten wer-den über einen DMA-
+[290]
+Underfull \hbox (badness 1152) in paragraph at lines 685--686
+[]\T1/lmr/m/n/10 (+20) siehe Aus-la-ge-rungs-spei-
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+[]\T1/lmr/m/n/10 (+20) Ein Be-triebs-sys-tem-kern, der
+[291]
+Underfull \hbox (badness 1466) in paragraph at lines 817--818
+[]\T1/lmr/m/n/10 (+20) Datenstruktur, in der in mo-der-ne
+[292]
+Underfull \hbox (badness 2376) in paragraph at lines 932--933
+[]\T1/lmr/m/n/10 (+20) Mehrere Pro-gram-me
+
+Underfull \hbox (badness 2181) in paragraph at lines 948--949
+[]\T1/lmr/m/n/10 (+20) Ein mi-ni-ma-ler Be-triebs-sys-tem-
+[293]
+Underfull \hbox (badness 1173) in paragraph at lines 1047--1048
+\T1/lmr/m/n/10 (+20) die Pro-zes-se nach dem FIFO-Prinzip
+[294] [295]
+Underfull \hbox (badness 1194) in paragraph at lines 1347--1348
+[]\T1/lmr/m/n/10 (+20) Windows 8/10 and Win-dows Server
+
+Underfull \hbox (badness 1946) in paragraph at lines 1347--1348
+\T1/lmr/m/n/10 (+20) 2012/2016 in-clude the \T1/lmr/m/it/10 (+20) Re\T1/lmr/m/n
+/10 (+20) silient \T1/lmr/m/it/10 (+20) F\T1/lmr/m/n/10 (+20) ile
+
+Underfull \hbox (badness 1062) in paragraph at lines 1354--1355
+[]\T1/lmr/m/n/10 (+20) Windows 8/10 und Win-dows Ser-ver
+
+Underfull \hbox (badness 2418) in paragraph at lines 1354--1355
+\T1/lmr/m/it/10 (+20) S\T1/lmr/m/n/10 (+20) ystem (ReFS). Die Be-triebs-sys-te-
+me
+
+Underfull \hbox (badness 2503) in paragraph at lines 1354--1355
+\T1/lmr/m/n/10 (+20) er-lau-ben die Ver-wen-dung von ReFS
+
+Underfull \hbox (badness 1838) in paragraph at lines 1354--1355
+\T1/lmr/m/n/10 (+20) aber bis-lang nur für we-ni-ge An-wen-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1393
+[]\T1/lmr/m/n/10 (+20) Automatic cal-cu-la-tion of an
+[296] [297]
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1623
+[]\T1/lmr/m/n/10 (+20) Transmission Con-trol Pro-to-col.
+
+Underfull \hbox (badness 6859) in paragraph at lines 1622--1623
+\T1/lmr/m/n/10 (+20) Connection-oriented Trans-port Layer
+[298] [299]) (./Z_0_002_Bibliography.tex [300] [301] [302]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+[]$\T1/lmtt/m/n/10 https : / / software . intel . com / content / dam / develop
+ / public / us / en / documents /
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+[]$\T1/lmtt/m/n/10 http : / / www . digilife . be / quickreferences / qrc / lin
+ux % 20system % 20call % 20quick %
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+[]$\T1/lmtt/m/n/10 https : / / msdn . microsoft . com / de-[]de / library / win
+dows / desktop / aa364218(v = vs . 85 )
+[303]
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
+[]$\T1/lmtt/m/n/10 https : / / docs . microsoft . com / en-[]gb / windows / win
+32 / fileio /
+[304] [305]) [306] (./book.ind [307] [308] [309] [310] [311] [312] [313]
+[314] [315] [316] [317] [318] [319]) [320] (./book.aux (./A_0_001_Preface.aux)
+(./M_0_001_bilingual.aux) (./M_0_002_bilingual.aux) (./M_0_003_bilingual.aux)
+(./M_0_004_bilingual.aux) (./M_0_005_bilingual.aux) (./M_0_006_bilingual.aux)
+(./M_0_007_bilingual.aux) (./M_0_008_bilingual.aux) (./M_0_009_bilingual.aux)
+(./M_0_010_bilingual.aux) (./Z_0_001_Glossary.aux) (./Z_0_002_Bibliography.aux)
+) )
+(see the transcript file for additional information){/usr/share/texmf/fonts/enc
+/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/sh
+are/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm
+/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf
+/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtti10.pfb>
+Output written on book.pdf (332 pages, 7340649 bytes).
+Transcript written on book.log.
+makeindex book.idx

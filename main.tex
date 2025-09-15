@@ -1,0 +1,340 @@
+\documentclass[a4paper,10pt,openright]{scrbook}
+
+% Das "cleardoublepage=current" definiert, dass die Vakantseiten am Ende eines Kapitels
+% die gleichen Kopf und Fußzeilen haben wie bisher und nicht komplett leer sind!
+
+% Mit Fußzeile
+% \usepackage[headtopline,headsepline]{scrlayer-scrpage}
+% Ohne Fußzeile
+\usepackage[headtopline]{scrlayer-scrpage}
+
+\pdfminorversion=7
+
+\RequirePackage{graphicx}
+% Die zuletzte angeben Sprache ist die zu Beginn bereitgestellte Sprache. 
+% Will man innerhalb des Dokumentes eine deutschsprachige Bezeichnung haben, 
+% wie zum Beispiel Inhaltsverzeichnis anstellen von table of contents, 
+% muss german beziehungsweise ngerman an der letzten Stelle stehen. 
+% Alternativ zu Beginn des Dokumentes die Sprache auf deutsch umstellen:
+% \begin{document}\selectlanguage{german}
+\usepackage[ngerman,english]{babel} 
+% \RequirePackage{english}
+\usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[tbtags,intlimits]{amsmath}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage{pdflscape}   % \begin{landscape} ... \end{landscape}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{icomma} % Das verhindert einen großen Abstand nach einem Komma in Formeln.
+% Quelle: https://texfragen.de/komma_in_formel
+
+
+% Use the etoolbox package to patch \thebibliography to use \addcontentsline:
+% https://tex.stackexchange.com/questions/71129/bibliography-in-table-of-contents
+\usepackage{etoolbox}
+
+%% Seitenlayout
+\usepackage[
+    %showframe = true,
+    showframe = false,
+        ]{geometry}
+
+%Das ist wichtig für die Synchronisierung der Seitennummern mit dem PDF-Viewer
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}   % Das braucht man u.a. in Tabellen für \toprule, \midrule, \bottomrule
+\usepackage{colortbl}   % Das braucht man u.a. in Tabellen für \cellcolor{lightgray} 
+\usepackage{tocloft}
+\usepackage{paracol}
+\usepackage{fancyvrb}  % Das braucht man für die Umgebung Verbatim
+\usepackage{needspace}
+\usepackage{longtable}
+\usepackage{float}      % Für den Positionsierungsparameter H
+\usepackage{verbatimbox} % Center verbatim
+\usepackage{microtype}% Verbesserter Randausgleich (wichtig bei 2-Spalten-Formatierung!)
+% \usepackage{pdfcolparallel} % 2-Spalten-Formatierung ermöglichen!
+\usepackage{textcase}
+\usepackage{calc}%
+% \RequirePackage[bottom]{footmisc}
+\RequirePackage{ragged2e}%
+\RequirePackage[singlelinecheck=false,listof=true]{caption}%
+\usepackage[leftcaption,raggedright]{sidecap}
+\RequirePackage[numbers]{natbib}
+% \RequirePackage{multicol}
+\usepackage{multirow}
+\usepackage{makeidx}
+\usepackage{framed}%
+\usepackage{url}%
+\usepackage{setspace}
+
+\usepackage{color}
+\usepackage{out}
+\usepackage{imakeidx}
+\usepackage{eso-pic}
+\usepackage{rotating} % Für \begin{sideways} ... 
+
+
+% \setlength{\textwidth}{10.8cm}
+% \setlength{\textheight}{15.7cm}
+
+\setlength{\textheight}{\textheight+1cm}
+
+
+\graphicspath{{./figures/}}
+
+
+% \setlength{\parskip}{0ex plus 10mm minus 0.0ex}
+\let\upmu\umu
+\let\nohline\relax
+\sloppy
+
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}%
+\newcolumntype{Z}{>{\hfill\arraybackslash}X}%
+
+%%% Trennungsregeln für das gesamte Dokument.
+%
+\hyphenation{
+Video-streaming
+Time-out
+Access
+Data
+OpenSHMEM
+PowerPC
+DHCP
+Sense
+Spacing
+Maxi-mum
+Trans-mission
+Unit
+Unics
+Inter-net-working
+Infor-mation
+Port-scanner
+Bytes
+Frames
+Frame
+CD/DVDs
+popular
+Waiting
+en-co-ding
+recog-ni-zable
+posi-tive
+Figure
+address-able
+hexa-decimal
+corres-ponds
+Avoi-dance
+ack-now-ledg-ments
+reques-ting
+digital
+address
+address-ing
+hier-ar-chy
+repre-sen-ted
+every
+globally
+Appli-ca-tion
+Appli-ca-tions
+appli-ca-tion
+appli-ca-tions
+commu-ni-ca-tion
+speci-fies
+example
+Accor-ding-ly
+follow-ing
+monitor-ing
+headers
+automa-ti-cally
+ack-now-ledg-ment
+WiFi
+Access
+memory
+operating
+modern
+offered
+theory
+different
+logi-cally
+applied
+nega-tive
+colla-bo-rate
+necessary
+However
+however
+original
+expanding
+addresses
+allow
+indicating
+addressed
+creating
+several
+written
+according
+worsens
+operation
+privilege
+operate
+strategy
+execution
+Cores
+limited
+reading
+After
+after
+methods
+}
+
+% \selectlanguage{english}
+
+
+\makeindex[name=de,title={Stichwortverzeichnis}]
+\makeindex
+
+
+\newcommand{\makroabschnitt}{
+\Needspace{3.5cm}
+\section[\englischertitel]{}
+\abschnitt{\deutschertitel}
+\begin{paracol}{2}[]
+\section*{\englischertitel}
+\switchcolumn
+\section*{\deutschertitel}
+\switchcolumn*
+\selectlanguage{english}
+}
+
+\newcommand{\makrounterabschnitt}{
+\Needspace{2.8cm}
+\subsection[\englischertitel]{}
+\unterabschnitt{\deutschertitel}
+\begin{paracol}{2}[]
+\subsection*{\englischertitel}
+\switchcolumn
+\subsection*{\deutschertitel}
+\switchcolumn*
+\selectlanguage{english}
+}
+
+
+\newcommand{\makrounterunterabschnitt}{
+\Needspace{1.5cm}
+\begin{paracol}{2}[]
+\subsubsection*{\englischertitel}
+\switchcolumn
+\subsubsection*{\deutschertitel}
+\switchcolumn*
+\selectlanguage{english}
+}
+
+
+
+\newcommand{\nombreindice}{Inhaltsverzeichnis}
+\newlistof{inhaltsverzeichnis}{deutschestoc}{\nombreindice}
+
+% Die Tilde ist der Abstand zwischen Zahl und Titel im deutschen Inhaltsverzeichnis
+% Das vspace fügt im deutschen Inhaltsverzeichnis einen kleinen Abstand unter jedem Kapiteleintrag ein.
+% Beim englischen Inhaltsverzeichnis ist es in Kapitel-Datei im \chapter[...
+\newcommand\kapitel[1]{%
+\addcontentsline{deutschestoc}{chapter}{\protect{\vspace{2pt}\thechapter}~#1}}
+\newcommand\abschnitt[1]{%
+\addcontentsline{deutschestoc}{section}{{\thesection}~#1}}
+\newcommand\unterabschnitt[1]{%
+\addcontentsline{deutschestoc}{subsection}{\protect{\thesubsection}~#1}}
+
+% Die Tilde ist der Abstand zwischen Zahl und Titel im englischen Inhaltsverzeichnis
+\renewcommand{\numberline}[1]{#1~}
+
+
+\definecolor{Gray}{gray}{0.9}
+
+\newcommand{\deutschertitel}{}
+\newcommand{\englischertitel}{}
+
+% Hurenkinder und Schusterjungen verhindern
+\clubpenalty10000
+\widowpenalty10000
+\displaywidowpenalty=10000
+\interlinepenalty=1000
+
+
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+% \pagemark = Seitennummer
+% \headmark = Kolumnentitel wie Chapter, Section oder Subsection
+
+% \ohead{Kopfzeile außen}
+\ohead{\pagemark}
+% \chead{Kopfzeile Mitte}
+\chead{}
+% \ihead{Kopfzeile innen}
+\ihead{\headmark}
+% \ifoot{Fußzeile innen}
+\ifoot{}
+% \cfoot{Fußzeile Mitte}
+\cfoot{}
+% \ofoot{Fußzeile außen}
+\ofoot{}
+
+
+\begin{document}
+
+
+
+% \newcommand{\heute}{2.~September 2019}
+\newcommand{\heute}{\today}
+
+% \AddToShipoutPictureBG{%
+%   \AtPageUpperLeft{\raisebox{-1cm}{\makebox[\paperwidth]{\huge \texttt{===>} Entwurf vom \heute\ \texttt{<===} }}}%
+% %   \AtPageCenter{\rotatebox{52}{\makebox[0pt]{\Huge This is diagonally across the page}}}
+% \AtPageLowerLeft{\raisebox{\baselineskip}{\makebox[\paperwidth]{\huge \texttt{===>}  Entwurf vom \heute\ \texttt{<===}}}}
+% }
+
+\frontmatter 
+\include{preface}
+\cleardoublepage
+\tableofcontents
+
+\cleardoublepage
+\listofinhaltsverzeichnis
+\clearpage
+
+\mainmatter 
+\include{chapter01}
+\include{chapter02}
+% \include{chapter03}
+% \include{chapter04}
+
+
+\backmatter 
+
+% \include{Z_0_004_TechnicalTerms}
+\include{glossary}
+
+
+
+% \cleardoublepage
+\phantomsection
+
+
+
+\apptocmd{\thebibliography}{\csname phantomsection\endcsname
+\renewcommand{\bibname}{References}\addcontentsline{toc}{chapter}{References}\addcontentsline{deutschestoc}{chapter}{Literatur}}{}{}
+
+\include{bibliography}
+
+
+\phantomsection
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Index}
+\addcontentsline{deutschestoc}{chapter}{Index}
+
+\printindex
+% \addcontentsline{deutschestoc}{chapter}{Stichwortverzeichnis}
+% \printindex[de]
+\end{document}
