@@ -102,8 +102,8 @@ Verfügt ein Rahmen nicht über passende Bohrlöcher für den ausgewählten Flug
 
 
 
-\renewcommand{\deutschertitel}{Flugcontroller}
-\renewcommand{\englischertitel}{Flight Controller}
+\renewcommand{\deutschertitel}{Flugcontroller und Motorsteuerung}
+\renewcommand{\englischertitel}{Flight Controller and Electronic Speed Controller}
 
 \makroabschnitt
 
@@ -114,9 +114,151 @@ TBD
 \switchcolumn
 \selectlanguage{ngerman}
 
+
+Der Flight Controller (FC) ist ist die zentrale Komponente jeder Drohne. Der FC  verarbeitet die Sensordaten von Gyroskop, Beschleunigungssensor, Barometer und GPS-Modul. Er stabilisiert die Fluglage durch Regelalgorithmen und nimmt über den Empfänger Steuerbefehle durch den Piloten entgegen. Zudem steuert der FC die Motoren über die Electronic Speed Controller (ESC).
+
+\switchcolumn*
+\selectlanguage{english}
+
 TBD
 
+\switchcolumn
+\selectlanguage{ngerman}
+
+Auch FPV-Kamera und Videosender sind mit dem FC verbunden und werden durch ihn gesteuert und dem Strom des Akkus versorgt. Der FC gibt auch Telemetriedaten als On Screen Display an den Videosender weiter. 
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Gängige FC enthalten einen STM32-Mikrocontroller. Hier wird auch die Firmware gespeichert. Moderne MCUs sind F4, F7 und H7. Diese unterscheiden sich im Takt und Speicher (siehe Tabelle~\ref{TabelleFCMCU}).
+
 \end{paracol}
+
+\begin{table}[htb!]
+\centering
+\captionabove{Overview of modern Flight Controller STM32 MCUs}
+\label{TabelleFCMCU}
+\begin{tabular}{c@{\hskip 8mm}l@{\hskip 8mm}r@{\hskip 8mm}r}
+\toprule
+CPU (MCU)  & Clock    & Flash Memory & RAM     \\
+\midrule
+F405       & 168\,MHz & 1\,MB        & 192\,KB \\
+F411       & 100\,MHz & 512\,KB      & 128\,KB \\
+F745       & 216\,MHz & 1\,MB        & 320\,KB \\
+F722       & 216\,MHz & 512\,KB      & 256\,KB \\
+H743       & 480\,MHz & 2\,MB        & 1\,MB   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{paracol}{2}[]
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Die Electronic Speed Controller (ESCs) steuert die Motoren. Der ESC ist eines der am stärksten belasteten Teile der Drohne, weil durch ihn teils 10 bis 20 Ampere Dauerstrom fließen.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Separate ESCs als einzelne Platinen sind heute unüblich. Bei modernen Drohnen sind die vier oder mehr ESCs auf einer einzelnen Platine, einem sogenannten 4-in-1-ESCs zur Motorsteuerung integriert. An dieser werden die Motoren und die Verbindung zum Akku (siehe Abschnitt~\ref{AbschnittAkkus}) angelötet. 
+
+\end{paracol}
+
+
+\renewcommand{\deutschertitel}{Stack oder AIO}
+\renewcommand{\englischertitel}{Stack or AIO}
+
+\makrounterabschnitt
+
+\label{AbschnittESC}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Die Kombination einer einer separaten Platine zur Motorsteuerung und dem Flugcontroller heißt Stack. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Befinden sich die ESCs auf der gleichen Platine wie der FC, spricht man von einem All In One Flight Controller (AIO FC). 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Bei kleineren Drohnen (2 bis 4 Zoll) sind schon aus Platzgründen AIO FCs üblich. Bei größeren Drohnen kommen meist Stacks zum Einsatz. Ein Vorteil von ist, dass separate Motorsteuerungen mit höheren Dauerströmen am Markt verfügbar sind. Separate Motorsteuerungen gibt es mit 45 bis 70\,A. Zudem bieten die FCs von Stacks tendenziell gegenüber AIO FCs mehr Platz für Lötpads, größere Lötpads, häufig zusätzlich Steckverbindungen und mehr nutzbare UART-Schnittstellen für Sensoren und Aktoren.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO}) zeigt einen einen AIO Flight-Controller. Die Abbildungen~\ref{AbbildungSpeedyBeeFCF405MiniBLS35front} und~\ref{AbbildungSpeedyBeeFCF405MiniBLS35Aback}) zeigen die Vorder- und Rückseite eines Stack bestehen aus Flight-Controller und separater ESC-Platine.
+
+\end{paracol}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{Flight Controller SpeedyBee F405 AIO 40A Bluejay 25.5x25.5 (Front and Back)}
+  \label{AbbildungSpeedyBeeFCBluejayAIO}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_F405_Mini_BLS_35A_front.jpg}
+  \caption{Flight Controller SpeedyBee F405 Mini 35A 20x20 Stack (Front)}
+  \label{AbbildungSpeedyBeeFCF405MiniBLS35front}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_F405_Mini_BLS_35A_back.jpg}
+  \caption{Flight Controller SpeedyBee F405 Mini 35A 20x20 Stack (Back)}
+  \label{AbbildungSpeedyBeeFCF405MiniBLS35Aback}
+\end{figure}
 
 
 
@@ -132,11 +274,225 @@ TBD
 \switchcolumn
 \selectlanguage{ngerman}
 
+Der Videosender (VTX) überträgt das Livebildes der FPV-Camera über den eingestellten Kanal im festgelegten Band an die FPV Brille. Neben analogen Videosendern existieren auch verschiedene digitale Systeme, die zueinander inkompatibel sind.
+
+\switchcolumn*
+\selectlanguage{english}
+
 TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+In Deutschland ist die Nutzung des Frequenzbereichs 5725-5875\,Mhz bei einer maximalen Sendeleistung von 25\,mW zulässig. Die für analoge Bildübertragung zulässigen Kanäle in den jeweiligen Bändern zeigt Tabelle~~\ref{TabelleFrequenzenVTX}). Auffällig sind beim Race Band die großen Kanalabstände von 37\,MHz, die Kanalüberlagerungen verhindern.
 
 \end{paracol}
 
+\begin{table}[htb!]
+\centering
+\captionabove{Overview about permitted VTX Channels in Germany}
+\label{TabelleFCMCU}
+\begin{tabular}{l@{\hskip 8mm}l}
+\toprule
+CPU (MCU)  & Channel Number (Frequency MHz)    \\
+\midrule
+Band A     & 7 (5745), 6 (5765), 5 (5785), 4 (5805), 3 (5825), 2 (5845), 1 (5865) \\
+Band B     & 1 (5733), 2 (5752), 3 (5771), 4 (5790), 5 (5809), 6 (5828), 7 (5847), 8 (5866) \\
+Band E     & none Frequency permitted in Germany \\
+Band F     & 1 (5749), 2 (5760), 3 (5780), 4 (5800), 5 (5820), 6 (5840), 7 (5860) \\
+Race Band  & 3 (5732), 4 (5769), 5 (5806), 6 (5843) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+\begin{paracol}{2}[]
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Der von einem Videosender zur Übertragung verwendete Kanal und das Band werden in der grafischen Oberfläche Firmware des Flugcontrollers festgelegt.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Analoge Videosender sind herstellerübergreifend mit analogen Videobrillen kompatibel. Bei digitalen Systemen ist das nicht der Fall. Hier müssen die Hersteller von Sender und Empfänger übereinstimmen. Digitale Systeme zur Übertragung des Livebildes sind von den Herstellern DJI, HDZero und CaddxFPV unter dem Namen Walksnail verfügbar. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Vorteile von digitaler Livebildübertratung sind die exzellente Bildqualität und die Möglichkeit, ohne weitere Action-Camera Videos in HD-Qualität aufnehmen zu können.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Vorteile von analoger Übertratung sind neben der bereits erwähnten herstellerübergreifenden Kompatibilität, die geringe Verzögerung (Latenz), das das Bild bei Störungen schlechter wird, aber nicht abrupt abreißt, und deutlich geringeren Anschaffungskosten für die benötigten Komponenten.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Einen wichtigen Einfluss auf die Bildqualität und Reichweite haben die verwendeten Antennen. Diese sollten auf auf Sender- und Empfängerseite zusammenpassen. Die verfügbaren Antennen für Videosender unterscheiden sich anhand ihrer Polarisation. Es existieren:
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+\begin{itemize}
+\item linearly polarized antennas (LP)
+\item circularly polarized antennas (CP)
+\end{itemize}
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+\begin{itemize}
+\item Antennen mit linearer Polarisation (LP)
+\item Antennen mit zirkularer Polarisation (CP)
+\end{itemize}
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+LP-Antennen sind die kostengünstigste und einfachste Variante. Sie werden häufig mit dem Videosender und mit der Videobrille mitgeliefert und haben eine Stabform. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+CP-Antennen ermöglichen eine bessere Bildqualität und eine höhere Reichweite. Bei zirkularer Polarisation dreht sich die Polarisation, während sich das Signal ausbreitet. Es existieren Antennen mit rechtsseitiger zirkularer Polarisation (RHCP) und mit linksseitiger zirkularer Polarisation (LHCP). 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+RHCP kommen in der Regel bei analogen FPV-Drohnen zum Einsatz und LHCP-Antennen bei digitaler Bildübertragung.
+
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Motoren}
+\renewcommand{\englischertitel}{Motors}
+
+\makroabschnitt
+
+\label{AbschnittMotoren}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Motoren unterscheiden sich in ihrem Aufbau (Motoraufbau und -größe), der elektrischen Spannung (Volt), mit der sie arbeiten können, Drehzahl (KV-Wert), der Aufnahme des Propellers und der Befestigung mit der Rahmen.
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+\begin{itemize}
+\item \textbf{Elektrische Spannung}: 4S-Motoren benötigen 4S-Akkus mit maximal 16,8\,V und 6S-Motoren benötigen 6S-Akkus mit maximal 25,2\,V. Komponenten für 4S sind meist günstiger und leichter, bieten dafür aber weniger Leistung. Komponenten für 6S bieten mehr Leistung oder mehr Flugzeit, haben dafür aber auch meist mehr Gewicht (insbesondere die Akkus). Für leichte kostengünstige Drohnen ist 4S die bessere Wahl. Es gibt auch Motoren, die 4S und 6S vertragen und durch eine hohe Flexibilität bieten.
+\end{itemize}
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+\begin{itemize}
+\item \textbf{Motoraufbau und -größe}: Die Motoren bestehen aus einem Stator und einem Rotor. Der Stator enthält die Wicklungen und das Kugellager. Der Rotor ist die Motorgloke mit den Magneten, die die eigentliche Drehbewegung ausführt. Jeder Motor ist mit einer Zahlenkombination ausgezeichnet, die den Durchmesser und die Höhe des Stators in Millimeter angibt. Bei einem Motor mit der Zahlenkombination 2306 beispielsweise hat der Stators einen Durchmesser von 23\,mm und eine Höhe von 6\,mm. Je größer das Statorvolumen, desto höher ist die Motorleistung im Bezug auf Drehmoment. Zudem ist die thermische Robustheit von großen Motoren besser.  Motoren mit kleinem Statorvolumen sind hingegen leichter und sparsamer bei kleinen Lasten. 
+\end{itemize}
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+\begin{itemize}
+\item \textbf{KV-Wert}: 
+\end{itemize}
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+\begin{itemize}
+\item \textbf{Propelleraufnahme}: Größere Motoren (z.B. 22xx, 23xx, 24xx) für Drohnen ab 5'' haben meistens eine M5-Welle mit 5\,mm Durchmesser. Die Propeller werden direkt auf die Motorwelle gesteckt und mit einer Mutter gesichert. Kleineren Motoren (z.B. 13xx, 14xx, 18xx) für Drohnen bis 3,5'' haben meist eine viel kleinere Wellen mit 1,5\,mm Durchmesser. Hier werden die Propeller mit zwei Schrauben am Motor befestigt. Motoren (z.B. 20xx, 21xx) für mittelgroße Drohnen (3,5''- oder 4'') gibt es für M5-Wellen und Wellen mit 1,5\,mm Durchmesser.
+\end{itemize}
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+\begin{itemize}
+\item \textbf{Rahmenbefestigung}: 
+\end{itemize}
+
+\end{paracol}
 
 
 \renewcommand{\deutschertitel}{Propeller}
@@ -152,5 +508,267 @@ TBD
 \selectlanguage{ngerman}
 
 TBD
+
+\end{paracol}
+
+
+\renewcommand{\deutschertitel}{Akkus}
+\renewcommand{\englischertitel}{Batteries}
+
+\makroabschnitt
+
+\label{AbschnittAkkus}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Klassischerweise verwenden FPV-Drohnen Lithium-Polymer (LiPo) oder Lithium-Ionen-Akkus (Li-Ion). Unterschieden werden die Akkus zudem hinsichtlich Kapazität (mAh), Spannung (Zellenzahl) und Entladespannung bzw. C-Wert (\textsl{Capacity Rate}), und Stecker. 
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Lade- oder Entladerate (C-Wert)}
+\renewcommand{\englischertitel}{Charge and Discharge Rate (C-Rate)}
+
+\makrounterabschnitt
+
+\label{AbschnittCWertAkkus}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Die Akkus bestehen aus einer oder mehreren in Reihe geschalteten Zellen und bieten sehr hohe C-Werte von 75 bis 120\,C. Der C-Wert (\textsl{Capacity Rate}) gibt an, wie schnell ein Akku entladen werden kann.
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Bei einem 1500\,mAh LiPo-Akku (siehe Abbildung~\ref{AbbildungLiPoAkku}) mit einem C-Wert 100 können somit \(1,5 A * 100 = 150\) Ampere dauerhaft abgegeben werden. 
+
+\end{paracol}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{A 4S Lithium-Polymere (LiPo) Battery with 1500\,mAh Capacity and 100\,C Capacity Rate}
+  \label{AbbildungLiPoAkku}
+\end{figure}
+
+\begin{paracol}{2}[]
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Für sehr rasante Flugmanöver braucht man solche hohen Ströme. Für typische Anwendungen in Lehre und Forschungsprojekten ist das aber uninteressant. Patrouillenflüge oder gar das Verharren an einer Position zur Datensammlung erfordern keine hohen C-Werte. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+LiPo-Akkus haben mehrere Nachteile. Die werden sehr leicht tiefentladen, was sie dauerhaft beschäftigt oder zerstört. Abstürze führen auch häufig zu Beschädigungen und bei unsachgemäßer Handhabung wie dem zu schnellen Laden oder dem Betrieb trotz Beschädigungen der Außenhülle, besteht das latente Risiko von Bränden. Eine deutlich robustere Alternative zu LiPo-Akkus sind Lithium-Ionen-Akkus. Diese bieten allerdings viel geringere C-Werte.
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Der C-Wert gibt auch die empfohlene Laderate an. Diese ist 1\,C, wenn der Hersteller nicht dediziert eine höhere Laderate wie z.B. 2\,C freigegeben hat. Bei dem eingangs erwähnten 1500\,mAh LiPo-Akku entspricht 1\,C Laderate einem Strom von 1,5\,A und dementsprechend dauert es eine Stunde den Akku vollständig zu laden. Das ist aber ein hypothetischer Wert, da ein derart tiefentladener Akku nicht mehr geladen werden kann.
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Anzahl der Zellen (S4/S6)}
+\renewcommand{\englischertitel}{Number of Cells (S4/S6)}
+
+\makrounterabschnitt
+
+\label{AbschnittSWertAkkusZellen}
+
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+LiPo-Akkus enthalten eine oder mehrere in Reihe geschaltete Zellen. Der sogenannte S-Wert bei Akkus definiert die Anzahl der Zellen. Jede LiPo-Zelle hat eine Nennspannung von ca. 3,7\,V. (voll geladen ca. 4,2\,V, entladen ca. 3,0\,V). Sind mehrere Zellen in Reihe geschaltet, addieren sich die Spannungen. 
+
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Die gängigsten Akkus sind 4S und 6S. Bei einem 4S-Akku sind 4 Zellen in Reihe geschaltet. Die Nennspannung ist \(4 \times 3,7\,V = 14,8\,V\). Ist ein solcher Akku voll geladen ist seine Spannung 16,8\,V. Eine Übersieht über die verschiedenen LiPo-Akkus enthält Tabelle~\ref{TabelleAkkus}).
+
+\end{paracol}
+
+\begin{table}[htb!]
+\centering
+\captionabove{Overview of Lithium-Polymere (LiPo) Batteries}
+\label{TabelleAkkus}
+\begin{tabular}{l@{\hskip 8mm}l@{\hskip 8mm}r@{\hskip 8mm}r@{\hskip 8mm}r}
+\toprule
+Battery Type  & Cells & Nominal Voltage  & Fully Charged & Discharged   \\
+\midrule
+S1            & 1     & 3.7\,V           & 4,2,V        & 3.0\,V         \\
+S2            & 2     & 7.4\,V           & 8.4,V        & 6.0\,V         \\
+S3            & 3     & 11.1\,V          & 12.6,V       & 9.0\,V         \\
+S4            & 4     & 14.8\,V          & 16.8,V       & 12.0\,V        \\
+S5            & 5     & 18.5\,V          & 21.0,V       & 15.0\,V        \\
+S6            & 6     & 22.2\,V          & 25.2,V       & 18.0\,V        \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{paracol}{2}[]
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Bei einer höheren Spannung braucht ein Motor bei gleicher Leistung weniger Strom und läuft effizienter. S6-Komponenten sind leistungsstärker aber auch schwerer und teurer. Größere oder leistungsorientierte Drohnen verwenden meist 6S-Akkus. Kleinere und mittlere Drohnen verwenden meist S4-Akkus und entsprechende leichtgewichtige Komponenten.
+
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Mit steigender Kapazität eines Akkus steigt nicht nur die Flugdauer, sondern auch das Gesamtgewicht. Sehr kleine S4-Akkus mit 450\,mAh Kapazität wiegen ca. 60\,g. Der in Abbildung~\ref{AbbildungLiPoAkku} gezeigte Akku mit 1500\,mAh Kapazität wiegt hingegen ca. 185\,g. Ein höheres Gesamtgewicht beeinflusst auch das Flugverhalten. 
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Stecker (XT30/XT60/XT90) zum Entladen und Laden}
+\renewcommand{\englischertitel}{Plugs (XT30/XT60/XT90) for Discharge and Charge}
+
+\makrounterabschnitt
+
+\label{AbschnittSteckerAkkus}
+
+
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Der Anschluss der Akkus an den Flugcontroller geschieht in der Regel über einen XT30- oder alternativ über eine XT60-Gleichstromstecker. Es gibt auch sehr große Akkus mit XT90-Stecker. Zwei Kabel mit einer Buchse sind an die Motorsteuerung (bei einem Stack) oder an den Flugcontroller bei einem AIO angelötet (siehe Abschnitt~\ref{AbschnittFC}). 
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Bei kleinen und leichten Drohnen bis zu einer Größe von 4''sind XT30-Buchsen üblich. 5'' und 6'' Drohnen verwenden üblicherweise XT60-Buchsen. Noch größe Drohnen verwenden häufig XT90-Buchen. Je größer die Zahl, desto größere Ströme verträgt der Stecker. Größere Buchsen und Stecker sind allerdings auch größer und schwerer. Auch der Leitungsquerschnitt muss zu den Buchen passen. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Neben den Gleichstromstecker verfügt jeder Akku mit zwei oder mehr Zellen über einen Balancerstecker zum sicheren Laden. Dieser Stecker, der bei modernen Akkus meist der Norm JST-XHR entspricht, ermöglicht es dem Ladegerät die Zellspannung jeder einzelnen Zelle zu messen und den Ladevorgang entsprechend zu steuern. Die Anzahl der Pins entspricht der Anzahl der Zellen plus eins (wegen der gemeinsamen Masse). Ein 4S-Akku hat somit fünf Leitungen und ein 6S-Akku hat sieben Leitungen. Durch die Werte, die über den Balancerstecker ausgelesen werden, gleicht das Ladegerät die Spannung der einzelnen Zellen an. Das verhindert die Überladung einzelner Zellen beim Ladevorgang und damit das Riskio für eine Beschädigung des Akkos oder sogar einen Brand und beugt einer Tiefentladung einzelner Zellen beim späteren Betrieb vor.
+
+
+
+\end{paracol}
+
+
+
+
+\renewcommand{\deutschertitel}{GPS}
+\renewcommand{\englischertitel}{GPS}
+
+\makroabschnitt
+
+\label{AbschnittGPS}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Ein GPS-Modul (Global Positioning System) ist obligatorisch für viele nützliche Funktionen wie zum Beispiel Return-to-Home (automatisches Heimfliegen), Geschwindigkeitsmessung, Bestimmung der Höhe, Unterstützung der Positionshaltung, autonomer Flug, etc. 
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Nicht jedes GPS-Modul ist mit allen gängigen Firmwares für Flugcontroller kompatibel. Während Betaflight quasi jedes GPS-Modul unterstützt, ist das bei INAV und ArduPilot nicht der Fall. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Verfügt ein GPS-Modul nur für 4 Anschlüsse (Lötpads oder Kabel), enthält es keinen magnetischen Kompass. Ohne magnetischen Kompass weiß eine Drohne aber ohne Vorwärtsbewegung nicht, wie sie positioniert ist, also in welche Richtung sie schaut. Mehrere sinnvolle Funktionen wie GPS-Position-Hold bei Ardupilot sind dann nicht möglich.
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Empfänger}
+\renewcommand{\englischertitel}{Receiver}
+
+\makroabschnitt
+
+\label{AbschnittReceiver}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
 
 \end{paracol}

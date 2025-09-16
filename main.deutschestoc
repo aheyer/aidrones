@@ -1,7 +1,15 @@
 \contentsline {chapter}{{\vspace {2pt}1}~Hardware}{1}{chapter.1}%
 \contentsline {section}{{1.1}~Rahmen}{1}{section.1.1}%
-\contentsline {section}{{1.2}~Flugcontroller}{2}{section.1.2}%
-\contentsline {section}{{1.3}~Videosender}{2}{section.1.3}%
-\contentsline {section}{{1.4}~Propeller}{2}{section.1.4}%
-\contentsline {chapter}{{\vspace {2pt}2}~Software}{3}{chapter.2}%
-\contentsline {section}{{2.1}~Flight Controller Firmware}{3}{section.2.1}%
+\contentsline {section}{{1.2}~Flugcontroller und Motorsteuerung}{2}{section.1.2}%
+\contentsline {subsection}{{1.2.1}~Stack oder AIO}{3}{subsection.1.2.1}%
+\contentsline {section}{{1.3}~Videosender}{5}{section.1.3}%
+\contentsline {section}{{1.4}~Motoren}{6}{section.1.4}%
+\contentsline {section}{{1.5}~Propeller}{7}{section.1.5}%
+\contentsline {section}{{1.6}~Akkus}{8}{section.1.6}%
+\contentsline {subsection}{{1.6.1}~Lade- oder Entladerate (C-Wert)}{8}{subsection.1.6.1}%
+\contentsline {subsection}{{1.6.2}~Anzahl der Zellen (S4/S6)}{9}{subsection.1.6.2}%
+\contentsline {subsection}{{1.6.3}~Stecker (XT30/XT60/XT90) zum Entladen und Laden}{10}{subsection.1.6.3}%
+\contentsline {section}{{1.7}~GPS}{11}{section.1.7}%
+\contentsline {section}{{1.8}~Empfänger}{11}{section.1.8}%
+\contentsline {chapter}{{\vspace {2pt}2}~Software}{13}{chapter.2}%
+\contentsline {section}{{2.1}~Flight Controller Firmware}{13}{section.2.1}%
