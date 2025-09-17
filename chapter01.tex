@@ -604,10 +604,123 @@ TBD
 \switchcolumn
 \selectlanguage{ngerman}
 
-TBD
+Die Propeller wandeln die Drehbewegung des Motors in Schub (Lift) und Steuerkraft um. Die Propellergröße (Durchmesser), Steigung (Pitch) und Blätterzahl beeinflussen Schub, Effizienz, Geräuschentwicklung und Flugverhalten. Dieses Dokument berücksichtigt nur Drohnen mit vier Propellern. Andere Konfigurationen wie Hexacopter und Octocopter sind möglich.
+
 
 \end{paracol}
 
+\renewcommand{\deutschertitel}{Propellergröße (Durchmesser)}
+\renewcommand{\englischertitel}{Propeller Size (Diameter)}
+
+\makrounterabschnitt
+
+\label{AbschnittPropellerDurchmesser}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Die Propellergröße bestimmt, einfach gesagt, wie viel Luft bewegt wird. 
+
+Die Angegebene Propellergröße ist immer der Durchmesser in Zoll. Die Propeller müssen zum verwendeten Rahmen (siehe Abschnitt~\ref{AbschnittFrames}) passen.  
+
+\switchcolumn*
+\selectlanguage{english}
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+
+Kleinere Propeller sind wendiger. Das bedeutet, dass schnellere Reaktion auf Steuerbefehle möglich sind. Die Drohne reagiert agiler. Der Grund dafür ist, dass kleinere Propeller einen geringeren Luftwiderstand haben und insgesamt leichter sind. Sie haben eine geringere Rotationsmasse (Trägheitsmoment). Dadurch kann der Motor die Drehzahl schneller erhöhen oder verringern. Da kleinere Propeller typischerweise mit kleineren Motoren mit höherem KV-Wert kombiniert sind, drehen sie zusätzlich schneller, was Die Agilität bzw. das Ansprechverhalten erneut steigert.
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Größere Propeller erzeugen mehr Schub und haben eine bessere Effizienz. Zudem machen Sie den Flug ruhiger -- auf Kosten der Agilität. Mit der Propellergröße steigt auch die Belastung für die Motoren und die Motorsteuerung (ESC), denn die größere Blattfläche erzeugt einen höheren Luftwiderstand. Zudem haben größere Propeller ein höheres Eigengewicht.
+
+
+\end{paracol}
+
+\renewcommand{\deutschertitel}{Anzahl der Blätter}
+\renewcommand{\englischertitel}{Number of Blades}
+
+\makrounterabschnitt
+
+\label{AbschnittPropellerAnzahlBlaetter}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Es gibt Propeller mit 2 bis 8 Blättern. Je weniger Blätter ein Propeller hat, desto höher sind die erreichbare Geschwindigkeit und Effizienz (Schub pro aufgenommenem Watt oder pro Ampere). Mit steigender Anzahl an Blättern verbessern sich Kontrolle, Laufruhe und Beschleunigung und gleichzeitig auch der Stromverbrauch. 
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Für Long-Range-Anwendungen, bei denen Effizienz das Maß aller Dinge ist, kommen in der Regel 2-Blatt-Propeller zum Einsatz. Racing- und Freestyle-Drohnen sind häufig mit 3-Blatt-Propellern ausgestattet. Cinewhoop verwenden häufig Propeller mit 5 oder mehr Blättern, da diese möglichst stabil in der Luft liegen und präzise steuerbar sein sollen.
+
+
+\end{paracol}
+
+
+
+\renewcommand{\deutschertitel}{Steigung (Pitch)} 
+\renewcommand{\englischertitel}{Pitch}
+
+\makrounterabschnitt
+
+\label{AbschnittPropellerPitch}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Neben der Anzahl der Propeller beeinflusst auch die Steigung (Pitch) der Blätter die Geschwindigkeit und die Effizienz (Stromverbrauch). Ein niedriger Pitch ist durch den geringeren Luftwiederstand effizienter bei Schweben und führt zu ruhigerem Flugverhalten. Ein hoher Pitch ermöglicht eine höhere Geschwindigkeit und aggressivere Flugmanöver, steigert aber auch den Stromverbrauch. 
+
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Der Pitch wird in Zoll angegeben und beschreibt den Vortrieb pro Umdrehung, also wie weit sich der Propeller bei einer Umdrehung durch die Luft schrauben würde, wenn es keine Schlupfverluste gäbe.
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Bei einem Pitch von 4,3'' pro Umdrehung und 3000\,U/min gibt es einen theoretischen Weg von von \(3000 \times 4,3 = 12.900\,Zoll/min\). Ein Zoll entspricht 25,4\,mm. Somit ist der theoretischen Weg pro Zeit, also die Geschwindigkeit: \(12.900\times 0,0254 \approx 327,7\,m/min\) bzw. \(327,7\,m/min / 60 \approx 5,46\,m/s\).
+
+\switchcolumn*
+\selectlanguage{english}
+
+TBD
+
+\switchcolumn
+\selectlanguage{ngerman}
+
+Diese theoretischen Werte werden in der Realität durch Schlupfverluste um 20-30\% verringert. Der Grund dafür ist die Physik der Luftströmung. Luft ist kein festes Medium, sondern gibt nach und ist beweglich. Durch dieses ausweichen und verwirbeln, \textsl{rutscht} immer ein Teil der Luft weg und der Propeller erreicht in der Praxis weniger Vortrieb als in der Theorie. 
+
+\end{paracol}
 
 \renewcommand{\deutschertitel}{Akkus}
 \renewcommand{\englischertitel}{Batteries}
@@ -988,6 +1101,6 @@ TBD
 \switchcolumn
 \selectlanguage{ngerman}
 
-ELRS-Fernbedienungen (Sender) nutzen als Firmware für das Sender-Modul ExpressLRS und als Betriebssystem EdgeTX, einen moderneren Form von OpenTX.
+ELRS-Fernbedienungen (Sender) nutzen als Firmware für das Funkprotokoll und das Sender-Modul ExpressLRS und als Betriebssystem EdgeTX, eine modernere Form von OpenTX. EdgeTX erzeugt sozusagen die Steuersignale und ExpressLRS überträgt sie.
 
 \end{paracol}
