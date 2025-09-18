@@ -2,23 +2,34 @@
 \contentsline {section}{{1.1}~Rahmen}{1}{section.1.1}%
 \contentsline {section}{{1.2}~Flugcontroller und Motorsteuerung}{2}{section.1.2}%
 \contentsline {subsection}{{1.2.1}~Stack oder AIO}{3}{subsection.1.2.1}%
-\contentsline {section}{{1.3}~Videosender}{3}{section.1.3}%
-\contentsline {section}{{1.4}~Motoren}{7}{section.1.4}%
-\contentsline {subsection}{{1.4.1}~Motoraufbau und -größe}{7}{subsection.1.4.1}%
-\contentsline {subsection}{{1.4.2}~Elektrische Spannung}{8}{subsection.1.4.2}%
-\contentsline {subsection}{{1.4.3}~KV-Wert}{8}{subsection.1.4.3}%
-\contentsline {subsection}{{1.4.4}~Propelleraufnahme}{9}{subsection.1.4.4}%
-\contentsline {subsection}{{1.4.5}~Rahmenbefestigung}{9}{subsection.1.4.5}%
-\contentsline {section}{{1.5}~Propeller}{9}{section.1.5}%
-\contentsline {subsection}{{1.5.1}~Propellergröße (Durchmesser)}{9}{subsection.1.5.1}%
-\contentsline {subsection}{{1.5.2}~Anzahl der Blätter}{10}{subsection.1.5.2}%
-\contentsline {subsection}{{1.5.3}~Steigung (Pitch)}{10}{subsection.1.5.3}%
-\contentsline {section}{{1.6}~Akkus}{11}{section.1.6}%
-\contentsline {subsection}{{1.6.1}~Lade- oder Entladerate (C-Wert)}{11}{subsection.1.6.1}%
-\contentsline {subsection}{{1.6.2}~Anzahl der Zellen (S4/S6)}{12}{subsection.1.6.2}%
-\contentsline {subsection}{{1.6.3}~Stecker (XT30/XT60/XT90) zum Entladen und Laden}{13}{subsection.1.6.3}%
-\contentsline {section}{{1.7}~GPS}{14}{section.1.7}%
-\contentsline {section}{{1.8}~Empfänger}{15}{section.1.8}%
-\contentsline {section}{{1.9}~Fernbedienung (Sender)}{17}{section.1.9}%
+\contentsline {section}{{1.3}~Motoren}{3}{section.1.3}%
+\contentsline {subsection}{{1.3.1}~Motoraufbau und -größe}{5}{subsection.1.3.1}%
+\contentsline {subsection}{{1.3.2}~Elektrische Spannung}{5}{subsection.1.3.2}%
+\contentsline {subsection}{{1.3.3}~KV-Wert}{6}{subsection.1.3.3}%
+\contentsline {subsection}{{1.3.4}~Propelleraufnahme}{6}{subsection.1.3.4}%
+\contentsline {subsection}{{1.3.5}~Rahmenbefestigung}{7}{subsection.1.3.5}%
+\contentsline {section}{{1.4}~Propeller}{7}{section.1.4}%
+\contentsline {subsection}{{1.4.1}~Propellergröße (Durchmesser)}{7}{subsection.1.4.1}%
+\contentsline {subsection}{{1.4.2}~Anzahl der Blätter}{8}{subsection.1.4.2}%
+\contentsline {subsection}{{1.4.3}~Steigung (Pitch)}{8}{subsection.1.4.3}%
+\contentsline {section}{{1.5}~Akkus}{9}{section.1.5}%
+\contentsline {subsection}{{1.5.1}~Lade- oder Entladerate (C-Wert)}{9}{subsection.1.5.1}%
+\contentsline {subsection}{{1.5.2}~Anzahl der Zellen (S4/S6)}{10}{subsection.1.5.2}%
+\contentsline {subsection}{{1.5.3}~Stecker (XT30/XT60/XT90) zum Entladen und Laden}{11}{subsection.1.5.3}%
+\contentsline {section}{{1.6}~GPS}{12}{section.1.6}%
+\contentsline {section}{{1.7}~Empfänger}{12}{section.1.7}%
+\contentsline {section}{{1.8}~Fernbedienung (Sender)}{14}{section.1.8}%
+\contentsline {section}{{1.9}~Videosender}{15}{section.1.9}%
+\contentsline {section}{{1.10}~Kamera}{17}{section.1.10}%
 \contentsline {chapter}{{\vspace {2pt}2}~Software}{19}{chapter.2}%
 \contentsline {section}{{2.1}~Flight Controller Firmware}{19}{section.2.1}%
+\contentsline {subsection}{{2.1.1}~Betaflight}{19}{subsection.2.1.1}%
+\contentsline {subsection}{{2.1.2}~INAV}{19}{subsection.2.1.2}%
+\contentsline {subsection}{{2.1.3}~ArduPilot}{19}{subsection.2.1.3}%
+\contentsline {section}{{2.2}~Fernbedienung Firmware}{19}{section.2.2}%
+\contentsline {subsection}{{2.2.1}~EdgeTX}{20}{subsection.2.2.1}%
+\contentsline {section}{{2.3}~Sendemodul- und Empfänger-Firmware}{20}{section.2.3}%
+\contentsline {subsection}{{2.3.1}~ExpressLRS}{20}{subsection.2.3.1}%
+\contentsline {chapter}{{\vspace {2pt}3}~KI-Anwendungen}{21}{chapter.3}%
+\contentsline {section}{{3.1}~Objekterkennung}{21}{section.3.1}%
+\contentsline {section}{{3.2}~Autopilot}{21}{section.3.2}%

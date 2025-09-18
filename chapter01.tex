@@ -236,149 +236,6 @@ Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO}) zeigt einen einen AIO Flight-Con
   \label{AbbildungSpeedyBeeFCF405MiniBLS35Aback}
 \end{figure}
 
-\renewcommand{\deutschertitel}{Videosender}
-\renewcommand{\englischertitel}{Video Transmitter}
-\makroabschnitt
-\label{AbschnittVTX}
-
-TBD
-
-\colger
-
-Der Videosender (VTX) überträgt das Livebildes der FPV-Camera über den eingestellten Kanal im festgelegten Band an die FPV Brille. Neben analogen Videosendern existieren auch verschiedene digitale Systeme, die zueinander inkompatibel sind. Videosender werden als einzelnes Gerät oder als Kit mit Kamera und Antenne(n) verkauft. Einen analogen Videosender zeigt Abbildung~\ref{AbbildungSpeedyBeeTX800FPVVTX}.
-
-\colend
-
-\begin{figure}[htbp]
-  \centering
-  \begin{minipage}[t]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg}
-    \vspace{0pt} % sorgt für Top-Ausrichtung
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg}
-    \vspace{0pt}
-  \end{minipage}
-  \caption{SpeedyBee TX800 FPV VTX Video Transmitter (Front and Back)}
-  \label{AbbildungSpeedyBeeTX800FPVVTX}
-\end{figure}
-
-\colstart
-
-TBD
-
-\colger
-
-In Deutschland ist die Nutzung des Frequenzbereichs 5725-5875\,Mhz bei einer maximalen Sendeleistung von 25\,mW zulässig. Die für analoge Bildübertragung zulässigen Kanäle in den jeweiligen Bändern zeigt Tabelle~\ref{TabelleFrequenzenVTX}). Auffällig sind beim Race Band die großen Kanalabstände von 37\,MHz, die Kanalüberlagerungen verhindern.
-
-\colend
-
-\begin{table}[htb!]
-\centering
-\captionabove{Overview about permitted VTX Channels in Germany}
-\label{TabelleFrequenzenVTX}
-\begin{tabular}{l@{\hskip 8mm}l}
-\toprule
-CPU (MCU)  & Channel Number (Frequency MHz)    \\
-\midrule
-Band A     & 7 (5745), 6 (5765), 5 (5785), 4 (5805), 3 (5825), 2 (5845), 1 (5865) \\
-Band B     & 1 (5733), 2 (5752), 3 (5771), 4 (5790), 5 (5809), 6 (5828), 7 (5847), 8 (5866) \\
-Band E     & none Frequency permitted in Germany \\
-Band F     & 1 (5749), 2 (5760), 3 (5780), 4 (5800), 5 (5820), 6 (5840), 7 (5860) \\
-Race Band  & 3 (5732), 4 (5769), 5 (5806), 6 (5843) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\colstart
-
-TBD
-
-\colger
-
-Der von einem Videosender zur Übertragung verwendete Kanal und das Band werden in der grafischen Oberfläche Firmware des Flugcontrollers festgelegt.
-
-\coleng
-
-TBD
-
-\colger
-
-Analoge Videosender sind herstellerübergreifend mit analogen Videobrillen kompatibel. Bei digitalen Systemen ist das nicht der Fall. Hier müssen die Hersteller von Sender und Empfänger übereinstimmen. Digitale Systeme zur Übertragung des Livebildes sind von den Herstellern DJI, HDZero und CaddxFPV unter dem Namen Walksnail verfügbar. 
-
-\coleng
-
-TBD
-
-\colger
-
-Vorteile von digitaler Livebildübertratung sind die exzellente Bildqualität und die Möglichkeit, ohne weitere Action-Camera Videos in HD-Qualität aufnehmen zu können.
-
-\coleng
-
-TBD
-
-\colger
-
-Vorteile von analoger Übertratung sind neben der bereits erwähnten herstellerübergreifenden Kompatibilität, die geringe Verzögerung (Latenz), das das Bild bei Störungen schlechter wird, aber nicht abrupt abreißt, und deutlich geringeren Anschaffungskosten für die benötigten Komponenten.
-
-\coleng
-
-TBD
-
-\colger
-
-Einen wichtigen Einfluss auf die Bildqualität und Reichweite haben die verwendeten Antennen. Der Betrieb des Videosenders ohne Antenne ist nicht empfehlenswert, da der Videosender so überhitzt und Beschädigungen wahrscheinlich sind. Der Anschluss der Antenne geschieht bei analogen Systemen üblicherweise über sehr filigrane Steckverbinder für Hochfrequenzsignale gemäß dem Standard U.FL. Diese Steckverbinder sind auch von WLAN (WiFi) bekannt und heißen umgangssprachlich \textsl{Pigtail}. Digitale Systemen (z.B. von DJI) verwenden in der Regel MMCX-Steckverbinder. Der Anschluss von Antennen mit dem größeren und robusteren SMA-Schraubgewinde ist über Adapterkabel möglich. Häufig liegen diese dem Videosender bei.
-
-\coleng
-
-TBD
-
-\colger
-
-Die Antennen sollten auf auf Sender- und Empfängerseite zusammenpassen. Die verfügbaren Antennen für Videosender unterscheiden sich anhand ihrer Polarisation. Es existieren:
-
-\coleng
-\begin{itemize}
-\item linearly polarized antennas (LP)
-\item circularly polarized antennas (CP)
-\end{itemize}
-
-\colger
-
-\begin{itemize}
-\item Antennen mit linearer Polarisation (LP)
-\item Antennen mit zirkularer Polarisation (CP)
-\end{itemize}
-
-\coleng
-
-TBD
-
-\colger
-
-LP-Antennen sind die kostengünstigste und einfachste Variante. Sie werden häufig mit dem Videosender und mit der Videobrille mitgeliefert und haben eine Stabform. 
-
-\coleng
-
-TBD
-
-\colger
-
-CP-Antennen ermöglichen eine bessere Bildqualität und eine höhere Reichweite. Bei zirkularer Polarisation dreht sich die Polarisation, während sich das Signal ausbreitet. Es existieren Antennen mit rechtsseitiger zirkularer Polarisation (RHCP) und mit linksseitiger zirkularer Polarisation (LHCP). 
-
-\coleng
-
-TBD
-
-\colger
-
-RHCP kommen in der Regel bei analogen FPV-Drohnen zum Einsatz und LHCP-Antennen bei FPV-Drohnen mit digitaler Bildübertragung.
-
-\colend
-
 \renewcommand{\deutschertitel}{Motoren}
 \renewcommand{\englischertitel}{Motors}
 \makroabschnitt
@@ -898,5 +755,162 @@ TBD
 \colger
 
 ELRS-Fernbedienungen (Sender) nutzen als Firmware für das Funkprotokoll und das Sender-Modul ExpressLRS und als Betriebssystem EdgeTX, eine modernere Form von OpenTX. EdgeTX erzeugt sozusagen die Steuersignale und ExpressLRS überträgt sie.
+
+\colend
+
+\renewcommand{\deutschertitel}{Videosender}
+\renewcommand{\englischertitel}{Video Transmitter}
+\makroabschnitt
+\label{AbschnittVTX}
+
+TBD
+
+\colger
+
+Der Videosender (VTX) überträgt das Livebildes der FPV-Camera über den eingestellten Kanal im festgelegten Band an die FPV Brille. Neben analogen Videosendern existieren auch verschiedene digitale Systeme, die zueinander inkompatibel sind. Videosender werden als einzelnes Gerät oder als Kit mit Kamera und Antenne(n) verkauft. Einen analogen Videosender zeigt Abbildung~\ref{AbbildungSpeedyBeeTX800FPVVTX}.
+
+\colend
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{SpeedyBee TX800 FPV VTX Video Transmitter (Front and Back)}
+  \label{AbbildungSpeedyBeeTX800FPVVTX}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+In Deutschland ist die Nutzung des Frequenzbereichs 5725-5875\,Mhz bei einer maximalen Sendeleistung von 25\,mW zulässig. Die für analoge Bildübertragung zulässigen Kanäle in den jeweiligen Bändern zeigt Tabelle~\ref{TabelleFrequenzenVTX}). Auffällig sind beim Race Band die großen Kanalabstände von 37\,MHz, die Kanalüberlagerungen verhindern.
+
+\colend
+
+\begin{table}[htb!]
+\centering
+\captionabove{Overview about permitted VTX Channels in Germany}
+\label{TabelleFrequenzenVTX}
+\begin{tabular}{l@{\hskip 8mm}l}
+\toprule
+CPU (MCU)  & Channel Number (Frequency MHz)    \\
+\midrule
+Band A     & 7 (5745), 6 (5765), 5 (5785), 4 (5805), 3 (5825), 2 (5845), 1 (5865) \\
+Band B     & 1 (5733), 2 (5752), 3 (5771), 4 (5790), 5 (5809), 6 (5828), 7 (5847), 8 (5866) \\
+Band E     & none Frequency permitted in Germany \\
+Band F     & 1 (5749), 2 (5760), 3 (5780), 4 (5800), 5 (5820), 6 (5840), 7 (5860) \\
+Race Band  & 3 (5732), 4 (5769), 5 (5806), 6 (5843) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\colstart
+
+TBD
+
+\colger
+
+Der von einem Videosender zur Übertragung verwendete Kanal und das Band werden in der grafischen Oberfläche Firmware des Flugcontrollers festgelegt.
+
+\coleng
+
+TBD
+
+\colger
+
+Analoge Videosender sind herstellerübergreifend mit analogen Videobrillen kompatibel. Bei digitalen Systemen ist das nicht der Fall. Hier müssen die Hersteller von Sender und Empfänger übereinstimmen. Digitale Systeme zur Übertragung des Livebildes sind von den Herstellern DJI, HDZero und CaddxFPV unter dem Namen Walksnail verfügbar. 
+
+\coleng
+
+TBD
+
+\colger
+
+Vorteile von digitaler Livebildübertratung sind die exzellente Bildqualität und die Möglichkeit, ohne weitere Action-Camera Videos in HD-Qualität aufnehmen zu können.
+
+\coleng
+
+TBD
+
+\colger
+
+Vorteile von analoger Übertratung sind neben der bereits erwähnten herstellerübergreifenden Kompatibilität, die geringe Verzögerung (Latenz), das das Bild bei Störungen schlechter wird, aber nicht abrupt abreißt, und deutlich geringeren Anschaffungskosten für die benötigten Komponenten.
+
+\coleng
+
+TBD
+
+\colger
+
+Einen wichtigen Einfluss auf die Bildqualität und Reichweite haben die verwendeten Antennen. Der Betrieb des Videosenders ohne Antenne ist nicht empfehlenswert, da der Videosender so überhitzt und Beschädigungen wahrscheinlich sind. Der Anschluss der Antenne geschieht bei analogen Systemen üblicherweise über sehr filigrane Steckverbinder für Hochfrequenzsignale gemäß dem Standard U.FL. Diese Steckverbinder sind auch von WLAN (WiFi) bekannt und heißen umgangssprachlich \textsl{Pigtail}. Digitale Systemen (z.B. von DJI) verwenden in der Regel MMCX-Steckverbinder. Der Anschluss von Antennen mit dem größeren und robusteren SMA-Schraubgewinde ist über Adapterkabel möglich. Häufig liegen diese dem Videosender bei.
+
+\coleng
+
+TBD
+
+\colger
+
+Die Antennen sollten auf auf Sender- und Empfängerseite zusammenpassen. Die verfügbaren Antennen für Videosender unterscheiden sich anhand ihrer Polarisation. Es existieren:
+
+\coleng
+\begin{itemize}
+\item linearly polarized antennas (LP)
+\item circularly polarized antennas (CP)
+\end{itemize}
+
+\colger
+
+\begin{itemize}
+\item Antennen mit linearer Polarisation (LP)
+\item Antennen mit zirkularer Polarisation (CP)
+\end{itemize}
+
+\coleng
+
+TBD
+
+\colger
+
+LP-Antennen sind die kostengünstigste und einfachste Variante. Sie werden häufig mit dem Videosender und mit der Videobrille mitgeliefert und haben eine Stabform. 
+
+\coleng
+
+TBD
+
+\colger
+
+CP-Antennen ermöglichen eine bessere Bildqualität und eine höhere Reichweite. Bei zirkularer Polarisation dreht sich die Polarisation, während sich das Signal ausbreitet. Es existieren Antennen mit rechtsseitiger zirkularer Polarisation (RHCP) und mit linksseitiger zirkularer Polarisation (LHCP). 
+
+\coleng
+
+TBD
+
+\colger
+
+RHCP kommen in der Regel bei analogen FPV-Drohnen zum Einsatz und LHCP-Antennen bei FPV-Drohnen mit digitaler Bildübertragung.
+
+\colend
+
+
+\renewcommand{\deutschertitel}{Kamera}
+\renewcommand{\englischertitel}{Camera}
+\makroabschnitt
+\label{AbschnittKamera}
+
+TBD
+
+\colger
+
+TBD
 
 \colend

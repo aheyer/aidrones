@@ -76,7 +76,6 @@
 \usepackage{eso-pic}
 \usepackage{rotating} % Für \begin{sideways} ... 
 
-
 % \setlength{\textwidth}{10.8cm}
 % \setlength{\textheight}{15.7cm}
 
@@ -298,10 +297,7 @@ methods
 % \ofoot{Fußzeile außen}
 \ofoot{}
 
-
 \begin{document}
-
-
 
 % \newcommand{\heute}{2.~September 2019}
 \newcommand{\heute}{\today}
@@ -313,6 +309,44 @@ methods
 % }
 
 \frontmatter 
+
+
+
+% Inhalt der Titelseite
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+  
+{\Huge\bfseries AI Drones\par}
+
+\vspace{1cm}
+
+{\Large\bfseries A Bilingual Handbook on the Design, Construction, and Use of AI-Enabled Drones for Scientific and Educational Projects\par}
+
+\vspace{3cm}
+
+{\Huge\bfseries KI-Drohnen\par}
+
+\vspace{1cm}
+
+{\Large\bfseries Ein zweisprachiges Handbuch über Entwurf, Bau und Einsatz von KI-fähigen Drohnen für wissenschaftliche Projekte und Lehre\par}
+
+\vspace{3cm}
+
+{\large Christian Baun, Theodor Bloch, Matthias Deegener, Oliver Hahm, Martin Kappes, Nur Uddun Syeed\par}
+  
+\vspace{1cm}
+  
+{\large Frankfurt University of Applied Sciences}
+  
+\vfill  
+  
+{\large \today\par}
+\end{titlepage}
+
+
+% \publishers{Frankfurt University of Applied Sciences}
+
 \include{preface}
 \cleardoublepage
 \tableofcontents
@@ -324,7 +358,7 @@ methods
 \mainmatter 
 \include{chapter01}
 \include{chapter02}
-% \include{chapter03}
+\include{chapter03}
 % \include{chapter04}
 
 
