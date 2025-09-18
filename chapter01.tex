@@ -130,7 +130,7 @@ TBD
 
 \colger
 
-Gängige FC enthalten einen STM32-Mikrocontroller. Hier wird auch die Firmware gespeichert. Moderne MCUs sind F4, F7 und H7. Diese unterscheiden sich im Takt und Speicher (siehe Tabelle~\ref{TabelleFCMCU}).
+Gängige FC enthalten einen STM32-Mikrocontroller. Hier wird auch die Firmware gespeichert. Moderne MCUs sind F4, F7 und H7. Diese unterscheiden sich im Takt und Speicher (siehe Tabelle~\ref{TabelleFCMCU}). Der genannten Rechen- und Speicherressourcen schränken die sinnvolle Nutzung der Firmwares ein. 
 
 \colend
 
@@ -142,16 +142,24 @@ Gängige FC enthalten einen STM32-Mikrocontroller. Hier wird auch die Firmware g
 \toprule
 CPU (MCU)  & Clock    & Flash Memory & RAM     \\
 \midrule
-F405       & 168\,MHz & 1\,MB        & 192\,KB \\
-F411       & 100\,MHz & 512\,KB      & 128\,KB \\
-F745       & 216\,MHz & 1\,MB        & 320\,KB \\
-F722       & 216\,MHz & 512\,KB      & 256\,KB \\
-H743       & 480\,MHz & 2\,MB        & 1\,MB   \\
+F405       & 168\,MHz & 1\,MB        & 192\,kB \\
+F411       & 100\,MHz & 512\,kB      & 128\,kB \\
+F745       & 216\,MHz & 1\,MB        & 320\,kB \\
+F722       & 216\,MHz & 512\,kB      & 256\,kB \\
+H743       & 480\,MHz & 2\,MB        & 1\,kB   \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \colstart
+
+TBD
+
+\colger
+
+Betaflight (siehe Abschnitt~\ref{AbschnittBetaflight}) und funktioniert auf allen und INAV (siehe Abschnitt~\ref{AbschnittINAV}) auf fast allen in (siehe Tabelle~\ref{TabelleFCMCU}) genannten Mikrocontrollern. Der Betrieb von ArduPilot (siehe Abschnitt~\ref{AbschnittArduPilot}) erfordert für einen reduzierten Betrieb mindestens 1\,MB Flash-Speicher. Erst mit 2\,MB Flash-Speicher steht der komplette Funktionsumfang zur Verfügung.
+
+\coleng
 
 TBD
 
@@ -911,6 +919,105 @@ TBD
 
 \colger
 
+Dieser Abschnitt befasst sich ausschließlich mit analogen analoge FPV-Kameras. Digitale Systeme zur Übertragung des Livebildes kamen bei den bisher durchgeführten Projekten nicht zum Einsatz.
+
+\coleng
+
 TBD
+
+\colger
+
+Die Kamera erzeugt ein Videosignal (NTSC oder PAL), das über den Flugcontroller an den Videosender weitergeleitet wird. Bei digitalen Systemen sind die Kameras direkt mit dem Videosender verbunden. 
+
+\coleng
+
+TBD
+
+\colger
+
+Die Bildqualität analoger Kameras wirkt durch Bildfehler und Unschärfen nicht mehr zeitgemäß und weit entfernt von HD-Qualität. Der Bildeindruck ist subjektiv im schlechtesten Fall mit VHS-Kassetten und im besten Fall mit DVDs vergleichbar. Analoge Bildübertragung hat aber mehrere Vorteile wie den günstigeren Preis, der bestmöglichen Latenz, geringes Gewicht und die herstellerübergreifende Kompatibilität der verfügbaren Komponenten. 
+
+\coleng
+
+TBD
+
+\colger
+
+Die Aufnahme qualitativ hochwerter Videos ist über eine analoge Kamera nicht möglich. Wenn diese Anforderung vorliegt, ist eine zusätzliche Kamera Actioncam oder etwas Vergleichbares nötig und muss auf der Drohne mitfliegen. 
+
+\coleng
+
+TBD
+
+\colger
+
+Die am Markt verfügbaren Kameras unterscheiden sich primär in der Auflösung, der Brennweite der Linse, die das Sichtfeld beeinflusst, und der Bauform (Breite).
+
+\coleng
+
+TBD
+
+\colger
+
+Die Kamera darf für den verwendeten Rahmen (siehe Abschnitt~\ref{AbschnittFrames}) nicht zu breit sein. Modernen Kameras sind 14\,mm (Nano-Kamera) oder 19\,mm (Micro-Kamera) breite.  Abbildung~\ref{AbbildungCaddyAntNanoCamera} zeigt eine Nano-Kamera und Abbildung~\ref{AbbildungRunCamPhoenix2Camera} zeigt eine Micro-Kamera.
+
+\colend
+
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=.5\linewidth]{Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=.5\linewidth]{Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{Caddx ANT Nano Analog Camera 1200\,TVL 14x14\,mm (Top and Back)}
+  \label{AbbildungCaddyAntNanoCamera}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=.5\linewidth]{RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=.5\linewidth]{RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{RunCam Phoenix 2 Analog Camera 1000\,TVL 19x19\,mm (Top and Back)}
+  \label{AbbildungRunCamPhoenix2Camera}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+Die horizontale Auflösung ist in TV-Lines (TVL) angegeben und meist 1000, 1200 oder 1500\,TVL. Je höher dieser Wert ist, desto besser ist die mögliche Bildqualität. 
+
+\coleng
+
+TBD
+
+\colger
+
+Die Brennweite definiert das Sichtfeld. Je kleiner der Wert ist, desto größer ist das Sichtfeld, was vorteilhaft beim Fliegen ist. Eine  niedrige Brennweite (z.B.\, 1.8\,mm oder 2.1\,mm) führt allerdings zu einem Fischaugen-Effekt und dementsprechend zu Verzerrungen, die das Auge schneller ermüden lassen und besonders kleine Objekte schwerer erkennbar machen. 
+
+\coleng
+
+TBD
+
+\colger
+
+Hohe Brennweiten (z.B.\, 2.5\,mm oder 2.8\,mm) bieten ein angenehmeres Bildgefühl, aber engen das Sichtfeld ein und erschweren so evtl. die Orientierung im Flug. 
 
 \colend
