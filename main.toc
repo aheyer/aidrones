@@ -360,6 +360,15 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1.11}FPV Goggles}{19}{section.1.11}%
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {2}{\vspace {2pt}Software}}{21}{chapter.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
