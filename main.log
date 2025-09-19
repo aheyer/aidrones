@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  19 SEP 2025 06:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  19 SEP 2025 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -893,6 +893,26 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (./out.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -1370,200 +1390,223 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
  []
 
 [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [3]
-
-LaTeX Warning: Reference `AbbildungSpeedyBeeFCF405MiniBLS35front' on page 4 und
-efined on input line 213.
-
-
-LaTeX Warning: Reference `AbbildungSpeedyBeeFCF405MiniBLS35Aback' on page 4 und
-efined on input line 213.
-
-<./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg, id=192, 1003.75p
+<./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg, id=191, 1003.75p
 t x 1003.75pt>
 File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg Graphic file
  (type jpg)
 <use ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_cr
-op.jpg  used on input line 221.
+op.jpg  used on input line 213.
 (pdftex.def)             Requested size: 200.75996pt x 200.76175pt.
-<./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg, id=193, 1003.75pt
+<./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg, id=192, 1003.75pt
  x 1003.75pt>
 File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg Graphic file 
 (type jpg)
 <use ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_cro
-p.jpg  used on input line 226.
+p.jpg  used on input line 218.
 (pdftex.def)             Requested size: 200.75996pt x 200.76175pt.
-<./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg, id=194, 2007.5pt x 1003.75pt>
+<./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg, id=196, 2007.5pt x 1003.75pt>
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg  used o
-n input line 235.
+n input line 237.
 (pdftex.def)             Requested size: 418.25368pt x 209.12428pt.
-<./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg, id=195, 2007.5pt x 1003.75pt>
+<./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg, id=197, 2007.5pt x 1003.75pt>
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg  used on
- input line 242.
+ input line 244.
 (pdftex.def)             Requested size: 418.25368pt x 209.12428pt.
 
+Underfull \vbox (badness 6542) has occurred while \output is active []
 
-[4 <./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg> <./images/Spe
-edyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>] [5{/usr/share/texmf/fonts/enc
-/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}]
+ [4 <./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg> <./images/Sp
+eedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg> <./images/SpeedyBee_F405_Mini
+_BLS_35A_front.jpg>] [5 <./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg>]
+<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg, id=214, 1003.75pt x 1003.7
+5pt>
+File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg Graphic file (type jpg
+)
+<use ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg>
+Package pdftex.def Info: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg  us
+ed on input line 282.
+(pdftex.def)             Requested size: 200.75996pt x 200.76175pt.
+<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg, id=215, 1003.75pt x 1003.75
+pt>
+File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg Graphic file (type jpg)
 
-[6]
+<use ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg>
+Package pdftex.def Info: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg  use
+d on input line 287.
+(pdftex.def)             Requested size: 200.75996pt x 200.76175pt.
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Overfull \hbox (3.39496pt too wide) in paragraph at lines 332--332
+ []|\T1/lmr/m/n/7 (-20) available$[]$| 
+ []
+
+
+Overfull \hbox (3.39496pt too wide) in paragraph at lines 332--332
+ []|\T1/lmr/m/n/7 (-20) available$[]$| 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 335.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 335.
+
+
+[6 <./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg> <./images/FLYWOO_GOKU_G
+N745_45A_AIO_V3_FC_back.jpg>]
+
+[7] [8{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/font
+s/enc/dvips/lm/lm-rm.enc}]
+
+[9]
+
+[10{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 \T1/lmr/m/n/10 (+20) Klassischerweise ver-wen-den FPV-Drohnen
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 469--470
+Underfull \hbox (badness 1960) in paragraph at lines 565--566
 \T1/lmr/m/n/10 (+20) Akkus (Li-Ion). Un-ter-schie-den wer-den die
  []
 
-[8{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
-<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg, id=246, 3468.96pt x 2312.64
+<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg, id=269, 3468.96pt x 2312.64
 pt>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg Graphic file (type jpg)
 
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg  use
-d on input line 498.
+d on input line 594.
 (pdftex.def)             Requested size: 200.75996pt x 133.81209pt.
-<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=247, 3468.96pt x 2312.64p
+<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=270, 3468.96pt x 2312.64p
 t>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg Graphic file (type jpg)
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg  used
- on input line 503.
+ on input line 599.
 (pdftex.def)             Requested size: 200.75996pt x 133.81209pt.
+[11 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh_
+100C_4S_XT60_Lipo_back.jpg>] [12]
 
-
-[9 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh_1
-00C_4S_XT60_Lipo_back.jpg>] [10] [11]
-<./images/HGLRS_GPS_M100_PRO_front.jpg, id=274, 702.625pt x 702.625pt>
+[13]
+<./images/HGLRS_GPS_M100_PRO_front.jpg, id=299, 702.625pt x 702.625pt>
 File: ./images/HGLRS_GPS_M100_PRO_front.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_front.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_front.jpg  used on input l
-ine 665.
+ine 761.
 (pdftex.def)             Requested size: 200.75996pt x 200.75409pt.
-<./images/HGLRS_GPS_M100_PRO_back.jpg, id=275, 752.8125pt x 752.8125pt>
+<./images/HGLRS_GPS_M100_PRO_back.jpg, id=300, 752.8125pt x 752.8125pt>
 File: ./images/HGLRS_GPS_M100_PRO_back.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_back.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_back.jpg  used on input li
-ne 670.
+ne 766.
 (pdftex.def)             Requested size: 200.75996pt x 200.75792pt.
- [12 <./images/HGLRS_GPS_M100_PRO_front.jpg> <./images/HGLRS_GPS_M100_PRO_back.
-jpg>]
-<./images/RadioMaster_RP2_Receiver_ELRS_front.jpg, id=285, 352.31625pt x 439.64
+
+
+[14 <./images/HGLRS_GPS_M100_PRO_front.jpg> <./images/HGLRS_GPS_M100_PRO_back.j
+pg>]
+<./images/RadioMaster_RP2_Receiver_ELRS_front.jpg, id=309, 352.31625pt x 439.64
 25pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg  used
- on input line 719.
+ on input line 815.
 (pdftex.def)             Requested size: 100.37997pt x 125.25916pt.
-<./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=286, 351.3125pt x 439.6425
+<./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=310, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg  used 
-on input line 724.
+on input line 820.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
-<./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=287, 351.3125pt x 439.642
+<./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=311, 351.3125pt x 439.642
 5pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg  used
- on input line 735.
+ on input line 831.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
-<./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=288, 351.3125pt x 439.6425
+<./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=312, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg  used 
-on input line 740.
+on input line 836.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
- [13 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg> <./images/RadioMaster_R
-P2_Receiver_ELRS_back.jpg>]
-<./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg, id=298, 853.1875pt x 85
+ [15] [16 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg> <./images/RadioMas
+ter_RP2_Receiver_ELRS_back.jpg> <./images/RadioMaster_RP1_Receiver_ELRS_front.j
+pg> <./images/RadioMaster_RP1_Receiver_ELRS_back.jpg>]
+<./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg, id=328, 853.1875pt x 85
 3.1875pt>
 File: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg Graphic file (type 
 jpg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg 
- used on input line 786.
+ used on input line 882.
 (pdftex.def)             Requested size: 200.75996pt x 200.75946pt.
-<./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=299, 853.1875pt x 853
+<./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=329, 853.1875pt x 853
 .1875pt>
 File: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg Graphic file (type j
 pg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg  
-used on input line 791.
+used on input line 887.
 (pdftex.def)             Requested size: 200.75996pt x 200.75946pt.
-
-Overfull \hbox (4.70468pt too wide) in paragraph at lines 812--823
+ [17 <./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg> <./images/SpeedyBe
+e_TX800_FPV_VTX_rueckseite_crop.jpg>]
+Overfull \hbox (4.70468pt too wide) in paragraph at lines 908--919
  [][] 
  []
 
-[14 <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg> <./images/RadioMaster_RP
-1_Receiver_ELRS_back.jpg>] [15 <./images/SpeedyBee_TX800_FPV_VTX_vorderseite_cr
-op.jpg> <./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg>] [16]
-Underfull \hbox (badness 1199) in paragraph at lines 961--962
+[18] [19]
+Underfull \hbox (badness 1199) in paragraph at lines 1057--1058
 \T1/lmr/m/n/10 (+20) oder 19mm (Micro-Kamera) brei-te. Ab-bil-
  []
 
-<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg, id=322, 552.0625pt x 552.
+<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg, id=353, 552.0625pt x 552.
 0625pt>
 File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg Graphic file (type jp
 g)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg  u
-sed on input line 970.
+sed on input line 1066.
 (pdftex.def)             Requested size: 100.37997pt x 100.3778pt.
-<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=323, 552.0625pt x 552
+<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=354, 552.0625pt x 552
 .0625pt>
 File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg Graphic file (type j
 pg)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg  
-used on input line 975.
+used on input line 1071.
 (pdftex.def)             Requested size: 100.37997pt x 100.3778pt.
-<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=324, 752.8125pt x 75
+<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=355, 752.8125pt x 75
 2.8125pt>
 File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg Graphic file (type 
 jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg 
- used on input line 986.
+ used on input line 1082.
 (pdftex.def)             Requested size: 100.37997pt x 100.37321pt.
-<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=325, 752.8125pt x 7
+<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=356, 752.8125pt x 7
 52.8125pt>
 File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg Graphic file (type
  jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg
-  used on input line 991.
+  used on input line 1087.
 (pdftex.def)             Requested size: 100.37997pt x 100.37321pt.
-[17 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_N
-ano_1200TVL_14mm_165FOV_back.jpg>] [18 <./images/RunCam_Phoenix_2_1000TVL_19mm_
-155FOV_top.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>])
+[20 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_N
+ano_1200TVL_14mm_165FOV_back.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155FO
+V_top.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>] [21])
 
-[19]
+[22]
 \openout2 = `chapter02.aux'.
 
  (./chapter02.tex
-
-[20
-
-
-
-
-
-]
 chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1579,7 +1622,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[21]
+[23
+
+
+
+
+
+]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
 3.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1589,14 +1638,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22])
+ [24])
 
-[23]
+[25]
 \openout2 = `chapter03.aux'.
 
  (./chapter03.tex
 
-[24
+[26
 
 
 
@@ -1620,9 +1669,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 )
 
-[25]
+[27]
 
-[26
+[28
 
 
 
@@ -1645,38 +1694,37 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26194 strings out of 475052
- 483479 string characters out of 5762548
- 1085969 words of memory out of 5000000
- 48425 multiletter control sequences out of 15000+600000
- 629556 words of font info for 155 fonts, out of 8000000 for 9000
+ 26715 strings out of 475052
+ 491706 string characters out of 5762548
+ 1112739 words of memory out of 5000000
+ 48897 multiletter control sequences out of 15000+600000
+ 650470 words of font info for 181 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
  108i,20n,119p,10899b,1207s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{section*.86} has been referenced but does not exist
+pdfTeX warning (dest): name{section*.89} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-tt10.pfb>
-Output written on main.pdf (33 pages, 12931015 bytes).
+ic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (35 pages, 18618964 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
- 43915 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 551 compressed objects within 6 object streams
+ 161 named destinations out of 1000 (max. 500000)
+ 56213 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -204,17 +204,9 @@ TBD
 
 Bei kleineren Drohnen (2 bis 4 Zoll) sind schon aus Platzgründen AIO FCs üblich. Bei größeren Drohnen kommen meist Stacks zum Einsatz. Ein Vorteil von ist, dass separate Motorsteuerungen mit höheren Dauerströmen am Markt verfügbar sind. Separate Motorsteuerungen gibt es mit 45 bis 70\,A. Zudem bieten die FCs von Stacks tendenziell gegenüber AIO FCs mehr Platz für Lötpads, größere Lötpads, häufig zusätzlich Steckverbindungen und mehr nutzbare UART-Schnittstellen für Sensoren und Aktoren.
 
-\coleng
-
-TBD
-
-\colger
-
-Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO}) zeigt einen einen AIO Flight-Controller. Die Abbildungen~\ref{AbbildungSpeedyBeeFCF405MiniBLS35front} und~\ref{AbbildungSpeedyBeeFCF405MiniBLS35Aback}) zeigen die Vorder- und Rückseite eines Stack bestehen aus Flight-Controller und separater ESC-Platine.
-
 \colende
 
-\begin{figure}[htbp]
+\begin{figure}[htb]
   \centering
   \begin{minipage}[t]{0.48\textwidth}
     \centering
@@ -230,19 +222,123 @@ Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO}) zeigt einen einen AIO Flight-Con
   \label{AbbildungSpeedyBeeFCBluejayAIO}
 \end{figure}
 
-\begin{figure}[htbp]
+\colstart
+
+TBD
+
+\colger
+
+Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO}) zeigt einen einen AIO Flight-Controller. Die Abbildungen~\ref{AbbildungSpeedyBeeFCF405MiniBLS35front} und~\ref{AbbildungSpeedyBeeFCF405MiniBLS35Aback}) zeigen die Vorder- und Rückseite eines Stack bestehen aus Flight-Controller und separater ESC-Platine.
+
+\colende
+
+\begin{figure}[htb]
   \centering
     \includegraphics[width=\linewidth]{SpeedyBee_F405_Mini_BLS_35A_front.jpg}
   \caption{Flight Controller SpeedyBee F405 Mini 35A 20x20 Stack (Front)}
   \label{AbbildungSpeedyBeeFCF405MiniBLS35front}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[htb]
   \centering
     \includegraphics[width=\linewidth]{SpeedyBee_F405_Mini_BLS_35A_back.jpg}
   \caption{Flight Controller SpeedyBee F405 Mini 35A 20x20 Stack (Back)}
   \label{AbbildungSpeedyBeeFCF405MiniBLS35Aback}
 \end{figure}
+
+
+\colstart
+
+TBD
+
+\colger
+
+Ein wichtiges Auswahlkriterium für Flugcontroller ist die Anzahl der nutzbaren UART-Schnittstellen zum Anschluss von Sensoren und Aktoren. Der in Abbildung~\ref{AbbildungSpeedyBeeFCBluejayAIO} gezeigte Flugcontroller SpeedyBee F405 AIO verfügt über sechs UART-Schnittstellen. Allerdings wird eine für die WLAN und USB-Schnittstellen zur Administration benötigt und eine weitere funktioniert nur unidirektional (Simplex). Sie kann nur Daten empfangen. Damit stehen lediglich vier vollwertige (bidirektionale) UART-Schnittstellen zur Verfügung, von denen üblicherweise drei durch die üblicherweise vorhandenen Komponenten Videosender, Empfänger und GPS-Modul belegt sind. Somit bleibt nur eine einzige freie UART-Schnittstelle.
+
+
+\coleng
+
+TBD
+
+\colger
+
+Auch der in den Abbildung~\ref{AbbildungSpeedyBeeFCF405MiniBLS35front} und \ref{AbbildungSpeedyBeeFCF405MiniBLS35Aback} gezeigte Flugcontroller SpeedyBee F405 Mini 35A Stack verfügt über sechs UART-Schnittstellen und auch hier bleibt bleibt nach Anschluss der üblicherweise vorhandenen Komponenten Videosender, Empfänger und GPS-Modul nur eine Schnittstelle frei verfügbar, da die Bluetooth-Schnittstelle zur Administration eine UART-Schnittstelle benötigt und die Motorsteuerung benötigt eine weitere UART-Schnittstelle zur Übertragung der Telemetriedaten.
+
+\coleng
+
+TBD
+
+\colger
+
+Zum Vergleich ein anderer Flugcontroller, der in Abbildung~\ref{AbbildungFlywooFCGOKUGN745AIO} gezeigte Flywoo GOKU GN745 AIO 45A, verfügt über sieben UART-Schnittstellen, von denen keine für die USB-Schnittstelle belegt wird. Dadurch sind nach Anschluss der üblicherweise vorhandenen Komponenten Videosender, Empfänger und GPS-Modul vier UART-Schnittstelle für weitere Sensoren und Aktoren verfügbar.
+
+\colende
+
+
+\begin{figure}[htb]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg}
+    \vspace{0pt} % sorgt für Top-Ausrichtung
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg}
+    \vspace{0pt}
+  \end{minipage}
+  \caption{Flight Controller Flywoo GOKU GN745 AIO 45A 25.5x25.5 (Front and Back)}
+  \label{AbbildungFlywooFCGOKUGN745AIO}
+\end{figure}
+
+
+
+
+\colstart
+
+TBD
+
+\colger
+
+Tabelle~\ref{TabelleUARTuebersicht} zeigt die typische Nutzung der verfügbaren UART-Schnittstellen einiger ausgewählter Flugcontroller und die damit einhergehenden Einschränkungen hinsichtlich Ihrer Nutzbarkeit für KI-Projekte, die häufig den Anschluss weiterer Sensoren und Aktoren erfordern. 
+
+\colende
+
+
+
+
+\begin{table}[htb!]
+\centering
+\setlength{\tabcolsep}{4pt}       % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{threeparttable}
+\captionabove{Overview of UART Interfaces of some Flight Controllers}
+\scriptsize
+\label{TabelleUARTuebersicht}
+\begin{tabularx}{\textwidth}{lYYYYYYYY}
+\toprule
+Flight Controller              & UART1 &  UART2 & UART3 & UART4 & UART5 & UART6 & UART7 & UART8  \\
+\midrule
+SpeedyBee F405 AIO             & \cellcolor{Gray}MSP\textsuperscript{a}  & \cellcolor{yellow}available\textsuperscript{b} & \cellcolor{Gray}VTX       & \cellcolor{green}available & \cellcolor{Gray}GPS  & \cellcolor{Gray}Receiver & --- & --- \\
+SpeedyBee F405 Mini Stack      & \cellcolor{Gray}VTX   & \cellcolor{Gray}Receiver        & \cellcolor{green}available & \cellcolor{Gray}MSP\textsuperscript{a} & \cellcolor{Gray}Telem.\textsuperscript{c} & \cellcolor{Gray}GPS & --- & ---     \\
+SpeedyBee F4V3 Stack           & \cellcolor{Gray}VTX   & \cellcolor{Gray}Receiver        & \cellcolor{green}available & \cellcolor{Gray}MSP\textsuperscript{a} & \cellcolor{Gray}Telem.\textsuperscript{c} & \cellcolor{Gray}GPS & --- & ---     \\
+Flywoo F722 PRO MINI V2        & \cellcolor{yellow}available\textsuperscript{b} & \cellcolor{green}available & \cellcolor{Gray}VTX & \cellcolor{Gray}Receiver & \cellcolor{Gray}GPS & \cellcolor{Gray}Telem.\textsuperscript{c} & --- & --- \\
+Flywoo F722 PRO V2              & \cellcolor{green}available & \cellcolor{Gray}Receiver & \cellcolor{Gray}VTX & \cellcolor{green}available & \cellcolor{Gray}GPS & \cellcolor{Gray}Telem.\textsuperscript{c} & --- & --- \\
+SpeedyBee F7V3 Stack           & \cellcolor{Gray}VTX   & \cellcolor{Gray}Receiver        & \cellcolor{green}available & \cellcolor{Gray}Telem.\textsuperscript{c} & --- &  \cellcolor{Gray}GPS & ---   & ---    \\
+Flywoo GN745 AIO V3            & \cellcolor{green}available & \cellcolor{Gray}Receiver & \cellcolor{Gray}VTX       & \cellcolor{green}available  & \cellcolor{green}available  & \cellcolor{Gray}GPS & \cellcolor{green}available & --- \\
+MicoAir H743 V2 45A AIO    & \cellcolor{green}available & \cellcolor{Gray}VTX & \cellcolor{Gray}GPS & \cellcolor{green}available & \cellcolor{green}available & \cellcolor{Gray}Receiver & \cellcolor{Gray}Telem.\textsuperscript{c} & \cellcolor{green}available \\
+T-Motor PACER H743 Stack    & \cellcolor{green}available  & \cellcolor{Gray}GPS & \cellcolor{green}available & \cellcolor{Gray}Telem.\textsuperscript{c} & \cellcolor{Gray}Receiver & \cellcolor{Gray}VTX &  \cellcolor{Gray}MSP\textsuperscript{a} & \cellcolor{green}available \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}
+\footnotesize
+\item[a] MSP = Port for administration via the MultiWii Serial Protocol using Bluetooth and WIFI if available.
+\item[b] Offers unidirectional (simplex) communication. It can only receive data.
+\item[c] Receives telemetry data from the ESC.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
 
 \renewcommand{\deutschertitel}{Motoren}
 \renewcommand{\englischertitel}{Motors}
