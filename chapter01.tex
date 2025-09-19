@@ -586,15 +586,18 @@ Klassischerweise verwenden FPV-Drohnen Lithium-Polymer (LiPo) oder Lithium-Ionen
 \centering
 \captionabove{Comparison of Lithium-Polymere (LiPo) and Lithium-Ion (Li-Ion) Characteristics}
 \label{TabelleLiPoLiIonAkkus}
+\setlength{\tabcolsep}{3pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.0} % Default
+\scriptsize
 \begin{tabularx}{\textwidth}{lXX}
 \toprule
 Feature                         & Li-Ion & LiPo    \\
 \midrule
 Energy Density (Wh/kg)          & Higher                             & Lower  \\
 Max. Discharge Current (C-Rate) & Lower (10-12\,C)                   & Higher (75-120\,C) \\
-Weight per stored energy        & Lighter                            & Heavier \\   
+Weight (per stored energy)      & Lighter                            & Heavier \\   
 Lifespan (number of charge cycles) & Longer                          & Shorter \\      
-Safety                         & More stable, more robust            & Sensitive to overcharge and undercharge \\
+Safety                         & More stable, more robust            & More sensitive to over-/undercharge \\
 Use Cases                      & Long-range, smooth flying, cruising & Racing, freestyle, aggressive maneuvers  \\
 \bottomrule
 \end{tabularx}

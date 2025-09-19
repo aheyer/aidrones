@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  19 SEP 2025 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  19 SEP 2025 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,14 +1477,14 @@ File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg Graphic file (type jpg)
 
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg  use
-d on input line 628.
+d on input line 631.
 (pdftex.def)             Requested size: 200.75996pt x 133.81209pt.
 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=279, 3468.96pt x 2312.64p
 t>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg Graphic file (type jpg)
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg  used
- on input line 633.
+ on input line 636.
 (pdftex.def)             Requested size: 200.75996pt x 133.81209pt.
  [12 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh
 _100C_4S_XT60_Lipo_back.jpg>] [13] [14]
@@ -1492,13 +1492,13 @@ _100C_4S_XT60_Lipo_back.jpg>] [13] [14]
 File: ./images/HGLRS_GPS_M100_PRO_front.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_front.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_front.jpg  used on input l
-ine 814.
+ine 817.
 (pdftex.def)             Requested size: 200.75996pt x 200.75409pt.
 <./images/HGLRS_GPS_M100_PRO_back.jpg, id=307, 752.8125pt x 752.8125pt>
 File: ./images/HGLRS_GPS_M100_PRO_back.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_back.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_back.jpg  used on input li
-ne 819.
+ne 822.
 (pdftex.def)             Requested size: 200.75996pt x 200.75792pt.
  [15]
 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg, id=318, 352.31625pt x 439.64
@@ -1506,28 +1506,28 @@ ne 819.
 File: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg  used
- on input line 868.
+ on input line 871.
 (pdftex.def)             Requested size: 100.37997pt x 125.25916pt.
 <./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=319, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg  used 
-on input line 873.
+on input line 876.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
 <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=320, 351.3125pt x 439.642
 5pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg  used
- on input line 884.
+ on input line 887.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
 <./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=321, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg  used 
-on input line 889.
+on input line 892.
 (pdftex.def)             Requested size: 100.37997pt x 125.6147pt.
 
 
@@ -1543,7 +1543,7 @@ File: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg Graphic file (type
 jpg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg 
- used on input line 935.
+ used on input line 938.
 (pdftex.def)             Requested size: 200.75996pt x 200.75946pt.
 <./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=334, 853.1875pt x 853
 .1875pt>
@@ -1551,10 +1551,10 @@ File: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg Graphic file (type j
 pg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg  
-used on input line 940.
+used on input line 943.
 (pdftex.def)             Requested size: 200.75996pt x 200.75946pt.
 
-Overfull \hbox (4.70468pt too wide) in paragraph at lines 961--972
+Overfull \hbox (4.70468pt too wide) in paragraph at lines 964--975
  [][] 
  []
 
@@ -1564,7 +1564,7 @@ Underfull \vbox (badness 4634) has occurred while \output is active []
  [18]
 [19 <./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg> <./images/SpeedyBee
 _TX800_FPV_VTX_rueckseite_crop.jpg>] [20]
-Underfull \hbox (badness 1199) in paragraph at lines 1110--1111
+Underfull \hbox (badness 1199) in paragraph at lines 1113--1114
 \T1/lmr/m/n/10 (+20) oder 19mm (Micro-Kamera) brei-te. Ab-bil-
  []
 
@@ -1574,7 +1574,7 @@ File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg Graphic file (type jp
 g)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg  u
-sed on input line 1119.
+sed on input line 1122.
 (pdftex.def)             Requested size: 100.37997pt x 100.3778pt.
 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=361, 552.0625pt x 552
 .0625pt>
@@ -1582,7 +1582,7 @@ File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg Graphic file (type j
 pg)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg  
-used on input line 1124.
+used on input line 1127.
 (pdftex.def)             Requested size: 100.37997pt x 100.3778pt.
 <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=362, 752.8125pt x 75
 2.8125pt>
@@ -1590,7 +1590,7 @@ File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg Graphic file (type
 jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg 
- used on input line 1135.
+ used on input line 1138.
 (pdftex.def)             Requested size: 100.37997pt x 100.37321pt.
 <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=363, 752.8125pt x 7
 52.8125pt>
@@ -1598,7 +1598,7 @@ File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg Graphic file (type
  jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg
-  used on input line 1140.
+  used on input line 1143.
 (pdftex.def)             Requested size: 100.37997pt x 100.37321pt.
 [21 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_N
 ano_1200TVL_14mm_165FOV_back.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155FO
@@ -1724,7 +1724,7 @@ ype1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (37 pages, 18621572 bytes).
+Output written on main.pdf (37 pages, 18623568 bytes).
 PDF statistics:
  661 PDF objects out of 1000 (max. 8388607)
  564 compressed objects within 6 object streams
