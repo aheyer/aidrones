@@ -362,6 +362,14 @@ TBD
 
 \colger
 
+Die Motoren von FPV-Drohnen sind dreiphasige, bürstenlose Gleichstrommotoren. Jeder Motor hat drei Anschlusskabel, die an die Motorsteuerung (ESC) oder direkt an an einen AIO-Flugcontroller angelötet werden. Die Motorsteuerung schickt zeitlich versetzte Wechselströme in diese drei Leitungen. Durch das Umschalten der Ströme entsteht ein rotierendes Magnetfeld, das den Rotor mit Permanentmagneten in Drehung versetzt. Die Leitungen sind gleichwertig. Es spielt also keine Rolle in welcher Reihenfolge sie an den Motorsteuerung oder den AIO-Flugcontroller angelötet sind. Die Drehrichtung des Motors kann durch vertauschen von zwei beliebigen der drei Kabel erreicht werden. Alternativ ist es auch möglich die Drehrichtung in der grafischen Oberfläche der Firmware für jeden Motor separat zu prüfen und zu ändern.
+
+\coleng
+
+TBD
+
+\colger
+
 Die Motoren bestehen aus einem Stator und einem Rotor. Der Stator enthält die Wicklungen und das Kugellager. Der Rotor ist die Motorgloke mit den Magneten, die die eigentliche Drehbewegung ausführt. Jeder Motor ist mit einer Zahlenkombination ausgezeichnet, die den Durchmesser und die Höhe des Stators in Millimeter angibt. Bei einem Motor mit der Zahlenkombination 2306 beispielsweise hat der Stators einen Durchmesser von 23\,mm und eine Höhe von 6\,mm. 
 
 \coleng
@@ -370,7 +378,15 @@ TBD
 
 \colger
 
-Je größer das Statorvolumen, desto höher ist die Motorleistung im Bezug auf Drehmoment. Zudem ist die thermische Robustheit von großen Motoren besser.  Motoren mit kleinem Statorvolumen sind hingegen leichter und sparsamer bei kleinen Lasten. 
+Je größer das Statorvolumen, desto höher ist die Motorleistung im Bezug auf Drehmoment. Zudem ist die thermische Robustheit von großen Motoren besser. Motoren mit kleinem Statorvolumen sind hingegen leichter und sparsamer bei kleinen Lasten. 
+
+\coleng
+
+TBD
+
+\colger
+
+Die Propelleraufnahme (siehe Abschnitt~\ref{AbschnittMotorenPropelleraufnahme}) geschieht auf einer M5-Welle mit 5\,mm Durchmesser und einer passenden Mutter oder alternativ  mit einer Welle mit 1,5\,mm Durchmesser und zusätzlich zwei wenige M2-Schrauben am Motor befestigt. 
 
 \colende
 
@@ -562,9 +578,27 @@ TBD
 
 \colger
 
-Klassischerweise verwenden FPV-Drohnen Lithium-Polymer (LiPo) oder Lithium-Ionen-Akkus (Li-Ion). Unterschieden werden die Akkus zudem hinsichtlich Kapazität (mAh), Spannung (Zellenzahl) und Entladespannung bzw. C-Wert (\textsl{Capacity Rate}), und Stecker. 
+Klassischerweise verwenden FPV-Drohnen Lithium-Polymer (LiPo) oder Lithium-Ionen-Akkus (Li-Ion). Unterschieden werden die Akkus zudem hinsichtlich Kapazität (mAh), Spannung (Zellenzahl) und Entladespannung bzw. C-Wert (\textsl{Capacity Rate}), und Stecker. Eine Übersicht der charakteristischen Eigenschaften von LiPo-Akkus und Li-Ion-Akkus zeigt Tabelle~\ref{TabelleLiPoLiIonAkkus}).
 
 \colende
+
+\begin{table}[htb!]
+\centering
+\captionabove{Comparison of Lithium-Polymere (LiPo) and Lithium-Ion (Li-Ion) Characteristics}
+\label{TabelleLiPoLiIonAkkus}
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+Feature                         & Li-Ion & LiPo    \\
+\midrule
+Energy Density (Wh/kg)          & Higher                             & Lower  \\
+Max. Discharge Current (C-Rate) & Lower (10-12\,C)                   & Higher (75-120\,C) \\
+Weight per stored energy        & Lighter                            & Heavier \\   
+Lifespan (number of charge cycles) & Longer                          & Shorter \\      
+Safety                         & More stable, more robust            & Sensitive to overcharge and undercharge \\
+Use Cases                      & Long-range, smooth flying, cruising & Racing, freestyle, aggressive maneuvers  \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \renewcommand{\deutschertitel}{Lade- oder Entladerate (C-Wert)}
 \renewcommand{\englischertitel}{Charge and Discharge Rate (C-Rate)}
@@ -575,7 +609,7 @@ TBD
 
 \colger
 
-Die Akkus bestehen aus einer oder mehreren in Reihe geschalteten Zellen und bieten sehr hohe C-Werte von 75 bis 120\,C. Der C-Wert (\textsl{Capacity Rate}) gibt an, wie schnell ein Akku entladen werden kann.
+Die Akkus bestehen aus einer oder mehreren in Reihe geschalteten Zellen. Der Grund dafür, dass bei FPV-Drohnen meist LiPo-Akkus verwendet werden, sind deren sehr hohe C-Werte von 75 bis 120\,C. Der C-Wert gibt an, wie schnell ein Akku entladen werden kann. Li-Ion-Akkus bieten im Gegensatz dazu nur 10-12\,C.
 
 \coleng
 
@@ -625,6 +659,14 @@ TBD
 
 \colger
 
+Li-Ion-Akkus sind ideal für Szenarien, bei denen lange Flugzeiten, ruhiges Flugverhalten und eventuell lange Strecken (Long-Range) angestrebt ist. LiPo-Akkus hingegen sind besser geeignet für rasante Flugmanöver und Rennen.
+
+\coleng
+
+TBD
+
+\colger
+
 Der C-Wert gibt auch die empfohlene Laderate an. Diese ist 1\,C, wenn der Hersteller nicht dediziert eine höhere Laderate wie z.B. 2\,C freigegeben hat. Bei dem eingangs erwähnten 1500\,mAh LiPo-Akku entspricht 1\,C Laderate einem Strom von 1,5\,A und dementsprechend dauert es eine Stunde den Akku vollständig zu laden. Das ist aber ein hypothetischer Wert, da ein derart tiefentladener Akku nicht mehr geladen werden kann.
 
 \colende
@@ -640,7 +682,7 @@ TBD
 
 \colger
 
-LiPo-Akkus enthalten eine oder mehrere in Reihe geschaltete Zellen. Der sogenannte S-Wert bei Akkus definiert die Anzahl der Zellen. Jede LiPo-Zelle hat eine Nennspannung von ca. 3,7\,V. (voll geladen ca. 4,2\,V, entladen ca. 3,0\,V). Sind mehrere Zellen in Reihe geschaltet, addieren sich die Spannungen. 
+LiPo-Akkus und Li-Ion-Akkus enthalten eine oder mehrere in Reihe geschaltete Zellen. Der sogenannte S-Wert bei Akkus definiert die Anzahl der Zellen. Jede LiPo-Zelle hat eine Nennspannung von ca. 3,7\,V. (voll geladen ca. 4,2\,V, entladen ca. 3,0\,V). Sind mehrere Zellen in Reihe geschaltet, addieren sich die Spannungen. 
 
 \coleng
 
@@ -654,7 +696,7 @@ Die gängigsten Akkus sind 4S und 6S. Bei einem 4S-Akku sind 4 Zellen in Reihe g
 
 \begin{table}[htb!]
 \centering
-\captionabove{Overview of Lithium-Polymere (LiPo) Batteries}
+\captionabove{Overview of Lithium-Polymere (LiPo) and Lithium-Ion (Li-Ion) Batteries}
 \label{TabelleAkkus}
 \begin{tabular}{l@{\hskip 8mm}l@{\hskip 8mm}r@{\hskip 8mm}r@{\hskip 8mm}r}
 \toprule
@@ -686,6 +728,15 @@ TBD
 
 Mit steigender Kapazität eines Akkus steigt nicht nur die Flugdauer, sondern auch das Gesamtgewicht. Sehr kleine S4-Akkus mit 450\,mAh Kapazität wiegen ca. 60\,g. Der in Abbildung~\ref{AbbildungLiPoAkku} gezeigte Akku mit 1500\,mAh Kapazität wiegt hingegen ca. 185\,g. Ein höheres Gesamtgewicht beeinflusst auch das Flugverhalten. 
 
+
+\coleng
+
+TBD
+
+\colger
+
+Li-Ion-Akkus enthalten üblicherweise in Reihe geschaltete 18650-Zellen. Die Kapazität der einzelnen Zellen hängt immer vom Hersteller und der Qualität der Zellen ab. Typische Kapazitäten sind zwischen 2500 und 3500\,mAh. Ist eine höhere Kapazität gewünscht, müssen zusätzliche Zellen parallel geschaltete werden. Die Anzahl der Zellen und die Art Ihrer Verschaltung ist auf den Li-Ion-Akkus mit den Buchstaben S (Serie) und P (Parallel) angegeben. Am Markt verfügbare LI-Ion-Akkus sind häufig 3S1P, 4S1P, 4S2P, 6S1P, 6S2P.
+
 \colende
 
 \renewcommand{\deutschertitel}{Stecker (XT30/XT60/XT90) zum Entladen und Laden}
@@ -716,6 +767,8 @@ TBD
 Neben den Gleichstromstecker verfügt jeder Akku mit zwei oder mehr Zellen über einen Balancerstecker zum sicheren Laden. Dieser Stecker, der bei modernen Akkus meist der Norm JST-XHR entspricht, ermöglicht es dem Ladegerät die Zellspannung jeder einzelnen Zelle zu messen und den Ladevorgang entsprechend zu steuern. Die Anzahl der Pins entspricht der Anzahl der Zellen plus eins (wegen der gemeinsamen Masse). Ein 4S-Akku hat somit fünf Leitungen und ein 6S-Akku hat sieben Leitungen. Durch die Werte, die über den Balancerstecker ausgelesen werden, gleicht das Ladegerät die Spannung der einzelnen Zellen an. Das verhindert die Überladung einzelner Zellen beim Ladevorgang und damit das Riskio für eine Beschädigung des Akkos oder sogar einen Brand und beugt einer Tiefentladung einzelner Zellen beim späteren Betrieb vor.
 
 \colende
+
+
 
 \renewcommand{\deutschertitel}{GPS}
 \renewcommand{\englischertitel}{GPS}
