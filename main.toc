@@ -455,9 +455,9 @@
 \contentsline {section}{\numberline {2.1}Flight Controller Firmware}{25}{section.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {ngerman}{}\relax 
-\babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -486,7 +486,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {2.1.2}INAV}{26}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}INAV}{27}{subsection.2.1.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -516,12 +516,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {2.2}Remote Control Firmware}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Remote Control Firmware}{28}{section.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {2.2.1}EdgeTX}{27}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}EdgeTX}{28}{subsection.2.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
