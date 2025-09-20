@@ -41,10 +41,32 @@ TBD
 
 \colger
 
+Objekterkennung ist eine der bekanntesten KI-Anwendungen. Zu den bekanntesten quelloffenen Softwarelösungen, die Objekterkennung ermöglichten, gehören das Framework TensorFlow (Lite) für Maschinelles Lernen in Zusammenarbeit mit der Bibliothek OpenCV (\textsl{Open Computer Vision}) zur Bildverarbeitung und Objekterkennung. Eine alternative Lösung ist das Objekterkennungs-Framework (\textsl{You Only Look Once}).
+
+\coleng
+
 TBD
+
+\colger
+
+Prinzipiell ist es möglich die nötige Hard- und Software als zusätzliche Komponenten in der Drohne zu integrieren und diese Komponenten mitfliegen zu lassen. Alternativ kann auch das Livebild am Boden erfasst und zur weiteren Verarbeitung in einen Computer geleitet werden. Eine einfache Möglichkeit, auf das Livebild zuzugreifen, bietet die eventuell vorhandene AV-Schnittstelle der Videobrille. Das Videosignal kann mit Hilfe eines Videograbbers digitalisiert und an einen Computer zur Verarbeitung weitergeleitet werden.
+
+\coleng
+
+TBD
+
+\colger
+
+Abbildung~\ref{AbbildungKompoentenEinerDrohneMitRaspberryPiundCoral} zeigt die Komponenten der FPV-Drohne aus Abbildung~\ref{AbbildungKompoentenEinerDrohneOhneKI}, erweitert um die zur lokalen Bilderkennung nötigen Komponenten, nämlich den Raspberry Pi Einplatinencomputer, ein Kameramodul, den Google Coral TPU Accelerator und einen BEC zur Umwandlung der elektrischen Spannung des Akkus in 5\,V.
 
 \colende
 
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=\linewidth]{Komponenten_der_Drohne_Diagramm_v1_en.pdf}
+  \caption{Components of a FPV Drone with additional Hardware Components for Object Detection by the Drone itself}
+  \label{AbbildungKompoentenEinerDrohneMitRaspberryPiundCoral}
+\end{figure}
 
 \renewcommand{\deutschertitel}{Autopilot}
 \renewcommand{\englischertitel}{Auto Pilot}
