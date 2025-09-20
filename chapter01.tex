@@ -23,7 +23,7 @@ TBD
 
 \colger
 
-Dieses Kapitel stellt die wichtigen Hardware-Komponenten zum Bau von FPV-Drohnen vor. Zusätzliche Hardware zur Realisierung einer KI-Funktionalität ist Teil von Kapitel~\ref{KapitelKI}. 
+Dieses Kapitel stellt die wichtigen Hardware-Komponenten zum Bau von FPV-Drohnen vor. Das Kapitel hat nicht den Anspruch, einen vollständigen Überblick über den Stand der Technik der jeweiligen Komponenten zu geben. Auch die Entwicklung der FPV-Drohnen in den letzten Jahren wird ausgeblendet. 
 
 \coleng
 
@@ -31,8 +31,7 @@ TBD
 
 \colger
 
-Dieses Kapitel hat nicht den Anspruch, einen vollständigen Überblick über den Stand der Technik der jeweiligen Komponenten zu geben. Auch die Entwicklung der FPV-Drohnen in den letzten Jahren wird ausgeblendet. Ziel dieses Kapitels ist es, Einsteigern einen leicht verständlichen Einstieg in das Themengebiet FPV-Drohnen zu geben, damit diese rasch die für sie nötigen Komponenten identifizieren können, um Drohnen für eigene Projekte zu entwerfen und zu bauen. Dieses ist Voraussetzung für die Identifikation und Installation der benötigten Software (siehe Kapitel~\ref{KapitelSoftware}) und der Realisierung eigener KI-Anwendungen mit diesen Drohnen.
-
+Ziel dieses Kapitels ist es, Einsteigern einen leicht verständlichen Einstieg in das Themengebiet FPV-Drohnen zu geben, damit diese rasch die für sie nötigen Komponenten identifizieren können, um Drohnen für eigene Projekte zu entwerfen und zu bauen. Dieses ist Voraussetzung für die Identifikation und Installation der benötigten Software (siehe Kapitel~\ref{KapitelSoftware}) auf diesen Drohnen und der Realisierung einer KI-Funktionalität mit mit zusätzlicher Hardware (siehe Kapitel~\ref{KapitelKI}).
 \coleng
 
 TBD
@@ -352,7 +351,7 @@ Tabelle~\ref{TabelleUARTuebersicht} zeigt die typische Nutzung der verfügbaren 
 \setlength{\tabcolsep}{4pt}       % Default value: 6pt
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{threeparttable}
-\captionabove{Overview of UART Interfaces of some Flight Controllers}
+\captionabove{Recommended use and availability of UART Interfaces of some Flight Controllers}
 \scriptsize
 \label{TabelleUARTuebersicht}
 \begin{tabularx}{\textwidth}{lYYYYYYYY}
@@ -460,7 +459,7 @@ TBD
 
 \colger
 
-Der KV-Wert beschreibt, wie schnell sich ein Motor pro Volt im Leerlauf dreht. Ein Motor mit beispielsweise 3000\,KV dreht also ohne Propeller bei 1\,V Versorgungsspannung 3000\,U/min. An einem 4S-Akku (siehe Abschnitt~\ref{AbschnittAkkus}) mit \(\approx\)\,16\,V Spannung hat dieser Motor also eine Leerlaufdrehzahl von \(3000 \times 16 \approx\ 48000\)\,U/min. 
+Der KV-Wert beschreibt, wie schnell (Drehzahl U/min) sich ein Motor pro Volt im Leerlauf dreht. Ein Motor mit beispielsweise 3000\,KV dreht also ohne Propeller bei 1\,V Versorgungsspannung 3000\,U/min. An einem 4S-Akku (siehe Abschnitt~\ref{AbschnittAkkus}) mit \(\approx\)\,16\,V Spannung hat dieser Motor also eine Leerlaufdrehzahl von \(3000 \times 16 \approx\ 48000\)\,U/min. 
 
 \coleng
 
@@ -716,9 +715,7 @@ Der C-Wert gibt auch die empfohlene Laderate an. Diese ist 1\,C, wenn der Herste
 
 \renewcommand{\deutschertitel}{Anzahl der Zellen (S4/S6)}
 \renewcommand{\englischertitel}{Number of Cells (S4/S6)}
-
 \makrounterabschnitt
-
 \label{AbschnittSWertAkkusZellen}
 
 TBD
