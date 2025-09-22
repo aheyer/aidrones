@@ -118,7 +118,11 @@ TBD
 
 \colger
 
-TBD
+INAV ist ein Fork von einer früheren Cleanflight-Version. Cleanflight ist ein verwandtes Projekt, welches allerdings nicht mehr weiterentwickelt wird. INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontrollerboard läuft und dem Konfigurationstool, welches für die Installation und Aministration genutzt werden kann.
+
+Neben der Return-To-Home- (RTH) bzw. Rescuefunktionalität bietet INAV weitere Autopilotenfunktionalitäten, wie Wegpunktmissionen, \textsl{Position halten}, \textsl{Flughöhe halten} und mehr. Diese können auch ohne Kompass genutzt werden (seit Version Version 7.1), jedoch mit geringerer Genauigkeit.
+
+Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates wie sie benötigt werden. Die aktuelle Version 8 unterstützt ebenfalls eine breite Spanne an gängigen Flugcontrollerchips, jedoch nicht ganz so viele wie Betaflight.
 
 \colende
 
@@ -131,7 +135,27 @@ TBD
 
 \colger
 
-TBD
+Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verwandschaft zu Betaflight sehr deutlich sichtbar, da der Aufbau sehr ähnlich zum Betaflight Configurator ist, welcher für die Versionen bis 4.5 genutzt wird. Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashing durchgeführt wird.
+
+Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die Konfiguration zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die entsprechenden Parameter aus. Mit dem Button \textsl{Save to File} können diese dann in eine Textdatei gespeichert werden. Danach besteht der Prozess aus den folgenden Schritten:
+
+\begin{enumerate}
+	\item \textsl{Device Firmware Upgrade (DFU)-Modus} aktivieren ist der erste notwendige Schritt. Dies kann in der Regel über einen Button am Flugcontrollerboard realisiert werden, oder mit dem Befehl \texttt{dfu} im \textsl{CLI}-Tab.
+
+	\item  Befindet sich das Board im DFU-Modus, so muss der \textsl{Firmware Flasher} Tab im INAV Configurator aufgerufen werden. In diesem muss zunächst das Target ausgewählt werden, sollte  \textsl{Auto-select Target} nicht funktionieren muss der Modellname händisch in der Liste gesucht werden.
+
+	\item Im Ausklappmenü unter dem Board werden dann die verfügbaren (stable) Releases angezeigt. Mit der Option \textsl{Show unstable releases} können noch aktuellere Versionen gewählt werden. Diese funktionieren aber unter Umständen nicht wie erwartet.
+
+	\item INAV bietet drei Optionen die für das Flashing gesetzt werden können:
+	\begin{itemize}
+		\item \textsl{No reboot sequence} - Wird nur benötigt, wenn die Bootpins überbrückt sind oder der Bootbutton gefrückt wird (modellabhängig).
+		\item \textsl{Full chip erase} - Löscht alle Konfigurationsoptionen (Backup Vorhanden?). Sollte immer gesetzt werden, wenn vorher eine andere Software installiert war.
+		\item \textsl{Manual baud rate} - Festlegen der Baudrate für Bluetooth oder falls ein Modell die Standardgeschwindigkeit nicht unterstützt.
+	\end{itemize}
+
+	\item Der Prozess des Flashens besteht aus zwei Schritten: Zunächst wird die Firmware geladen (online oder über ein File), dann wird das eigentliche Flashing über einen separaten Button gestartet. Das eigentliche Flashing sollte nicht unterbrochen werden.
+
+\end{enumerate}
 
 \colende
 
