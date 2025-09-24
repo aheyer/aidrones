@@ -90,7 +90,7 @@ TBD
 
 \colger
 
-Die Installation und Konfiguration der Firmware geschieht mit der lokal installierten Software Betaflight Configurator oder mit der Webanwendung \url{app.betaflight.com}. Abbildung~\ref{AbbildungBetaflighInstallation} zeigt die Möglichkeit der Installation von Betaflight über die Webanwendung. Diese Seite erreicht man über den Button \textsl{Update Firmware} am oberen Rand der Webseite. Ein bestehendes Backup von Einstellungen kann auch auf dieser Seite in den Flugcontroller eingespielt werden. Ein Backup der aktuellen Einstellungen wird bei der Installation einer neuen Version automatisch angefertigt.
+Die Installation und Konfiguration der Firmware geschieht mit der lokal installierten Software Betaflight Configurator oder mit der Webanwendung \url{app.betaflight.com}. Abbildung~\ref{AbbildungBetaflighInstallation} zeigt die Möglichkeit der Installation von Betaflight über die Webanwendung. Das Modell des Flugcontrollers wird üblicherweise automatisch erkannt. Diese Seite erreicht man über den Button \textsl{Update Firmware} am oberen Rand der Webseite. Ein bestehendes Backup von Einstellungen kann auch auf dieser Seite in den Flugcontroller eingespielt werden. Ein Backup der aktuellen Einstellungen wird bei der Installation einer neuen Version automatisch angefertigt.
 
 \colende
 
@@ -104,7 +104,7 @@ Die Installation und Konfiguration der Firmware geschieht mit der lokal installi
 \begin{figure}[htb!]
   \centering
     \includegraphics[width=\linewidth]{Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png}
-  \caption{Main page of Betaflight}
+  \caption{Main Page of Betaflight}
   \label{AbbildungBetaflightAppHauptseite}
 \end{figure}
 
@@ -116,7 +116,85 @@ TBD
 
 Abbildung~\ref{AbbildungBetaflightAppHauptseite} zeigt die Startseite (\textsl{Setup}) von Betaflight beim Zugriff aus der Webanwendung heraus. Auf der Startseite können der Beschleunigungssensor und der magnetische Kompass kalibriert werden. Die Startseite enthält auch generelle Informationen zum Zustand der Drohne und ihrer Komponenten. Ein wertvolles Werkzeug ist die Startseite bei der Kontrolle der korrekten Konfiguration der Ausrichtung des Flugcontrollers im Rahmen. Häufig ergibt es sich bei Flugcontroller-Stacks und bei kleineren Drohnen, dass der Flugcontroller gedreht oder auf dem Kopf stehend im Rahmen verbaut ist. Die Startseite zeigt die Position der Drohne als Live-Bild entsprechen der Konfiguration der Position des Flugcontrollers in der Seite \textsl{Configuration}.
 
+\coleng
+
+TBD
+
+\colger
+
+Abbildung~\ref{AbbildungBetaflightAppPorts} zeigt die Seite \textsl{Ports}. Hier wird die Konfiguration der verfügbaren UART-Schnittstellen vorgenommen. Die Korrekte Einstellung der Funktionswiese der UARTs ist Voraussetzung für die Nutzung vieler an der Drohne angeschlossenen Komponenten wie zum Beispiel Videosender (in Abbildung~\ref{AbbildungBetaflightAppPorts} an UART3), GPS-Modul (in Abbildung~\ref{AbbildungBetaflightAppPorts} an UART5) und Empfänger (in Abbildung~\ref{AbbildungBetaflightAppPorts} an UART6). 
+
 \colende
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{Betaflight_4_5_3_ports_firmware_screenshot_app.png}
+  \caption{Ports Page of Betaflight}
+  \label{AbbildungBetaflightAppPorts}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+Auf der Seite \textsl{Configuration} (siehe Abbildungen~\ref{AbbildungBetaflightAppConfiguration1} und~\ref{AbbildungBetaflightAppConfiguration2}) werden unter anderem Einstellungen zur Ausrichtung des Flugcontrollers und des für jede Drohne unverzichtbaren Gyroskops (Kreiselinstrument zur Lagebestimmung) vorgenommen. 
+
+\colende
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{Betaflight_4_5_3_configuration1_firmware_screenshot_app.png}
+  \caption{Configuration Page of Betaflight (Part 1/2)}
+  \label{AbbildungBetaflightAppConfiguration1}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+Auch sicherheitsrelevante Einstellungen wie der maximale Aufstellwindel der Drohne, bei der das Arming (das aktivieren der Motoren, um sie für den Flug vorzubereiten) überhaupt möglich ist, werden auf dieser Seite \textsl{Configuration} festgelegt. Soll im Livebild der FPV-Drohne durch den Flugcontroller ein on-screen display (OSD) eingeblendet werden, muss es hier grundsätzlich aktiviert werden.
+
+\colende
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{Betaflight_4_5_3_configuration2_firmware_screenshot_app.png}
+  \caption{Configuration Page of Betaflight (Part 2/2)}
+  \label{AbbildungBetaflightAppConfiguration2}
+\end{figure}
+
+
+\colstart
+
+TBD
+
+\colger
+
+Die Seite \textsl{Power \& Battery} erlaubt die Spannungen zu definieren, bei denen der Akku der vollständig geladen und entladen ist und bei welcher Spannungen der Flugcontroller entsprechend warnen soll. 
+
+\coleng
+
+TBD
+
+\colger
+
+Auf der Seite \textsl{Failsafe} kann sehr detailliert festgelegt werden, wie der Flugcontroller reagieren soll, wenn der Drohnennpilot ein Problem anzeigt oder wenn es zum Signalverlust kommt. Sinnvolle Einstellungen hier können sein, dass die Drohne kontrolliert landen oder alternativ mit Hilfe des GPS-Moduls selbständig zum Startpunkt zurückfliegen soll.
+
+\coleng
+
+TBD
+
+\colger
+
+Die Seite \textsl{Presets}...
+
+
+\colende
+
 
 \renewcommand{\deutschertitel}{Administration}
 \renewcommand{\englischertitel}{Administration}
