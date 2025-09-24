@@ -61,15 +61,13 @@ TBD
 
 \colger
 
-Betaflight ist eine Firmware für Flugcontroller von FPV-Drohnen. Die Installation und Konfiguration der Firmware geschieht bis Betaflight 4.5 mit der lokal installierten Software Betaflight Configurator. Neue Versionen verwenden hierfür die Webanwendung \url{app.betaflight.com}.
+Betaflight ist eine Firmware für Flugcontroller von FPV-Drohnen. Der Fokusvon Betaflight ist die Unterstützung des manuellen Fliegens (Freestyle, Racing, etc.). Ziele von Betaflight sind schnelle Reaktion auf Benutzereingaben und umfangreiche Einstellungsmöglichkeiten um das Flugerhalten zu optimieren (tuning). 
 
 \coleng
 
 TBD
 
 \colger
-
-Der Fokus bei der Entwicklung von Betaflight ist die Unterstützung des manuellen Fliegens (Freestyle, Racing, etc.). Ziele von Betaflight sind schnelle Reaktion auf Benutzereingaben und umfangreiche Einstellungsmöglichkeiten um das Flugerhalten zu optimieren (tuning). 
 
 Einstellungsmöglichkeiten Autonomes Fliegen unterstützt Betaflight -- ganz im  Gegensatz zu den alternativem Firmwares INAV oder ArduPilot -- fast gar nicht. Ausnahmen sind der Rettungsmodus (\textsl{Rescue Mode}), der die Drohne im Fall von Verbindungsproblemen mit Hilfe eines GPS-Moduls automatisch zurückzukehren lässt, und ein experimenteller Modus um Höhe und Position automatisch zu halten. 
  
@@ -92,7 +90,31 @@ TBD
 
 \colger
 
+Die Installation und Konfiguration der Firmware geschieht mit der lokal installierten Software Betaflight Configurator oder mit der Webanwendung \url{app.betaflight.com}. Abbildung~\ref{AbbildungBetaflighInstallation} zeigt die Möglichkeit der Installation von Betaflight über die Webanwendung. Diese Seite erreicht man über den Button \textsl{Update Firmware} am oberen Rand der Webseite. Ein bestehendes Backup von Einstellungen kann auch auf dieser Seite in den Flugcontroller eingespielt werden. Ein Backup der aktuellen Einstellungen wird bei der Installation einer neuen Version automatisch angefertigt.
+
+\colende
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{Betaflight_4_5_3_installation_update_backup_firmware_screenshot_app.png}
+  \caption{Installation of Betaflight and Option to Backup / Restore of Configuration Settings}
+  \label{AbbildungBetaflighInstallation}
+\end{figure}
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png}
+  \caption{Main page of Betaflight}
+  \label{AbbildungBetaflightAppHauptseite}
+\end{figure}
+
+\colstart
+
 TBD
+
+\colger
+
+Abbildung~\ref{AbbildungBetaflightAppHauptseite} zeigt die Startseite (\textsl{Setup}) von Betaflight beim Zugriff aus der Webanwendung heraus. Auf der Startseite können der Beschleunigungssensor und der magnetische Kompass kalibriert werden. Die Startseite enthält auch generelle Informationen zum Zustand der Drohne und ihrer Komponenten. Ein wertvolles Werkzeug ist die Startseite bei der Kontrolle der korrekten Konfiguration der Ausrichtung des Flugcontrollers im Rahmen. Häufig ergibt es sich bei Flugcontroller-Stacks und bei kleineren Drohnen, dass der Flugcontroller gedreht oder auf dem Kopf stehend im Rahmen verbaut ist. Die Startseite zeigt die Position der Drohne als Live-Bild entsprechen der Konfiguration der Position des Flugcontrollers in der Seite \textsl{Configuration}.
 
 \colende
 

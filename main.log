@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  22 SEP 2025 20:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  24 SEP 2025 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1679,8 +1679,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-4.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+3.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1688,16 +1688,53 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [26]
+<./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_app.p
+ng, id=443, 878.21773pt x 490.89056pt>
+File: ./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_
+app.png Graphic file (type png)
+<use ./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_a
+pp.png>
+Package pdftex.def Info: ./images/Betaflight_4_5_3_installation_update_backup_f
+irmware_screenshot_app.png  used on input line 99.
+(pdftex.def)             Requested size: 418.25368pt x 233.78964pt.
+<./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png, id=445, 878.
+21773pt x 490.89056pt>
+File: ./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png Graphic 
+file (type png)
+<use ./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png>
+Package pdftex.def Info: ./images/Betaflight_4_5_3_hauptseite_firmware_screensh
+ot_app.png  used on input line 106.
+(pdftex.def)             Requested size: 418.25368pt x 233.78964pt.
+ [27 <./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_
+app.png> <./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png>] [2
+8] [29]
+Underfull \hbox (badness 2293) in paragraph at lines 214--215
+[]\T1/lmr/m/n/10 (+20) Im \T1/lmr/m/sl/10 (+20) Receiver-Tab \T1/lmr/m/n/10 (+2
+0) wird Flug-con-trol-ler-
+ []
 
 
-[26]
+Underfull \hbox (badness 2197) in paragraph at lines 214--215
+\T1/lmr/m/n/10 (+20) sei-tig die Ver-bin-dung zur Fern-be-die-
+ []
 
-[27])
+[30] [31]
 
-[28]
+[32])
+
+[33]
 \openout2 = `chapter03.aux'.
 
  (./chapter03.tex
+
+[34
+
+
+
+
+
+]
 chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1713,13 +1750,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[29
-
-
-
-
-
-]
+[35]
 Overfull \hbox (1.17847pt too wide) in paragraph at lines 77--89
  [][] 
  []
@@ -1727,36 +1758,36 @@ Overfull \hbox (1.17847pt too wide) in paragraph at lines 77--89
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-[31]
+ [36]
+[37]
 Underfull \hbox (badness 1028) in paragraph at lines 134--135
 \T1/lmr/m/n/10 (+20) 65x30x8mm groÿ. Das Ge-wicht die-ses KI-
  []
 
-<./images/Google_Coral_TPU_Accelerator_front.pdf, id=500, 1298.8525pt x 687.568
+<./images/Google_Coral_TPU_Accelerator_front.pdf, id=552, 1298.8525pt x 687.568
 76pt>
 File: ./images/Google_Coral_TPU_Accelerator_front.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_front.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_front.pdf  used 
 on input line 142.
 (pdftex.def)             Requested size: 200.75996pt x 106.26779pt.
-<./images/Google_Coral_TPU_Accelerator_back.pdf, id=501, 1298.8525pt x 687.5687
+<./images/Google_Coral_TPU_Accelerator_back.pdf, id=553, 1298.8525pt x 687.5687
 6pt>
 File: ./images/Google_Coral_TPU_Accelerator_back.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_back.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_back.pdf  used o
 n input line 147.
 (pdftex.def)             Requested size: 200.75996pt x 106.26779pt.
-[32 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_TP
+[38 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_TP
 U_Accelerator_back.pdf>]
-<./images/Intel_Neuronal_Compute_Stick2_front.png, id=513, 1405.25pt x 702.625p
+<./images/Intel_Neuronal_Compute_Stick2_front.png, id=565, 1405.25pt x 702.625p
 t>
 File: ./images/Intel_Neuronal_Compute_Stick2_front.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_front.png>
 Package pdftex.def Info: ./images/Intel_Neuronal_Compute_Stick2_front.png  used
  on input line 168.
 (pdftex.def)             Requested size: 200.75996pt x 100.37169pt.
-<./images/Intel_Neuronal_Compute_Stick2_back.png, id=514, 1505.625pt x 752.8125
+<./images/Intel_Neuronal_Compute_Stick2_back.png, id=566, 1505.625pt x 752.8125
 pt>
 File: ./images/Intel_Neuronal_Compute_Stick2_back.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_back.png>
@@ -1766,14 +1797,14 @@ on input line 173.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neurona
+ [39 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neurona
 l_Compute_Stick2_back.png>]
 Underfull \hbox (badness 2671) in paragraph at lines 243--244
 \T1/lmr/m/n/10 (+20) con-trol-ler ver-fügt nur über sechs UART-
  []
 
-[34]
-<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=530, 4076.22874pt x 188
+[40]
+<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=581, 4076.22874pt x 188
 5.0425pt>
 File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
 )
@@ -1788,9 +1819,9 @@ Overfull \hbox (1.32286pt too wide) in paragraph at lines 306--307
 
 
 
-[35 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>])
+[41 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>])
 
-[36]
+[42]
 \openout2 = `chapter04.aux'.
 
  (./chapter04.tex
@@ -1811,7 +1842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 )
 
-[37
+[43
 
 
 
@@ -1822,7 +1853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  (./chapter05.tex
 
-[38
+[44
 
 
 
@@ -1846,9 +1877,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 )
 
-[39]
+[45]
 
-[40
+[46
 
 
 
@@ -1881,15 +1912,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28391 strings out of 475052
- 520292 string characters out of 5762548
- 1153702 words of memory out of 5000000
- 50479 multiletter control sequences out of 15000+600000
- 650882 words of font info for 185 fonts, out of 8000000 for 9000
+ 28468 strings out of 475052
+ 522466 string characters out of 5762548
+ 1153877 words of memory out of 5000000
+ 50501 multiletter control sequences out of 15000+600000
+ 652652 words of font info for 200 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
  108i,20n,119p,10899b,1242s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{section*.121} has been referenced but does not exis
+pdfTeX warning (dest): name{section*.123} has been referenced but does not exis
 t, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/sha
@@ -1903,10 +1934,10 @@ ic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (47 pages, 27652384 bytes).
+Output written on main.pdf (53 pages, 28048877 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 211 named destinations out of 1000 (max. 500000)
- 56291 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 236 named destinations out of 1000 (max. 500000)
+ 56301 words of extra memory for PDF output out of 61914 (max. 10000000)
 
