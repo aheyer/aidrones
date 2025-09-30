@@ -342,11 +342,11 @@ TBD
 
 \colger
 
-INAV ist ein Fork von einer früheren Cleanflight-Version. Cleanflight ist ein verwandtes Projekt, welches allerdings nicht mehr weiterentwickelt wird. INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann.
+INAV basiert auf einer früheren Cleanflight-Version und ist ebenfalls eng verwandt mit Betaflight. Im Gegensatz zu Betaflight und INAV wird Cleanflight allerdings nicht mehr weiterentwickelt. INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann. Es gibt keine Web-App, wie bei aktuellen Betaflight-Versionen.
 
 Neben der Return-To-Home- (RTH) bzw. Rescuefunktionalität bietet INAV weitere Autopilotenfunktionalitäten, wie Wegpunktmissionen, \textsl{Position halten}, \textsl{Flughöhe halten} und mehr. Diese können auch ohne Kompass genutzt werden (seit Version 7.1), jedoch mit geringerer Genauigkeit.
 
-Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt ebenfalls eine breite Spanne an gängigen Flugcontrollerchips, jedoch nicht ganz so viele wie Betaflight.
+Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt die folgenden STM-Flugcontrollerchips: F405, F722, F745, F765 und H743. Außerdem werden AT-F435 Chips unterstützt. Die Kompatibilität mit einem jeweiligen Board sollte jedoch im Einzelfall immer vor dem Kauf geprüft werden.
 
 \colende
 
@@ -359,7 +359,22 @@ TBD
 
 \colger
 
-Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verwandtschaft zu Betaflight sehr deutlich sichtbar, da der Aufbau sehr ähnlich zum Betaflight Configurator ist, welcher für die Versionen bis 4.5 genutzt wird. Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
+Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verwandtschaft zu Betaflight sehr deutlich sichtbar, da der Aufbau sehr ähnlich zum Betaflight Configurator ist, welcher für die Versionen bis 4.5 genutzt wird (Abbildung \ref{AbbildungINAVFirmwareFlasher}). Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Firmware_Flasher.png}
+	\caption{Firmware Flasher tab in the INAV Configurator}
+	\label{AbbildungINAVFirmwareFlasher}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
 
 Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die Konfiguration zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die entsprechenden Parameter aus. Mit dem Button \textsl{Save to File} können diese dann in eine Textdatei gespeichert werden. Danach besteht der Prozess aus den folgenden Schritten:
 
@@ -398,6 +413,30 @@ Die Administration von INAV erfolgt ebenfalls über den \textsl{INAV Configurato
 Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheinen Fenster zum Setzen der \textsl{Default-Values} (Presets). Hier gilt es das Preset auszuwählen, was am nächsten an dem gebauten Modell dran ist. Danach können die UART-Ports (für GPS, VTX, etc.) konfiguriert werden. Dies kann allerdings auch über den Ports-Tab durchgeführt werden. Die weiteren Konfigurationsschritte gestalten sich wie folgt:
 
 \begin{enumerate}
+	
+	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken.
+	
+	\item Im \textsl{Calibration-Tab} (Abbildung \ref{AbbildungINAVCalibrationTab}) werden der Beschleunigungsmesser und der Kompass kalibriert. Dazu muss die Drohne jeweils in unterschiedliche Posen gebracht werden.
+	
+\end{enumerate}
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Calibration_Tab.png}
+	\caption{INAV Calibration Tab for Board Orientation, Compass and Flow Sensor }
+	\label{AbbildungINAVCalibrationTab}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{2} 
 
 	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken.
 
@@ -407,28 +446,51 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 
 	\item Im \textsl{Outputs-Tab} werden die Motoren aktiviert mit der Option \textsl{Enable motor and servo output}. Außerdem sollte sichergestellt werden, dass  \texttt{DSHOT300} als \textsl{ESC protocol} verwendet wird. Außerdem kann die \textsl{Motors IDLE power} auf 5\% gesetzt werden, wenn eine Multirotor-Drohne verwendet wird.
 
-	\item Im \textsl{Ports-Tab} werden die Peripheriegeräte konfiguriert, insofern dies nicht im Pop-Up-Menü am Anfang gemacht wurde. Wie diese konfiguriert werden, hängt von den angeschlossenen Geräten und vom Flugcontrollerchip ab. Meist kann die Konfiguration für Betaflight aus den jeweiligen Handbüchern entnommen und übertragen werden.
-
+	\item Im \textsl{Ports-Tab} werden die Peripheriegeräte konfiguriert, insofern dies nicht im Pop-Up-Menü am Anfang gemacht wurde. Dieser sieht dem Ports-Tab des Betaflight-Configurators sehr ähnlich, mit dem Unterschied, dass \textsl{USB VCP} ausgeblendet statt ausgegraut ist (Abbildung \ref{AbbildungBetaflightAppPorts}).  Wie diese konfiguriert werden, hängt von den angeschlossenen Geräten und vom Flugcontrollerchip ab. Meist kann die Konfiguration für Betaflight aus den jeweiligen Handbüchern entnommen und übertragen werden.
+	
 	\item Im \textsl{Configuration-Tab} können die Sensoren aktiviert werden, insofern dies nicht nach Konfiguration der Ports automatisch geschehen ist. Wenn möglich, sollte hier der \textsl{I2C Speed} auf \texttt{800KHZ} gestellt werden.
 
-	\item Der \textsl{Failsafe-Tab} ist sehr wichtig, da in diesem das Verhalten definiert ist, sollte das Fernsteuerungssignal abreißen. Hier sollte sichergestellt werden, dass entweder textsl{Drop}, \textsl{Land} oder \textsl{Return-to-Home (RTH)} konfiguriert sind, damit die Drohne nicht unkontrolliert weiterfliegt.
-
-	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind.
-
-	\item Im \textsl{GPS-Tab} muss die Option \textsl{GPS for navigation and telemetry} aktiviert werden, um das GPS nutzen zu können. Die Option \textsl{Protocol} ist entsprechend der Spezifikation des verwendeten Modells zu setzen.
-
-	\item Im \textsl{Modes-Tab} muss grundsätzlich nur \texttt{ARM} konfiguriert werden (CH5 empfohlen). Darüber hinaus lohnt es sich auch \texttt{ANGLE} zu konfigurieren (vor allem für Fluganfänger) und \texttt{FAILSAFE} sollte sich die Drohne mal unerwartet verhalten.
-
-	\item Das \textsl{on-screen display (OSD)} kann so konfiguriert werden, wie es vom Piloten bevorzugt wird. Nützliche Elemente, welche nicht standardmäßig eingeblendet werden sind zum Beispiel \textsl{Remaining Flight Time} und \textsl{Battery Remaining Percentage}. Je nach VTX-Modell muss in diesem Tab auch das \textsl{Video Format} konfiguriert werden.
+	\item Der \textsl{Failsafe-Tab} (Abbildung \ref{AbbildungINAVFailsafeTab}) ist sehr wichtig, da in diesem das Verhalten definiert ist, sollte das Fernsteuerungssignal abreißen. Hier sollte sichergestellt werden, dass entweder textsl{Drop}, \textsl{Land} oder \textsl{Return-to-Home (RTH)} konfiguriert sind, damit die Drohne nicht unkontrolliert weiterfliegt.
 
 \end{enumerate}
 
-Darüber hinaus gibt es erweiterte Konfigurationsmöglichkeiten, um die Performance der Drohne zu optimieren.
-% TODO: Kapitel für Flight-Mode-Übersicht (wie starte ich den Autopiloten?):
-% TODO: Add chapter for PID-Tuning guide and for INAV-SITL?
-% TODO: Restliche Tabs erklären? -> Tuning, Advanced Tuning, Programming, Adjustments, Alignment, Mission Control, LED Strip Sensors, Tethered Logging, Blackbox, CLI
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Failsafe_Tab.png}
+	\caption{INAV Failsafe Tab}
+	\label{AbbildungINAVFailsafeTab}
+\end{figure}
+
+\colstart
+
+TBD
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{9} 
+	
+	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind. Dieser Tab ist sehr ähnlich zum Receiver-Tab im Betaflight Configurator (Abbildung\ref{AbbildungBetaflightAppReceiver})
+
+	\item Im \textsl{GPS-Tab} muss die Option \textsl{GPS for navigation and telemetry} aktiviert werden, um das GPS nutzen zu können. Die Option \textsl{Protocol} ist entsprechend der Spezifikation des verwendeten Modells zu setzen.
+
+	\item Im \textsl{Modes-Tab}, welcher der Betaflight-Version ebenfalls sehr ähnlich ist (Abbildung \ref{AbbildungBetaflightAppModes}) muss grundsätzlich nur \texttt{ARM} konfiguriert werden (CH5 empfohlen). Darüber hinaus lohnt es sich auch \texttt{ANGLE} zu konfigurieren (vor allem für Fluganfänger) und \texttt{FAILSAFE} sollte sich die Drohne mal unerwartet verhalten. Modi für Autopilotfunktionalitäten können zu einem späteren Zeitpunkt konfiguriert werden. 
+
+	\item Das \textsl{on-screen display (OSD)} kann so konfiguriert werden, wie es vom Piloten bevorzugt wird. Nützliche Elemente, welche nicht standardmäßig eingeblendet werden sind zum Beispiel \textsl{Remaining Flight Time} und \textsl{Battery Remaining Percentage}. Je nach VTX-Modell muss in diesem Tab auch das \textsl{Video Format} konfiguriert werden.
+	
+\end{enumerate}
 
 \colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_OSD_Tab.png}
+	\caption{INAV OSD Tab}
+	\label{AbbildungINAVOSDTab}
+\end{figure}
+
 
 \renewcommand{\deutschertitel}{ArduPilot}
 \renewcommand{\englischertitel}{ArduPilot}
