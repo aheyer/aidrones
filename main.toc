@@ -669,17 +669,17 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Comparison of AI Accelerators}{46}{subsection.3.1.1}%
 \babel@toc {english}{}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Comparison of AI Accelerators}{45}{subsection.3.1.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 

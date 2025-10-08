@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  7 OCT 2025 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.3.26)  8 OCT 2025 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1886,71 +1886,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 
 ]
-Overfull \hbox (1.17847pt too wide) in paragraph at lines 77--89
+Overfull \hbox (1.17847pt too wide) in paragraph at lines 78--90
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1325) in paragraph at lines 98--99
+[]\T1/lmr/m/n/10 (+20) Im Ver-gleich zu den et-wa scheck-kar-ten-
+ []
 
- [44]
-<./images/raspberry_pi_2_wh_front.png, id=688, 1806.75pt x 903.375pt>
+<./images/raspberry_pi_2_wh_front.png, id=684, 1806.75pt x 903.375pt>
 File: ./images/raspberry_pi_2_wh_front.png Graphic file (type png)
 <use ./images/raspberry_pi_2_wh_front.png>
 Package pdftex.def Info: ./images/raspberry_pi_2_wh_front.png  used on input li
-ne 105.
+ne 106.
 (pdftex.def)             Requested size: 200.75996pt x 100.3778pt.
-<./images/raspberry_pi_2_wh_back.png, id=689, 1806.75pt x 903.375pt>
+<./images/raspberry_pi_2_wh_back.png, id=685, 1806.75pt x 903.375pt>
 File: ./images/raspberry_pi_2_wh_back.png Graphic file (type png)
 <use ./images/raspberry_pi_2_wh_back.png>
 Package pdftex.def Info: ./images/raspberry_pi_2_wh_back.png  used on input lin
-e 110.
+e 111.
 (pdftex.def)             Requested size: 200.75996pt x 100.3778pt.
-
-[45 <./images/raspberry_pi_2_wh_front.png> <./images/raspberry_pi_2_wh_back.png
->]
-Underfull \hbox (badness 1028) in paragraph at lines 152--153
-\T1/lmr/m/n/10 (+20) 65x30x8mm groÿ. Das Ge-wicht die-ses KI-
- []
-
-<./images/Google_Coral_TPU_Accelerator_front.pdf, id=699, 1298.8525pt x 687.568
+[44] [45 <./images/raspberry_pi_2_wh_front.png> <./images/raspberry_pi_2_wh_bac
+k.png>]
+<./images/Google_Coral_TPU_Accelerator_front.pdf, id=706, 1298.8525pt x 687.568
 76pt>
 File: ./images/Google_Coral_TPU_Accelerator_front.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_front.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_front.pdf  used 
 on input line 160.
 (pdftex.def)             Requested size: 200.75996pt x 106.26779pt.
-<./images/Google_Coral_TPU_Accelerator_back.pdf, id=700, 1298.8525pt x 687.5687
+<./images/Google_Coral_TPU_Accelerator_back.pdf, id=707, 1298.8525pt x 687.5687
 6pt>
 File: ./images/Google_Coral_TPU_Accelerator_back.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_back.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_back.pdf  used o
 n input line 165.
 (pdftex.def)             Requested size: 200.75996pt x 106.26779pt.
-[46 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_TP
-U_Accelerator_back.pdf>]
-<./images/Intel_Neuronal_Compute_Stick2_front.png, id=714, 1405.25pt x 702.625p
+ [46 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_T
+PU_Accelerator_back.pdf>]
+<./images/Intel_Neuronal_Compute_Stick2_front.png, id=721, 1405.25pt x 702.625p
 t>
 File: ./images/Intel_Neuronal_Compute_Stick2_front.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_front.png>
 Package pdftex.def Info: ./images/Intel_Neuronal_Compute_Stick2_front.png  used
  on input line 186.
 (pdftex.def)             Requested size: 200.75996pt x 100.37169pt.
-<./images/Intel_Neuronal_Compute_Stick2_back.png, id=715, 1505.625pt x 752.8125
+<./images/Intel_Neuronal_Compute_Stick2_back.png, id=722, 1505.625pt x 752.8125
 pt>
 File: ./images/Intel_Neuronal_Compute_Stick2_back.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_back.png>
 Package pdftex.def Info: ./images/Intel_Neuronal_Compute_Stick2_back.png  used 
 on input line 191.
 (pdftex.def)             Requested size: 200.75996pt x 100.37321pt.
- [47 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neurona
-l_Compute_Stick2_back.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]\T1/lmr/m/n/10 (+20) Eine mo-der-ne-re Al-ter-na-ti-ve zum An-
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 204--205
+\T1/lmr/m/n/10 (+20) schluss ei-nes KI-Beschleunigers über die
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 204--205
+\T1/lmr/m/n/10 (+20) USB-Schnittstelle ist die 2024 er-schie-ne-ne
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 204--205
+\T1/lmr/m/n/10 (+20) einen in-te-grier-ten KI-Beschleuniger, des-sen
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 204--205
+\T1/lmr/m/n/10 (+20) Leis-tungs-fä-hig-keit in TOPS nicht be-kannt
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 204--205
+\T1/lmr/m/n/10 (+20) als der an-de-rer Kamera-Module, sie kann
+ []
+
+[47 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neuronal
+_Compute_Stick2_back.png>]
 Underfull \hbox (badness 2671) in paragraph at lines 261--262
 \T1/lmr/m/n/10 (+20) con-trol-ler ver-fügt nur über sechs UART-
  []
 
 [48]
-<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=731, 4076.22874pt x 188
+<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=741, 4076.22874pt x 188
 5.0425pt>
 File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
 )
@@ -1958,10 +1984,15 @@ File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
 Package pdftex.def Info: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf  us
 ed on input line 275.
 (pdftex.def)             Requested size: 418.25368pt x 193.40506pt.
- [49 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>]
+
 Overfull \hbox (1.32286pt too wide) in paragraph at lines 324--325
  [][] 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>]
 
 [50])
 
@@ -2055,11 +2086,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28643 strings out of 475052
- 530176 string characters out of 5762548
+ 28650 strings out of 475052
+ 530257 string characters out of 5762548
  1161739 words of memory out of 5000000
- 50639 multiletter control sequences out of 15000+600000
- 653443 words of font info for 207 fonts, out of 8000000 for 9000
+ 50640 multiletter control sequences out of 15000+600000
+ 653667 words of font info for 210 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
  108i,20n,120p,10899b,1230s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2077,10 +2108,10 @@ ic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (63 pages, 37499440 bytes).
+Output written on main.pdf (63 pages, 37511012 bytes).
 PDF statistics:
- 1070 PDF objects out of 1200 (max. 8388607)
- 875 compressed objects within 9 object streams
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 888 compressed objects within 9 object streams
  259 named destinations out of 1000 (max. 500000)
  56371 words of extra memory for PDF output out of 61914 (max. 10000000)
 
