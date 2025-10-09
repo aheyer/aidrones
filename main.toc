@@ -676,6 +676,8 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {3.2}Security before Flight}{45}{section.3.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -696,7 +698,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.6}Use the appropriate flight mode}{47}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Use the Appropriate Flight Mode}{47}{section.3.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -717,13 +719,11 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.7}Training with a Simulator}{48}{section.3.7}%
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {ngerman}{}\relax 
-\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {3.7}Practice with a Simulator}{48}{section.3.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {4}{\vspace {2pt}Object Detection}}{51}{chapter.4}%

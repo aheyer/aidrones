@@ -15,11 +15,11 @@
 
 \coleng
 
-TBD
+This chapter provides useful advice for both the preparations before the first flight and the checks afterwards.
 
 \colger
 
-Dieses Kapitel enthält hilfreiche Hinweise vor dem ersten Flug und danach.
+Dieses Kapitel enthält hilfreiche Hinweise für die Vorbereitung vor dem ersten Flug sowie für die Überprüfungen danach.
 
 \colende
 
@@ -28,11 +28,13 @@ Dieses Kapitel enthält hilfreiche Hinweise vor dem ersten Flug und danach.
 \makroabschnitt
 \label{AbschnittSicherheitBeimFlug}
 
-TBD
+\coleng
+
+Always keep as much distance as possible from other people during flight. Do not fly over other people's buildings or private property without prior permission.
 
 \colger
 
-Beim Flug auf jeden Fall einen möglichst großen Abstand zu anderen Personen einhalten. Auch fremde Gebäude und private Flächen dürfen nicht ohne vorherige Absprachen überflogen werden. 
+Während des Fluges ist stets ein möglichst großer Abstand zu anderen Personen einzuhalten. Fremde Gebäude und private Grundstücke dürfen nicht ohne vorherige Zustimmung überflogen werden.
 
 \colende
 
@@ -41,39 +43,37 @@ Beim Flug auf jeden Fall einen möglichst großen Abstand zu anderen Personen ei
 \makroabschnitt
 \label{AbschnittSicherheitVorFlug}
 
-TBD
+Before each flight, the arming procedure takes place. This means activating the motors in preparation for flight. Although the motors run at a relatively low speed during this process, even at this speed injuries to arms or hands can easily occur. To prevent accidental arming, it is advisable to configure the flight controller so that two switches—ideally not positioned directly next to each other—must be activated simultaneously. A configuration in Betaflight that ensures exactly this is shown in Figure~\ref{AbbildungBetaflightAppModes}.
 
 \colger
 
-Vor dem Flug findet das Arming statt. Dabei handelt es ich um das Aktivieren der Motoren zur Flugvorbereitung. Die Motoren laufen dabei zwar nur mit relativ niedriger Geschwindigkeit, aber auch bei dieser Geschwindigkeit kann es leicht zu Verletzungen z.B. an Armen und Händen kommen. Um ein versehentliches Arming auszuschließen, ist es sinnvoll, den Flugcontroller dahingehend zu konfigurieren, dass zum Arming zwei Schalter, die idealerweise auch nicht direkt nebeneinander liegen, betätigt werden müssen. Eine Konfiguration in Betaflight, die genau dieses garantiert, zeigt  Abbildung~\ref{AbbildungBetaflightAppModes}.
+Vor dem Flug findet das Arming statt. Dabei handelt es sich um das Aktivieren der Motoren zur Flugvorbereitung. Die Motoren laufen dabei zwar nur mit relativ niedriger Geschwindigkeit, aber selbst bei dieser Drehzahl kann es leicht zu Verletzungen, beispielsweise an Armen und Händen, kommen. Um ein unbeabsichtigtes Arming zu vermeiden, ist es ratsam, den Flugcontroller so zu konfigurieren, dass zum Arming zwei Schalter betätigt werden müssen, die idealerweise nicht direkt nebeneinander liegen. Eine Konfiguration in Betaflight, die genau dies sicherstellt, zeigt Abbildung~\ref{AbbildungBetaflightAppModes}.
 
 \colende
-
 
 \renewcommand{\deutschertitel}{Sichere Verwendung von LiPo-Akkus}
 \renewcommand{\englischertitel}{Secure use of LiPo Batteries}
 \makroabschnitt
 \label{AbschnittSicherheitLiPoAkkus}
 
-TBD
+LiPo batteries should never be charged unattended, and they must not be charged while sleeping. Damaged batteries must no longer be used, especially if they have become swollen due to deep discharge, overcharging, or physical damage. Swollen LiPo batteries pose a significant fire hazard. A swollen battery cannot be repaired and must be properly disposed of. Disposal must not be done through household waste but through designated recycling or collection points provided by the local municipality.
 
 \colger
 
-LiPo-Akkus dürfen nie alleine geladen werden. Sie dürfen auch nicht geladen werden während man schläft. Beschädigte Akkus dürfen nicht mehr verwendet werden. Das gilt besonders wenn Sie durch Tiefentladung, Überladung oder physische Schäden aufgebläht sind. Aufgeblähte LiPo-Akkus haben ein enorm hohes Brandrisiko. Ein aufgeblähter Akku kann nicht repariert werden und muss entsorgt werden. Die Entsorgung darf nicht über den Hausmüll geschehen sondern über entsprechende Sammelstellen der lokalen Gemeinde. 
+LiPo-Akkus dürfen niemals unbeaufsichtigt geladen werden, insbesondere nicht während man schläft. Beschädigte Akkus dürfen nicht weiterverwendet werden, insbesondere wenn sie durch Tiefentladung, Überladung oder physische Einwirkungen aufgebläht sind. Aufgeblähte LiPo-Akkus stellen ein erhebliches Brandrisiko dar. Ein solcher Akku kann nicht repariert werden und muss ordnungsgemäß entsorgt werden. Die Entsorgung darf nicht über den Hausmüll erfolgen, sondern über die entsprechenden Sammelstellen der örtlichen Gemeinde.
 
 \colende
-
 
 \renewcommand{\deutschertitel}{Laden von Akkus}
 \renewcommand{\englischertitel}{Loading of Batteries}
 \makroabschnitt
 \label{AbschnittLadenAkkus}
 
-TBD
+Batteries (LiPo or Li-Ion) with more than one cell must always be charged in balance mode using the voltage values read via the balancer connector (see Figure~\ref{AbbildungLiIonAkkuLaden}). This prevents individual cells from being overcharged during the charging process and helps to avoid deep discharge of individual cells during later use. The maximum recommended charge rate (see Section~\ref{AbschnittCWertAkkus}) is typically 1\,C. If this limit is exceeded, the cells will age more quickly, and in the worst case, a fire may occur. For safety reasons, Li-Ion batteries should only be stored in specially designed fireproof containers.
 
 \colger
 
-Akkus (LiPo oder Li-Ion) mit mehr als einer Zelle müssen immer mithilfe der über den Balancerstecker ausgelesenen Werte balancierend geladen werden (siehe Abbildung~\ref{AbbildungLiIonAkkuLaden}). Dies verhindert die Überladung einzelner Zellen während des Ladevorgangs und beugt einer Tiefentladung einzelner Zellen beim späteren Betrieb vor. Die maximale empfohlene Laderate (siehe Abschnitt~\ref{AbschnittCWertAkkus}) ist üblicherweise 1\,C. Wird die maximale empfohlene Laderate altern die Zellen schneller und es kann im schlimmsten Fall zum Brand kommen. Die Lagerung von Li-Ion-Akkus sollte zur Sicherheit nur in dafür vorgesehenen feuerfesten Behältnissen erfolgen. 
+Akkus (LiPo oder Li-Ion) mit mehr als einer Zelle müssen immer unter Verwendung der über den Balancerstecker ausgelesenen Spannungswerte im Balancermodus geladen werden (siehe Abbildung~\ref{AbbildungLiIonAkkuLaden}). Dies verhindert eine Überladung einzelner Zellen während des Ladevorgangs und beugt einer Tiefentladung einzelner Zellen im späteren Betrieb vor. Die maximal empfohlene Laderate (siehe Abschnitt~\ref{AbschnittCWertAkkus}) beträgt üblicherweise 1\,C. Wird diese Rate überschritten, altern die Zellen schneller, und es kann im schlimmsten Fall zu einem Brand kommen. Zur Sicherheit sollten Li-Ion-Akkus nur in dafür vorgesehenen, feuerfesten Behältnissen gelagert werden.
 
 \colende
 
@@ -90,76 +90,70 @@ Akkus (LiPo oder Li-Ion) mit mehr als einer Zelle müssen immer mithilfe der üb
 \makroabschnitt
 \label{AbschnittBefestigungLoseKabel}
 
-TBD
+If cables or other drone components are not properly secured and can reach the propellers, they eventually will. This can damage either the loose components or the propellers, potentially leading to a crash or costly damage. A common example of components that frequently and unintentionally come into contact with the propellers are the battery balancer connectors, which are not always easy to replace. Therefore, all components must be securely fastened, and cables must be fixed using screws, cable ties, Velcro straps, or at least electrical tape.
 
 \colger
 
-Wenn Kabel oder sonstige Bauteile der Drohne nicht zuverlässig befestigt sind und Rotoren erreichen können, dann werden sie auch früher oder später die laufenden Rotoren erreichen. Dabei werden entweder die losen Komponenten oder die Rotoren beschädigt und es kommt unter Umständen zum Absturz oder zu ärgerlichen Beschädigungen. Ein typisches Beispiel für Komponenten, die häufig ungewollt mit Rotoren in Berührung kommen sind die Balancerstecker der Akkus. Diese Ersetzen ist nicht immer einfach. Die Befestigung aller Bauteile und Sicherung von Kabeln mit Schrauben, Kabelbindern, Klettbändern oder zumindest Isolierband ist daher zwingend erforderlich. 
+Wenn Kabel oder andere Bauteile der Drohne nicht zuverlässig befestigt sind und die Rotoren erreichen können, werden sie diese früher oder später tatsächlich erreichen. Dabei werden entweder die losen Komponenten oder die Rotoren beschädigt, was zu einem Absturz oder zu teuren Beschädigungen führen kann. Ein typisches Beispiel für Bauteile, die häufig ungewollt mit den Rotoren in Kontakt kommen, sind die Balancerstecker der Akkus, deren Austausch nicht immer einfach ist. Daher ist die Befestigung aller Bauteile und die Sicherung aller Kabel mit Schrauben, Kabelbindern, Klettbändern oder zumindest Isolierband zwingend erforderlich.
 
 \colende
 
 \renewcommand{\deutschertitel}{Den geeigneten Flugmodus verwenden}
-\renewcommand{\englischertitel}{Use the appropriate flight mode}
+\renewcommand{\englischertitel}{Use the Appropriate Flight Mode}
 \makroabschnitt
 \label{AbschnittFlugmodusEinstellen}
 
-TBD
+There are three flight modes: Angle Mode (stabilized), Horizon Mode (semi-stabilized), and Acro Mode (manual).
 
 \colger
 
-Es gibt die Flugmodi Angle Mode (stabilisiert), Horizon Mode (halb-stabilisiert) und Acro Mode (manual). 
+Es gibt die Flugmodi Angle Mode (stabilisiert), Horizon Mode (halb-stabilisiert) und Acro Mode (manuell).
 
 \coleng
 
-TBD
+In Angle Mode, the drone stabilizes itself and remains level without explicit control input from the pilot. This flight mode is the most beginner-friendly and ideal for indoor flights and smooth, slow cinematic shots. Because the maximum tilt angle is limited, spectacular flight maneuvers such as flips or rolls are not possible.
 
 \colger
 
-Beim Angle Mode stabilisiert sich die Drohne selbst. Sie hält sich ohne explizite Steueranweisungen durch den Benutzer automatisch waagrecht. Dieser Flugmodus ist am meisten anfängerfreundlich und ideal für Indoor-Flüge und langsames Filmen. Da die maximale Neigung (Tilt) begrenzt ist, sind spektakuläre Flugmanöver wie Flips oder Rollen unmöglich. 
+Im Angle Mode stabilisiert sich die Drohne selbst und hält sich ohne explizite Steueranweisungen des Piloten automatisch waagrecht. Dieser Flugmodus ist besonders anfängerfreundlich und ideal für Indoor-Flüge sowie für langsame, ruhige Filmaufnahmen. Da die maximale Neigung (Tilt) begrenzt ist, sind spektakuläre Flugmanöver wie Flips oder Rollen nicht möglich.
  
 \coleng
 
-TBD
+In Horizon Mode, flips and rolls are possible, but the drone automatically stabilizes itself when no control input is applied.
 
 \colger
 
-Beim Horizon Mode sind Flips oder Rollen möglich, aber die Drohne stabilisiert er sich  automatisch, wenn keine Steuerkommandos vorliegen.
+Im Horizon Mode sind Flips und Rollen möglich, jedoch stabilisiert sich die Drohne automatisch, sobald keine Steuerkommandos mehr gegeben werden.
 
 \coleng
 
-TBD
+In Acro Mode, which is actually the default mode, there is no automatic stabilization. The drone maintains its current rotational speed until the pilot counteracts it. This mode provides full control on all axes and allows spectacular flight maneuvers at any time. It is the least beginner-friendly mode but ideal for freestyle flying and racing.
 
 \colger
 
-Beim Acro Mode, der eigentlich der normale Modus ist, erfolgt keine automatische Stabilisierung. Die Drohne hält stets die aktuelle Drehgeschwindigkeit bis der Benutzer gegensteuert. Auf allen Achsen gibt es volle Kontrolle und spektakuläre Flugmanöver sind jederzeit möglich. Dieser Flugmodus ist am wenigsten anfängerfreundlich und ideal für Freestyle und Rennen.
+Im Acro Mode, der eigentlich der Standardmodus ist, erfolgt keine automatische Stabilisierung. Die Drohne hält stets die aktuelle Drehgeschwindigkeit bei, bis der Pilot aktiv gegensteuert. In diesem Modus hat man die volle Kontrolle über alle Achsen, und spektakuläre Flugmanöver sind jederzeit möglich. Dieser Flugmodus ist am wenigsten anfängerfreundlich und ideal für Freestyle-Flüge und Rennen.
 
 \coleng
 
-TBD
+Since a drone is set to Acro Mode by default, it is advisable to configure a three-position switch on the transmitter for selecting flight modes so that Angle Mode can be activated automatically when desired. A configuration in Betaflight that enables this is shown in Figure~\ref{AbbildungBetaflightAppModes}.
 
 \colger
 
-Da standardmäßig eine Drohne im Acro Mode ist, ist es sinnvoll einen Schalter des Senders mit drei möglichen Positionen zur Auswahl des Flugmodus dahingehend zu konfigurieren, dass automatisch Angle Mode verwendet wird. Eine Konfiguration in Betaflight, die dieses ermöglicht, zeigt Abbildung~\ref{AbbildungBetaflightAppModes}.
+Da Drohnen standardmäßig im Acro Mode betrieben werden, ist es sinnvoll, einen Schalter des Senders mit drei möglichen Positionen zur Auswahl des Flugmodus so zu konfigurieren, dass bei Bedarf automatisch der Angle Mode aktiviert werden kann. Eine entsprechende Konfiguration in Betaflight, die dies ermöglicht, zeigt Abbildung~\ref{AbbildungBetaflightAppModes}.
 
 \colende
 
 \renewcommand{\deutschertitel}{Mit einem Simulator üben}
-\renewcommand{\englischertitel}{Training with a Simulator}
+\renewcommand{\englischertitel}{Practice with a Simulator}
 \makroabschnitt
 \label{AbschnittSimulator}
 
-TBD
-
-\colger
-
-Drohnen fliegen ist nicht einfach und Abstütze gerade zu Beginn auch mit dem Flugmodus Angle Mode unvermeidlich. Es ist daher sinnvoll mit einem Simulator zu üben. Geeignete Simulatoren gibt es für alle Betriebssysteme. Einige bekannte Produkte sind Liftoff, VelociDrone, Uncrashed, FPV Freerider, Quadsim FPV und Freerider Lite.
-
 \coleng
 
-TBD
+Flying a drone is not easy, and crashes are almost inevitable at the beginning, even in Angle Mode. Therefore, it is highly advisable to practice with a simulator. Suitable simulators are available for all operating systems. Some well-known examples include Liftoff, VelociDrone, Uncrashed, FPV Freerider, Quadsim FPV, and Freerider Lite. The transmitter has a USB interface and should be used as the input device for training. The USB mode must be set to \textsl{Joystick}. It is recommended to create a new model in OpenTX for this purpose, for example named \textsl{Simulator}. This model should have no active internal or external RF module, since the module consumes a significant amount of power and produces heat. This is unnecessary when using a simulator because no radio signals are transmitted.
 
 \colger
 
-Der Sender verfügt über eine USB-Schnittstelle und sollte als Eingabegerät zum Üben verwendet werden. Als USB-Modus muss \textsl{Joystick} ausgewählt werden. Es ist sinnvoll, hierfür in OpenTX ein neues Modell anzulegen. Hierfür bietet sich ein Name wie \textsl{Simulator}. Dieses neue Modell sollte über kein aktives internes oder externes Sendemodul verfügen. Hintergrund ist, dass das Sendemodul signifikant Strom verbraucht und Abwärme erzeugt, was beim Verwendung mit einem Simulator unnötig ist, weil hier keine Funksignale gesendet werden.
+Das Fliegen einer Drohne ist nicht einfach, und Abstürze sind insbesondere zu Beginn selbst im Angle Mode kaum zu vermeiden. Daher ist es sehr empfehlenswert, mit einem Simulator zu üben. Geeignete Simulatoren sind für alle Betriebssysteme verfügbar. Einige bekannte Produkte sind Liftoff, VelociDrone, Uncrashed, FPV Freerider, Quadsim FPV und Freerider Lite. Der Sender verfügt über eine USB-Schnittstelle und sollte als Eingabegerät zum Üben verwendet werden. Als USB-Modus muss \textsl{Joystick} ausgewählt werden. Es ist sinnvoll, hierfür in OpenTX ein neues Modell anzulegen, beispielsweise mit dem Namen \textsl{Simulator}. Dieses Modell sollte über kein aktives internes oder externes Sendemodul verfügen, da das Sendemodul signifikant Strom verbraucht und Wärme erzeugt. Dies ist beim Einsatz mit einem Simulator unnötig, da keine Funksignale gesendet werden.
 
 \colende
