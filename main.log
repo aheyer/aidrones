@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  9 OCT 2025 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  9 OCT 2025 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1918,7 +1918,39 @@ File: ./images/LiIo-Akku-laden.png Graphic file (type png)
 <use ./images/LiIo-Akku-laden.png>
 Package pdftex.def Info: ./images/LiIo-Akku-laden.png  used on input line 82.
 (pdftex.def)             Requested size: 418.25368pt x 336.94221pt.
- [46] [47 <./images/LiIo-Akku-laden.png>] [48])
+ [46] [47 <./images/LiIo-Akku-laden.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+[]\T1/lmr/m/n/10 (+20) Der Sen-der ver-fügt über ei-ne USB-
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 162--163
+\T1/lmr/m/n/10 (+20) Schnittstelle und soll-te als Ein-ga-be-ge-rät
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 162--163
+\T1/lmr/m/n/10 (+20) muss \T1/lmr/m/sl/10 (+20) Joy-stick \T1/lmr/m/n/10 (+20) 
+aus-ge-wählt wer-den. Es ist
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 162--163
+\T1/lmr/m/n/10 (+20) an-zu-le-gen, bei-spiels-wei-se mit dem Na-men
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 162--163
+\T1/lmr/m/sl/10 (+20) Si-mu-la-tor\T1/lmr/m/n/10 (+20) . Die-ses Mo-dell soll-t
+e über kein
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 162--163
+\T1/lmr/m/n/10 (+20) ak-ti-ves in-ter-nes oder ex-ter-nes Sen-de-mo-dul
+ []
+
+[48])
 
 [49]
 \openout2 = `chapter04.aux'.
@@ -2168,7 +2200,7 @@ ic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (71 pages, 41971980 bytes).
+Output written on main.pdf (71 pages, 41971999 bytes).
 PDF statistics:
  1207 PDF objects out of 1440 (max. 8388607)
  998 compressed objects within 10 object streams

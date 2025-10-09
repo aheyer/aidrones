@@ -721,9 +721,11 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {3.7}Practice with a Simulator}{48}{section.3.7}%
 \babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {4}{\vspace {2pt}Object Detection}}{51}{chapter.4}%
