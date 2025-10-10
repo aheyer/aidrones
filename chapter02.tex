@@ -359,10 +359,10 @@ Der Flugdatenschreiber zur Aufzeichnung verschiedenster Sensordaten wird auf der
 \colende
 
 \begin{figure}[htb!]
-  \centering
-    \includegraphics[width=\linewidth]{Betaflight_4_5_3_blackbox_firmware_screenshot_app.png}
-  \caption{Blackbox Page of Betaflight}
-  \label{AbbildungBetaflightAppBlackbox}
+	\centering
+	\includegraphics[width=\linewidth]{Betaflight_4_5_3_blackbox_firmware_screenshot_app.png}
+	\caption{Blackbox Page of Betaflight}
+	\label{AbbildungBetaflightAppBlackbox}
 \end{figure}
 
 \colstart
@@ -373,7 +373,16 @@ The \textsl{CLI} page in Betaflight (see Figure~\ref{AbbildungBetaflightAppCLI})
 
 Betaflight bietet auf der Seite \textsl{CLI} (siehe Abbildung~\ref{AbbildungBetaflightAppCLI}) Zugriff auf die integrierte Kommandozeilenumgebung des Flugcontrollers. Hierüber kann der Flugcontroller direkt untersucht und konfiguriert werden. Einzelne Parameter können mit den Kommandos \verb!get! und \verb!set! angezeigt und geändert werden. Das Kommando \verb!save! speichert alle Änderungen und startet den Flugcontroller neu.
 
-\coleng
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Betaflight_4_5_3_cli_firmware_screenshot_app.png}
+	\caption{CLI Page of Betaflight}
+	\label{AbbildungBetaflightAppCLI}
+\end{figure}
+
+\colstart
 
 The current configuration of the flight controller can be displayed completely with the command \verb!dump!. Only the differences from the default configuration are shown using the command \verb!diff!. These outputs can be copied into text files and re-imported later using copy and paste. This makes it easy to create backups of all settings and restore them when needed.
 
@@ -391,31 +400,32 @@ Informationen zum Flugcontroller und zur installierten Firmwareversion liefert d
 
 \colende
 
-\begin{figure}[htb!]
-  \centering
-    \includegraphics[width=\linewidth]{Betaflight_4_5_3_cli_firmware_screenshot_app.png}
-  \caption{CLI Page of Betaflight}
-  \label{AbbildungBetaflightAppCLI}
-\end{figure}
-
 \renewcommand{\deutschertitel}{INAV}
 \renewcommand{\englischertitel}{INAV}
 \makrounterabschnitt
 \label{AbschnittINAV}
 
-INAV is based on an earlier version of Cleanflight and closely related to Betaflight. Unlike Betaflight and INAV, however, Cleanflight is no longer being developed. INAV consists of two main components: the firmware that runs on the flight controller and the configuration tool that is used for installation and administration. There is no web app, as is the case with current Betaflight versions.
+ INAV consists of two main components: the firmware that runs on the flight controller and the configuration tool that is used for installation and administration. There is no web app, as is the case with current Betaflight versions.
+
+ \colger
+
+INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann. Es gibt keine Web-App, wie bei aktuellen Betaflight-Versionen.
+
+\coleng
 
 In addition to the Return-To-Home (RTH) and rescue functionality, INAV offers additional autopilot features such as waypoint missions, hold position, hold altitude, and more. These can also be used without a compass (since version 7.1), albeit with lower accuracy.
 
-The software receives a major release every year and minor support updates as needed. The current version 8 supports the following STM flight controller chips: F405, F722, F745, F765, and H743. AT-F435 chips are also supported. However, compatibility with a particular board should always be checked before each individual purchase.
-
 \colger
-
-INAV basiert auf einer früheren Cleanflight-Version und ist ebenfalls eng verwandt mit Betaflight. Im Gegensatz zu Betaflight und INAV wird Cleanflight allerdings nicht mehr weiterentwickelt. INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann. Es gibt keine Web-App, wie bei aktuellen Betaflight-Versionen.
 
 Neben der Return-To-Home- (RTH) bzw. Rescuefunktionalität bietet INAV weitere Autopilotenfunktionalitäten, wie Wegpunktmissionen, \textsl{Position halten}, \textsl{Flughöhe halten} und mehr. Diese können auch ohne Kompass genutzt werden (seit Version 7.1), jedoch mit geringerer Genauigkeit.
 
-Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt die folgenden STM-Flugcontrollerchips: F405, F722, F745, F765 und H743. Außerdem werden AT-F435 Chips unterstützt. Die Kompatibilität mit einem jeweiligen Board sollte jedoch im Einzelfall immer vor dem Kauf geprüft werden.
+\coleng
+
+The software receives a major release every year and minor support updates as needed. The current version 8 supports the following STM flight controller chips: F405, F722, F745, F765, and H743. AT-F435 chips are also supported.
+
+\colger
+
+Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt die folgenden STM-Flugcontrollerchips: F405, F722, F745, F765 und H743. Außerdem werden AT-F435 Chips unterstützt.
 
 \colende
 
@@ -424,11 +434,11 @@ Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updat
 \makrounterunterabschnitt
 \label{AbschnittInstallationINAV}
 
-The installation of INAV is done using the \textsl{INAV Configurator}. The similarity to Betaflight is very apparent here, as the structure is very similar to the Betaflight Configurator, which is used for versions up to 4.5 (Figure \ref{FigureINAVFirmwareFlasher}). This guide assumes that the flight controller is connected via USB to the computer used for flashing.
+The installation of INAV is done using the \textsl{INAV Configurator}. A certain similarity to Betaflight is very apparent here, as the structure is quite similar to the Betaflight Configurator, which is used for versions up to 4.5 (Figure \ref{AbbildungINAVFirmwareFlasher}). This guide assumes that the flight controller is connected via USB to the computer used for flashing.
 
 \colger
 
-Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verwandtschaft zu Betaflight sehr deutlich sichtbar, da der Aufbau sehr ähnlich zum Betaflight Configurator ist, welcher für die Versionen bis 4.5 genutzt wird (Abbildung \ref{AbbildungINAVFirmwareFlasher}). Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
+Die Installation erfolgt über den \textsl{INAV Configurator}.Der Aufbau dieses Prozesses ist sehr ähnlich zum Betaflight Configurator, welcher bis Version 4.5 verwendet wurde. (Abbildung \ref{AbbildungINAVFirmwareFlasher}). Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
 
 \colende
 
@@ -441,49 +451,112 @@ Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verw
 
 \colstart
 
-If the flight controller is not being flashed for the first time, a backup of the configuration should be made, as some upgrades reset the configuration. This is done via the \textsl{CLI} tab. The command \texttt{diff all} outputs the corresponding parameters. These can then be saved to a text file using the \textsl{Save to File} button. The flashing process itself consists of the following steps:
+If the flight controller is not being flashed for the first time, it is good practice to create a backup of the configuration, as some upgrades reset it or to be save in case of a failure. This is done via the \textsl{CLI} tab. The command \texttt{diff all} outputs the corresponding parameters. These can then be saved to a text file using the \textsl{Save to File} button. The flashing process itself consists of the following steps:
+
+\colger
+
+Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die diese zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die Parameter aus. Mit dem Button \textsl{Save to File} können diese in eine Textdatei gespeichert werden. Der Flashprozess besteht dann aus den folgenden Schritten:
+
+\coleng
 
 \begin{enumerate}
 	\item Putting the flight controller into \textsl{Device Firmware Upgrade (DFU) mode} is the first step. This can usually be done using a button on the flight controller board or with the \texttt{dfu} command in the \textsl{CLI} tab.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\item Den \textsl{Device Firmware Upgrade (DFU)-Modus} aktivieren ist der erste notwendige Schritt. Dies kann in der Regel über einen Button am Flugcontrollerboard realisiert werden oder mit dem Befehl \texttt{dfu} im \textsl{CLI}-Tab.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{1}
 
 	\item Once the board is in DFU mode, the \textsl{Firmware Flasher} tab in the INAV Configurator must be opened. First, the target must be selected. If  \textsl{Auto-select Target} does not work, the model name must be searched for manually in the list.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{1}
+
+	\item Befindet sich das Board im DFU-Modus, so muss der \textsl{Firmware Flasher} Tab im INAV Configurator aufgerufen werden. In diesem muss zunächst das Target ausgewählt werden, sollte  \textsl{Auto-select Target} nicht funktionieren, muss der Modellname händisch in der Liste gesucht werden.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{2}
 
 	\item The available (stable) releases are then displayed in the drop-down menu below the board. The \textsl{Show unstable releases} option allows you to select even more recent versions. However, these may not work as expected.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{2}
+
+	\item Im Ausklappmenü unter dem Board werden dann die verfügbaren (stable) Releases angezeigt. Mit der Option \textsl{Show unstable releases} können noch aktuellere Versionen gewählt werden. Diese funktionieren aber unter Umständen nicht wie erwartet.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{3}
 
 	\item INAV offers three options that can be set for flashing:
 	\begin{itemize}
-		\item \textsl{No reboot sequence} - Only required if the boot pins are bridged or the boot button remains pressed (depending on the model).
+		\item \textsl{No reboot sequence} - Only required if the boot pins are bridged or the boot button remains pressed during the flashing process (depending on the model).
 		\item \textsl{Full chip erase} - Deletes all configuration options (backup available?). This should always be set if other software was previously installed.
-		\item \textsl{Manual baud rate} - Set a manual baud rate for Bluetooth or if a model does not support the standard speed.
+		\item \textsl{Manual baud rate} - Set a manual baud rate for Bluetooth or for USB if a model does not support the standard speed.
 	\end{itemize}
-
-	\item The flashing process consists of two steps: First, the firmware is loaded (online or file), then software is flashed onto the board via a separate button. The actual flashing should not be interrupted, as this will brick the device. However, the bootloader required for the flashing itself is stored in ROM and cannot be bricked. This means the device can always be reflashed.
-
-	\item If necessary, the backup can now be restored via the \textsl{CLI} tab. This is done using the \textsl{Load from File} button. This allows the corresponding text file to be selected and executed using the \textsl{Execute} button.
-
 \end{enumerate}
+
 \colger
 
-Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die Konfiguration zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die entsprechenden Parameter aus. Mit dem Button \textsl{Save to File} können diese dann in eine Textdatei gespeichert werden. Danach besteht der Prozess aus den folgenden Schritten:
-
 \begin{enumerate}
-	\item \textsl{Device Firmware Upgrade (DFU)-Modus} aktivieren ist der erste notwendige Schritt. Dies kann in der Regel über einen Button am Flugcontrollerboard realisiert werden oder mit dem Befehl \texttt{dfu} im \textsl{CLI}-Tab.
-
-	\item Befindet sich das Board im DFU-Modus, so muss der \textsl{Firmware Flasher} Tab im INAV Configurator aufgerufen werden. In diesem muss zunächst das Target ausgewählt werden, sollte  \textsl{Auto-select Target} nicht funktionieren, muss der Modellname händisch in der Liste gesucht werden.
-
-	\item Im Ausklappmenü unter dem Board werden dann die verfügbaren (stable) Releases angezeigt. Mit der Option \textsl{Show unstable releases} können noch aktuellere Versionen gewählt werden. Diese funktionieren aber unter Umständen nicht wie erwartet.
+	\setcounter{enumi}{3}
 
 	\item INAV bietet drei Optionen die für das Flashen gesetzt werden können:
 	\begin{itemize}
-		\item \textsl{No reboot sequence} - Wird nur benötigt, wenn die Bootpins überbrückt sind oder der Bootbutton gedrückt wird (modellabhängig).
+		\item \textsl{No reboot sequence} - Wird nur benötigt, wenn die Bootpins überbrückt sind oder der Bootbutton während des Flashens gedrückt wird (modellabhängig).
 		\item \textsl{Full chip erase} - Löscht alle Konfigurationsoptionen (Backup Vorhanden?). Sollte immer gesetzt werden, wenn vorher eine andere Software installiert war.
 		\item \textsl{Manual baud rate} - Festlegen der Baudrate für Bluetooth oder falls ein Modell die Standardgeschwindigkeit nicht unterstützt.
 	\end{itemize}
+\end{enumerate}
 
-	\item Der Prozess des Flashens besteht aus zwei Schritten: Zunächst wird die Firmware geladen (online oder über eine Datei), dann wird das eigentliche Flashen über einen separaten Button gestartet. Das eigentliche Flashen sollte nicht unterbrochen werden, da hierdurch das Board "gebrickt" wird. Der zum Flashen benötigte Bootloader ist allerdings im ROM gespeichert und kann nicht gebrickt werden. Das bedeutet, dass der Chip immer wieder neu geflasht werden kann.
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
+
+	\item The flashing process consists of two steps: First, the firmware is loaded (online or file), then software is flashed onto the board via a separate button. The actual flashing should not be interrupted, as this will brick the device. However, the bootloader required for the flashing itself is stored in ROM and cannot be bricked. This means the device can always be reflashed.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
+
+	\item Der Prozess des Flashens besteht aus zwei Schritten: Zunächst wird die Firmware geladen (online oder Datei), dann wird das eigentliche Flashen über einen separaten Button gestartet. Dies sollte nicht unterbrochen werden, da hierdurch das Board \textsl{gebrickt}  wird. Der zum Flashen benötigte Bootloader ist allerdings im ROM gespeichert und kann \textsl{nicht gebrickt} werden. Das bedeutet, dass das Board immer wieder neu geflasht werden kann.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+
+	\item If necessary, the backup can now be restored via the \textsl{CLI} tab. This is done using the \textsl{Load from File} button. This allows the corresponding text file to be selected and executed using the \textsl{Execute} button.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
 
 	\item Gegebenenfalls kann nun das Backup über den \textsl{CLI}-Tab wieder eingespielt werden. Dies geschieht über den Button \textsl{Load from File}. Damit kann die entsprechende Textdatei herausgesucht werden, um sie mit dem \textsl{Execute}-Button auszuführen.
-
 \end{enumerate}
 
 \colende
@@ -495,28 +568,44 @@ Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollt
 
 The administration of INAV also occurs in the \textsl{INAV Configurator}. When the software is installed for the first time, a few things need to be configured to enable initial flight. These are described in this section.
 
-When the Configurator is launched for the first time after installation, windows appear for setting the \textsl{Default Values} (presets). Here, you need to select the preset that is closest to the model you have built. After that, you can configure the UART ports (for GPS, VTX, etc.). However, this can also be done via the Ports tab. The further configuration steps are as follows:
-
-\begin{enumerate}
-
-	\item The \textsl{Status tab} provides a basic overview. Among other things, the \textsl{Pre-arming checks} overview shows whether the drone is ready for takeoff. It may be necessary to adjust the board orientation beforehand. To do this, place the drone upright with the camera facing the screen of the configuring computer and then press the \textsl{Reset Z axis} button.
-
-	\item The \textsl{Calibration tab} (Figure \ref{AbbildungINAVCalibrationTab}) is used to calibrate the accelerometer and compass. To do this, the drone must be placed in different positions.
-
-\end{enumerate}
-
 \colger
 
 Die Administration von INAV erfolgt ebenfalls über den \textsl{INAV Configurator}. Wenn die Software das erste Mal installiert wurde, müssen einige Punkte konfiguriert werden, um das Fliegen initial zu ermöglichen.
 
+\coleng
+
+When the Configurator is launched for the first time after installation, windows appear for setting the \textsl{Default Values} (presets). Here, you need to select the preset that is closest to the model you have built. After that, you can configure the UART ports (for GPS, VTX, etc.). However, this can also be done via the Ports tab. The further configuration steps are as follows:
+
+\colger
+
 Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheinen Fenster zum Setzen der \textsl{Default-Values} (Presets). Hier gilt es das Preset auszuwählen, was am nächsten an dem gebauten Modell dran ist. Danach können die UART-Ports (für GPS, VTX, etc.) konfiguriert werden. Dies kann allerdings auch über den Ports-Tab durchgeführt werden. Die weiteren Konfigurationsschritte gestalten sich wie folgt:
 
+\coleng
+
 \begin{enumerate}
-	
-	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken.
-	
+	\item The \textsl{Status tab} provides a basic overview. Among other things, the \textsl{Pre-arming checks} overview shows whether the drone is ready for takeoff. It may be necessary to adjust the board orientation beforehand. To do this, place the drone upright with the camera facing the screen of the configuring computer and then press the \textsl{Reset Z axis} button.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken. 
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	 \setcounter{enumi}{1}
+
+	 \item The \textsl{Calibration tab} (Figure \ref{AbbildungINAVCalibrationTab}) is used to calibrate the accelerometer and compass. To do this, the drone must be placed in different positions.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{1}
+
 	\item Im \textsl{Calibration-Tab} (Abbildung \ref{AbbildungINAVCalibrationTab}) werden der Beschleunigungsmesser und der Kompass kalibriert. Dazu muss die Drohne jeweils in unterschiedliche Posen gebracht werden.
-	
 \end{enumerate}
 
 \colende
@@ -533,34 +622,81 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 \begin{enumerate}
 	\setcounter{enumi}{2}
 
-	\item The \textsl{Mixer tab}, together with the Outputs tab, configures the drone's motors. It is crucial that the correct Platform type and Mixer preset are configured according to the type of drone used. If the motors do not rotate in the correct direction, this can be adjusted via the \textsl{Motor direction} and the assignment via the \textsl{Motor Mixer Wizard}.
-
-	\item In the \textsl{Outputs tab}, the motors are activated with the \textsl{Enable motor and servo output} option. You should also ensure that \texttt{DSHOT300} is used as the \textsl{ESC protocol}. In addition, the \textsl{Motors IDLE power} can be set to 5\% if a multirotor drone is used.
-
-	\item In the \textsl{Ports tab}, the peripheral devices are configured, unless this was done in the pop-up menu at the beginning. This looks very similar to the Ports tab of the Betaflight Configurator, with the difference that \textsl{USB VCP} is hidden instead of partially grayed out (Figure \ref{AbbildungBetaflightAppPorts}).  How these are configured depends on the connected devices and the flight controller chip. In most cases, the configuration options for Betaflight (usually found in the respective device manuals) are transferrable to INAV.
-
-	\item The sensors can be activated in the \textsl{Configuration tab} if this has not been done automatically after configuring the ports. If possible, the \textsl{I2C Speed} should be set to \texttt{800KHZ} here, if possible.
-
-	\item The \textsl{Failsafe tab} (Figure \ref{AbbildungINAVFailsafeTab}) is very important, as it defines the behavior should the remote control signal be lost. Here, you should ensure that either \textsl{Drop}, \textsl{Land}, or \textsl{Return-to-Home (RTH)} are configured so that the drone does not continue to fly uncontrollably.
-
+	\item The \textsl{Mixer tab}, together with the Outputs tab, configures the drone's motors. It is crucial that the correct \textsl{Platform type} and \textsl{Mixer preset} (\texttt{Multirotor} and \texttt{QUAD X} for a quadcopter) are configured according to the type of drone used. If the motors do not rotate in the correct direction, this can be adjusted via the \textsl{Motor direction} and the assignment via the \textsl{Motor Mixer Wizard}.
 \end{enumerate}
 
 \colger
 
 \begin{enumerate}
-	\setcounter{enumi}{2} 
+	\setcounter{enumi}{2}
 
-	\item Der \textsl{Mixer-Tab} konfiguriert zusammen mit dem Outputs-Tab die Motoren der Drohne. Hier ist entscheidend, dass der richtige  \textsl{Platform type} und das richtige \textsl{Mixer preset} entsprechend des Typs der verwendeten Drohne konfiguriert sind. Sollten die Motoren nicht in die richtige Richtung drehen, kann die diese über die \textsl{Motor direction} angepasst werden und die Zuordnung über den \textsl{Motor Mixer Wizard}.
+	\item Der \textsl{Mixer-Tab} konfiguriert zusammen mit dem Outputs-Tab die Motoren der Drohne. Hier ist entscheidend, dass der richtige  \textsl{Platform type} und das richtige \textsl{Mixer preset} (\texttt{Multirotor} und \texttt{QUAD X} für einen Quadcopter) entsprechend des Typs der verwendeten Drohne konfiguriert sind. Sollten die Motoren nicht in die richtige Richtung drehen, kann die diese über die \textsl{Motor direction} angepasst werden und die Zuordnung über den \textsl{Motor Mixer Wizard}.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{3}
+
+	\item In the \textsl{Outputs tab}, the motors are activated with the \textsl{Enable motor and servo output} option. You should also ensure that \texttt{DSHOT300} is used as the \textsl{ESC protocol}. In addition, the \textsl{Motors IDLE power} can be set to 5\% if a multirotor drone is used.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{3}
 
 	\item Im \textsl{Outputs-Tab} werden die Motoren aktiviert mit der Option \textsl{Enable motor and servo output}. Außerdem sollte sichergestellt werden, dass  \texttt{DSHOT300} als \textsl{ESC protocol} verwendet wird. Außerdem kann die \textsl{Motors IDLE power} auf 5\% gesetzt werden, wenn eine Multirotor-Drohne verwendet wird.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
+
+	\item In the \textsl{Ports tab}, the peripheral devices are configured, unless this was done in the pop-up menu at the beginning. This looks very similar to the Ports tab of the Betaflight Configurator, with the difference that \textsl{USB VCP} is hidden instead of partially grayed out (Figure \ref{AbbildungBetaflightAppPorts}).  How these are configured depends on the connected devices and the flight controller chip. In most cases, the configuration options for Betaflight (usually found in the respective device manuals) are transferrable to INAV.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
 
 	\item Im \textsl{Ports-Tab} werden die Peripheriegeräte konfiguriert, insofern dies nicht im Pop-Up-Menü am Anfang gemacht wurde. Dieser sieht dem Ports-Tab des Betaflight-Configurators sehr ähnlich, mit dem Unterschied, dass \textsl{USB VCP} ausgeblendet statt teilweise ausgegraut ist (Abbildung \ref{AbbildungBetaflightAppPorts}).  Wie diese konfiguriert werden, hängt von den angeschlossenen Geräten und vom Flugcontrollerchip ab. Meist kann die Konfiguration für Betaflight aus den jeweiligen Handbüchern entnommen und übertragen werden.
-	
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+
+	\item The sensors can be activated in the \textsl{Configuration tab} if this has not been done automatically after configuring the ports. If possible, the \textsl{I2C Speed} should be set to \texttt{800KHZ} here, if possible.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+
 	\item Im \textsl{Configuration-Tab} können die Sensoren aktiviert werden, insofern dies nicht nach Konfiguration der Ports automatisch geschehen ist. Wenn möglich, sollte hier der \textsl{I2C Speed} auf \texttt{800KHZ} gestellt werden.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	
+	\item The \textsl{Failsafe tab} (Figure \ref{AbbildungINAVFailsafeTab}) is very important, as it defines the behavior should the remote control signal be lost. Here, you should ensure that either \textsl{Drop}, \textsl{Land}, or \textsl{Return-to-Home (RTH)} are configured so that the drone does not continue to fly uncontrollably.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
 
 	\item Der \textsl{Failsafe-Tab} (Abbildung \ref{AbbildungINAVFailsafeTab}) ist sehr wichtig, da in diesem das Verhalten definiert ist, sollte das Fernsteuerungssignal abreißen. Hier sollte sichergestellt werden, dass entweder textsl{Drop}, \textsl{Land} oder \textsl{Return-to-Home (RTH)} konfiguriert sind, damit die Drohne nicht unkontrolliert weiterfliegt.
-
 \end{enumerate}
+
 
 \colende
 
@@ -573,21 +709,67 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 
 \colstart
 
-TBD
+\begin{enumerate}
+	\setcounter{enumi}{7}
+
+	\item In the \textsl{Receiver tab}, the connection to the remote control from the side of the flight controller is configured. If an ExpressLRS remote control is used, \texttt{SERIAL} must be configured as the \textsl{Receiver type} and \texttt{CRSF} as the \textsl{Serial Receiver Provider}. In addition, you can check whether the channel mappings are correct. This tab is very similar to the Receiver tab in the Betaflight Configurator (Figure \ref{AbbildungBetaflightAppReceiver}).
+\end{enumerate}
 
 \colger
 
 \begin{enumerate}
-	\setcounter{enumi}{9} 
-	
-	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind. Dieser Tab ist sehr ähnlich zum Receiver-Tab im Betaflight Configurator (Abbildung\ref{AbbildungBetaflightAppReceiver})
+	\setcounter{enumi}{7}
+
+	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind. Dieser Tab ist sehr ähnlich zum Receiver-Tab im Betaflight Configurator (Abbildung \ref{AbbildungBetaflightAppReceiver}).
+\end{enumerate}
+
+%8.
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{8}
+
+	\item In the \textsl{GPS tab}, the \textsl{GPS for navigation and telemetry} option must be activated in order to use the GPS. The \textsl{Protocol} option must be set according to the specifications of the model used.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{8}
 
 	\item Im \textsl{GPS-Tab} muss die Option \textsl{GPS for navigation and telemetry} aktiviert werden, um das GPS nutzen zu können. Die Option \textsl{Protocol} ist entsprechend der Spezifikation des verwendeten Modells zu setzen.
+\end{enumerate}
 
-	\item Im \textsl{Modes-Tab}, welcher der Betaflight-Version ebenfalls sehr ähnlich ist (Abbildung \ref{AbbildungBetaflightAppModes}) muss grundsätzlich nur \texttt{ARM} konfiguriert werden (CH5 empfohlen). Darüber hinaus lohnt es sich auch \texttt{ANGLE} zu konfigurieren (vor allem für Fluganfänger) und \texttt{FAILSAFE} sollte sich die Drohne mal unerwartet verhalten. Modi für Autopilotfunktionalitäten können zu einem späteren Zeitpunkt konfiguriert werden. 
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{9}
+
+	\item In the \textsl{Modes tab}, which is also very similar to the Betaflight version (Figure \ref{AbbildungBetaflightAppModes}), only \texttt{ARM} needs to be configured (CH5 recommended). In addition, it is also worth configuring \texttt{ANGLE}, especially for beginner pilots as it limits the maximum amount of pitch and roll, allowing for a smoother flight experience. \texttt{FAILSAFE} should also be configured, so it can be activated in case the drone behaves unexpectedly. Modes for autopilot functions can be configured at a later stage.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{9}
+
+	\item Im \textsl{Modes-Tab}, welcher der Betaflight-Version ebenfalls sehr ähnlich ist (Abbildung \ref{AbbildungBetaflightAppModes}) muss grundsätzlich nur \texttt{ARM} konfiguriert werden (CH5 empfohlen). Darüber hinaus lohnt es sich auch \texttt{ANGLE} zu konfigurieren. Dies ist vor allem für Fluganfänger interessant, da Pitch und Roll limitiert werden, was das Fliegen vereinfacht. \texttt{FAILSAFE} ist auch zu empfehlen, um reagieren zu können, sollte die Drohne unerwartet verhalten. Modi für Autopilotfunktionalitäten können zu einem späteren Zeitpunkt konfiguriert werden. 
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{10}
+
+	\item The \textsl{on-screen display (OSD)} can be configured according to the pilot's preferences. Useful elements that are not displayed by default include \textsl{Remaining Flight Time} and \textsl{Battery Remaining Percentage}. Depending on the VTX model, the \textsl{Video Format} must also be configured in this tab. The relevant info can usually be found in the manual of the VTX.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{10}
 
 	\item Das \textsl{on-screen display (OSD)} kann so konfiguriert werden, wie es vom Piloten bevorzugt wird. Nützliche Elemente, welche nicht standardmäßig eingeblendet werden sind zum Beispiel \textsl{Remaining Flight Time} und \textsl{Battery Remaining Percentage}. Je nach VTX-Modell muss in diesem Tab auch das \textsl{Video Format} konfiguriert werden.
-	
 \end{enumerate}
 
 \colende
@@ -598,7 +780,6 @@ TBD
 	\caption{INAV OSD Tab}
 	\label{AbbildungINAVOSDTab}
 \end{figure}
-
 
 \renewcommand{\deutschertitel}{ArduPilot}
 \renewcommand{\englischertitel}{ArduPilot}
@@ -714,6 +895,19 @@ TBD
 
 \renewcommand{\deutschertitel}{Installation}
 \renewcommand{\englischertitel}{Installation}
+\makrounterunterabschnitt
+\label{AbschnittInstallationExpressLRS}
+
+TBD
+
+\colger
+
+TBD
+
+\colende
+
+\renewcommand{\deutschertitel}{Kopplung}
+\renewcommand{\englischertitel}{Coupling/Pairing}
 \makrounterunterabschnitt
 \label{AbschnittInstallationExpressLRS}
 
