@@ -327,11 +327,11 @@ Zum Aufbau der Drohne empfiehlt sich ein Rahmen mit 3,5 bis 5 Zoll. Soll die Dro
 
 \colstart
 
-The components listed in Table~\ref{TabelleDrohne35GoogleCoral} refer exclusively to the essential parts of the drone itself. Additional required equipment such as a remote controller, FPV goggles, and a charger must already be available or purchased separately. The prices of the individual components depend on personal preferences and financial means.
+The components listed in Table~\ref{TabelleDrohne35GoogleCoral} refer exclusively to the essential parts of the drone itself. Additional required equipment such as a remote controller (80-160\,\euro{}), FPV goggles (120-250\,\euro{}), and a charger (50-100\,\euro{}) must already be available or purchased separately. The prices of the individual components depend on personal preferences and financial means.
 
 \colger
 
-Die in Tabelle~\ref{TabelleDrohne35GoogleCoral} aufgeführten Komponenten betreffen ausschließlich die notwendigen Bestandteile der Drohne selbst. Weiteres erforderliches Zubehör wie Fernbedienung, FPV-Brille und Ladegerät muss bereits vorhanden sein oder zusätzlich beschafft werden. Die Preise der einzelnen Komponenten hängen auch von persönlichen Präferenzen und finanziellen Möglichkeiten ab.
+Die in Tabelle~\ref{TabelleDrohne35GoogleCoral} aufgeführten Komponenten betreffen ausschließlich die notwendigen Bestandteile der Drohne selbst. Weiteres erforderliches Zubehör wie Fernbedienung (80-160\,\euro{}), FPV-Brille (120-250\,\euro{}) und Ladegerät (50-100\,\euro{}) muss bereits vorhanden sein oder zusätzlich beschafft werden. Die Preise der einzelnen Komponenten hängen auch von persönlichen Präferenzen und finanziellen Möglichkeiten ab.
 
 \colende
 
@@ -340,24 +340,11 @@ Die in Tabelle~\ref{TabelleDrohne35GoogleCoral} aufgeführten Komponenten betref
 \makroabschnitt
 \label{AbschnittObjekterkennungVideoGrabber}
 
-An easy way to access the live video feed is by using the AV interface that some FPV goggles provide. The video signal can be digitized with a video grabber and transmitted to a computer for further processing.
+An easy way to access the live video feed is by using the AV interface that some FPV goggles (see Table~\ref{TabelleVideobrillen}) provide. The video signal can be digitized with a video grabber and transmitted to a computer for further processing.
 
 \colger
 
-Eine einfache Möglichkeit, auf das Livebild zuzugreifen, bietet die gegebenenfalls vorhandene AV-Schnittstelle der Videobrille. Das Videosignal kann mithilfe eines Videograbbers digitalisiert und zur Verarbeitung an einen Computer weitergeleitet werden.
-
-\colende
-
-\renewcommand{\deutschertitel}{Aufbau und Implementierung}
-\renewcommand{\englischertitel}{Construction and Implementation}
-\makrounterabschnitt
-\label{AbschnittObjekterkennungImplementierungVideoGrabber}
-
-TBD
-
-\colger
-
-TBD
+Eine einfache Möglichkeit, auf das Livebild zuzugreifen, bietet die gegebenenfalls vorhandene AV-Schnittstelle der Videobrille (siehe Tabelle~\ref{TabelleVideobrillen}). Das Videosignal kann mithilfe eines Videograbbers digitalisiert und zur Verarbeitung an einen Computer weitergeleitet werden.
 
 \colende
 
@@ -366,11 +353,39 @@ TBD
 \makrounterabschnitt
 \label{AbschnittObjekterkennungKostenVideoGrabber}
 
-TBD
+
+Table~\ref{TabelleDrohne35Videograbber} lists the components of the drone from Table~\ref{TabelleDrohne35GoogleCoral}, excluding the hardware required for object detection. Specifically, this includes the Raspberry Pi Zero, the camera module, the Google Coral TPU, and the corresponding cables and enclosures. Additional accessories such as the remote control, FPV goggles, and charger must also be available or purchased separately. In addition, a video grabber (15–25 \euro{}) and a computer are required.
 
 \colger
 
-TBD
+Tabelle~\ref{TabelleDrohne35Videograbber} enthält die Komponenten der Drohne aus Tabelle~\ref{TabelleDrohne35GoogleCoral}, reduziert um die Hardware, die für die Objekterkennung erforderlich ist. Konkret sind das der Raspberry Pi Zero, das Kameramodul, die Google Coral TPU sowie die entsprechenden Kabel und Gehäuse. Weiteres notwendiges Zubehör wie Fernbedienung, FPV-Brille und Ladegerät muss selbstverständlich ebenfalls bereits vorhanden sein oder zusätzlich beschafft werden. Zusätzlich werden ein Videograbber (15–25 \euro{}) und ein Computer benötigt.
 
 \colende
+
+\begin{table}[htb!]
+\centering
+\caption{Components of a Drone for Object Detection by using the Live Image on the Ground}
+\label{TabelleDrohne35Videograbber}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.0}
+
+\begin{spreadtab}{{tabular}{llrr}}
+\toprule
+@Product & @Category & @Weight [g] & @Price [\euro{}] \\
+\midrule
+@SpeedyBee Bee35 PRO 3.5                   & @Frame                  & 130  & 55 \\
+@SpeedyBee F405 AIO 40A 3-6S               & @Flight Controller      & 14   & 70 \\
+@Radiomaster RP1 2,4GHz                    & @Receiver               & 3    & 25 \\
+@Flywoo NIN 1404 V2 3750KV                 & @Motors                 & 40   & 65 \\
+@Gemfan D90-5 3.5 Inch Ducted 5-Blade      & @Propellers             & 4    & 3  \\
+@SpeedyBee TX800 VTX + SMA Adapter         & @Video Transmitter      & 10   & 40 \\
+@Foxeer Lollipop 4 RHCP SMA                & @FPV Antenna            & 5    & 20 \\
+@HGLRC M100-5883                           & @GPS and Compass        & 8    & 20 \\
+@Caddx Ratel Pro                           & @FPV Camera             & 10   & 55 \\
+@Li-Ion 2500mAh 4S1P 14,8V 12C             & @Battery                & 200  & 25 \\
+@Additional cables, straps and panels      & @Cables + fixing material & 10   & 5  \\
+\bottomrule
+@Sum & & sum(c2:c11) & sum(d2:d11) \\
+\end{spreadtab}
+\end{table}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  13 OCT 2025 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  13 OCT 2025 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2209,7 +2209,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>]
 
-[66])
+[66]
+Overfull \hbox (1.32286pt too wide) in paragraph at lines 389--390
+ [][] 
+ []
+
+)
 
 [67]
 \openout2 = `chapter05.aux'.
@@ -2299,16 +2304,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29129 strings out of 469603
- 545652 string characters out of 5473551
- 1182374 words of memory out of 5000000
+ 29128 strings out of 469603
+ 545668 string characters out of 5473551
+ 1182488 words of memory out of 5000000
  56492 multiletter control sequences out of 15000+600000
  723336 words of font info for 222 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
  108i,20n,122p,11207b,1245s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{section*.157} has been referenced but does not exis
+pdfTeX warning (dest): name{section*.156} has been referenced but does not exis
 t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
+exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/
@@ -2321,10 +2330,10 @@ ic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (79 pages, 43883300 bytes).
+Output written on main.pdf (79 pages, 43885446 bytes).
 PDF statistics:
- 1323 PDF objects out of 1440 (max. 8388607)
- 1082 compressed objects within 11 object streams
- 320 named destinations out of 1000 (max. 500000)
- 56502 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1325 PDF objects out of 1440 (max. 8388607)
+ 1084 compressed objects within 11 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 56494 words of extra memory for PDF output out of 61914 (max. 10000000)
 
