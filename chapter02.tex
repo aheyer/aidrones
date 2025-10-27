@@ -562,7 +562,7 @@ TBD
 \makrounterabschnitt
 \label{AbschnittArduPilot}
 
-TBD
+ArduPilot, as a flight controller firmware, focuses on fully autonomous flight and complex mission profiles. It enables mission planning with waypoints, automatic takeoff and landing, obstacle avoidance, follow-me mode, etc. For this purpose, ArduPilot uses not only the usual sensors such as GPS, magnetic compass, and speed sensors, but can also incorporate lidar sensors for distance measurement and cameras.
 
 \colger
 
@@ -570,7 +570,7 @@ ArduPilot legt als Flugcontroller-Firmware den Fokus auf vollautonomen Flug und 
 
 \coleng
 
-TBD
+Of the flight controller firmwares presented in this document, ArduPilot requires the most memory. Ideally, 2 MB of flash memory should be available for running ArduPilot. This is only provided by flight controllers equipped with an H743 microcontroller. With 1 MB of flash memory (F405 and F745 microcontrollers), operation is possible but with a reduced feature set. With only 512 kB (F411 and F722 microcontrollers), ArduPilot cannot be used at all.
 
 \colger
 
@@ -582,6 +582,86 @@ Von den in diesem Dokument vorgestellten Flugcontroller-Firmwares braucht ArduPi
 \renewcommand{\englischertitel}{Installation}
 \makrounterunterabschnitt
 \label{AbschnittInstallationArduPilot}
+
+Typically, FPV flight controllers are delivered with Betaflight pre-installed. If ArduPilot is not already present on the device, installing it involves three main steps: (1) installing the necessary drivers and flashing tool, (2) downloading the appropriate ArduPilot firmware, and (3) flashing the firmware to the flight controller.
+
+\colger
+
+TBD
+
+\coleng
+
+To install ArduPilot on a compatible flight controller, the required drivers and tools must first be installed. The STM32CubeProgrammer, developed by STMicroelectronics, provides the necessary DFU drivers. This software is available for Windows, Linux, and macOS.
+
+\colger
+
+TBD
+
+\coleng
+
+To download the ArduCopter firmware, visit the official ArduPilot firmware server at \url{firmware.ardupilot.org/Copter/stable/}.
+From the list of available flight controller boards, select the folder that matches your hardware (for example, FlywooF745, Pixhawk1, or MatekH743). 
+Inside that folder, download the file ending with \_with\_bl.hex, which includes the bootloader. 
+If your board supports the ArduCopter firmware, it should be listed in this directory, and the corresponding firmware file should be available there.
+It is recommended to use the latest stable release to ensure optimal reliability and compatibility with current mission planning tools.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{STM32CubeProgrammerConnect.png}
+	\caption{Flashing Ardupilot Frimware using STM32CubeProgrammer (Part 1/3)}
+	\label{FlashingArdupilotFirmware}
+\end{figure}
+
+\colstart
+
+	Before starting the firmware installation process, activate DFU (Device Firmware Upgrade) mode on your flight controller.
+	This mode allows the board to accept new firmware via USB. Typically, DFU mode is enabled by holding down the
+	boot button (or bridging the BOOT pads) while connecting the board to your computer using a USB cable.
+	In STM32CubeProgrammer, select the connection method: USB (see Figure~\ref{FlashingArdupilotFirmware}), then click Connect to establish communication with the flight controller.
+	If your computer does not recognize the board, verify that the STM32 drivers are correctly installed and that the USB cable supports data transfer.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{STM32CubeProgrammerFullChipErase.png}
+	\caption{Flashing Ardupilot Frimware using STM32CubeProgrammer (Part 1/3)}
+	\label{ErasingBoardUsingSTM32}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{STM32CubeProgrammerFirmwareFlashing.png}
+	\caption{Flashing Ardupilot Frimware using STM32CubeProgrammer (Part 3/3)}
+	\label{PrgrammingUsingSTM32}
+\end{figure}
+
+\colstart
+
+After successfully connecting, choose Erase Full Chip (see Figure~\ref{ErasingBoardUsingSTM32}) to remove any existing firmware and prepare the board for a clean installation.
+Then click Browse and locate the downloaded firmware file ending in \_with\_bl.hex. Finally, press Start Programming to begin flashing the ArduPilot firmware to your flight controller,
+(as illustrated in Figure~\ref{ErasingBoardUsingSTM32}). Wait for the programming process to finish, then disconnect and power-cycle the board to complete the installation.
+
+\colger
+
+TBD
+
+\colende
+
+\renewcommand{\deutschertitel}{Mandatory Configuration}
+\renewcommand{\englischertitel}{Mandatory Configuration}
+\makrounterunterabschnitt
+\label{AbschnittKonfigurationArduPilot}
 
 TBD
 
