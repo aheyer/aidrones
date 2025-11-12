@@ -89,13 +89,20 @@ Akkus (LiPo oder Li-Ion) mit mehr als einer Zelle müssen immer unter Verwendung
 \makroabschnitt
 \label{AbschnittBefestigungLoseKabel}
 
-If cables or other drone components are not properly secured and can reach the propellers, they eventually will. This can damage either the loose components or the propellers, potentially leading to a crash or costly damage. A common example of components that frequently and unintentionally come into contact with the propellers are the battery balancer connectors, which are not always easy to replace. Therefore, all components must be securely fastened, and cables must be fixed using screws, cable ties, Velcro straps, or at least electrical tape.
+If cables or other drone components are not properly secured and can reach the propellers, they eventually will. This can damage either the loose components or the propellers, potentially leading to a crash or costly damage. A common example of components that frequently and unintentionally come into contact with the propellers are the battery balancer connectors (see Figure~\ref{AbbildungBalancerConnectorDestroyed}) , which are not always easy to replace. Therefore, all components must be securely fastened, and cables must be fixed using screws, cable ties, Velcro straps, or at least electrical tape.
 
 \colger
 
-Wenn Kabel oder andere Bauteile der Drohne nicht zuverlässig befestigt sind und die Rotoren erreichen können, werden sie diese früher oder später tatsächlich erreichen. Dabei werden entweder die losen Komponenten oder die Rotoren beschädigt, was zu einem Absturz oder zu teuren Beschädigungen führen kann. Ein typisches Beispiel für Bauteile, die häufig ungewollt mit den Rotoren in Kontakt kommen, sind die Balancerstecker der Akkus, deren Austausch nicht immer einfach ist. Daher ist die Befestigung aller Bauteile und die Sicherung aller Kabel mit Schrauben, Kabelbindern, Klettbändern oder zumindest Isolierband zwingend erforderlich.
+Wenn Kabel oder andere Bauteile der Drohne nicht zuverlässig befestigt sind und die Rotoren erreichen können, werden sie diese früher oder später tatsächlich erreichen. Dabei werden entweder die losen Komponenten oder die Rotoren beschädigt, was zu einem Absturz oder zu teuren Beschädigungen führen kann. Ein typisches Beispiel für Bauteile, die häufig ungewollt mit den Rotoren in Kontakt kommen, sind die Balancerstecker (siehe Abbildung~\ref{AbbildungBalancerConnectorDestroyed}) der Akkus, deren Austausch nicht immer einfach ist. Daher ist die Befestigung aller Bauteile und die Sicherung aller Kabel mit Schrauben, Kabelbindern, Klettbändern oder zumindest Isolierband zwingend erforderlich.
 
 \colende
+
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[width=\linewidth]{LiPo_Akku_Schaden_durch_Propeller_crop.png}
+  \caption{A Balancer Connector got destroyed because it touched a Propeller during Flight}
+  \label{AbbildungBalancerConnectorDestroyed}
+\end{figure}
 
 \renewcommand{\deutschertitel}{Den geeigneten Flugmodus verwenden}
 \renewcommand{\englischertitel}{Use the Appropriate Flight Mode}
@@ -160,5 +167,20 @@ The transmitter has a USB interface and should be used as the input device for t
 \colger
 
 Der Sender verfügt über eine USB-Schnittstelle und sollte als Eingabegerät zum Üben verwendet werden. Als USB-Modus muss \textsl{Joystick} ausgewählt werden. Es ist sinnvoll, hierfür in OpenTX ein neues Modell anzulegen, beispielsweise mit dem Namen \textsl{Simulator}. Dieses Modell sollte über kein aktives internes oder externes Sendemodul verfügen, da das Sendemodul signifikant Strom verbraucht und Wärme erzeugt. Dies ist beim Einsatz mit einem Simulator unnötig, da keine Funksignale gesendet werden.
+
+\colende
+
+\renewcommand{\deutschertitel}{Die Kopplung automatisieren}
+\renewcommand{\englischertitel}{Automate the Pairing}
+\makroabschnitt
+\label{AbschnittBindingPhrase1}
+
+\coleng
+
+To speed up the pairing process between transmitter and receiver and to prevent accidental pairing with other devices, a binding phrase can be defined in the ExpressLRS firmware (see Section~\ref{AbschnittExpressLRS}). This phrase must be identical on both communication partners and cannot be changed without reinstalling (flashing) the firmware.
+
+\colger
+
+Um die Kopplung zwischen Sender und Empfänger zu beschleunigen und ein versehentliches Koppeln mit anderen Geräten zu verhindern, kann in der ExpressLRS-Firmware eine Binding Phrase definiert werden (siehe Abschnitt~\ref{AbschnittExpressLRS}). Diese muss bei beiden Kommunikationspartnern identisch sein und kann nur durch eine Neuinstallation (Flashen) der Firmware geändert werden.
 
 \colende

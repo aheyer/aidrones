@@ -359,10 +359,10 @@ Der Flugdatenschreiber zur Aufzeichnung verschiedenster Sensordaten wird auf der
 \colende
 
 \begin{figure}[htb!]
-  \centering
-    \includegraphics[width=\linewidth]{Betaflight_4_5_3_blackbox_firmware_screenshot_app.png}
-  \caption{Blackbox Page of Betaflight}
-  \label{AbbildungBetaflightAppBlackbox}
+	\centering
+	\includegraphics[width=\linewidth]{Betaflight_4_5_3_blackbox_firmware_screenshot_app.png}
+	\caption{Blackbox Page of Betaflight}
+	\label{AbbildungBetaflightAppBlackbox}
 \end{figure}
 
 \colstart
@@ -373,7 +373,16 @@ The \textsl{CLI} page in Betaflight (see Figure~\ref{AbbildungBetaflightAppCLI})
 
 Betaflight bietet auf der Seite \textsl{CLI} (siehe Abbildung~\ref{AbbildungBetaflightAppCLI}) Zugriff auf die integrierte Kommandozeilenumgebung des Flugcontrollers. Hierüber kann der Flugcontroller direkt untersucht und konfiguriert werden. Einzelne Parameter können mit den Kommandos \verb!get! und \verb!set! angezeigt und geändert werden. Das Kommando \verb!save! speichert alle Änderungen und startet den Flugcontroller neu.
 
-\coleng
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Betaflight_4_5_3_cli_firmware_screenshot_app.png}
+	\caption{CLI Page of Betaflight}
+	\label{AbbildungBetaflightAppCLI}
+\end{figure}
+
+\colstart
 
 The current configuration of the flight controller can be displayed completely with the command \verb!dump!. Only the differences from the default configuration are shown using the command \verb!diff!. These outputs can be copied into text files and re-imported later using copy and paste. This makes it easy to create backups of all settings and restore them when needed.
 
@@ -391,27 +400,32 @@ Informationen zum Flugcontroller und zur installierten Firmwareversion liefert d
 
 \colende
 
-\begin{figure}[htb!]
-  \centering
-    \includegraphics[width=\linewidth]{Betaflight_4_5_3_cli_firmware_screenshot_app.png}
-  \caption{CLI Page of Betaflight}
-  \label{AbbildungBetaflightAppCLI}
-\end{figure}
-
 \renewcommand{\deutschertitel}{INAV}
 \renewcommand{\englischertitel}{INAV}
 \makrounterabschnitt
 \label{AbschnittINAV}
 
-TBD
+INAV consists of two main components: the firmware that runs on the flight controller and the configuration tool that is used for installation and administration. There is no web app, as is the case with current Betaflight versions.
+
+ \colger
+
+INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann. Es gibt keine Web-App, wie bei aktuellen Betaflight-Versionen.
+
+\coleng
+
+In addition to the Return-To-Home (RTH) and rescue functionality, INAV offers additional autopilot features such as waypoint missions, hold position, hold altitude, and more. These can also be used without a compass (since version 7.1), albeit with lower accuracy.
 
 \colger
 
-INAV basiert auf einer früheren Cleanflight-Version und ist ebenfalls eng verwandt mit Betaflight. Im Gegensatz zu Betaflight und INAV wird Cleanflight allerdings nicht mehr weiterentwickelt. INAV besteht aus zwei Hauptkomponenten: Die Firmware, welche auf dem Flugcontroller läuft und dem Konfigurationstool, welches für die Installation und Administration genutzt werden kann. Es gibt keine Web-App, wie bei aktuellen Betaflight-Versionen.
-
 Neben der Return-To-Home- (RTH) bzw. Rescuefunktionalität bietet INAV weitere Autopilotenfunktionalitäten, wie Wegpunktmissionen, \textsl{Position halten}, \textsl{Flughöhe halten} und mehr. Diese können auch ohne Kompass genutzt werden (seit Version 7.1), jedoch mit geringerer Genauigkeit.
 
-Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt die folgenden STM-Flugcontrollerchips: F405, F722, F745, F765 und H743. Außerdem werden AT-F435 Chips unterstützt. Die Kompatibilität mit einem jeweiligen Board sollte jedoch im Einzelfall immer vor dem Kauf geprüft werden.
+\coleng
+
+The software receives a major release every year and minor support updates as needed. The current version 8 supports the following STM flight controller chips: F405, F722, F745, F765, and H743. AT-F435 chips are also supported.
+
+\colger
+
+Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updates, wie sie benötigt werden. Die aktuelle Version 8 unterstützt die folgenden STM-Flugcontrollerchips: F405, F722, F745, F765 und H743. Außerdem werden AT-F435 Chips unterstützt.
 
 \colende
 
@@ -420,11 +434,11 @@ Die Software erhält jedes Jahr einen großen Release und kleinere Support-Updat
 \makrounterunterabschnitt
 \label{AbschnittInstallationINAV}
 
-TBD
+The installation of INAV is done using the \textsl{INAV Configurator}. A certain similarity to Betaflight is very apparent here, as the structure is quite similar to the Betaflight Configurator, which is used for versions up to 4.5 (Figure~\ref{AbbildungINAVFirmwareFlasher}). This guide assumes that the flight controller is connected via USB to the computer used for flashing.
 
 \colger
 
-Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verwandtschaft zu Betaflight sehr deutlich sichtbar, da der Aufbau sehr ähnlich zum Betaflight Configurator ist, welcher für die Versionen bis 4.5 genutzt wird (Abbildung \ref{AbbildungINAVFirmwareFlasher}). Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
+Die Installation erfolgt über den \textsl{INAV Configurator}.Der Aufbau dieses Prozesses ist sehr ähnlich zum Betaflight Configurator, welcher bis Version 4.5 verwendet wurde. (Abbildung~\ref{AbbildungINAVFirmwareFlasher}). Dieser Guide geht davon aus, dass der Flugcontroller via USB an den Computer angeschlossen ist, mit welchem das Flashen durchgeführt wird.
 
 \colende
 
@@ -437,30 +451,112 @@ Die Installation erfolgt über den \textsl{INAV Configurator}. Hier ist die Verw
 
 \colstart
 
-TBD
+If the flight controller is not being flashed for the first time, it is good practice to create a backup of the configuration, as some upgrades reset it, or to be safe in case of a failure. This is done via the \textsl{CLI} tab. The command \texttt{diff all} outputs the corresponding parameters. These can then be saved to a text file using the \textsl{Save to File} button. The flashing process itself consists of the following steps:
 
 \colger
 
-Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die Konfiguration zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die entsprechenden Parameter aus. Mit dem Button \textsl{Save to File} können diese dann in eine Textdatei gespeichert werden. Danach besteht der Prozess aus den folgenden Schritten:
+Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollte ein Backup der Konfiguration gemacht werden, da manche Upgrades die diese zurücksetzen. Dies geschieht über den \textsl{CLI}-Tab. Der Befehl \texttt{diff all} gibt die Parameter aus. Mit dem Button \textsl{Save to File} können diese in eine Textdatei gespeichert werden. Der Flashprozess besteht dann aus den folgenden Schritten:
+
+\coleng
 
 \begin{enumerate}
-	\item \textsl{Device Firmware Upgrade (DFU)-Modus} aktivieren ist der erste notwendige Schritt. Dies kann in der Regel über einen Button am Flugcontrollerboard realisiert werden oder mit dem Befehl \texttt{dfu} im \textsl{CLI}-Tab.
+	\item Putting the flight controller into \textsl{Device Firmware Upgrade (DFU) mode} is the first step. This can usually be done using a button on the flight controller board or with the \texttt{dfu} command in the \textsl{CLI} tab.
+\end{enumerate}
 
+\colger
+
+\begin{enumerate}
+	\item Den \textsl{Device Firmware Upgrade (DFU)-Modus} aktivieren ist der erste notwendige Schritt. Dies kann in der Regel über einen Button am Flugcontrollerboard realisiert werden oder mit dem Befehl \texttt{dfu} im \textsl{CLI}-Tab.
+\end{enumerate}
+
+\coleng
+
+	
+\begin{enumerate}
+\setcounter{enumi}{1}
+	\item Once the board is in DFU mode, the \textsl{Firmware Flasher} tab in the INAV Configurator must be opened. First, the target must be selected. If  \textsl{Auto-select Target} does not work, the model name must be searched for manually in the list.
+\end{enumerate}
+
+\colger
+
+	
+\begin{enumerate}
+\setcounter{enumi}{1}
 	\item Befindet sich das Board im DFU-Modus, so muss der \textsl{Firmware Flasher} Tab im INAV Configurator aufgerufen werden. In diesem muss zunächst das Target ausgewählt werden, sollte  \textsl{Auto-select Target} nicht funktionieren, muss der Modellname händisch in der Liste gesucht werden.
+\end{enumerate}
 
+\coleng
+
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+	\item The available (stable) releases are then displayed in the drop-down menu below the board. The \textsl{Show unstable releases} option allows you to select even more recent versions. However, these may not work as expected.
+\end{enumerate}
+
+\colger
+
+	
+\begin{enumerate}
+\setcounter{enumi}{2}
 	\item Im Ausklappmenü unter dem Board werden dann die verfügbaren (stable) Releases angezeigt. Mit der Option \textsl{Show unstable releases} können noch aktuellere Versionen gewählt werden. Diese funktionieren aber unter Umständen nicht wie erwartet.
+\end{enumerate}
 
+\coleng
+
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+	\item INAV offers three options that can be set for flashing:
+	\begin{itemize}
+		\item \textsl{No reboot sequence} - Only required if the boot pins are bridged or the boot button remains pressed during the flashing process (depending on the model).
+		\item \textsl{Full chip erase} - Deletes all configuration options (backup available?). This should always be set if a different software was previously installed.
+		\item \textsl{Manual baud rate} - Set a fixed baud rate for Bluetooth or USB if the model in question does not support the standard speed.
+	\end{itemize}
+\end{enumerate}
+
+\colger
+
+	
+\begin{enumerate}
+\setcounter{enumi}{3}
 	\item INAV bietet drei Optionen die für das Flashen gesetzt werden können:
 	\begin{itemize}
-		\item \textsl{No reboot sequence} - Wird nur benötigt, wenn die Bootpins überbrückt sind oder der Bootbutton gedrückt wird (modellabhängig).
+		\item \textsl{No reboot sequence} - Wird nur benötigt, wenn die Bootpins überbrückt sind oder der Bootbutton während des Flashens gedrückt wird (modellabhängig).
 		\item \textsl{Full chip erase} - Löscht alle Konfigurationsoptionen (Backup Vorhanden?). Sollte immer gesetzt werden, wenn vorher eine andere Software installiert war.
-		\item \textsl{Manual baud rate} - Festlegen der Baudrate für Bluetooth oder falls ein Modell die Standardgeschwindigkeit nicht unterstützt.
+		\item \textsl{Manual baud rate} - Festlegen der Baudrate für Bluetooth oder falls das zu flashende Modell die Standardgeschwindigkeit nicht unterstützt.
 	\end{itemize}
+\end{enumerate}
 
-	\item Der Prozess des Flashens besteht aus zwei Schritten: Zunächst wird die Firmware geladen (online oder über ein File), dann wird das eigentliche Flashen über einen separaten Button gestartet. Das eigentliche Flashen sollte nicht unterbrochen werden.
+\coleng
 
+	
+\begin{enumerate}
+\setcounter{enumi}{4}
+	\item The flashing process consists of two steps: First, the firmware is loaded (online or file), then the software is flashed onto the board via a separate button. The actual flashing should not be interrupted, as this will brick the device. However, the bootloader required for the flashing itself is stored in ROM and \textsl{cannot be bricked}. This means the device can always be reflashed.
+\end{enumerate}
+
+\colger
+
+	
+\begin{enumerate}
+\setcounter{enumi}{4}
+	\item Der Prozess des Flashens besteht aus zwei Schritten: Zunächst wird die Firmware geladen (online oder Datei), dann wird das eigentliche Flashen über einen separaten Button gestartet. Dies sollte nicht unterbrochen werden, da hierdurch das Board \textsl{gebrickt}  wird. Der zum Flashen benötigte Bootloader ist allerdings im ROM gespeichert und kann \textsl{nicht gebrickt} werden. Das bedeutet, dass das Board immer wieder neu geflasht werden kann.
+\end{enumerate}
+
+\coleng
+
+	
+\begin{enumerate}
+\setcounter{enumi}{5}
+	\item If necessary, the backup can now be restored via the \textsl{CLI} tab. This is done using the \textsl{Load from File} button. This allows the corresponding text file to be selected and executed using the \textsl{Execute} button.
+\end{enumerate}
+
+\colger
+
+	
+\begin{enumerate}
+\setcounter{enumi}{5}
 	\item Gegebenenfalls kann nun das Backup über den \textsl{CLI}-Tab wieder eingespielt werden. Dies geschieht über den Button \textsl{Load from File}. Damit kann die entsprechende Textdatei herausgesucht werden, um sie mit dem \textsl{Execute}-Button auszuführen.
-
 \end{enumerate}
 
 \colende
@@ -470,19 +566,46 @@ Wird die Software nicht zum ersten Mal auf dem Flugcontroller installiert, sollt
 \makrounterunterabschnitt
 \label{AbschnittAdministrationINAV}
 
-TBD
+The administration of INAV also occurs in the \textsl{INAV Configurator}. When the software is installed for the first time, a few things need to be configured to enable initial flight. These are described in this section.
 
 \colger
+
 Die Administration von INAV erfolgt ebenfalls über den \textsl{INAV Configurator}. Wenn die Software das erste Mal installiert wurde, müssen einige Punkte konfiguriert werden, um das Fliegen initial zu ermöglichen.
+
+\coleng
+
+When the Configurator is launched for the first time after installation, windows appear for setting the \textsl{Default Values} (presets). Here, you need to select the preset that is closest to the model you have built. After that, you can configure the UART ports (for GPS, VTX, etc.). However, this can also be done via the Ports tab. The further configuration steps are as follows:
+
+\colger
 
 Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheinen Fenster zum Setzen der \textsl{Default-Values} (Presets). Hier gilt es das Preset auszuwählen, was am nächsten an dem gebauten Modell dran ist. Danach können die UART-Ports (für GPS, VTX, etc.) konfiguriert werden. Dies kann allerdings auch über den Ports-Tab durchgeführt werden. Die weiteren Konfigurationsschritte gestalten sich wie folgt:
 
+\coleng
+
 \begin{enumerate}
+	\item The \textsl{Status tab} provides a basic overview. Among other things, the \textsl{Pre-arming checks} overview shows whether the drone is ready for takeoff. It may be necessary to adjust the board orientation beforehand. To do this, place the drone upright with the camera facing the screen of the configuring computer and then press the \textsl{Reset Z axis} button.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken. 
+\end{enumerate}
+
+\coleng
+
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+	 \item The \textsl{Calibration tab} (Figure~\ref{AbbildungINAVCalibrationTab}) is used to calibrate the accelerometer and compass. To do this, the drone must be placed in different positions.
+\end{enumerate}
+
+\colger
+
 	
-	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken.
-	
-	\item Im \textsl{Calibration-Tab} (Abbildung \ref{AbbildungINAVCalibrationTab}) werden der Beschleunigungsmesser und der Kompass kalibriert. Dazu muss die Drohne jeweils in unterschiedliche Posen gebracht werden.
-	
+\begin{enumerate}
+\setcounter{enumi}{1}
+	\item Im \textsl{Calibration-Tab} (Abbildung~\ref{AbbildungINAVCalibrationTab}) werden der Beschleunigungsmesser und der Kompass kalibriert. Dazu muss die Drohne jeweils in unterschiedliche Posen gebracht werden.
 \end{enumerate}
 
 \colende
@@ -496,28 +619,84 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 
 \colstart
 
-TBD
+\begin{enumerate}
+	\setcounter{enumi}{2}
+
+	\item The \textsl{Mixer tab}, together with the Outputs tab, configures the drone's motors. It is crucial that the correct \textsl{Platform type} and \textsl{Mixer preset} (\texttt{Multirotor} and \texttt{QUAD X} for a quadcopter) are configured according to the type of drone used. If the motors do not rotate in the correct direction, this can be adjusted via the \textsl{Motor direction} and the assignment via the \textsl{Motor Mixer Wizard}.
+\end{enumerate}
 
 \colger
 
 \begin{enumerate}
-	\setcounter{enumi}{2} 
+	\setcounter{enumi}{2}
 
-	\item Der \textsl{Status-Tab} stellt einen Überblick zur Verfügung. Unter anderem ist in der Übersicht \textsl{Pre-arming checks} zu sehen, ob die Drohne abheben kann. Eventuell muss hier vorher die Boardorientierung angepasst werden. Dazu wird die Drohne aufrecht mit Kamera Richtung Bildschirm des konfigurierenden Computers gestellt, um dann den \textsl{Reset Z axis} Button zu drücken.
+	\item Der \textsl{Mixer-Tab} konfiguriert zusammen mit dem Outputs-Tab die Motoren der Drohne. Hier ist entscheidend, dass der richtige  \textsl{Platform type} und das richtige \textsl{Mixer preset} (\texttt{Multirotor} und \texttt{QUAD X} für einen Quadcopter) entsprechend des verwendeten Drohnen-Typs konfiguriert sind. Sollten die Motoren nicht in die richtige Richtung drehen, kann die diese über die \textsl{Motor direction} angepasst werden und die Zuordnung über den \textsl{Motor Mixer Wizard}.
+\end{enumerate}
 
-	\item Im \textsl{Calibration-Tab} werden der Beschleunigungsmesser und der Kompass kalibriert. Dazu muss die Drohne jeweils in unterschiedliche Posen gebracht werden.
+\coleng
 
-	\item Der \textsl{Mixer-Tab} konfiguriert zusammen mit dem Outputs-Tab die Motoren der Drohne. Hier ist entscheidend, dass der richtige  \textsl{Platform type} und das richtige \textsl{Mixer preset} entsprechend des Typs der verwendeten Drohne konfiguriert sind. Sollten die Motoren nicht in die richtige Richtung drehen, kann die diese über die \textsl{Motor direction} angepasst werden und die Zuordnung über den \textsl{Motor Mixer Wizard}.
+\begin{enumerate}
+	\setcounter{enumi}{3}
+
+	\item In the \textsl{Outputs tab}, the motors are activated with the \textsl{Enable motor and servo output} option. You should also ensure that \texttt{DSHOT300} is used as the \textsl{ESC protocol}. In addition, the \textsl{Motors IDLE power} can be set to 5\% if a multirotor drone is used.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{3}
 
 	\item Im \textsl{Outputs-Tab} werden die Motoren aktiviert mit der Option \textsl{Enable motor and servo output}. Außerdem sollte sichergestellt werden, dass  \texttt{DSHOT300} als \textsl{ESC protocol} verwendet wird. Außerdem kann die \textsl{Motors IDLE power} auf 5\% gesetzt werden, wenn eine Multirotor-Drohne verwendet wird.
-
-	\item Im \textsl{Ports-Tab} werden die Peripheriegeräte konfiguriert, insofern dies nicht im Pop-Up-Menü am Anfang gemacht wurde. Dieser sieht dem Ports-Tab des Betaflight-Configurators sehr ähnlich, mit dem Unterschied, dass \textsl{USB VCP} ausgeblendet statt ausgegraut ist (Abbildung \ref{AbbildungBetaflightAppPorts}).  Wie diese konfiguriert werden, hängt von den angeschlossenen Geräten und vom Flugcontrollerchip ab. Meist kann die Konfiguration für Betaflight aus den jeweiligen Handbüchern entnommen und übertragen werden.
-	
-	\item Im \textsl{Configuration-Tab} können die Sensoren aktiviert werden, insofern dies nicht nach Konfiguration der Ports automatisch geschehen ist. Wenn möglich, sollte hier der \textsl{I2C Speed} auf \texttt{800KHZ} gestellt werden.
-
-	\item Der \textsl{Failsafe-Tab} (Abbildung \ref{AbbildungINAVFailsafeTab}) ist sehr wichtig, da in diesem das Verhalten definiert ist, sollte das Fernsteuerungssignal abreißen. Hier sollte sichergestellt werden, dass entweder textsl{Drop}, \textsl{Land} oder \textsl{Return-to-Home (RTH)} konfiguriert sind, damit die Drohne nicht unkontrolliert weiterfliegt.
-
 \end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
+
+	\item In the \textsl{Ports tab}, the peripheral devices are configured, unless this was done in the pop-up menu at the beginning. This looks very similar to the Ports tab of the Betaflight Configurator, with the difference that \textsl{USB VCP} is hidden instead of partially grayed out (Figure~\ref{AbbildungBetaflightAppPorts}).  How these are configured depends on the connected devices and the flight controller chip. In most cases, the configuration options for Betaflight (usually found in the respective device manuals) are transferable to INAV.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{4}
+
+	\item Im \textsl{Ports-Tab} werden die Peripheriegeräte konfiguriert, insofern dies nicht im Pop-Up-Menü am Anfang gemacht wurde. Dieser sieht dem Ports-Tab des Betaflight-Configurators sehr ähnlich mit dem Unterschied, dass \textsl{USB VCP} ausgeblendet statt teilweise ausgegraut ist (Abbildung~\ref{AbbildungBetaflightAppPorts}).  Wie diese konfiguriert werden, hängt von den angeschlossenen Geräten und vom Flugcontrollerchip ab. Meist kann die Konfiguration für Betaflight aus den jeweiligen Handbüchern entnommen und übertragen werden.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+
+	\item The sensors can be activated in the \textsl{Configuration tab} if this has not been done automatically after configuring the ports. If possible, the \textsl{I2C Speed} should be set to \texttt{800KHZ} here, if possible.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+
+	\item Im \textsl{Configuration-Tab} können die Sensoren aktiviert werden, insofern dies nicht nach Konfiguration der Ports automatisch geschehen ist. Wenn möglich, sollte hier der \textsl{I2C Speed} auf \texttt{800KHZ} gestellt werden.
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	
+	\item The \textsl{Failsafe tab} (Figure~\ref{AbbildungINAVFailsafeTab}) is very important, as it defines the behavior should the remote control signal be lost. Here, you should ensure that either \textsl{Drop}, \textsl{Land}, or \textsl{Return-to-Home (RTH)} are configured so that the drone does not continue to fly uncontrollably.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
+
+	\item Der \textsl{Failsafe-Tab} (Abbildung~\ref{AbbildungINAVFailsafeTab}) ist sehr wichtig, da in diesem das Verhalten definiert ist, sollte das Fernsteuerungssignal abreißen. Hier sollte sichergestellt werden, dass entweder textsl{Drop}, \textsl{Land} oder \textsl{Return-to-Home (RTH)} konfiguriert sind, damit die Drohne nicht unkontrolliert weiterfliegt.
+\end{enumerate}
+
 
 \colende
 
@@ -529,22 +708,62 @@ TBD
 \end{figure}
 
 \colstart
-
-TBD
+	
+\begin{enumerate}
+\setcounter{enumi}{7}
+	\item In the \textsl{Receiver tab}, the connection to the remote control from the side of the flight controller is configured. If an ExpressLRS remote control is used, \texttt{SERIAL} must be configured as the \textsl{Receiver type} and \texttt{CRSF} as the \textsl{Serial Receiver Provider}. In addition, you can check whether the channel mappings are correct. This tab is very similar to the Receiver tab in the Betaflight Configurator (Figure~\ref{AbbildungBetaflightAppReceiver}).
+\end{enumerate}
 
 \colger
 
 \begin{enumerate}
-	\setcounter{enumi}{9} 
-	
-	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind. Dieser Tab ist sehr ähnlich zum Receiver-Tab im Betaflight Configurator (Abbildung\ref{AbbildungBetaflightAppReceiver})
+\setcounter{enumi}{7}
+	\item Im \textsl{Receiver-Tab} wird Flugcontrollerseitig die Verbindung zur Fernbedienung konfiguriert. Wird eine ExpressLRS-Fernbedienung verwendet, muss \texttt{SERIAL} als \textsl{Receiver type} und \texttt{CRSF} als \textsl{Serial Receiver Provider} konfiguriert werden. Darüber hinaus kann kontrolliert werden, ob die Channel-Mappings korrekt sind. Dieser Tab ist sehr ähnlich zum Receiver-Tab im Betaflight Configurator (Abbildung~\ref{AbbildungBetaflightAppReceiver}).
+\end{enumerate}
 
+%8.
+\coleng
+
+\begin{enumerate}
+\setcounter{enumi}{8}
+	\item In the \textsl{GPS tab}, the \textsl{GPS for navigation and telemetry} option must be activated in order to use the GPS. The \textsl{Protocol} option must be set according to the specifications of the model used.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+\setcounter{enumi}{8}
 	\item Im \textsl{GPS-Tab} muss die Option \textsl{GPS for navigation and telemetry} aktiviert werden, um das GPS nutzen zu können. Die Option \textsl{Protocol} ist entsprechend der Spezifikation des verwendeten Modells zu setzen.
+\end{enumerate}
 
-	\item Im \textsl{Modes-Tab}, welcher der Betaflight-Version ebenfalls sehr ähnlich ist (Abbildung \ref{AbbildungBetaflightAppModes}) muss grundsätzlich nur \texttt{ARM} konfiguriert werden (CH5 empfohlen). Darüber hinaus lohnt es sich auch \texttt{ANGLE} zu konfigurieren (vor allem für Fluganfänger) und \texttt{FAILSAFE} sollte sich die Drohne mal unerwartet verhalten. Modi für Autopilotfunktionalitäten können zu einem späteren Zeitpunkt konfiguriert werden. 
+\coleng
 
-	\item Das \textsl{on-screen display (OSD)} kann so konfiguriert werden, wie es vom Piloten bevorzugt wird. Nützliche Elemente, welche nicht standardmäßig eingeblendet werden sind zum Beispiel \textsl{Remaining Flight Time} und \textsl{Battery Remaining Percentage}. Je nach VTX-Modell muss in diesem Tab auch das \textsl{Video Format} konfiguriert werden.
-	
+\begin{enumerate}
+	\setcounter{enumi}{9}
+	\item In the \textsl{Modes tab}, which is also very similar to the Betaflight version (Figure~\ref{AbbildungBetaflightAppModes}), only \texttt{ARM} needs to be configured (CH5 recommended). In addition, it is also worth configuring \texttt{ANGLE}, especially for beginner pilots, as it limits the maximum amount of pitch and roll, allowing for a smoother flight experience. \texttt{FAILSAFE} should also be configured, so it can be activated in case the drone behaves unexpectedly. Modes for autopilot functions can be configured at a later stage.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{9}
+	\item Im \textsl{Modes-Tab}, der der Betaflight-Version sehr ähnlich ist (siehe Abbildung~\ref{AbbildungBetaflightAppModes}), muss grundsätzlich nur \texttt{ARM} konfiguriert werden. Dafür wird Kanal 5 empfohlen.  
+	Es lohnt sich außerdem, \texttt{ANGLE} einzustellen. Das ist besonders für Fluganfänger wichtig, weil dadurch die Neigung in Pitch und Roll begrenzt wird. Das macht das Fliegen einfacher.  
+	Auch \texttt{FAILSAFE} sollte aktiviert werden. So kann man reagieren, falls sich die Drohne unerwartet verhält. Modi für Autopilotfunktionalitäten können zu einem späteren Zeitpunkt konfiguriert werden. 
+\end{enumerate}
+
+\coleng
+
+\begin{enumerate}
+\setcounter{enumi}{10}
+	\item The \textsl{on-screen display (OSD)} can be configured according to the pilot's preferences. Useful elements that are not displayed by default include \textsl{Remaining Flight Time} and \textsl{Battery Remaining Percentage}. Depending on the VTX model, the \textsl{Video Format} must also be configured in this tab. The relevant info can usually be found in the manual of the VTX.
+\end{enumerate}
+
+\colger
+
+\begin{enumerate}
+	\setcounter{enumi}{10}
+	\item Das \textsl{on-screen display (OSD)} kann so konfiguriert werden, wie es vom Piloten bevorzugt wird. Nützliche Elemente, welche nicht standardmäßig eingeblendet werden sind zum Beispiel \textsl{Remaining Flight Time} und \textsl{Battery Remaining Percentage}. Je nach VTX-Modell muss in diesem Tab auch das \textsl{Video Format} konfiguriert werden. Relevante Informationen dazu können in der Regel im Handbuch des VTX gefunden werden.
 \end{enumerate}
 
 \colende
@@ -562,19 +781,20 @@ TBD
 \makrounterabschnitt
 \label{AbschnittArduPilot}
 
+As a flight controller firmware, ArduPilot focuses on fully autonomous flight and complex mission profiles. It enables mission planning with waypoints, automatic takeoff and landing, obstacle avoidance, follow-me functionality, and more. To achieve this, ArduPilot uses not only standard sensors such as GPS, magnetic compass, and velocity sensors but can also integrate LiDAR sensors for distance measurement and cameras for visual processing.
 ArduPilot, as a flight controller firmware, focuses on fully autonomous flight and complex mission profiles. It enables mission planning with waypoints, automatic takeoff and landing, obstacle avoidance, follow-me mode, etc. For this purpose, ArduPilot uses not only the usual sensors such as GPS, magnetic compass, and speed sensors, but can also incorporate lidar sensors for distance measurement and cameras.
 
 \colger
 
-ArduPilot legt als Flugcontroller-Firmware den Fokus auf vollautonomen Flug und komplexe Missionsprofile. Es ermöglicht Missionsplanung mit Wegpunkten, automatische Starts und automatisches Landen, Hindernisvermeidung, Follow-Me, etc. Hierfür nutzt ArduPilot nicht nur die üblichen Sensoren wie GPS, magnetischer Kompass, Geschwindigkeit, sondern kann auch Lidar-Sensoren zur Entfernungen und Kameras einbeziehen.
+ArduPilot legt als Flugcontroller-Firmware den Schwerpunkt auf vollautonome Flüge und komplexe Missionsprofile. Es ermöglicht die Missionsplanung mit Wegpunkten, automatischen Starts und Landungen, Hindernisvermeidung, Follow-Me-Funktion und vieles mehr. Hierfür nutzt ArduPilot nicht nur die üblichen Sensoren wie GPS, magnetischen Kompass und Geschwindigkeitsmessung, sondern kann auch LiDAR-Sensoren zur Distanzmessung und Kameras zur visuellen Erfassung einbeziehen.
 
 \coleng
 
-Of the flight controller firmwares presented in this document, ArduPilot requires the most memory. Ideally, 2 MB of flash memory should be available for running ArduPilot. This is only provided by flight controllers equipped with an H743 microcontroller. With 1 MB of flash memory (F405 and F745 microcontrollers), operation is possible but with a reduced feature set. With only 512 kB (F411 and F722 microcontrollers), ArduPilot cannot be used at all.
+TBD
 
 \colger
 
-Von den in diesem Dokument vorgestellten Flugcontroller-Firmwares braucht ArduPilot am meisten Speicher. Idealerweise sind zum Betrieb von ArduPilot 2\,MB Flash-Speicher verfügbar. Das bieten nur Flugcontroller mit einem H743 Mikrocontroller. Mit 1\,MB Flash-Speicher (F405 und F745 Mikrocontroller) ist der Betrieb mit einem reduzierten Funktionsumfang möglich. Mit nur 512\,kB (F411 und F722 Mikrocontroller) kann ArduPilot gar nicht verwendet werden.
+Von den in diesem Dokument vorgestellten Flugcontroller-Firmwares benötigt ArduPilot den meisten Speicher. Idealerweise stehen zum Betrieb von ArduPilot 2\,MB Flash-Speicher zur Verfügung. Dies bieten nur Flugcontroller mit einem H743-Mikrocontroller. Mit 1\,MB Flash-Speicher (F405- und F745-Mikrocontroller) ist der Betrieb mit reduziertem Funktionsumfang möglich. Mit lediglich 512 kB (F411- und F722-Mikrocontroller) kann ArduPilot nicht verwendet werden.
 
 \colende
 
@@ -799,80 +1019,210 @@ TBD
 
 \colende
 
-\renewcommand{\deutschertitel}{Fernbedienung Firmware}
-\renewcommand{\englischertitel}{Remote Control Firmware}
+\renewcommand{\deutschertitel}{Fernbedienung Firmware: EdgeTX}
+\renewcommand{\englischertitel}{Remote Control Firmware: EdgeTX}
 \makroabschnitt
-\label{AbschnittFirmwareRemoteControl}
-
-TBD
-
-\colger
-
-TBD
-
-\colende
-
-\renewcommand{\deutschertitel}{EdgeTX}
-\renewcommand{\englischertitel}{EdgeTX}
-\makrounterabschnitt
 \label{AbschnittEdgeTX}
 
-TBD
+EdgeTX is an operating system for radio transmitters used in model aircraft and drones. It is open-source software and runs on transmitters from many well-known manufacturers. EdgeTX generates the control signals, which are then transmitted by the ExpressLRS firmware (see Section~\ref{AbschnittExpressLRS}) running on the transmitter module.
 
 \colger
 
-TBD
+EdgeTX ist ein Betriebssystem für Fernsteuerungen im Modellbau. Es handelt sich um freie Software, die auf Fernbedienungen vieler bekannter Hersteller läuft. EdgeTX erzeugt die Steuersignale, welche anschließend von der Firmware ExpressLRS (siehe Abschnitt~\ref{AbschnittExpressLRS}) des Sendemoduls übertragen werden.
 
-\colende
+\coleng
 
-\renewcommand{\deutschertitel}{Installation}
-\renewcommand{\englischertitel}{Installation}
-\makrounterunterabschnitt
-\label{AbschnittInstallationEdgeTX}
-
-TBD
+Installation is performed via the web application \url{buddy.edgetx.org}. This section describes the installation process on a Radiomaster Boxer using a PC.
 
 \colger
 
-TBD
+Die Installation erfolgt über die Webanwendung \url{buddy.edgetx.org}. Dieser Abschnitt beschreibt die Installation auf einer Radiomaster Boxer mithilfe eines PCs.
+
+\coleng
+
+With the transmitter turned off, connect it to the PC using one of its two USB-C ports. In the web application, select the desired version and the correct device (see Figure~\ref{AbbildungEdgeTXInstallation1}). Clicking the \textsl{Flash via USB} button starts the next step.
+
+\colger
+
+Die Fernbedienung wird im ausgeschalteten Zustand über eine der beiden USB-C-Schnittstellen mit dem PC verbunden. In der Webanwendung wird die gewünschte Version sowie das passende Gerät ausgewählt (siehe Abbildung~\ref{AbbildungEdgeTXInstallation1}). Die Schaltfläche \textsl{Flash via USB} führt zum nächsten Schritt.
 
 \colende
 
-\renewcommand{\deutschertitel}{Sendemodul- und Empfänger-Firmware}
-\renewcommand{\englischertitel}{Transmitter and Receiver Firmware}
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{edgetx_installation_1.png}
+	\caption{EdgeTX Installation Step 1}
+	\label{AbbildungEdgeTXInstallation1}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{edgetx_installation_2.png}
+	\caption{EdgeTX Installation Step 2}
+	\label{AbbildungEdgeTXInstallation2}
+\end{figure}
+
+\colstart
+
+In the second step, the correct device must be selected. It appears under the name STM32 BOOTLOADER (see Figures~\ref{AbbildungEdgeTXInstallation2} and~\ref{AbbildungEdgeTXInstallation3}).
+
+\colger
+
+Im zweiten Schritt wird das korrekte Gerät ausgewählt. Dieses erscheint unter dem Namen STM32 BOOTLOADER (siehe Abbildung~\ref{AbbildungEdgeTXInstallation2} und Abbildung~\ref{AbbildungEdgeTXInstallation3}).
+
+\coleng
+
+The final step is to start the installation by clicking the \textsl{Start flashing} button (see Figure~\ref{AbbildungEdgeTXInstallation4}).
+
+\colger
+
+Der letzte Schritt ist der Start der Installation über die Schaltfläche \textsl{Start flashing} (siehe Abbildung~\ref{AbbildungEdgeTXInstallation4}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{edgetx_installation_3.png}
+	\caption{EdgeTX Installation Step 3}
+	\label{AbbildungEdgeTXInstallation3}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{edgetx_installation_4.png}
+	\caption{EdgeTX Installation Step 4}
+	\label{AbbildungEdgeTXInstallation4}
+\end{figure}
+
+\renewcommand{\deutschertitel}{Sendemodul- und Empfänger-Firmware: ExpressLRS}
+\renewcommand{\englischertitel}{Transmitter and Receiver Firmware: ExpressLRS}
 \makroabschnitt
-\label{AbschnittFirmwareReceiverTransmitter}
-
-TBD
-
-\colger
-
-TBD
-
-\colende
-
-\renewcommand{\deutschertitel}{ExpressLRS}
-\renewcommand{\englischertitel}{ExpressLRS}
-\makrounterabschnitt
 \label{AbschnittExpressLRS}
 
-TBD
+The firmware of the transmitter module in the remote control and the receiver in the drone must both use compatible firmware versions. Ideally, the firmware versions of the transmitter and receiver are identical. This section focuses exclusively on the ExpressLRS firmware, including its installation and configuration.
 
 \colger
 
-TBD
+Die Firmware des Sendemoduls in der Fernbedienung und des Empfängers in der Drohne müssen beide mit kompatibler Firmware ausgestattet sein. Idealerweise sind bei Sender und Empfänger die Versionen identisch. Dieser Abschnitt befasst sich ausschließlich mit der Firmware ExpressLRS sowie deren Installation und Konfiguration.
 
-\colende
+\coleng
 
-\renewcommand{\deutschertitel}{Installation}
-\renewcommand{\englischertitel}{Installation}
-\makrounterunterabschnitt
-\label{AbschnittInstallationExpressLRS}
-
-TBD
+Installation is performed using the locally installed application ExpressLRS Configurator. Installation packages and the source code can be found here:
 
 \colger
 
-TBD
+Die Installation erfolgt über die lokal installierte Anwendung ExpressLRS Configurator. Installationspakete und der Quellcode befinden sich hier:
 
 \colende
+
+\smallskip
+\url{https://github.com/ExpressLRS/ExpressLRS-Configurator/releases}
+\smallskip
+
+\colstart
+
+In the ExpressLRS Configurator, the desired version, device type, connection method (EdgeTX Passthrough, UART, or Wi-Fi), frequency band usage permissions (Listen Before Talk), and the binding phrase are defined. The binding phrase must match the one later used on the receiver (see Figure~\ref{AbbildungExpressLRS1}).
+
+\colger
+
+Im ExpressLRS Configurator werden die gewünschte Version, das Gerät, die Zugriffsart (EdgeTX Passthrough, UART oder Wi-Fi), die erlaubte Nutzung des Frequenzbands (Listen Before Talk) sowie die Binding Phrase festgelegt. Diese muss mit der später beim Empfänger verwendeten Binding Phrase übereinstimmen (siehe Abbildung~\ref{AbbildungExpressLRS1}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_1.png}
+	\caption{ExpressLRS Installation on Sender: Step 1}
+	\label{AbbildungExpressLRS1}
+\end{figure}
+
+\colstart
+
+The default Wi-Fi parameters can also be adjusted here, although this option will not be discussed further in this section. The firmware file is created by clicking the \textsl{BUILD} button (see Figure~\ref{AbbildungExpressLRS2}).
+
+\colger
+
+Auch die standardmäßig verwendeten WLAN-Parameter können hier angepasst werden, auf diese Option wird an dieser Stelle jedoch nicht weiter eingegangen. Die Erstellung der Firmware-Datei erfolgt über die Schaltfläche \textsl{BUILD} (siehe Abbildung~\ref{AbbildungExpressLRS2}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_2.png}
+	\caption{ExpressLRS Installation on Sender: Step 2}
+	\label{AbbildungExpressLRS2}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_3.png}
+	\caption{ExpressLRS Installation on Sender: Step 3}
+	\label{AbbildungExpressLRS3}
+\end{figure}
+
+\colstart
+
+Figure~\ref{AbbildungExpressLRS3} shows that the firmware file has been successfully created. Typically, a file manager window opens at this point, displaying the directory where the firmware file is located.
+
+\colger
+
+Abbildung~\ref{AbbildungExpressLRS3} zeigt, dass die Firmware-Datei erstellt wurde. Üblicherweise öffnet sich an dieser Stelle ein Dateimanager-Fenster, das den Pfad anzeigt, in dem sich die Firmware-Datei befindet. 
+
+\coleng
+
+In the next step, the firmware file must be uploaded to the transmitter module of the remote control. One option is installation via the transmitter’s Wi-Fi module. This is activated through SYS→Tools→ExpressLRS→Wi-Fi Connectivity→Enable Wi-Fi. Once the network \verb!ExpressLRS TX! (password: \verb!expresslrs!) becomes available, the PC must be connected to it. The transmitter module uses the IP address \verb!10.0.0.1!. When this address is opened in a web browser, a simple interface allows, among other things, firmware updates (see Figure~\ref{AbbildungExpressLRS4}).
+
+\colger
+
+Im nächsten Schritt muss die Firmware-Datei auf das Sendemodul der Fernbedienung aufgespielt werden. Eine Möglichkeit hierzu ist die Installation über das WLAN-Modul des Senders. Dieses wird über SYS→Tools→ExpressLRS→Wi-Fi Connectivity→Enable Wi-Fi aktiviert. Sobald das Funknetz \verb!ExpressLRS TX! (Passwort: \verb!expresslrs!) verfügbar ist, muss der PC damit verbunden werden. Das Sendemodul hat die IP-Adresse \verb!10.0.0.1!. Wird diese Adresse über einen Browser aufgerufen, kann über eine einfache Webseite unter anderem die Firmware aktualisiert werden (siehe Abbildung~\ref{AbbildungExpressLRS4}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_4.png}
+	\caption{ExpressLRS Installation on Sender: Step 4}
+	\label{AbbildungExpressLRS4}
+\end{figure}
+
+\colstart
+
+The installation of ExpressLRS on the receiver is almost identical. Here, too, a firmware file matching the receiver is created using the ExpressLRS Configurator (see Figures~\ref{AbbildungExpressLRSReceiver1} and~\ref{AbbildungExpressLRSReceiver2}).
+
+\colger
+
+Die Installation von ExpressLRS auf dem Empfänger erfolgt nahezu identisch. Auch hier wird mit dem ExpressLRS Configurator eine zur Empfängerhardware passende Firmware-Datei erstellt (siehe Abbildung~\ref{AbbildungExpressLRSReceiver1} und Abbildung~\ref{AbbildungExpressLRSReceiver2}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_RX_1.png}
+	\caption{ExpressLRS Installation on Receiver: Step 1}
+	\label{AbbildungExpressLRSReceiver1}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_RX_2.png}
+	\caption{ExpressLRS Installation on Receiver: Step 2}
+	\label{AbbildungExpressLRSReceiver2}
+\end{figure}
+
+\colstart
+
+Receivers from Radiomaster provide a Wi-Fi network named \verb!ExpressLRS RX! (password: \verb!expresslrs!) after approximately 30 seconds without a connection to a transmitter. The PC must be connected to this network. The receiver module uses the IP address \verb!10.0.0.1!. When this address is opened in a web browser, a simple interface allows, among other things, firmware updates (see Figure~\ref{AbbildungExpressLRSReceiver3}).
+
+\colger
+
+Empfänger von Radiomaster stellen nach etwa 30 Sekunden ohne Verbindung zu einer Fernbedienung ein Funknetz mit dem Namen \verb!ExpressLRS RX! (Passwort: \verb!expresslrs!) bereit. Der PC muss mit diesem Netzwerk verbunden werden. Das Empfangsmodul hat die IP-Adresse \verb!10.0.0.1!. Wird diese Adresse über einen Browser aufgerufen, kann über eine einfache Webseite unter anderem die Firmware aktualisiert werden (siehe Abbildung~\ref{AbbildungExpressLRSReceiver3}).
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{ExpressLRS_Installation_RX_3.png}
+	\caption{ExpressLRS Installation on Receiver: Step 3}
+	\label{AbbildungExpressLRSReceiver3}
+\end{figure}
+
