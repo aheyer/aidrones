@@ -648,9 +648,9 @@ TBD
 
 \colstart
 
-After successfully connecting, choose Erase Full Chip (see Figure~\ref{ErasingBoardUsingSTM32}) to remove any existing firmware and prepare the board for a clean installation.
-Then click Browse and locate the downloaded firmware file ending in \_with\_bl.hex. Finally, press Start Programming to begin flashing the ArduPilot firmware to your flight controller,
-(as illustrated in Figure~\ref{ErasingBoardUsingSTM32}). Wait for the programming process to finish, then disconnect and power-cycle the board to complete the installation.
+	After successfully connecting, choose Erase Full Chip (see Figure~\ref{ErasingBoardUsingSTM32}) to remove any existing firmware and prepare the board for a clean installation.
+	Then click Browse and locate the downloaded firmware file ending in \_with\_bl.hex. Finally, press Start Programming to begin flashing the ArduPilot firmware to your flight controller,
+	(as illustrated in Figure~\ref{PrgrammingUsingSTM32}). Wait for the programming process to finish, then disconnect and power-cycle the board to complete the installation.
 
 \colger
 
@@ -663,7 +663,122 @@ TBD
 \makrounterunterabschnitt
 \label{AbschnittKonfigurationArduPilot}
 
+	After the ArduPilot firmware has been flashed onto the flight controller, it is essential to perform a series of mandatory 
+	hardware configuration steps using the Mission Planner ground control software. These configurations align the firmware 
+	with the physical characteristics of the aircraft — such as its frame type, motor orientation, and sensor calibrations 
+	— ensuring that the autopilot interprets sensor data correctly and controls the motors appropriately. Completing these 
+	steps is a prerequisite for safe and stable and flight performance.
+
+\colger
+
 TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Mission_Planneer_1.3.83_connect_screenshot.png}
+	\caption{Main Page of Mission Planner}
+	\label{MissionPlannerConnect}
+\end{figure}
+
+\colstart
+
+	Typically you can connect your drone with the Mission Planner software by selecting auto in the port as describe in figure \ref{MissionPlannerConnect}.
+	Once connection is established, the page will show general data from the sensors of the drone. 
+	The steps bellow covers the “mandatory” hardware configuration steps for a copter using ArduPilot.
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Mission_Planneer_1.3.83_frame_setup_screenshot.png}
+	\caption{Mission Planner: Frame type configuration}
+	\label{MissionPlannerFrameTypeSetup}
+\end{figure}
+
+\colstart
+
+	Figure \ref{MissionPlannerFrameTypeSetup} shows the \textsl{Setup} page of Mission Planner, where selecting a configuration 
+	option writes the setting directly to the flight controller hardware. No additional save action is required, as the change is applied automatically.
+
+\colger
+
+TBD
+
+\coleng
+
+In the \textsl{Frame type section} choose the appropriate frame class from the top (e.g., for Quad, Hexa, heli etc) and
+also select tye type of the drone. (e.g., select X for x shaped frame, V type for frame if your frame has shorter 
+front arm and longer rare arm).
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Mission_Planneer_1.3.83_board_orientation_screenshot.png}
+	\caption{Mission Planner: Board orientation}
+	\label{MissionPlannerBoardOrient}
+\end{figure}
+
+
+\colstart
+
+Before performing the accelerometer calibration, it is essential to ensure that the flight controller \(FC\) board is mounted with the correct orientation. An incorrect board orientation can lead to severe flight instability or even crashes. As illustrated in Figure \ref{MissionPlannerBoardOrient}, the orientation of the flight controller can be configured in Mission Planner by navigating to:
+Config tab → Full Parameter List → AHRS\_ORIENTATION.
+
+After selecting the appropriate orientation, click the Write Params button to save the setting to the flight controller.
+
+To verify that the orientation has been configured correctly, open the DATA tab from the top menu in Mission Planner. Then, gently move the drone in all directions (pitch, roll, and yaw) and observe the artificial horizon or attitude indicator. If the display accurately reflects the movement of the drone, the board orientation has been set correctly.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Mission_Planneer_1.3.83_board_accelerometer_calibration_screenshot.png}
+	\caption{Mission Planner: Accelerometer calibration}
+	\label{MissionPlannerAccelerometerCalibration}
+\end{figure}
+
+\colstart
+
+The Accelerometer Calibration page, accessible from the Setup tab in Mission Planner, provides the interface for calibrating the onboard accelerometer (see Figure~\ref{MissionPlannerAccelerometerCalibration}). To begin the process, click Calibrate Accel and follow the on-screen instructions to rotate the vehicle slowly around all three axes—yaw, pitch, and roll. This procedure allows the flight controller to record reference data for each orientation and compute the necessary offsets.
+
+After completing the calibration, restart the drone by reconnecting the flight controller. Once reconnected, place the drone on a level surface and select Calibrate Level to define the horizontal reference plane. The resulting calibration parameters enable the flight controller to maintain stability during flight, particularly in Stabilize mode.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png}
+	\caption{Mission Planner: Compass calibration}
+	\label{MissionPlannerCompassCalibration}
+\end{figure}
+
+\colstart
+
+The Compass Calibration page in Mission Planner provides the interface for calibrating the onboard magnetometer, which is responsible for providing accurate heading information essential for directional navigation and yaw control.
+
+Before beginning the calibration, ensure that the compass sensor is mounted in its final position and located away from strong magnetic sources such as motors, ESCs, or power wiring. In Mission Planner, navigate to the compass calibration page under the Setup tab and click Start (see Figure~\ref{MissionPlannerCompassCalibration}). During the calibration process, slowly rotate the vehicle around all three axes—yaw, pitch, and roll—as instructed on screen, ensuring smooth and complete movements.
+
+If the calibration fails, repeat the process several times until a successful calibration is achieved. Persistent failure to calibrate may indicate that the magnetometer is experiencing magnetic interference. In such cases, the compass should be repositioned farther from high-current components or wiring to minimize magnetic disturbances.
+
+Once calibration is successfully completed, Mission Planner will indicate an acceptable calibration result. Finally, save the configuration and reboot the flight controller to apply the updated compass offsets.
 
 \colger
 
