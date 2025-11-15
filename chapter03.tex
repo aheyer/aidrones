@@ -149,6 +149,173 @@ Da Drohnen standardmäßig im Acro Mode betrieben werden, ist es sinnvoll, einen
 
 \colende
 
+\renewcommand{\deutschertitel}{Die Leistung des Videosenders reduzieren oder diesen abschalten}
+\renewcommand{\englischertitel}{Reduce the Power of the Video Transmitter or Switch It Off}
+\makroabschnitt
+\label{AbschnittVTXreduzieren}
+
+It is highly recommended to switch off the VTX or significantly reduce its output power during ground or laboratory tests, as it can overheat within a few minutes without the airflow present during flight. Even if it does not overheat, it will still become very hot quickly and draw considerable current from the batteries.
+
+
+\colger
+
+Es ist sehr empfehlenswert, bei Boden- oder Labortests den VTX abzuschalten oder seine Leistung stark zu reduzieren, da er ohne die Luftkühlung während des Flugs innerhalb weniger Minuten überhitzen kann. Selbst wenn er nicht überhitzt, wird er sehr schnell heiß und zieht viel Strom aus den Akkus.
+
+\coleng
+
+In Betaflight, the VTX can be completely switched off via the CLI:
+
+\colger
+
+In Betaflight kann man den VTX über die CLI komplett ausschalten:
+
+\colende
+
+\lstdefinestyle{shell}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,        % <-- Zeilenumbruch aktivieren
+  breakatwhitespace=true, % <-- nur bei Leerzeichen umbrechen 
+  postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}, % Pfeil am Zeilenende
+  showstringspaces=false,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  framerule=0.5pt,
+  rulecolor=\color{gray!60}
+}
+
+\begin{lstlisting}[style=shell]
+vtx_power = 0
+save
+\end{lstlisting}
+
+\colstart
+
+These commands switch the VTX to the reduced 25 mW power mode:
+
+\colger
+
+Diese Kommandos schalten den VTX in den reduzierten 25-mW-Leistungsbetrieb:
+
+\colende
+
+\lstdefinestyle{shell}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,        % <-- Zeilenumbruch aktivieren
+  breakatwhitespace=true, % <-- nur bei Leerzeichen umbrechen 
+  postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}, % Pfeil am Zeilenende
+  showstringspaces=false,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  framerule=0.5pt,
+  rulecolor=\color{gray!60}
+}
+
+\begin{lstlisting}[style=shell]
+vtx_power = 1
+save
+\end{lstlisting}
+
+\colstart
+
+Another option is to greatly reduce the VTX’s output power by switching it to so-called PIT mode. PIT mode lowers the transmit power to approximately 0.1\,mW -- just enough to receive the signal on the bench or within the same room, while preventing overheating. The following command switches the VTX to PIT mode:
+
+\colger
+
+Eine andere Möglichkeit ist, die Leistung des VTX stark zu reduzieren, indem man ihn in den sogenannten PIT-Mode schaltet. Der PIT-Mode reduziert die Sendeleistung auf ungefähr 0,1\,mW. Das ist gerade genug, um das Signal auf dem Tisch oder im Raum zu sehen und eine Überhitzung auszuschließen. Das folgende Kommando schaltet den VTX in den PIT-Mode:
+
+\colende
+
+
+\lstdefinestyle{shell}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,        % <-- Zeilenumbruch aktivieren
+  breakatwhitespace=true, % <-- nur bei Leerzeichen umbrechen 
+  postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}, % Pfeil am Zeilenende
+  showstringspaces=false,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  framerule=0.5pt,
+  rulecolor=\color{gray!60}
+}
+
+\begin{lstlisting}[style=shell]
+set vtx_pit_mode = ON
+save
+\end{lstlisting}
+
+\colstart
+
+To deactivate PIT mode again:
+
+\colger
+
+Um den PIT-Mode wieder zu deaktivieren:
+
+\colende
+
+
+
+\lstdefinestyle{shell}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,        % <-- Zeilenumbruch aktivieren
+  breakatwhitespace=true, % <-- nur bei Leerzeichen umbrechen 
+  postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}, % Pfeil am Zeilenende
+  showstringspaces=false,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  framerule=0.5pt,
+  rulecolor=\color{gray!60}
+}
+
+\begin{lstlisting}[style=shell]
+set vtx_pit_mode = OFF
+save
+\end{lstlisting}
+\colstart
+
+The PIT mode can also be enabled and disabled on the \textsl{Video Transmitter} page in the Betaflight Configurator or via the Betaflight web application. It is useful to assign PIT mode to a switch (AUX channel) on the transmitter. This can be done in the Betaflight Configurator or the Betaflight web application on the \textsl{Modes} page using the \textsl{VTX Pit Mode} entry.
+
+\colger
+
+Der PIT-Mode kann auch auf der Seite \textsl{Video Transmitter} im Betaflight Configurator oder über die Betaflight Webanwendung ein- und ausgeschaltet werden. Sinnvoll ist es, dem PIT-Mode einen Schalter (AUX-Kanal) auf der Fernbedienung zuzuweisen. Dies ist im Betaflight Configurator oder in der Betaflight Webanwendung auf der Seite \textsl{Modes} über den Eintrag \textsl{VTX Pit Mode} möglich.
+
+\coleng
+
+Additionally, it is possible to operate the VTX in \textsl{low-power mode} before arming and after disarming -- i.e., during flight preparation and after the flight. The following command defines that the VTX transmission power will only be increased to the configured level after arming. Before arming and after disarming, the transmission power is reduced to the value defined by \verb!vtx_power=1!.
+
+\colger
+
+Zudem ist es möglich, den VTX vor dem Arming und nach dem Disarming im \textsl{Low-Power-Modus} zu betreiben, also während der Flugvorbereitung und nach dem Flug. Das folgende Kommando definiert, dass die Sendeleistung des VTX erst nach dem Arming auf den eingestellten Wert erhöht wird. Vor dem Arming und nach dem Disarming ist die Sendeleistung auf den Wert von \verb!vtx_power=1! reduziert.
+
+\colende
+
+\lstdefinestyle{shell}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,        % <-- Zeilenumbruch aktivieren
+  breakatwhitespace=true, % <-- nur bei Leerzeichen umbrechen 
+  postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}, % Pfeil am Zeilenende
+  showstringspaces=false,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  framerule=0.5pt,
+  rulecolor=\color{gray!60}
+}
+
+\begin{lstlisting}[style=shell]
+set vtx_low_power_disarm = ON
+save
+\end{lstlisting}
+
 \renewcommand{\deutschertitel}{Mit einem Simulator üben}
 \renewcommand{\englischertitel}{Practice with a Simulator}
 \makroabschnitt
