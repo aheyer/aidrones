@@ -47,8 +47,16 @@
 \contentsline {section}{{4.2}~Objekterkennung durch Auswertung des Livebilds am Boden}{80}{section.4.2}%
 \contentsline {subsection}{{4.2.1}~Gesamtgewicht und Anschaffungskosten}{82}{subsection.4.2.1}%
 \contentsline {chapter}{{\vspace {2pt}5}~Autopilot}{85}{chapter.5}%
-\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{87}{chapter.6}%
-\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{89}{chapter.7}%
-\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{89}{section.7.1}%
-\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{90}{section.7.2}%
-\contentsline {section}{{7.3}~Ansteuerung und Integration}{90}{section.7.3}%
+\contentsline {section}{{5.1}~Autopilot mit Betaflight}{85}{section.5.1}%
+\contentsline {section}{{5.2}~Autopilot mit iNAV}{86}{section.5.2}%
+\contentsline {section}{{5.3}~Autopilot mit ArduPilot}{86}{section.5.3}%
+\contentsline {section}{{5.4}~Autopilot mit PX4}{87}{section.5.4}%
+\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{89}{chapter.6}%
+\contentsline {section}{{6.1}~Follow-Me mit Betaflight}{89}{section.6.1}%
+\contentsline {section}{{6.2}~Follow-Me mit iNAV}{90}{section.6.2}%
+\contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{90}{section.6.3}%
+\contentsline {section}{{6.4}~Follow-Me mit PX4}{91}{section.6.4}%
+\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{93}{chapter.7}%
+\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{93}{section.7.1}%
+\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{94}{section.7.2}%
+\contentsline {section}{{7.3}~Ansteuerung und Integration}{94}{section.7.3}%

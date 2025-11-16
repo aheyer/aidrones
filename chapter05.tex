@@ -1,5 +1,5 @@
 \renewcommand{\deutschertitel}{Autopilot}
-\renewcommand{\englischertitel}{Auto Pilot}
+\renewcommand{\englischertitel}{Autopilot}
 \chapter[\protect{\vspace{2pt}\englischertitel}]{}
 \kapitel{\deutschertitel}
 
@@ -15,13 +15,134 @@
 
 \coleng
 
-TBD
+An autopilot system enables an FPV drone to perform autonomous or semi-autonomous tasks such as position hold, altitude hold, waypoint missions, or return-to-home procedures. These functions rely on a combination of hardware components, sensors, and flight-controller firmware that interprets sensor data and executes control commands. 
 
 \colger
 
-TBD
+Ein Autopilot-System ermöglicht es einer FPV-Drohne, autonome oder teilautonome Aufgaben wie das Halten der Position, das Halten der Flughöhe, Wegpunktmissionen oder die Rückkehr zum Startpunkt auszuführen. Diese Funktionen basieren auf einer Kombination aus Hardwarekomponenten, Sensoren und Flugcontroller-Firmware, welche die Sensordaten auswertet und entsprechende Steuerbefehle umsetzt. 
+
+\coleng
+
+Various firmware platforms provide differing levels of capability and complexity, including Betaflight, iNAV, ArduPilot, and PX4. The following sections outline the requirements, configuration steps, and supported functions for each of these systems.
+
+\colger
+
+Verschiedene Firmware-Plattformen bieten hierfür unterschiedliche Fähigkeiten und Komplexitätsstufen, darunter Betaflight, iNAV, ArduPilot und PX4. Die folgenden Abschnitte beschreiben die Anforderungen, Konfigurationsschritte und unterstützten Funktionen der jeweiligen Systeme.
 
 \colende
 
+\renewcommand{\deutschertitel}{Autopilot mit Betaflight}
+\renewcommand{\englischertitel}{Autopilot with Betaflight}
+\makroabschnitt
+\label{AbschnittAutopilotBetaflight}
 
+Betaflight (see Section~\ref{AbschnittBetaflight}) is primarily designed for manual flight (freestyle and racing) and does not provide a full-featured autopilot. However, limited autonomous functions can be implemented, such as angle-stabilized flight, horizon-assisted stabilization, and basic failsafe procedures. 
 
+\colger
+
+Betaflight (siehe Abschnitt~\ref{AbschnittBetaflight}) ist primär für manuelles Fliegen (Freestyle und Rennen) ausgelegt und stellt keinen vollwertigen Autopiloten bereit. Es lassen sich jedoch begrenzte autonome Funktionen realisieren, etwa stabilisierte Flugmodi (Angle, Horizon) oder grundlegende Failsafe-Verfahren. 
+
+\coleng
+
+To achieve these functions, the flight controller requires an accelerometer, a gyroscope, and optionally a barometer. GPS support is available only for basic features such as rescue mode. Betaflight does not support waypoint missions or advanced navigation. 
+
+\colger
+
+Für diese Funktionen werden ein Beschleunigungssensor, ein Gyroskop und optional ein Barometer benötigt. GPS-Unterstützung existiert nur in eingeschränkter Form, beispielsweise für den Rescue Mode. Wegpunktmissionen oder fortgeschrittene Navigationsaufgaben werden nicht unterstützt. 
+
+\coleng
+
+Configuration is performed through the Betaflight Configurator or via the Betaflight web application, where stabilization modes, failsafe behavior, and optional rescue functionality can be assigned to AUX channels.
+
+\colger
+
+Die Konfiguration erfolgt über den Betaflight Configurator oder über die Betaflight Webanwendung, wo Stabilisierung, Failsafe-Verhalten und optional Rettungsfunktionen auf AUX-Kanäle gelegt werden können.
+
+\colende
+
+\renewcommand{\deutschertitel}{Autopilot mit iNAV}
+\renewcommand{\englischertitel}{Autopilot with iNAV}
+\makroabschnitt
+\label{AbschnittAutopilotINAV}
+
+The iNAV firmware (see Section~\ref{AbschnittINAV}) implements full GPS-assisted flight and is designed for navigation, position hold, altitude hold, return-to-home, and limited waypoint missions. 
+
+\colger
+
+Die Firmware iNAV (siehe Abschnitt~\ref{AbschnittINAV}) implementiert eine vollständige GPS-unterstützte Flugsteuerung bereit und eignet sich für Navigation, Position Hold, Altitude Hold, Return-to-Home und eingeschränkte Wegpunktmissionen.
+
+\coleng
+
+Supported hardware includes flight controllers with gyroscope, accelerometer, barometer, magnetic compass, and a GPS module. Also airspeed sensors are supported by iNAV. 
+
+\colger
+
+Unterstützte Hardware umfasst einen Flugcontroller mit Gyroskop, Beschleunigungssensor, Barometer, magnetischem Kompass sowie ein GPS-Modul. Auch Fluggeschwindigkeitssensoren werden von iNAV unterstützt. 
+ 
+\coleng
+
+The iNAV Configurator is used to configure sensors, calibrate the magnetic compass, specify mixer settings, and assign flight modes. iNAV enables basic autonomous missions but is not as feature-rich as ArduPilot or PX4.
+
+\colger
+
+Die Konfiguration erfolgt über den iNAV Configurator, in dem Sensoren kalibriert, der magnetische Kompass eingerichtet, Mixer-Einstellungen definiert und Flugmodi zugewiesen werden. iNAV ermöglicht grundlegende autonome Missionen, bietet jedoch weniger Funktionen als ArduPilot oder PX4.
+
+\colende
+
+\renewcommand{\deutschertitel}{Autopilot mit ArduPilot}
+\renewcommand{\englischertitel}{Autopilot with ArduPilot}
+\makroabschnitt
+\label{AbschnittAutopilotArduPilot}
+
+ArduPilot (see Section~\ref{AbschnittArduPilot}) provides a comprehensive autopilot system for drones. It enables advanced autonomous functions such as waypoint navigation, mission planning, geofencing, object avoidance with additional sensors, automatic takeoff and landing, and precision positioning.
+
+\colger
+
+ArduPilot (siehe Abschnitt~\ref{AbschnittArduPilot}) bietet ein umfassendes Autopilotsystem für Drohnen, Flächenflugzeuge, Hubschrauber und andere Plattformen. Es unterstützt fortgeschrittene autonome Funktionen wie Wegpunktnavigation, Missionsplanung, Geofencing, Hindernisvermeidung mit zusätzlichen Sensoren, automatischen Start und automatische Landung sowie präzise Positionsbestimmung. 
+
+\coleng
+
+Depending on the firmware variant, ArduPilot requires powerful hardware with sufficient flash memory (see Section~\ref{AbschnittFC}) and sensors including barometer, magnetic compass, accelerometer, gyroscope, and GPS. Additional sensors such as optical flow sensors (Light Detection and Ranging -- lidar), or airspeed sensors can be integrated. 
+
+\colger
+
+e nach Firmware-Variante benötigt ArduPilot leistungsfähige Hardware mit ausreichend Flash-Speicher (siehe Abschnitt~\ref{AbschnittFC}) sowie Sensoren wie Barometer, magnetischem Kompass, Beschleunigungssensor, Gyroskop und GPS. Zusätzliche Sensoren wie optische Flusssensoren (Light Detection and Ranging -- Lidar) oder Fluggeschwindigkeitssensoren können integriert werden. 
+
+\coleng
+
+The Mission Planner software is used for configuration, calibration, and mission definition.
+
+\colger
+
+Konfiguration, Kalibrierung und Missionsplanung erfolgen über die Software Mission Planner.
+
+\colende
+
+\renewcommand{\deutschertitel}{Autopilot mit PX4}
+\renewcommand{\englischertitel}{Autopilot with PX4}
+\makroabschnitt
+\label{AbschnittAutopilotPX4}
+
+PX4 is an open-source autopilot platform similar to ArduPilot, designed for research, industry applications, and autonomous robotics. It supports advanced mission planning, companion computers (e.g., Raspberry Pi Compute Module\,4), and complex multi-sensor navigation. 
+
+\colger
+
+PX4 ist eine Open-Source-Autopilotplattform, die ähnlich wie ArduPilot auf Forschungs-, Industrie- und Robotikanwendungen ausgerichtet ist. Die Firmware unterstützt fortgeschrittene Missionsplanung, Companion-Computer (z.B. Raspberry Pi Compute Module\,4), und komplexe multisensorbasierte Navigation. 
+
+\coleng
+
+PX4 requires hardware such as Pixhawk controllers or compatible boards with powerful processors and extensive sensor capability. Configuration and mission planning are performed using the QGroundControl software. 
+
+\colger
+
+PX4 erfordert Hardware wie Pixhawk-Controller oder kompatible Boards mit leistungsfähigen Prozessoren und umfangreicher Sensorunterstützung. Die Konfiguration und Missionsplanung erfolgt über die Software QGroundControl. 
+
+\coleng
+
+Due to its modular design and focus on extensibility, PX4 is frequently used in industrial environments, although some FPV-specific features are less developed compared to Betaflight or iNAV.
+
+\colger
+
+Aufgrund seiner modularen Architektur und Erweiterbarkeit wird PX4 häufig in industriellen Projekten eingesetzt, auch wenn FPV-spezifische Funktionen teilweise weniger ausgeprägt sind als bei Betaflight oder iNAV.
+
+\colende

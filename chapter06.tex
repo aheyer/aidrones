@@ -1,5 +1,5 @@
 \renewcommand{\deutschertitel}{Follow-Me-Funktion}
-\renewcommand{\englischertitel}{Follow Me Function}
+\renewcommand{\englischertitel}{Follow-Me Function}
 \chapter[\protect{\vspace{2pt}\englischertitel}]{}
 \kapitel{\deutschertitel}
 
@@ -15,10 +15,102 @@
 
 \coleng
 
-TBD
+The Follow-Me function allows an FPV drone to track and follow a moving target, typically a person carrying a GPS device, a smartphone, or a companion transmitter. This capability is useful for recording moving subjects, supporting inspection tasks, or enabling semi-autonomous flight operations. 
 
 \colger
 
-TBD
+Die Follow-Me-Funktion ermöglicht es einer FPV-Drohne, einem sich bewegenden Ziel zu folgen, typischerweise einer Person, die ein GPS-Gerät, ein Smartphone oder einen zusätzlichen Sender mit sich führt. Diese Fähigkeit wird unter anderem zur Aufnahme bewegter Szenen, zur Unterstützung von Inspektionsaufgaben oder für teilautonome Fluganwendungen genutzt. 
+
+\coleng
+
+Depending on the firmware, the Follow-Me function may rely on external GPS data, telemetry links, onboard sensors, or a combination of these. The following sections describe how Follow-Me is implemented in Betaflight, iNAV, ArduPilot, and provide an outlook on its implementation in PX4. 
+
+\colger
+
+Je nach Firmware basiert die Follow-Me-Funktion auf externen GPS-Daten, Telemetrieverbindungen, an Bord befindlichen Sensoren oder einer Kombination dieser Quellen. Die folgenden Abschnitte beschreiben die Umsetzung der Follow-Me-Funktion in Betaflight, iNAV, ArduPilot sowie einen Ausblick auf die Implementierung in PX4. 
+
+\colende
+
+\renewcommand{\deutschertitel}{Follow-Me mit Betaflight}
+\renewcommand{\englischertitel}{Follow-Me with Betaflight}
+\makroabschnitt
+\label{AbschnittFollowMeBetaflight}
+
+Betaflight does not provide a Follow-Me mode, as the firmware is primarily optimized for manual flight (freestyle and racing). Only basic GPS-assisted functions such as rescue mode are available. Follow-Me operation is not supported because Betaflight lacks autonomous navigation, positional tracking, and target-following logic. Implementing Follow-Me functionality would require a transition to iNAV or ArduPilot.
+
+\colger
+
+Betaflight bietet keinen Follow-Me-Modus, da die Firmware primär für für manuelles Fliegen (Freestyle und Rennen) ausgelegt ist. Lediglich grundlegende GPS-gestützte Funktionen wie der Rescue Mode sind verfügbar. Ein Follow-Me-Betrieb wird nicht unterstützt, da Betaflight keine autonome Navigation, keine Positionsverfolgung und keine Zielverfolgungslogik bereitstellt. Für den Einsatz der Follow-Me-Funktion wird daher ein Wechsel zu iNAV oder ArduPilot erforderlich.
+
+\colende
+
+\renewcommand{\deutschertitel}{Follow-Me mit iNAV}
+\renewcommand{\englischertitel}{Follow-Me with iNAV}
+\makroabschnitt
+\label{AbschnittFollowMeINAV}
+
+iNAV provides a dedicated Follow-Me mode that uses the GPS position of an external device, typically the radio transmitter equipped with an external GPS module or a compatible telemetry system. 
+
+\colger
+
+iNAV stellt einen eigenen Follow-Me-Modus bereit, der die GPS-Position eines externen Geräts verwendet, üblicherweise die Fernbedienung mit einem angeschlossenen GPS-Modul oder einem kompatiblen Telemetriesystem. Für Follow-Me in iNAV werden ein Flugcontroller mit GPS, Barometer, magnetischen Kompass sowie eine stabile GPS-Empfangsqualität benötigt.
+
+\coleng
+
+Follow-Me in iNAV requires a flight controller with GPS, barometer, magnetic compass, and stable GPS reception. The external device transmits its position to the flight controller via a telemetry protocol such as MAVLink, MSP, or a proprietary transmitter protocol. 
+
+\colger
+
+Das externe Gerät übermittelt seine Position über ein Telemetrieprotokoll wie MAVLink, MSP oder ein proprietäres Fernsteuerungsprotokoll an den Flugcontroller. 
+
+\coleng
+
+Configuration is performed in the iNAV Configurator by enabling the Follow-Me mode, assigning it to an AUX channel, and configuring the GPS update rate and safe distances. iNAV supports various follow patterns, including direct pursuit and offset tracking.
+
+\colger
+
+Die Konfiguration erfolgt im iNAV Configurator durch Aktivieren des Follow-Me-Modus, das Zuweisen eines AUX-Kanals sowie die Einstellung der GPS-Aktualisierungsrate und der Sicherheitsabstände. iNAV unterstützt unterschiedliche Verfolgungsprofile, darunter direkte Verfolgung und seitlich versetztes Tracking.
+
+\colende
+
+\renewcommand{\deutschertitel}{Follow-Me mit ArduPilot}
+\renewcommand{\englischertitel}{Follow-Me with ArduPilot}
+\makroabschnitt
+\label{AbschnittFollowMeArduPilot}
+
+ArduPilot provides a comprehensive Follow-Me implementation that supports external GPS devices, companion computers (e.g., Raspberry Pi Zero, Raspberry Pi Compute Module\,4/5, NVidia TX1/TX2), and smartphone applications via MAVLink. Follow-Me requires a GPS-equipped external device. The drone must include a barometer, magnetic compass, accelerometer, gyroscope, and GPS module. 
+
+\colger
+
+ArduPilot bietet eine umfassende Follow-Me-Implementierung, die externe GPS-Geräte, Companion-Computer (z.B. Raspberry Pi Zero, Raspberry Pi Compute Module\,4/5, NVidia TX1/TX2) und Smartphone-Anwendungen über MAVLink unterstützt. Für Follow-Me wird ein externes GPS-Gerät benötigt. Die Drohne muss über Barometer, magnetischen Kompass, Beschleunigungssensor, Gyroskop und ein GPS-Modul verfügen. 
+
+\coleng
+
+Follow-Me is enabled in Mission Planner by selecting the Follow-Me feature and configuring parameters such as follow distance, altitude offset, and update frequency. 
+
+\colger
+
+Die Aktivierung erfolgt im Mission Planner über die Follow-Me-Funktion, wobei Parameter wie Verfolgungsabstand, Höhenversatz und Aktualisierungsrate konfiguriert werden. 
+
+\coleng
+
+ArduPilot supports advanced behaviors including smooth pursuit, orbiting around the target, and terrain-following when additional sensors are available. Its implementation is suitable for professional and research applications.
+
+\colger
+
+ArduPilot unterstützt fortgeschrittene Verfolgungsverfahren, darunter sanfte Annäherung, Umkreisung des Ziels und Geländefolgeflug bei Verwendung zusätzlicher Sensoren. Die Umsetzung eignet sich für professionelle und forschungsorientierte Anwendungen.
+
+\colende
+
+\renewcommand{\deutschertitel}{Follow-Me mit PX4}
+\renewcommand{\englischertitel}{Follow-Me with PX4}
+\makroabschnitt
+\label{AbschnittFollowMePX4}
+
+PX4 provides a Follow-Me feature primarily through the software QGroundControl and companion-computer applications. The function relies on the transmission of position data from a smartphone or companion system (e.g., Raspberry Pi Compute Module\,4) using MAVLink. PX4 requires a GPS-equipped flight controller with barometer, and magnetic compass. 
+
+\colger
+
+PX4 stellt eine Follow-Me-Funktion bereit, die hauptsächlich über die Software QGroundControl und Companion-Computer-Anwendungen implementiert wird. Die Funktion basiert auf der Übertragung von Positionsdaten eines Smartphones oder eines Companion-Systems (z.B. Raspberry Pi Compute Module\,4) über MAVLink. Für den Follow-Me-Betrieb benötigt PX4 einen GPS-fähigen Flugcontroller mit Barometer und magnetischen Kompass.
 
 \colende
