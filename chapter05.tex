@@ -91,16 +91,21 @@ The iNAV Configurator is used to configure sensors, calibrate the magnetic compa
 Im INAV-Konfigurator werden die autonomen Modi konfiguriert. Nicht alle dieser Modi sind eigenständig. Einige verändern lediglich Eigenschaften des Flugverhaltens und müssen in Kombination mit anderen Modi verwendet werden. Zu diesen modi gehören die folgenden:
 
 \begin{description}
-	\item[NAV ALTHOLD] ist ein solcher Modus. Dieser setzt lediglich die Flughöhe fest und muss in Kombination mit einem manuellen Flugmodus verwendet werden. Hierbei ist ANGLE empflohlen, da ALTHOLD nicht für Überkopf-Maneuver geeignet ist.
+	\item[NAV ALTHOLD] ist ein solcher Modus. Dieser setzt lediglich die Flughöhe fest und muss in Kombination mit einem manuellen Flugmodus verwendet werden. Hierbei ist ANGLE empflohlen, da ALTHOLD nicht für Überkopf-Maneuver geeignet ist. Im "Advanced Tuning" Tab kann mit "Max. Alt-hold climb rate" der Spielraum konfiguriert werden, mit welchem der Pilot die Höhe manuell nach oben und unten variieren kann.
 
 	\item[NAV GCS] ist ein weiterer uneigenständiger Modus. Dieser erlaubt es einer verbundenen Ground-Control-Station (GCS) die Position der Drohne zu kontrollieren. Dies kann für die Follow-Me-Funktion verwendet werden.
 \end{description}
 
 \begin{description}
-	\item[NAV POSHOLD] description
-	\item[NAV COURSE HOLD] description
-	\item[NAV CRUISE] description
-	\item[NAV RTH] description % What about HOME RESET Mode
+	\item[NAV POSHOLD] ist ein eigenständiger Modus, welcher die Drohne die Position halten lässt. Durch anpassen der Throttle-, Pitch- und Roll-Sticks kann die Position verändert werden. Sobald die jeweiligen Sticks in die Ausgangsposition versetzt werden, hält die Drohne die neue Position.
+
+	\item[MC BRAKING] fällt unter den NAV POSHOLD Modus und wird zusammen mit diesem verwendet. Der Unterschied liegt im Bremsverhalten bei Positionsanpassungen. Beim einfachen POSHOLD kehrt die Drohne nach Abschluss des Bremsvorgangs an den Ort zurück an dem die Sticks losgelassen wurden. Mit MC BRAKING bremst die Drohne stärker und hält die Position an dem Ort an welchem sie zum Stillstand kommt.
+
+	\item[NAV COURSE HOLD] versucht die Drohne den derzeitigen Kurs zu halten. Die Geschwindigkeit kann in diesem Modus mithilfe des Pitch-Sticks angepasst werden. Der Flugcontroller passt die Geschwindigkeit proportional zur Stellung des Pitch-Sticks an.
+
+	\item[NAV CRUISE] entspricht einer Kombination aus NAV COURSE HOLD und NAV ALTHOLD.
+
+	\item[NAV RTH] ist der Return-To-Home (RTH)-Modus, welcher auch als Failsafe konfiguriert werden kann. Es wird jedoch dringend davon abgeraten, den Failsafe für ein kontrolliertes RTH zu verwenden. Ist die Drohne mehr als 10 Meter von der Arming-Location oder dem konfigurierten Safehome entfernt klettert sie erst auf eine konfigurierte Höhe und fliegt dann in Richtung "Home" und landet dort, sobald sie dort im Radius von einem Meter ist.   % What about HOME RESET Mode, nav_rth_climb_first -> Wie wird die Safehome-Location konfiguriert.
 
 \end{description}
 
