@@ -7,9 +7,7 @@
 
 # AI‑Drohnen - Ein zweisprachiges Handbuch zu Entwurf, Bau und Einsatz von KI‑fähigen Drohnen
 
-## Projektüberblick \| Project Overview
-
-### 🇩🇪
+## 🇩🇪
 
 Dieses Dokument bietet einen Einstieg in das komplexe Thema Drohnen mit künstlicher Intelligenz. Schwerpunkte sind die Entwicklung (einschließlich der Auswahl geeigneter Hard- und Softwarekomponenten), der Bau und der Betrieb von Drohnen in der Lehre sowie in Forschungsprojekten.
 
@@ -21,7 +19,7 @@ Eine vollständige Abhandlung über Drohnen und KI ist nicht Ziel dieses Dokumen
 
 Über Ihre Kommentare und Verbesserungsvorschläge freuen wir uns sehr.
 
-### 🇬🇧
+##  🇬🇧
 
 This document provides an introduction to the complex topic of drones with artificial intelligence. Its focus is on the development (including the selection of suitable hardware and software components), construction, and operation of drones for teaching and research purposes.
 
