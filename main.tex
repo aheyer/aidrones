@@ -197,7 +197,6 @@ methods
 \displaywidowpenalty=10000
 \interlinepenalty=1000
 
-
 \pagestyle{scrheadings}
 \clearpairofpagestyles
 % \pagemark = Seitennummer
@@ -228,9 +227,6 @@ methods
 % }
 
 \frontmatter 
-
-
-
 % Inhalt der Titelseite
 \begin{titlepage}
 \thispagestyle{empty}
@@ -269,10 +265,10 @@ methods
 \include{chapter00}  % preface
 \cleardoublepage
 \tableofcontents
-
 \cleardoublepage
 \listofinhaltsverzeichnis
-\clearpage
+\cleardoublepage
+% \markboth{}{}
 
 \mainmatter 
 \include{chapter01}
@@ -283,29 +279,29 @@ methods
 \include{chapter06}
 \include{chapter07}
 
-\backmatter 
+% \backmatter 
 
 % \include{Z_0_004_TechnicalTerms}
-\include{glossary}
+% \include{glossary}
 
 
 
+% % \cleardoublepage
+% \phantomsection
+% 
+% \apptocmd{\thebibliography}{\csname phantomsection\endcsname
+% \renewcommand{\bibname}{References}\addcontentsline{toc}{chapter}{References}\addcontentsline{deutschestoc}{chapter}{Literatur}}{}{}
+% 
+% \include{bibliography}
+% 
+% 
+% \phantomsection
 % \cleardoublepage
-\phantomsection
+% 
+% \addcontentsline{toc}{chapter}{Index}
+% \addcontentsline{deutschestoc}{chapter}{Index}
 
-\apptocmd{\thebibliography}{\csname phantomsection\endcsname
-\renewcommand{\bibname}{References}\addcontentsline{toc}{chapter}{References}\addcontentsline{deutschestoc}{chapter}{Literatur}}{}{}
-
-\include{bibliography}
-
-
-\phantomsection
-\cleardoublepage
-
-\addcontentsline{toc}{chapter}{Index}
-\addcontentsline{deutschestoc}{chapter}{Index}
-
-\printindex
+% \printindex
 % \addcontentsline{deutschestoc}{chapter}{Stichwortverzeichnis}
 % \printindex[de]
 \end{document}
