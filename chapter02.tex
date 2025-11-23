@@ -44,11 +44,11 @@ Das Betriebssystem des Flugcontrollers wird als Firmware implementiert, die im F
 
 \coleng
 
-This document introduces the flight controller firmwares Betaflight, INAV, and ArduPilot.
+This document introduces the flight controller firmwares Betaflight, INAV, ArduPilot, and PX4.
 
 \colger
 
-Dieses Dokument stellt die Flugcontroller-Firmwares Betaflight, INAV und ArduPilot vor.
+Dieses Dokument stellt die Flugcontroller-Firmwares Betaflight, INAV, ArduPilot und PX4 vor.
 
 \colende
 
@@ -1176,6 +1176,37 @@ It is recommended to configure an arming switch before your first flight. To do 
 \colger
 
 Es wird empfohlen, vor dem ersten Flug einen separaten Arming-Schalter zu konfigurieren. Hierzu wird im Mission Planner der Bereich Config \(\longrightarrow\) Full Parameter List geöffnet und nach \verb!RC<channel number>_OPTION! gesucht (beispielsweise \verb!RC5_OPTION!). Der Wert dieses Parameters wird anschließend auf 153 gesetzt, wodurch dieser RC-Kanal als Arming-Kanal definiert wird.
+
+\colende
+
+
+
+\renewcommand{\deutschertitel}{PX4}
+\renewcommand{\englischertitel}{PX4}
+\makrounterabschnitt
+\label{AbschnittPX4}
+
+PX4 is an open-source autopilot firmware widely used in research, industry, and robotics. Unlike Betaflight and iNAV, which primarily focus on FPV and hobbyist use cases, PX4 provides an advanced and modular architecture designed for highly autonomous flight operations. Typical application domains include mapping, inspection, multi-robot cooperation, and integration with companion computers such as the Raspberry Pi or NVIDIA Jetson platforms. 
+
+\colger
+
+PX4 ist eine Open-Source-Autopilot-Firmware, die häufig in Forschung, Industrie und Robotik eingesetzt wird. Im Gegensatz zu Betaflight und iNAV, die primär auf FPV- und Hobbyanwendungen ausgerichtet sind, bietet PX4 eine erweiterbare und modulare Architektur für hochgradig autonome Flugoperationen. Typische Einsatzgebiete sind Kartierung, Inspektionen, Multi-Roboter-Kooperation und die Integration von Companion-Computern wie dem Raspberry Pi oder NVIDIA Jetson. 
+
+\coleng
+
+PX4 supports a broad range of flight controller boards, including the Pixhawk series and STM32-based systems. The firmware offers extensive functionality such as mission planning, position and altitude hold, obstacle avoidance (when paired with appropriate sensors), geofencing, and fully autonomous waypoint navigation. Configuration and calibration are performed using the ground control software QGroundControl, which provides tools for sensor calibration, flight mode configuration, and monitoring of telemetry data. PX4 communicates using the MAVLink protocol, enabling seamless integration with ground stations, companion computers, and external tools. 
+
+\colger
+
+PX4 unterstützt eine große Bandbreite an Flugcontroller-Platinen, darunter die Pixhawk-Serie sowie andere STM32-basierte Systeme. Die Firmware stellt umfangreiche Funktionen bereit, darunter Missionsplanung, Position- und Höhenhaltung, Hinderniserkennung (mit geeigneter Sensorik), Geofencing und vollständig autonome Wegpunktnavigation. Die Konfiguration und Kalibrierung erfolgt über die Bodenstationssoftware QGroundControl, die Werkzeuge zur Sensorkalibrierung, Flugmoduskonfiguration und Überwachung von Telemetriedaten bietet. PX4 nutzt das MAVLink-Protokoll und ermöglicht damit eine nahtlose Anbindung an Bodenstationen, Companion-Computer und externe Werkzeuge. 
+
+\coleng
+
+Its modular design allows developers to extend or replace subsystems, making PX4 particularly suitable for research projects and complex multi-sensor setups. Compared to the other systems discussed in this chapter, PX4 offers the highest flexibility and scalability but requires more powerful hardware and a more extensive setup effort. It is therefore best suited for applications requiring autonomy, sensor fusion, or advanced mission capabilities rather than purely manual FPV flight.
+
+\colger
+
+Durch das modulare Design lassen sich einzelne Subsysteme erweitern oder austauschen, was PX4 besonders für Forschungsprojekte und komplexe Multisensorsysteme geeignet macht. Im Vergleich zu den anderen in diesem Kapitel beschriebenen Systemen bietet PX4 die größte Flexibilität und Skalierbarkeit, erfordert jedoch leistungsfähigere Hardware und mehr Konfigurationsaufwand. Es eignet sich daher insbesondere für Anwendungen, die Autonomie, Sensorfusion oder erweiterte Missionsfähigkeiten benötigen und weniger für rein manuell geflogene FPV-Drohnen.
 
 \colende
 

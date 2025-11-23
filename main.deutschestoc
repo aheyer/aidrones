@@ -27,37 +27,38 @@
 \contentsline {subsection}{{2.1.1}~Betaflight}{26}{subsection.2.1.1}%
 \contentsline {subsection}{{2.1.2}~INAV}{37}{subsection.2.1.2}%
 \contentsline {subsection}{{2.1.3}~ArduPilot}{43}{subsection.2.1.3}%
-\contentsline {section}{{2.2}~Fernbedienung Firmware: EdgeTX}{57}{section.2.2}%
+\contentsline {subsection}{{2.1.4}~PX4}{57}{subsection.2.1.4}%
+\contentsline {section}{{2.2}~Fernbedienung Firmware: EdgeTX}{58}{section.2.2}%
 \contentsline {section}{{2.3}~Sendemodul- und Empfänger-Firmware: ExpressLRS}{60}{section.2.3}%
-\contentsline {chapter}{{\vspace {2pt}3}~Wichtige Punkte vor dem ersten Flug}{65}{chapter.3}%
-\contentsline {section}{{3.1}~Sicherheit beim Flug}{65}{section.3.1}%
-\contentsline {section}{{3.2}~Sicherheit vor dem Flug}{65}{section.3.2}%
-\contentsline {section}{{3.3}~Sichere Verwendung von LiPo-Akkus}{66}{section.3.3}%
-\contentsline {section}{{3.4}~Laden von Akkus}{66}{section.3.4}%
-\contentsline {section}{{3.5}~Sichere Befestigung loser Kabel und sonstiger Komponenten}{66}{section.3.5}%
-\contentsline {section}{{3.6}~Den geeigneten Flugmodus verwenden}{67}{section.3.6}%
-\contentsline {section}{{3.7}~Die Leistung des Videosenders reduzieren oder diesen abschalten}{69}{section.3.7}%
-\contentsline {section}{{3.8}~Mit einem Simulator üben}{70}{section.3.8}%
-\contentsline {section}{{3.9}~Die Kopplung automatisieren}{70}{section.3.9}%
-\contentsline {section}{{3.10}~Überwachung der Telemetriedaten mit geeigneten Werkzeugen}{71}{section.3.10}%
-\contentsline {chapter}{{\vspace {2pt}4}~Objekterkennung}{73}{chapter.4}%
-\contentsline {section}{{4.1}~Objekterkennung mit zusätzlicher Hardware an der Drohne}{74}{section.4.1}%
-\contentsline {subsection}{{4.1.1}~Vergleich von KI-Beschleunigern}{75}{subsection.4.1.1}%
-\contentsline {subsection}{{4.1.2}~Aufbau und Implementierung}{78}{subsection.4.1.2}%
-\contentsline {subsection}{{4.1.3}~Gesamtgewicht und Anschaffungskosten}{79}{subsection.4.1.3}%
-\contentsline {section}{{4.2}~Objekterkennung durch Auswertung des Livebilds am Boden}{80}{section.4.2}%
-\contentsline {subsection}{{4.2.1}~Gesamtgewicht und Anschaffungskosten}{82}{subsection.4.2.1}%
-\contentsline {chapter}{{\vspace {2pt}5}~Autopilot}{85}{chapter.5}%
-\contentsline {section}{{5.1}~Autopilot mit Betaflight}{85}{section.5.1}%
-\contentsline {section}{{5.2}~Autopilot mit iNAV}{86}{section.5.2}%
-\contentsline {section}{{5.3}~Autopilot mit ArduPilot}{86}{section.5.3}%
-\contentsline {section}{{5.4}~Autopilot mit PX4}{87}{section.5.4}%
-\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{89}{chapter.6}%
-\contentsline {section}{{6.1}~Follow-Me mit Betaflight}{89}{section.6.1}%
-\contentsline {section}{{6.2}~Follow-Me mit iNAV}{90}{section.6.2}%
-\contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{90}{section.6.3}%
-\contentsline {section}{{6.4}~Follow-Me mit PX4}{91}{section.6.4}%
-\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{93}{chapter.7}%
-\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{93}{section.7.1}%
-\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{94}{section.7.2}%
-\contentsline {section}{{7.3}~Ansteuerung und Integration}{94}{section.7.3}%
+\contentsline {chapter}{{\vspace {2pt}3}~Wichtige Punkte vor dem ersten Flug}{67}{chapter.3}%
+\contentsline {section}{{3.1}~Sicherheit beim Flug}{67}{section.3.1}%
+\contentsline {section}{{3.2}~Sicherheit vor dem Flug}{67}{section.3.2}%
+\contentsline {section}{{3.3}~Sichere Verwendung von LiPo-Akkus}{68}{section.3.3}%
+\contentsline {section}{{3.4}~Laden von Akkus}{68}{section.3.4}%
+\contentsline {section}{{3.5}~Sichere Befestigung loser Kabel und sonstiger Komponenten}{68}{section.3.5}%
+\contentsline {section}{{3.6}~Den geeigneten Flugmodus verwenden}{69}{section.3.6}%
+\contentsline {section}{{3.7}~Die Leistung des Videosenders reduzieren oder diesen abschalten}{71}{section.3.7}%
+\contentsline {section}{{3.8}~Mit einem Simulator üben}{72}{section.3.8}%
+\contentsline {section}{{3.9}~Die Kopplung automatisieren}{72}{section.3.9}%
+\contentsline {section}{{3.10}~Überwachung der Telemetriedaten mit geeigneten Werkzeugen}{73}{section.3.10}%
+\contentsline {chapter}{{\vspace {2pt}4}~Objekterkennung}{75}{chapter.4}%
+\contentsline {section}{{4.1}~Objekterkennung mit zusätzlicher Hardware an der Drohne}{76}{section.4.1}%
+\contentsline {subsection}{{4.1.1}~Vergleich von KI-Beschleunigern}{77}{subsection.4.1.1}%
+\contentsline {subsection}{{4.1.2}~Aufbau und Implementierung}{80}{subsection.4.1.2}%
+\contentsline {subsection}{{4.1.3}~Gesamtgewicht und Anschaffungskosten}{81}{subsection.4.1.3}%
+\contentsline {section}{{4.2}~Objekterkennung durch Auswertung des Livebilds am Boden}{82}{section.4.2}%
+\contentsline {subsection}{{4.2.1}~Gesamtgewicht und Anschaffungskosten}{84}{subsection.4.2.1}%
+\contentsline {chapter}{{\vspace {2pt}5}~Autopilot}{87}{chapter.5}%
+\contentsline {section}{{5.1}~Autopilot mit Betaflight}{87}{section.5.1}%
+\contentsline {section}{{5.2}~Autopilot mit iNAV}{88}{section.5.2}%
+\contentsline {section}{{5.3}~Autopilot mit ArduPilot}{88}{section.5.3}%
+\contentsline {section}{{5.4}~Autopilot mit PX4}{89}{section.5.4}%
+\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{91}{chapter.6}%
+\contentsline {section}{{6.1}~Follow-Me mit Betaflight}{91}{section.6.1}%
+\contentsline {section}{{6.2}~Follow-Me mit iNAV}{92}{section.6.2}%
+\contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{92}{section.6.3}%
+\contentsline {section}{{6.4}~Follow-Me mit PX4}{93}{section.6.4}%
+\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{95}{chapter.7}%
+\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{95}{section.7.1}%
+\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{96}{section.7.2}%
+\contentsline {section}{{7.3}~Ansteuerung und Integration}{96}{section.7.3}%
