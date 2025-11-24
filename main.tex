@@ -1,7 +1,24 @@
-\documentclass[a4paper,10pt,openright]{scrbook}
+\documentclass[
+  paper=a4,                % Papierformat A5 (oder benutze "paperwidth" und "paperheight" für benutzerdefinierte Formate)
+  DIV=calc,                % Automatische Berechnung des Satzspiegels
+  BCOR=0mm,               % Bindekorrektur (z. B. 10 mm, falls notwendig)
+  pagesize,                % Seitenformat in die PDF-Metadaten einfügen
+  headinclude=true,        % Kolumnentitel einbeziehen
+  footinclude=false,        % Fußzeile nicht einbeziehen
+]{scrbook}
 
 % Das "cleardoublepage=current" definiert, dass die Vakantseiten am Ende eines Kapitels
 % die gleichen Kopf und Fußzeilen haben wie bisher und nicht komplett leer sind!
+
+
+
+% Feineinstellungen des Satzspiegels
+\KOMAoptions{
+  DIV=11,                  % Anpassung des Satzspiegels (höhere Werte = kleinere Ränder)
+  fontsize=11pt,           % Schriftgröße (optional, falls Einfluss auf den Satzspiegel gewünscht)
+  twoside=true,            % Für zweiseitigen Druck
+}
+
 
 % Mit Fußzeile
 % \usepackage[headtopline,headsepline]{scrlayer-scrpage}
@@ -29,6 +46,7 @@
 \usepackage{pdflscape}   % \begin{landscape} ... \end{landscape}
 \usepackage{textcomp}
 \usepackage{lmodern}
+\usepackage{placeins}   % Für \FloatBarrier. Reihenfolge der Bilder und Tabellen bleibt so absolut stabil. Keine falschen Platzierungen mehr.
 \usepackage[official]{eurosym}% Eurosymbol: \euro{}
 \usepackage{icomma} % Das verhindert einen großen Abstand nach einem Komma in Formeln.
 % Quelle: https://texfragen.de/komma_in_formel
@@ -38,11 +56,17 @@
 % https://tex.stackexchange.com/questions/71129/bibliography-in-table-of-contents
 \usepackage{etoolbox}
 
+
 %% Seitenlayout
 \usepackage[
-    %showframe = true,
-    showframe = false,
-        ]{geometry}
+    a4paper,
+    twoside,
+    left=25mm,
+    right=25mm,
+    top=30mm,
+    bottom=25mm,
+    bindingoffset=0mm
+]{geometry}
 
 %Das ist wichtig für die Synchronisierung der Seitennummern mit dem PDF-Viewer
 \usepackage[hidelinks]{hyperref}
@@ -176,7 +200,8 @@ methods
 % Das vspace fügt im deutschen Inhaltsverzeichnis einen kleinen Abstand unter jedem Kapiteleintrag ein.
 % Beim englischen Inhaltsverzeichnis ist es in Kapitel-Datei im \chapter[...
 \newcommand\kapitel[1]{%
-\addcontentsline{deutschestoc}{chapter}{\protect{\vspace{2pt}\thechapter}~#1}}
+  \addcontentsline{deutschestoc}{chapter}{\protect{\vspace{2pt}\thechapter}~#1}%
+}
 \newcommand\abschnitt[1]{%
 \addcontentsline{deutschestoc}{section}{{\thesection}~#1}}
 \newcommand\unterabschnitt[1]{%
@@ -198,7 +223,10 @@ methods
 \interlinepenalty=1000
 
 \pagestyle{scrheadings}
+
 \clearpairofpagestyles
+\automark[section]{chapter}
+
 % \pagemark = Seitennummer
 % \headmark = Kolumnentitel wie Chapter, Section oder Subsection
 
@@ -214,6 +242,9 @@ methods
 \cfoot{}
 % \ofoot{Fußzeile außen}
 \ofoot{}
+
+
+\renewcommand{\chapterpagestyle}{scrheadings}
 
 \begin{document}
 
@@ -271,6 +302,7 @@ methods
 % \markboth{}{}
 
 \mainmatter 
+\ihead{\englischertitel} % Ohne diese manuelle Zuweisung ist die Kopfzeile in den folgenden Kapiteln fehlerhaft
 \include{chapter01}
 \include{chapter02}
 \include{chapter03}

@@ -2,6 +2,7 @@
 \renewcommand{\englischertitel}{Object Detection}
 \chapter[\protect{\vspace{2pt}\englischertitel}]{}
 \kapitel{\deutschertitel}
+\thispagestyle{empty}
 
 \label{KapitelObjekterkennung}
 
@@ -88,6 +89,7 @@ Pi 5         & 4\,\(@\)\,2400\,MHz  & 2-16\,GB & 85x56x16\,mm  & \(\sim 70\)\,g 
 \bottomrule
 \end{tabular}
 \end{table}
+\FloatBarrier
 
 \colstart
 
@@ -114,6 +116,7 @@ Im Vergleich zu den etwa scheckkartengroßen Modellreihen sind die Raspberry Pi 
   \caption{Raspberry Pi\,2\,WH (Front and Back)}
   \label{AbbildungRaspberryPiZero2WH}
 \end{figure}
+\FloatBarrier
 
 \colstart
 
@@ -169,6 +172,7 @@ Der 2019 erschienene Google Coral TPU Accelerator (siehe Abbildung~\ref{Abbildun
   \caption{Google Coral TPU Accelerator (Front and Back)}
   \label{AbbildungGoogleCoralTPUAccelerator}
 \end{figure}
+\FloatBarrier
 
 \colstart
 
@@ -195,6 +199,7 @@ Ein alternativer KI-Beschleuniger, der ebenfalls über die USB-Schnittstelle ang
   \caption{Intel Neuronal Compute Stick\,2 (Front and Back)}
   \label{AbbildungIntelNCS2}
 \end{figure}
+\FloatBarrier
 
 \colstart
 
@@ -231,6 +236,7 @@ RPi AI\,Kit/HAT+                & HAT (PCIe)      & 13          & \(\sim\)\,40\,
 \bottomrule
 \end{tabular}
 \end{table}
+\FloatBarrier
 
 \colstart
 
@@ -277,6 +283,7 @@ Ein Nachteil des Google Coral TPU Accelerator ist, dass der Hersteller keine wei
   \caption{Components of a FPV Drone with additional Hardware Components for Object Detection by the Drone itself}
   \label{AbbildungKompoentenEinerDrohneMitRaspberryPiundCoral}
 \end{figure}
+\FloatBarrier
 
 \renewcommand{\deutschertitel}{Gesamtgewicht und Anschaffungskosten}
 \renewcommand{\englischertitel}{Total Weight and Purchase Cost}
@@ -324,6 +331,7 @@ Zum Aufbau der Drohne empfiehlt sich ein Rahmen mit 3,5 bis 5 Zoll. Soll die Dro
 @Sum & & sum(c2:c19) & sum(d2:d19) \\
 \end{spreadtab}
 \end{table}
+\FloatBarrier
 
 \colstart
 
@@ -354,7 +362,7 @@ Eine einfache Möglichkeit, auf das Livebild zuzugreifen, bietet die gegebenenfa
   \caption{Video Grabber Device connected to the A/V Port of an FPV Goggle}
   \label{AbbildungVideobrillemitVideograbber}
 \end{figure}
-
+\FloatBarrier
 
 \colstart
 
@@ -485,7 +493,6 @@ Soll der Videostrom aus einem Programmquellcode heraus verwendet werden, bietet 
 \makrounterabschnitt
 \label{AbschnittObjekterkennungKostenVideoGrabber}
 
-
 Table~\ref{TabelleDrohne35Videograbber} lists the components of the drone from Table~\ref{TabelleDrohne35GoogleCoral}, excluding the hardware required for object detection. Specifically, this includes the Raspberry Pi Zero, the camera module, the Google Coral TPU, and the corresponding cables and enclosures. Additional accessories such as the remote control, FPV goggles, and charger must also be available or purchased separately. In addition, a video grabber (15–25 \euro{}) and a computer are required.
 
 \colger
@@ -520,4 +527,5 @@ Tabelle~\ref{TabelleDrohne35Videograbber} enthält die Komponenten der Drohne au
 @Sum & & sum(c2:c11) & sum(d2:d11) \\
 \end{spreadtab}
 \end{table}
+\FloatBarrier
 

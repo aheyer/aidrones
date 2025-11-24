@@ -5,7 +5,7 @@ DATEINAME = main
 
 all:
 	$(PDFLATEX) $(DATEINAME).tex
-	$(MAKEINDEX) $(DATEINAME).idx
+#	$(MAKEINDEX) $(DATEINAME).idx
 	cp main.pdf AI_Drones.pdf
 
 clean:

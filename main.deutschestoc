@@ -1,6 +1,6 @@
 \contentsline {chapter}{{\vspace {2pt}1}~Hardware-Komponenten zum Bau von FPV-Drohnen}{1}{chapter.1}%
-\contentsline {section}{{1.1}~Rahmen}{1}{section.1.1}%
-\contentsline {section}{{1.2}~Flugcontroller und Motorsteuerung}{3}{section.1.2}%
+\contentsline {section}{{1.1}~Rahmen}{2}{section.1.1}%
+\contentsline {section}{{1.2}~Flugcontroller und Motorsteuerung}{4}{section.1.2}%
 \contentsline {subsection}{{1.2.1}~Stack oder AIO}{5}{subsection.1.2.1}%
 \contentsline {section}{{1.3}~Motoren}{8}{section.1.3}%
 \contentsline {subsection}{{1.3.1}~Motoraufbau und -größe}{8}{subsection.1.3.1}%
@@ -8,11 +8,11 @@
 \contentsline {subsection}{{1.3.3}~KV-Wert}{9}{subsection.1.3.3}%
 \contentsline {subsection}{{1.3.4}~Propelleraufnahme}{10}{subsection.1.3.4}%
 \contentsline {subsection}{{1.3.5}~Rahmenbefestigung}{10}{subsection.1.3.5}%
-\contentsline {section}{{1.4}~Propeller}{11}{section.1.4}%
+\contentsline {section}{{1.4}~Propeller}{10}{section.1.4}%
 \contentsline {subsection}{{1.4.1}~Propellergröße (Durchmesser)}{11}{subsection.1.4.1}%
 \contentsline {subsection}{{1.4.2}~Anzahl der Blätter}{11}{subsection.1.4.2}%
 \contentsline {subsection}{{1.4.3}~Steigung (Pitch)}{12}{subsection.1.4.3}%
-\contentsline {section}{{1.5}~Akkus}{13}{section.1.5}%
+\contentsline {section}{{1.5}~Akkus}{12}{section.1.5}%
 \contentsline {subsection}{{1.5.1}~Lade- oder Entladerate (C-Wert)}{13}{subsection.1.5.1}%
 \contentsline {subsection}{{1.5.2}~Anzahl der Zellen (S4/S6)}{14}{subsection.1.5.2}%
 \contentsline {subsection}{{1.5.3}~Stecker (XT30/XT60/XT90) zum Entladen und Laden}{15}{subsection.1.5.3}%
@@ -21,22 +21,22 @@
 \contentsline {section}{{1.8}~Fernbedienung (Sender)}{18}{section.1.8}%
 \contentsline {section}{{1.9}~Videosender}{19}{section.1.9}%
 \contentsline {section}{{1.10}~Kamera}{21}{section.1.10}%
-\contentsline {section}{{1.11}~Videobrille (FPV-Brille)}{23}{section.1.11}%
+\contentsline {section}{{1.11}~Videobrille (FPV-Brille)}{22}{section.1.11}%
 \contentsline {chapter}{{\vspace {2pt}2}~Software zum Betrieb von FPV-Drohnen}{25}{chapter.2}%
 \contentsline {section}{{2.1}~Flight Controller Firmware}{25}{section.2.1}%
 \contentsline {subsection}{{2.1.1}~Betaflight}{26}{subsection.2.1.1}%
 \contentsline {subsection}{{2.1.2}~INAV}{37}{subsection.2.1.2}%
-\contentsline {subsection}{{2.1.3}~ArduPilot}{43}{subsection.2.1.3}%
-\contentsline {subsection}{{2.1.4}~PX4}{57}{subsection.2.1.4}%
+\contentsline {subsection}{{2.1.3}~ArduPilot}{44}{subsection.2.1.3}%
+\contentsline {subsection}{{2.1.4}~PX4}{58}{subsection.2.1.4}%
 \contentsline {section}{{2.2}~Fernbedienung Firmware: EdgeTX}{58}{section.2.2}%
-\contentsline {section}{{2.3}~Sendemodul- und Empfänger-Firmware: ExpressLRS}{60}{section.2.3}%
+\contentsline {section}{{2.3}~Sendemodul- und Empfänger-Firmware: ExpressLRS}{61}{section.2.3}%
 \contentsline {chapter}{{\vspace {2pt}3}~Wichtige Punkte vor dem ersten Flug}{67}{chapter.3}%
 \contentsline {section}{{3.1}~Sicherheit beim Flug}{67}{section.3.1}%
 \contentsline {section}{{3.2}~Sicherheit vor dem Flug}{67}{section.3.2}%
-\contentsline {section}{{3.3}~Sichere Verwendung von LiPo-Akkus}{68}{section.3.3}%
+\contentsline {section}{{3.3}~Sichere Verwendung von LiPo-Akkus}{67}{section.3.3}%
 \contentsline {section}{{3.4}~Laden von Akkus}{68}{section.3.4}%
-\contentsline {section}{{3.5}~Sichere Befestigung loser Kabel und sonstiger Komponenten}{68}{section.3.5}%
-\contentsline {section}{{3.6}~Den geeigneten Flugmodus verwenden}{69}{section.3.6}%
+\contentsline {section}{{3.5}~Sichere Befestigung loser Kabel und sonstiger Komponenten}{69}{section.3.5}%
+\contentsline {section}{{3.6}~Den geeigneten Flugmodus verwenden}{70}{section.3.6}%
 \contentsline {section}{{3.7}~Die Leistung des Videosenders reduzieren oder diesen abschalten}{71}{section.3.7}%
 \contentsline {section}{{3.8}~Mit einem Simulator üben}{72}{section.3.8}%
 \contentsline {section}{{3.9}~Die Kopplung automatisieren}{72}{section.3.9}%
@@ -55,9 +55,9 @@
 \contentsline {section}{{5.4}~Autopilot mit PX4}{89}{section.5.4}%
 \contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{91}{chapter.6}%
 \contentsline {section}{{6.1}~Follow-Me mit Betaflight}{91}{section.6.1}%
-\contentsline {section}{{6.2}~Follow-Me mit iNAV}{92}{section.6.2}%
+\contentsline {section}{{6.2}~Follow-Me mit iNAV}{91}{section.6.2}%
 \contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{92}{section.6.3}%
-\contentsline {section}{{6.4}~Follow-Me mit PX4}{93}{section.6.4}%
+\contentsline {section}{{6.4}~Follow-Me mit PX4}{92}{section.6.4}%
 \contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{95}{chapter.7}%
 \contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{95}{section.7.1}%
 \contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{96}{section.7.2}%
