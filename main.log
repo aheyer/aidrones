@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  24 NOV 2025 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  24 NOV 2025 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,6 +462,557 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen175
 \Gm@dimlist=\toks27
 )
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen176
+\lightrulewidth=\dimen177
+\cmidrulewidth=\dimen178
+\belowrulesep=\dimen179
+\belowbottomsep=\dimen180
+\aboverulesep=\dimen181
+\abovetopsep=\dimen182
+\cmidrulesep=\dimen183
+\cmidrulekern=\dimen184
+\defaultaddspace=\dimen185
+\@cmidla=\count304
+\@cmidlb=\count305
+\@aboverulesep=\dimen186
+\@belowrulesep=\dimen187
+\@thisruleclass=\count306
+\@lastruleclass=\count307
+\@thisrulewidth=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+\everycr=\toks28
+\minrowclearance=\skip71
+\rownum=\count308
+)
+
+Class scrbook Warning: Usage of package `tocloft' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use options like `listof=entryprefix',
+(scrbook)              commands like `\listoflofentryname' or
+(scrbook)              `\listoflotentryname', and `\DeclareTOCStyleEntry' or
+(scrbook)              `\RedeclareSectionCommand' instead of this package,
+(scrbook)              because it breaks several KOMA-Script features of
+(scrbook)              the list of figures, list of tables and table of
+(scrbook)              contents, i.e., options like `listof=numbered',
+(scrbook)              `listof=flat or `toc=flat', commands like
+(scrbook)              `\BeforeTOCHead{...}' and `\AfterTOCHead{...}',
+(scrbook)              `\BeforeStartingTOC{...}' and \AfterStartingTOC{...}',
+(scrbook)              all features of `\DeclareTOCStyleEntry',
+(scrbook)              and the ToC entry features of `\DeclareSecionCommand'
+(scrbook)              and `\RedeclareSectionCommand' of levels
+(scrbook)              `part', `section', `subsection',
+(scrbook)              `subsubsection', `paragraph' and `subparagraph'.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `tocloft' on input line 74.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip72
+\cftbeforetoctitleskip=\skip73
+\cftaftertoctitleskip=\skip74
+\cftbeforepartskip=\skip75
+\cftpartnumwidth=\skip76
+\cftpartindent=\skip77
+\cftbeforechapskip=\skip78
+\cftchapindent=\skip79
+\cftchapnumwidth=\skip80
+\cftbeforesecskip=\skip81
+\cftsecindent=\skip82
+\cftsecnumwidth=\skip83
+\cftbeforesubsecskip=\skip84
+\cftsubsecindent=\skip85
+\cftsubsecnumwidth=\skip86
+\cftbeforesubsubsecskip=\skip87
+\cftsubsubsecindent=\skip88
+\cftsubsubsecnumwidth=\skip89
+\cftbeforeparaskip=\skip90
+\cftparaindent=\skip91
+\cftparanumwidth=\skip92
+\cftbeforesubparaskip=\skip93
+\cftsubparaindent=\skip94
+\cftsubparanumwidth=\skip95
+\cftbeforeloftitleskip=\skip96
+\cftafterloftitleskip=\skip97
+\cftbeforefigskip=\skip98
+\cftfigindent=\skip99
+\cftfignumwidth=\skip100
+\c@lofdepth=\count309
+\c@lotdepth=\count310
+\cftbeforelottitleskip=\skip101
+\cftafterlottitleskip=\skip102
+\cftbeforetabskip=\skip103
+\cfttabindent=\skip104
+\cfttabnumwidth=\skip105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2025/07/14 1.37 typeset columns in parallel
+\pcol@currcol=\count311
+\pcol@nextcol=\count312
+\pcol@ncol=\count313
+\pcol@ncolleft=\count314
+\pcol@page=\count315
+\pcol@basepage=\count316
+\pcol@toppage=\count317
+\pcol@footnotebase=\count318
+\pcol@nfootnotes=\count319
+\pcol@mcid=\count320
+\pcol@prevdepth=\dimen189
+\pcol@colht=\dimen190
+\pcol@textfloatsep=\dimen191
+\pcol@lrmargin=\dimen192
+\pagerim=\dimen193
+\pcol@topskip=\skip106
+\belowfootnoteskip=\skip107
+\pcol@topfnotes=\box61
+\pcol@prespan=\box62
+\pcol@rightpage=\box63
+\pcol@colorstack@saved=\box64
+\pcol@tempboxa=\box65
+\pcol@tempboxb=\box66
+\pcol@colorins=\insert252
+\pcol@everyvbox=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count321
+\FV@InFile=\read3
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count322
+\FV@StepNumber=\count323
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+\LTleft=\skip108
+\LTright=\skip109
+\LTpre=\skip110
+\LTpost=\skip111
+\LTchunksize=\count324
+\LTcapwidth=\dimen194
+\LT@head=\box68
+\LT@firsthead=\box69
+\LT@foot=\box70
+\LT@lastfoot=\box71
+\LT@gbox=\box72
+\LT@cols=\count325
+\LT@rows=\count326
+\c@LT@tables=\count327
+\c@LT@chunks=\count328
+\LT@p@ftn=\toks30
+)
+Class scrbook Info: longtable captions redefined on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count329
+\float@exts=\toks31
+\float@box=\box73
+\@float@everytoks=\toks32
+\@floatcapt=\box74
+)
+(/usr/share/texlive/texmf-dist/tex/latex/verbatimbox/verbatimbox.sty
+Package: verbatimbox 2023/08/08 v3.2\ Routines for placing verbatim text into b
+oxes, useful in places where the verbatim environment is inaccessible. Secondar
+ily, for adding vertical buffer around an object.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks33
+\verbatim@line=\toks34
+\verbatim@in@stream=\read4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/readarray/readarray.sty
+Package: readarray 2021/09/17\ 3.1\ Routines for inputting 2D and 3D array data
+ and recalling it on an element-by-element basis.
+
+(/usr/share/texlive/texmf-dist/tex/latex/forloop/forloop.sty
+Package: forloop 2023/05/03 v3.0 For Loops for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count330
+\loi_nestcnt=\count331
+)
+Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@index=\count332
+\c@@plane=\count333
+\c@@row=\count334
+\c@@col=\count335
+\c@use@args=\count336
+\c@@record=\count337
+\c@index@count=\count338
+\Arg@toks=\toks35
+\@arrayident@toks=\toks36
+\rdar@file=\read5
+\readarrayendlinechar=\count339
+
+readarray: bounds checking OFF
+)
+\savedverbbox=\box75
+\c@VerbboxLineNo=\count340
+\boxtopsep=\dimen195
+\boxbottomsep=\dimen196
+\ps@tempdima=\dimen197
+\ps@tempboxa=\box76
+\boxtop@sep=\skip112
+\boxbottom@sep=\skip113
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+\MT@toks=\toks37
+\MT@tempbox=\box77
+\MT@count=\count341
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks38
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen198
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count342
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip114
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count343
+\calc@Bcount=\count344
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen256
+\calc@Askip=\skip115
+\calc@Bskip=\skip116
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count345
+\calc@Cskip=\skip117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip118
+\RaggedLeftLeftskip=\skip119
+\RaggedRightLeftskip=\skip120
+\CenteringRightskip=\skip121
+\RaggedLeftRightskip=\skip122
+\RaggedRightRightskip=\skip123
+\CenteringParfillskip=\skip124
+\RaggedLeftParfillskip=\skip125
+\RaggedRightParfillskip=\skip126
+\JustifyingParfillskip=\skip127
+\CenteringParindent=\skip128
+\RaggedLeftParindent=\skip129
+\RaggedRightParindent=\skip130
+\JustifyingParindent=\skip131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen257
+\captionmargin=\dimen258
+\caption@leftmargin=\dimen259
+\caption@rightmargin=\dimen260
+\caption@width=\dimen261
+\caption@indent=\dimen262
+\caption@parindent=\dimen263
+\caption@hangindent=\dimen264
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\@abovecaptionbreak \vs
+kip \abovecaptionskip \@abovecaptionbreak \@@makecaption \@firstofone {#1}{#2}\
+@belowcaptionbreak \vskip \belowcaptionskip \@belowcaptionbreak  on input line 
+1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count346
+\c@continuedfloat=\count347
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2023/01/24 v1.7a SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen265
+\SC@CAPWD=\dimen266
+\SC@tempdima=\dimen267
+\SC@tempdimb=\dimen268
+\c@SC@C=\count348
+\SC@BOX=\box78
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip132
+\bibsep=\skip133
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count349
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip134
+\multirow@cntb=\count350
+\multirow@dima=\skip135
+\bigstrutjot=\dimen269
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip136
+\fb@frw=\dimen270
+\fb@frh=\dimen271
+\FrameRule=\dimen272
+\FrameSep=\dimen273
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count351
+\lst@gtempboxa=\box79
+\lst@token=\toks39
+\lst@length=\count352
+\lst@currlwidth=\dimen274
+\lst@column=\count353
+\lst@pos=\count354
+\lst@lostspace=\dimen275
+\lst@width=\dimen276
+\lst@newlines=\count355
+\lst@lineno=\count356
+\lst@maxwidth=\dimen277
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
+\lst@framebox=\box80
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (./out.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+\c@r@tfl@t=\count359
+\rotFPtop=\skip137
+\rotFPbot=\skip138
+\rot@float@box=\box81
+\rot@mess@toks=\toks40
+))
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks41
+\XKV@tempa@toks=\toks42
+)
+\XKV@depth=\count360
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
+\c@tracingmulticols=\count361
+\mult@box=\box82
+\multicol@leftmargin=\dimen278
+\c@unbalance=\count362
+\c@collectmore=\count363
+\doublecol@number=\count364
+\multicoltolerance=\count365
+\multicolpretolerance=\count366
+\full@width=\dimen279
+\page@free=\dimen280
+\premulticols=\dimen281
+\postmulticols=\dimen282
+\multicolsep=\skip139
+\multicolbaselineskip=\skip140
+\partial@page=\box83
+\last@line=\box84
+\mc@boxedresult=\box85
+\maxbalancingoverflow=\dimen283
+\mult@rightbox=\box86
+\mult@grightbox=\box87
+\mult@firstbox=\box88
+\mult@gfirstbox=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\c@minrows=\count367
+\c@columnbadness=\count368
+\c@finalcolumnbadness=\count369
+\last@try=\dimen284
+\multicolovershoot=\dimen285
+\multicolundershoot=\dimen286
+\mult@nat@firstbox=\box126
+\colbreak@box=\box127
+\mc@col@check@num=\count370
+\g__mc_curr_col_int=\count371
+))
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen287
+\ESO@tempdimb=\dimen288
+)
+(/usr/share/texlive/texmf-dist/tex/latex/spreadtab/spreadtab.sty
+Package: spreadtab 2025/03/14 v0.61 Spreadsheet features for table environments
+ (CT)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count372
+\xs_countb=\count373
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.sty
+(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.tex)
+Package: simplekv 2025/06/15 v0.32 Simple keyval package (CT)
+)
+\ST_cnt=\count374
+\ST_col_cnt=\count375
+\ST_col_cnt_a=\count376
+\ST_row_cnt=\count377
+\ST_row_cnt_a=\count378
+\ST_intpart_cnt=\count379
+)
+(/usr/share/texlive/texmf-dist/tex/latex/numprint/numprint.sty
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count380
+\c@nprt@mantissa@digitsafter=\count381
+\c@nprt@exponent@digitsbefore=\count382
+\c@nprt@exponent@digitsafter=\count383
+\nprt@digitwidth=\skip141
+\nprt@sepwidth=\skip142
+\nprt@decimalwidth=\skip143
+\nprt@blockwidth=\skip144
+\nprt@digittoks=\toks43
+\nprt@pretoks=\toks44
+\nprt@posttoks=\toks45
+\nprt@thisdigit=\count384
+\nprt@curpos=\count385
+\nprt@rndpos=\count386
+\c@nprt@digitsfirstblock=\count387
+\c@nprt@blockcnt=\count388
+\c@nprt@cntprint=\count389
+
+No configuration file `numprint.cfg' found.)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
@@ -503,15 +1054,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count304
+\c@section@level=\count390
 )
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen176
-\Hy@linkcounter=\count305
-\Hy@pagecounter=\count306
+\@linkdim=\dimen289
+\Hy@linkcounter=\count391
+\Hy@pagecounter=\count392
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -521,7 +1072,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count307
+\Hy@SavedSpaceFactor=\count393
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -535,14 +1086,9 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count308
-
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count394
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen177
+\XeTeXLinkMargin=\dimen290
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -551,9 +1097,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count309
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\Fld@menulength=\count395
+\Field@Width=\dimen291
+\Fld@charsize=\dimen292
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -561,16 +1107,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count310
-\c@Item=\count311
-\c@Hfootnote=\count312
+\Hy@abspage=\count396
+\c@Item=\count397
+\c@Hfootnote=\count398
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count313
-\c@bookmark@seq@number=\count314
+\Fld@listcount=\count399
+\c@bookmark@seq@number=\count400
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
@@ -581,561 +1127,11 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip145
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen180
-\lightrulewidth=\dimen181
-\cmidrulewidth=\dimen182
-\belowrulesep=\dimen183
-\belowbottomsep=\dimen184
-\aboverulesep=\dimen185
-\abovetopsep=\dimen186
-\cmidrulesep=\dimen187
-\cmidrulekern=\dimen188
-\defaultaddspace=\dimen189
-\@cmidla=\count315
-\@cmidlb=\count316
-\@aboverulesep=\dimen190
-\@belowrulesep=\dimen191
-\@thisruleclass=\count317
-\@lastruleclass=\count318
-\@thisrulewidth=\dimen192
-)
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-\everycr=\toks28
-\minrowclearance=\skip72
-\rownum=\count319
-)
-
-Class scrbook Warning: Usage of package `tocloft' together
-(scrbook)              with a KOMA-Script class is not recommended.
-(scrbook)              I'd suggest to use options like `listof=entryprefix',
-(scrbook)              commands like `\listoflofentryname' or
-(scrbook)              `\listoflotentryname', and `\DeclareTOCStyleEntry' or
-(scrbook)              `\RedeclareSectionCommand' instead of this package,
-(scrbook)              because it breaks several KOMA-Script features of
-(scrbook)              the list of figures, list of tables and table of
-(scrbook)              contents, i.e., options like `listof=numbered',
-(scrbook)              `listof=flat or `toc=flat', commands like
-(scrbook)              `\BeforeTOCHead{...}' and `\AfterTOCHead{...}',
-(scrbook)              `\BeforeStartingTOC{...}' and \AfterStartingTOC{...}',
-(scrbook)              all features of `\DeclareTOCStyleEntry',
-(scrbook)              and the ToC entry features of `\DeclareSecionCommand'
-(scrbook)              and `\RedeclareSectionCommand' of levels
-(scrbook)              `part', `section', `subsection',
-(scrbook)              `subsubsection', `paragraph' and `subparagraph'.
-(scrbook)              Nevertheless, using requested
-(scrbook)              package `tocloft' on input line 76.
-
-(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip73
-\cftbeforetoctitleskip=\skip74
-\cftaftertoctitleskip=\skip75
-\cftbeforepartskip=\skip76
-\cftpartnumwidth=\skip77
-\cftpartindent=\skip78
-\cftbeforechapskip=\skip79
-\cftchapindent=\skip80
-\cftchapnumwidth=\skip81
-\cftbeforesecskip=\skip82
-\cftsecindent=\skip83
-\cftsecnumwidth=\skip84
-\cftbeforesubsecskip=\skip85
-\cftsubsecindent=\skip86
-\cftsubsecnumwidth=\skip87
-\cftbeforesubsubsecskip=\skip88
-\cftsubsubsecindent=\skip89
-\cftsubsubsecnumwidth=\skip90
-\cftbeforeparaskip=\skip91
-\cftparaindent=\skip92
-\cftparanumwidth=\skip93
-\cftbeforesubparaskip=\skip94
-\cftsubparaindent=\skip95
-\cftsubparanumwidth=\skip96
-\cftbeforeloftitleskip=\skip97
-\cftafterloftitleskip=\skip98
-\cftbeforefigskip=\skip99
-\cftfigindent=\skip100
-\cftfignumwidth=\skip101
-\c@lofdepth=\count320
-\c@lotdepth=\count321
-\cftbeforelottitleskip=\skip102
-\cftafterlottitleskip=\skip103
-\cftbeforetabskip=\skip104
-\cfttabindent=\skip105
-\cfttabnumwidth=\skip106
-)
-(/usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
-Package: paracol 2025/07/14 1.37 typeset columns in parallel
-\pcol@currcol=\count322
-\pcol@nextcol=\count323
-\pcol@ncol=\count324
-\pcol@ncolleft=\count325
-\pcol@page=\count326
-\pcol@basepage=\count327
-\pcol@toppage=\count328
-\pcol@footnotebase=\count329
-\pcol@nfootnotes=\count330
-\pcol@mcid=\count331
-\pcol@prevdepth=\dimen193
-\pcol@colht=\dimen194
-\pcol@textfloatsep=\dimen195
-\pcol@lrmargin=\dimen196
-\pagerim=\dimen197
-\pcol@topskip=\skip107
-\belowfootnoteskip=\skip108
-\pcol@topfnotes=\box61
-\pcol@prespan=\box62
-\pcol@rightpage=\box63
-\pcol@colorstack@saved=\box64
-\pcol@tempboxa=\box65
-\pcol@tempboxb=\box66
-\pcol@colorins=\insert252
-\pcol@everyvbox=\toks29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count332
-\FV@InFile=\read3
-\FV@TabBox=\box67
-\c@FancyVerbLine=\count333
-\FV@StepNumber=\count334
-\FV@OutFile=\write3
-)
-(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
-Package: needspace 2025/03/13 v1.3e reserve vertical space
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
-\LTleft=\skip109
-\LTright=\skip110
-\LTpre=\skip111
-\LTpost=\skip112
-\LTchunksize=\count335
-\LTcapwidth=\dimen198
-\LT@head=\box68
-\LT@firsthead=\box69
-\LT@foot=\box70
-\LT@lastfoot=\box71
-\LT@gbox=\box72
-\LT@cols=\count336
-\LT@rows=\count337
-\c@LT@tables=\count338
-\c@LT@chunks=\count339
-\LT@p@ftn=\toks30
-)
-Class scrbook Info: longtable captions redefined on input line 80.
-
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count340
-\float@exts=\toks31
-\float@box=\box73
-\@float@everytoks=\toks32
-\@floatcapt=\box74
-)
-(/usr/share/texlive/texmf-dist/tex/latex/verbatimbox/verbatimbox.sty
-Package: verbatimbox 2023/08/08 v3.2\ Routines for placing verbatim text into b
-oxes, useful in places where the verbatim environment is inaccessible. Secondar
-ily, for adding vertical buffer around an object.
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks33
-\verbatim@line=\toks34
-\verbatim@in@stream=\read4
-)
-(/usr/share/texlive/texmf-dist/tex/latex/readarray/readarray.sty
-Package: readarray 2021/09/17\ 3.1\ Routines for inputting 2D and 3D array data
- and recalling it on an element-by-element basis.
-
-(/usr/share/texlive/texmf-dist/tex/latex/forloop/forloop.sty
-Package: forloop 2023/05/03 v3.0 For Loops for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
-(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_cnt_foreach_nest=\count341
-\loi_nestcnt=\count342
-)
-Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified 
-sep char (CT)
-)
-\c@@index=\count343
-\c@@plane=\count344
-\c@@row=\count345
-\c@@col=\count346
-\c@use@args=\count347
-\c@@record=\count348
-\c@index@count=\count349
-\Arg@toks=\toks35
-\@arrayident@toks=\toks36
-\rdar@file=\read5
-\readarrayendlinechar=\count350
-
-readarray: bounds checking OFF
-)
-\savedverbbox=\box75
-\c@VerbboxLineNo=\count351
-\boxtopsep=\dimen199
-\boxbottomsep=\dimen256
-\ps@tempdima=\dimen257
-\ps@tempboxa=\box76
-\boxtop@sep=\skip113
-\boxbottom@sep=\skip114
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-\MT@toks=\toks37
-\MT@tempbox=\box77
-\MT@count=\count352
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
-LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks38
-LaTeX Info: Redefining \rightprotrusion on input line 1107.
-LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen258
-LaTeX Info: Redefining \microtypecontext on input line 2053.
-LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count353
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 944.
-LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip115
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
-)
-LaTeX Info: Redefining \microtypesetup on input line 3065.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
-Package textcase Info: Defining Legacy names on input line 20.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count354
-\calc@Bcount=\count355
-\calc@Adimen=\dimen259
-\calc@Bdimen=\dimen260
-\calc@Askip=\skip116
-\calc@Bskip=\skip117
-LaTeX Info: Redefining \setlength on input line 86.
-LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count356
-\calc@Cskip=\skip118
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip119
-\RaggedLeftLeftskip=\skip120
-\RaggedRightLeftskip=\skip121
-\CenteringRightskip=\skip122
-\RaggedLeftRightskip=\skip123
-\RaggedRightRightskip=\skip124
-\CenteringParfillskip=\skip125
-\RaggedLeftParfillskip=\skip126
-\RaggedRightParfillskip=\skip127
-\JustifyingParfillskip=\skip128
-\CenteringParindent=\skip129
-\RaggedLeftParindent=\skip130
-\RaggedRightParindent=\skip131
-\JustifyingParindent=\skip132
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen261
-\captionmargin=\dimen262
-\caption@leftmargin=\dimen263
-\caption@rightmargin=\dimen264
-\caption@width=\dimen265
-\caption@indent=\dimen266
-\caption@parindent=\dimen267
-\caption@hangindent=\dimen268
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\@abovecaptionbreak \vs
-kip \abovecaptionskip \@abovecaptionbreak \@@makecaption \@firstofone {#1}{#2}\
-@belowcaptionbreak \vskip \belowcaptionskip \@belowcaptionbreak  on input line 
-1175.
-)
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count357
-\c@continuedfloat=\count358
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)
-Package caption Info: threeparttable package is loaded.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
-Package: sidecap 2023/01/24 v1.7a SideCap Package (RN/HjG)
-\SC@BOXWD=\dimen269
-\SC@CAPWD=\dimen270
-\SC@tempdima=\dimen271
-\SC@tempdimb=\dimen272
-\c@SC@C=\count359
-\SC@BOX=\box78
-)
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip133
-\bibsep=\skip134
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count360
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip135
-\multirow@cntb=\count361
-\multirow@dima=\skip136
-\bigstrutjot=\dimen273
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
-)
-(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip137
-\fb@frw=\dimen274
-\fb@frh=\dimen275
-\FrameRule=\dimen276
-\FrameSep=\dimen277
-)
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count362
-\lst@gtempboxa=\box79
-\lst@token=\toks39
-\lst@length=\count363
-\lst@currlwidth=\dimen278
-\lst@column=\count364
-\lst@pos=\count365
-\lst@lostspace=\dimen279
-\lst@width=\dimen280
-\lst@newlines=\count366
-\lst@lineno=\count367
-\lst@maxwidth=\dimen281
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count368
-\lst@skipnumbers=\count369
-\lst@framebox=\box80
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
-))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
-
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-LaTeX Info: Redefining \color on input line 762.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (./out.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
-\c@r@tfl@t=\count370
-\rotFPtop=\skip138
-\rotFPbot=\skip139
-\rot@float@box=\box81
-\rot@mess@toks=\toks40
-))
-(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
-Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
-nous mode
-
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks41
-\XKV@tempa@toks=\toks42
-)
-\XKV@depth=\count371
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count372
-\mult@box=\box82
-\multicol@leftmargin=\dimen282
-\c@unbalance=\count373
-\c@collectmore=\count374
-\doublecol@number=\count375
-\multicoltolerance=\count376
-\multicolpretolerance=\count377
-\full@width=\dimen283
-\page@free=\dimen284
-\premulticols=\dimen285
-\postmulticols=\dimen286
-\multicolsep=\skip140
-\multicolbaselineskip=\skip141
-\partial@page=\box83
-\last@line=\box84
-\mc@boxedresult=\box85
-\maxbalancingoverflow=\dimen287
-\mult@rightbox=\box86
-\mult@grightbox=\box87
-\mult@firstbox=\box88
-\mult@gfirstbox=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\@tempa=\box121
-\@tempa=\box122
-\@tempa=\box123
-\@tempa=\box124
-\@tempa=\box125
-\c@minrows=\count378
-\c@columnbadness=\count379
-\c@finalcolumnbadness=\count380
-\last@try=\dimen288
-\multicolovershoot=\dimen289
-\multicolundershoot=\dimen290
-\mult@nat@firstbox=\box126
-\colbreak@box=\box127
-\mc@col@check@num=\count381
-\g__mc_curr_col_int=\count382
-))
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen291
-\ESO@tempdimb=\dimen292
-)
-(/usr/share/texlive/texmf-dist/tex/latex/spreadtab/spreadtab.sty
-Package: spreadtab 2025/03/14 v0.61 Spreadsheet features for table environments
- (CT)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count383
-\xs_countb=\count384
-)
-Package: xstring 2023/08/22 v1.86 String manipulations (CT)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.sty
-(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.tex)
-Package: simplekv 2025/06/15 v0.32 Simple keyval package (CT)
-)
-\ST_cnt=\count385
-\ST_col_cnt=\count386
-\ST_col_cnt_a=\count387
-\ST_row_cnt=\count388
-\ST_row_cnt_a=\count389
-\ST_intpart_cnt=\count390
-)
-(/usr/share/texlive/texmf-dist/tex/latex/numprint/numprint.sty
-Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count391
-\c@nprt@mantissa@digitsafter=\count392
-\c@nprt@exponent@digitsbefore=\count393
-\c@nprt@exponent@digitsafter=\count394
-\nprt@digitwidth=\skip142
-\nprt@sepwidth=\skip143
-\nprt@decimalwidth=\skip144
-\nprt@blockwidth=\skip145
-\nprt@digittoks=\toks43
-\nprt@pretoks=\toks44
-\nprt@posttoks=\toks45
-\nprt@thisdigit=\count395
-\nprt@curpos=\count396
-\nprt@rndpos=\count397
-\c@nprt@digitsfirstblock=\count398
-\c@nprt@blockcnt=\count399
-\c@nprt@cntprint=\count400
-
-No configuration file `numprint.cfg' found.)
-
-Package array Warning: Column Z is already defined on input line 140.
-
 \de@idxfile=\write4
 \openout4 = `de.idx'.
+
 
 Writing index file de.idx
 \main@idxfile=\write5
@@ -1156,7 +1152,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 249.
+(scrbook)           before \begin{document} on input line 260.
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -1165,8 +1161,8 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
 \BKM@id=\count403
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
-9.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 26
+0.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1178,42 +1174,39 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 (./main.aux (./chapter00.aux
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 9.
-) (./chapter01.aux
-
-LaTeX Warning: Label `AbbildungLiPoAkku' multiply defined.
-
-) (./chapter02.aux) (./chapter03.aux) (./chapter04.aux) (./chapter05.aux)
-(./chapter06.aux) (./chapter07.aux))
+) (./chapter01.aux) (./chapter02.aux)
+(./chapter03.aux) (./chapter04.aux) (./chapter05.aux) (./chapter06.aux)
+(./chapter07.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-Package scrbase Info: activating english \partname on input line 249.
-Package scrbase Info: activating english \chaptername on input line 249.
-Package scrbase Info: activating english \appendixname on input line 249.
-Package scrbase Info: activating english \figurename on input line 249.
-Package scrbase Info: activating english \tablename on input line 249.
-Package scrbase Info: activating english \contentsname on input line 249.
-Package scrbase Info: activating english \listfigurename on input line 249.
-Package scrbase Info: activating english \listtablename on input line 249.
-Package scrbase Info: activating english \bibname on input line 249.
-Package scrbase Info: activating english \indexname on input line 249.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+Package scrbase Info: activating english \partname on input line 260.
+Package scrbase Info: activating english \chaptername on input line 260.
+Package scrbase Info: activating english \appendixname on input line 260.
+Package scrbase Info: activating english \figurename on input line 260.
+Package scrbase Info: activating english \tablename on input line 260.
+Package scrbase Info: activating english \contentsname on input line 260.
+Package scrbase Info: activating english \listfigurename on input line 260.
+Package scrbase Info: activating english \listtablename on input line 260.
+Package scrbase Info: activating english \bibname on input line 260.
+Package scrbase Info: activating english \indexname on input line 260.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1271,16 +1264,13 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 249.
-LaTeX Info: Redefining \microtypecontext on input line 249.
-Package microtype Info: Applying patch `item' on input line 249.
-Package microtype Info: Applying patch `toc' on input line 249.
-Package microtype Info: Applying patch `eqnum' on input line 249.
-
-Package microtype Warning: Unable to apply patch `footnote' on input line 249.
-
-Package microtype Info: Applying patch `verbatim' on input line 249.
-LaTeX Info: Redefining \microtypesetup on input line 249.
+LaTeX Info: Redefining \microtypecontext on input line 260.
+Package microtype Info: Applying patch `item' on input line 260.
+Package microtype Info: Applying patch `toc' on input line 260.
+Package microtype Info: Applying patch `eqnum' on input line 260.
+Package microtype Info: Applying patch `footnote' on input line 260.
+Package microtype Info: Applying patch `verbatim' on input line 260.
+LaTeX Info: Redefining \microtypesetup on input line 260.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1288,21 +1278,25 @@ Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
 Package microtype Info: Patching command `\showhyphens'.
-Package microtype Info: No adjustment of tracking.
+Package microtype Info: Tracking enabled.
+Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Adjustment of character kerning enabled.
+Package microtype Info: Using default kerning set `alltext'.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count411
-Package tocbasic Info: setting babel extension for `lol' on input line 249.
+Package tocbasic Info: setting babel extension for `lol' on input line 260.
 \scr@dte@lstlisting@maxnumwidth=\skip151
+Package hyperref Info: Link coloring OFF on input line 260.
 
 
 [1
@@ -1326,18 +1320,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
 4.
+
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1420,37 +1405,13 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
  (./chapter01.tex
 chapter 1.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-[]\T1/lmr/m/n/10.95 (+20) Dieses Ka-pi-tel stellt die wich-tigs-ten
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 44--45
-[]\T1/lmr/m/n/10.95 (+20) Die ty-pi-schen Kom-po-nen-ten ei-ner FPV-
- []
-
 <./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf, id=246, 2873.73625pt 
 x 1885.0425pt>
 File: ./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf Graphic file (typ
 e pdf)
 <use ./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf>
 Package pdftex.def Info: ./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pd
-f  used on input line 50.
+f  used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 298.5928pt.
 
 
@@ -1466,26 +1427,21 @@ f  used on input line 50.
 
 [2 <./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-18.
+19.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [3{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 1383) in paragraph at lines 222--223
-\T1/lmr/m/n/10.95 (+20) or more ESCs are com-bined on a sin-gle
- []
-
-[4]
+vips/lm/lm-mathsy.enc}] [4]
 <./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg, id=311, 1003.75p
 t x 1003.75pt>
 File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg Graphic file
  (type jpg)
 <use ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_cr
-op.jpg  used on input line 263.
+op.jpg  used on input line 264.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
 <./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg, id=312, 1003.75pt
  x 1003.75pt>
@@ -1493,18 +1449,13 @@ File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg Graphic file
 (type jpg)
 <use ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_cro
-p.jpg  used on input line 268.
+p.jpg  used on input line 269.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
-
-Underfull \hbox (badness 5147) in paragraph at lines 282--283
-[]\T1/lmr/m/n/10.95 (+20) Abbildung []1.2[] zeigt einen AIO-Flight-
- []
-
 <./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg, id=319, 2007.5pt x 1003.75pt>
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg  used o
-n input line 288.
+n input line 289.
 (pdftex.def)             Requested size: 455.24411pt x 227.61066pt.
 
 
@@ -1514,7 +1465,7 @@ edyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>]
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg  used on
- input line 296.
+ input line 297.
 (pdftex.def)             Requested size: 455.24411pt x 227.61066pt.
  [6 <./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg> <./images/SpeedyBee_F405_M
 ini_BLS_35A_back.jpg>]
@@ -1524,7 +1475,7 @@ File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg Graphic file (type jpg
 )
 <use ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg>
 Package pdftex.def Info: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg  us
-ed on input line 332.
+ed on input line 333.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
 <./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg, id=345, 1003.75pt x 1003.75
 pt>
@@ -1532,73 +1483,60 @@ File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg Graphic file (type jpg)
 
 <use ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg>
 Package pdftex.def Info: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg  use
-d on input line 337.
+d on input line 338.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
 
-Overfull \hbox (3.14168pt too wide) in paragraph at lines 380--380
+Overfull \hbox (3.14168pt too wide) in paragraph at lines 381--381
  []|\T1/lmr/m/n/8 (-20) available$[]$| 
  []
 
 
-Overfull \hbox (3.14168pt too wide) in paragraph at lines 380--380
+Overfull \hbox (3.14168pt too wide) in paragraph at lines 381--381
  []|\T1/lmr/m/n/8 (-20) available$[]$| 
  []
 
 
-Overfull \hbox (3.14168pt too wide) in paragraph at lines 380--380
+Overfull \hbox (3.14168pt too wide) in paragraph at lines 381--381
  []|\T1/lmr/m/n/8 (-20) available$[]$| 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 383.
+(Font)              <9> on input line 384.
 
 
 [7 <./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg> <./images/FLYWOO_GOKU_G
-N745_45A_AIO_V3_FC_back.jpg>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-[]\T1/lmr/m/n/10.95 (+20) Die Pro-pel-ler-auf-nah-me (sie-he Ab-
- []
-
-[9{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
-\T1/lmr/m/n/10.95 (+20) Klassischerweise ver-wen-den FPV-Drohnen
- []
-
-
+N745_45A_AIO_V3_FC_back.jpg>] [8] [9{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.
+enc}] [10] [11]
 
 [12{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
-Underfull \hbox (badness 1107) in paragraph at lines 670--671
-[]\T1/lmr/m/n/10.95 (+20) Ein 1500 mAh LiPo-Akku (sie-he Ab-bil-
- []
-
 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg, id=413, 3468.96pt x 2312.64
 pt>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg Graphic file (type jpg)
 
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg  use
-d on input line 678.
+d on input line 679.
 (pdftex.def)             Requested size: 218.51521pt x 145.66885pt.
 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=414, 3468.96pt x 2312.64p
 t>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg Graphic file (type jpg)
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg>
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg  used
- on input line 683.
+ on input line 684.
 (pdftex.def)             Requested size: 218.51521pt x 145.66885pt.
-[13 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh_
-100C_4S_XT60_Lipo_back.jpg>] [14] [15]
-<./images/HGLRS_GPS_M100_PRO_front.jpg, id=445, 702.625pt x 702.625pt>
+ [13 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh
+_100C_4S_XT60_Lipo_back.jpg>] [14] [15]
+<./images/HGLRS_GPS_M100_PRO_front.jpg, id=444, 702.625pt x 702.625pt>
 File: ./images/HGLRS_GPS_M100_PRO_front.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_front.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_front.jpg  used on input l
-ine 861.
+ine 862.
 (pdftex.def)             Requested size: 218.51521pt x 218.51909pt.
-<./images/HGLRS_GPS_M100_PRO_back.jpg, id=446, 752.8125pt x 752.8125pt>
+<./images/HGLRS_GPS_M100_PRO_back.jpg, id=445, 752.8125pt x 752.8125pt>
 File: ./images/HGLRS_GPS_M100_PRO_back.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_back.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_back.jpg  used on input li
-ne 866.
+ne 867.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
 
 
@@ -1609,28 +1547,28 @@ ack.jpg>]
 File: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg  used
- on input line 915.
+ on input line 916.
 (pdftex.def)             Requested size: 109.2576pt x 136.33472pt.
 <./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=465, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg  used 
-on input line 920.
+on input line 921.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
 <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=466, 351.3125pt x 439.642
 5pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg  used
- on input line 932.
+ on input line 933.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
 <./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=467, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg  used 
-on input line 937.
+on input line 938.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
  [18 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg> <./images/RadioMaster_R
 P2_Receiver_ELRS_back.jpg> <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg> <
@@ -1641,7 +1579,7 @@ File: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg Graphic file (type
 jpg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg 
- used on input line 983.
+ used on input line 984.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
 <./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=479, 853.1875pt x 853
 .1875pt>
@@ -1649,29 +1587,24 @@ File: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg Graphic file (type j
 pg)
 <use ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg  
-used on input line 988.
+used on input line 989.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
 
-Overfull \hbox (4.59229pt too wide) in paragraph at lines 1010--1021
+Overfull \hbox (4.59229pt too wide) in paragraph at lines 1011--1022
  [][] 
  []
 
 
 
 [19 <./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg> <./images/SpeedyBee
-_TX800_FPV_VTX_rueckseite_crop.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
-[]\T1/lmr/m/n/10.95 (+20) Analog video trans-mit-ters are cross-
- []
-
-[20] [21]
+_TX800_FPV_VTX_rueckseite_crop.jpg>] [20] [21]
 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg, id=506, 552.0625pt x 552.
 0625pt>
 File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg Graphic file (type jp
 g)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg  u
-sed on input line 1169.
+sed on input line 1170.
 (pdftex.def)             Requested size: 109.2576pt x 109.25648pt.
 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=507, 552.0625pt x 552
 .0625pt>
@@ -1679,7 +1612,7 @@ File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg Graphic file (type j
 pg)
 <use ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg>
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg  
-used on input line 1174.
+used on input line 1175.
 (pdftex.def)             Requested size: 109.2576pt x 109.25648pt.
 <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=508, 752.8125pt x 75
 2.8125pt>
@@ -1687,7 +1620,7 @@ File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg Graphic file (type
 jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg 
- used on input line 1186.
+ used on input line 1187.
 (pdftex.def)             Requested size: 109.2576pt x 109.25266pt.
 <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=509, 752.8125pt x 7
 52.8125pt>
@@ -1695,7 +1628,7 @@ File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg Graphic file (type
  jpg)
 <use ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg
-  used on input line 1191.
+  used on input line 1192.
 (pdftex.def)             Requested size: 109.2576pt x 109.25266pt.
  [22 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_
 Nano_1200TVL_14mm_165FOV_back.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155F
@@ -1704,7 +1637,7 @@ OV_top.jpg> <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg>]
 File: ./images/SKYZONE_04X_PRO_IMG_5179.png Graphic file (type png)
 <use ./images/SKYZONE_04X_PRO_IMG_5179.png>
 Package pdftex.def Info: ./images/SKYZONE_04X_PRO_IMG_5179.png  used on input l
-ine 1290.
+ine 1291.
 (pdftex.def)             Requested size: 455.24411pt x 237.9265pt.
 
 
@@ -1715,35 +1648,6 @@ ine 1290.
 
  (./chapter02.tex
 chapter 2.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 4981) in paragraph at lines 44--45
-[]\T1/lmr/m/n/10.95 (+20) Das Be-triebs-sys-tem des Flug-con-trol-lers
- []
-
-
-Underfull \hbox (badness 2229) in paragraph at lines 44--45
-\T1/lmr/m/n/10.95 (+20) wird als Firm-wa-re im-ple-men-tiert, die im
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 44--45
-\T1/lmr/m/n/10.95 (+20) Flash-Speicher ab-ge-legt ist. Da al-le gän-
- []
-
 [25
 
 
@@ -1760,11 +1664,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 1910) in paragraph at lines 90--91
-\T1/lmr/m/n/10.95 (+20) The in-stal-la-tion and con-fig-u-ra-tion of the
- []
-
 <./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_app.p
 ng, id=547, 878.21773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_
@@ -1894,11 +1793,6 @@ Package pdftex.def Info: ./images/INAV_Firmware_Flasher.png  used on input line
  460.
 (pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
  [38 <./images/INAV_Firmware_Flasher.png>] [39]
-Underfull \hbox (badness 1087) in paragraph at lines 600--601
-\T1/lmr/m/n/10.95 (+20) Among other things, the \T1/lmr/m/sl/10.95 (+20) Pre-ar
-ming
- []
-
 <./images/INAV_Calibration_Tab.png, id=697, 1927.2pt x 1084.05pt>
 File: ./images/INAV_Calibration_Tab.png Graphic file (type png)
 <use ./images/INAV_Calibration_Tab.png>
@@ -1914,18 +1808,7 @@ File: ./images/INAV_Failsafe_Tab.png Graphic file (type png)
 Package pdftex.def Info: ./images/INAV_Failsafe_Tab.png  used on input line 720
 .
 (pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
-
-Underfull \hbox (badness 1917) in paragraph at lines 737--738
-[]\T1/lmr/m/n/10.95 (+20) Im \T1/lmr/m/sl/10.95 (+20) Receiver-Tab \T1/lmr/m/n/
-10.95 (+20) wird Flug-con-trol-ler-
- []
-
-
-Underfull \hbox (badness 1917) in paragraph at lines 737--738
-\T1/lmr/m/n/10.95 (+20) sei-tig die Ver-bin-dung zur Fern-be-die-
- []
-
-[42 <./images/INAV_Failsafe_Tab.png>]
+ [42 <./images/INAV_Failsafe_Tab.png>]
 <./images/INAV_OSD_Tab.png, id=744, 1927.2pt x 1051.93pt>
 File: ./images/INAV_OSD_Tab.png Graphic file (type png)
 <use ./images/INAV_OSD_Tab.png>
@@ -1934,38 +1817,13 @@ Package pdftex.def Info: ./images/INAV_OSD_Tab.png  used on input line 789.
 
 
 [43] [44 <./images/INAV_OSD_Tab.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 842--843
-[]\T1/lmr/m/n/10.95 (+20) Zum Her-un-ter-la-den der ArduCopter-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 842--843
-\T1/lmr/m/n/10.95 (+20) Firmware wird der of-fi-zi-el-le ArduPilot-
- []
-
-
-Underfull \hbox (badness 4967) in paragraph at lines 842--843
-\T1/lmtt/m/n/10.95 org / Copter / stable/$[] \T1/lmr/m/n/10.95 (+20) auf-ge-ru-
-fen. Aus der
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 842--843
-[]\T1/lmr/m/n/10.95 (+20) her-un-ter-ge-la-den, da die-se den Boot-loa-der
- []
-
-
-Underfull \hbox (badness 5161) in paragraph at lines 842--843
-\T1/lmr/m/n/10.95 (+20) wird emp-foh-len, um Kom-pa-ti-bi-li-tät und
- []
-
 <./images/STM32CubeProgrammerConnect.png, id=766, 1445.4pt x 818.05624pt>
 File: ./images/STM32CubeProgrammerConnect.png Graphic file (type png)
 <use ./images/STM32CubeProgrammerConnect.png>
 Package pdftex.def Info: ./images/STM32CubeProgrammerConnect.png  used on input
  line 848.
 (pdftex.def)             Requested size: 455.24411pt x 257.65163pt.
-[45 <./images/STM32CubeProgrammerConnect.png>]
+ [45 <./images/STM32CubeProgrammerConnect.png>]
 <./images/STM32CubeProgrammerFullChipErase.png, id=777, 1445.4pt x 818.05624pt>
 
 File: ./images/STM32CubeProgrammerFullChipErase.png Graphic file (type png)
@@ -1982,9 +1840,8 @@ Package pdftex.def Info: ./images/STM32CubeProgrammerFirmwareFlashing.png  used
 (pdftex.def)             Requested size: 455.24411pt x 257.65163pt.
 
 
-[46 <./images/STM32CubeProgrammerFullChipErase.png>] [47 <./images/STM32CubePro
-grammerFirmwareFlashing.png>]
-<./images/Mission_Planneer_1.3.83_connect_screenshot.png, id=798, 1154.51324pt 
+[46 <./images/STM32CubeProgrammerFullChipErase.png>]
+<./images/Mission_Planneer_1.3.83_connect_screenshot.png, id=789, 1154.51324pt 
 x 612.48825pt>
 File: ./images/Mission_Planneer_1.3.83_connect_screenshot.png Graphic file (typ
 e png)
@@ -1992,6 +1849,9 @@ e png)
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_connect_screenshot.pn
 g  used on input line 905.
 (pdftex.def)             Requested size: 455.24411pt x 241.51431pt.
+
+
+[47 <./images/STM32CubeProgrammerFirmwareFlashing.png>]
 <./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png, id=801, 1444.6471
 9pt x 777.65532pt>
 File: ./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png Graphic file 
@@ -2000,9 +1860,6 @@ File: ./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png Graphic file
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_frame_setup_screensho
 t.png  used on input line 923.
 (pdftex.def)             Requested size: 455.24411pt x 245.05765pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [48 <./images/Mission_Planneer_1.3.83_connect_screenshot.png> <./images/Missio
 n_Planneer_1.3.83_frame_setup_screenshot.png>]
 <./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png, id=813, 115
@@ -2031,9 +1888,6 @@ t.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_board_accelerometer_c
 alibration_screenshot.png  used on input line 1001.
 (pdftex.def)             Requested size: 455.24411pt x 138.06732pt.
-
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
  [50 <./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png> <./images/M
 ission_Planneer_1.3.83_board_accelerometer_calibration_screenshot.png>]
 <./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png, id=
@@ -2073,15 +1927,9 @@ File: ./images/Mission_Planneer_1.3.83_Servo_Output_screenshot.png Graphic file
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Servo_Output_screensh
 ot.png  used on input line 1096.
 (pdftex.def)             Requested size: 455.24411pt x 200.79135pt.
-
-Underfull \hbox (badness 3547) in paragraph at lines 1108--1109
-\T1/lmr/m/n/10.95 (+20) ren: []$\T1/lmtt/m/n/10.95 https : / / ardupilot . org 
-/ copter / docs /
- []
-
-[53 <./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scree
-nshot.png (PNG copy)> <./images/Mission_Planneer_1.3.83_Servo_Output_screenshot
-.png>]
+ [53 <./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scre
+enshot.png (PNG copy)> <./images/Mission_Planneer_1.3.83_Servo_Output_screensho
+t.png>]
 <./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png, id=871, 1444.
 64719pt x 428.35031pt>
 File: ./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png Graphic f
@@ -2090,41 +1938,6 @@ ile (type png)
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_ESC_Calibration_scree
 nshot.png  used on input line 1114.
 (pdftex.def)             Requested size: 455.24411pt x 134.98334pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
-[]\T1/lmr/m/n/10.95 (+20) Abbildung []2.29[] zeigt die ESC-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) Kalibrierungsseite im Missi-on Plan-ner,
- []
-
-
-Underfull \hbox (badness 2126) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) die zur Ver-ein-heit-li-chung des Gas-be-reichs
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) das Mo-tor-ver-hal-ten im Leer-lauf und über
- []
-
-
-Underfull \hbox (badness 3068) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) rung be-nö-ti-gen, da die Ga-sin-ter-pre-ta-ti-on
- []
-
-
-Underfull \hbox (badness 2460) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) die meis-ten mo-der-nen Flug-con-trol-ler und
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 1126--1127
-\T1/lmr/m/n/10.95 (+20) ESCs ge-nügt es, im Feld ESC Ty-pe das
- []
-
 <./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png, id=874, 1444.647
 19pt x 426.84468pt>
 File: ./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png Graphic file
@@ -2221,20 +2034,6 @@ line 1392.
 
 [62 <./images/ExpressLRS_Installation_1.png> <./images/ExpressLRS_Installation_
 2.png>]
-Underfull \hbox (badness 6477) in paragraph at lines 1412--1413
-\T1/lmr/m/n/10.95 (+20) Datei auf das Sen-de-mo-dul der Fern-be-
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 1412--1413
-\T1/lmr/m/n/10.95 (+20) die-nung auf-ge-spielt wer-den. Ei-ne Mög-lich-
- []
-
-
-Underfull \hbox (badness 2717) in paragraph at lines 1412--1413
-\T1/lmr/m/n/10.95 (+20) keit hier-zu ist die In-stal-la-ti-on über das
- []
-
 <./images/ExpressLRS_Installation_4.png, id=985, 878.21773pt x 490.89056pt>
 File: ./images/ExpressLRS_Installation_4.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_4.png>
@@ -2276,20 +2075,6 @@ ut line 1462.
 
  (./chapter03.tex
 chapter 3.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
 [67
 
 
@@ -2322,33 +2107,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 189.
  [71]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
-[]\T1/lmr/m/n/10.95 (+20) Der Sen-der ver-fügt über ei-ne USB-
- []
-
-
-Underfull \hbox (badness 4913) in paragraph at lines 336--337
-\T1/lmr/m/n/10.95 (+20) Schnittstelle und soll-te als Ein-ga-be-ge-rät
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 336--337
-\T1/lmr/m/n/10.95 (+20) muss \T1/lmr/m/sl/10.95 (+20) Joy-stick \T1/lmr/m/n/10.
-95 (+20) aus-ge-wählt wer-den. Es ist
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 336--337
-\T1/lmr/m/n/10.95 (+20) an-zu-le-gen, bei-spiels-wei-se mit dem Na-men
- []
-
-
-Underfull \hbox (badness 1596) in paragraph at lines 336--337
-\T1/lmr/m/sl/10.95 (+20) Si-mu-la-tor\T1/lmr/m/n/10.95 (+20) . Die-ses Mo-dell 
-soll-te über kein
- []
-
-
 
 [72])
 
@@ -2365,26 +2123,7 @@ soll-te über kein
 
 ]
 chapter 4.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[75]
-Underfull \hbox (badness 1168) in paragraph at lines 100--101
-[]\T1/lmr/m/n/10.95 (+20) Im Ver-gleich zu den et-wa scheck-kar-ten-
- []
-
-[76]
+[75] [76]
 <./images/raspberry_pi_2_wh_front.png, id=1127, 1806.75pt x 903.375pt>
 File: ./images/raspberry_pi_2_wh_front.png Graphic file (type png)
 <use ./images/raspberry_pi_2_wh_front.png>
@@ -2431,44 +2170,9 @@ on input line 196.
 
 [78 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_TP
 U_Accelerator_back.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-[]\T1/lmr/m/n/10.95 (+20) Eine mo-der-ne-re Al-ter-na-ti-ve zum An-
- []
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 210--211
-\T1/lmr/m/n/10.95 (+20) schluss ei-nes KI-Beschleunigers über die
- []
-
-
-Underfull \hbox (badness 1596) in paragraph at lines 210--211
-\T1/lmr/m/n/10.95 (+20) USB-Schnittstelle ist die 2024 er-schie-ne-ne
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 210--211
-\T1/lmr/m/n/10.95 (+20) einen in-te-grier-ten KI-Beschleuniger, des-sen
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 210--211
-\T1/lmr/m/n/10.95 (+20) Leis-tungs-fä-hig-keit in TOPS nicht be-kannt
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 210--211
-\T1/lmr/m/n/10.95 (+20) als der an-de-rer Kamera-Module, sie kann
- []
-
-
 
 [79 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neuronal
-_Compute_Stick2_back.png>]
-Underfull \hbox (badness 2418) in paragraph at lines 268--269
-\T1/lmr/m/n/10.95 (+20) con-trol-ler ver-fügt nur über sechs UART-
- []
-
-[80]
+_Compute_Stick2_back.png>] [80]
 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=1177, 4076.22874pt x 18
 85.0425pt>
 File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
@@ -2488,18 +2192,9 @@ ut line 361.
 (pdftex.def)             Requested size: 455.24411pt x 341.39963pt.
 
 
-[82] [83 <./images/Videobrille_mit_Videograbber.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
-[]\T1/lmr/m/n/10.95 (+20) Das Kom-man-do [][]\T1/lmtt/m/n/10.95 v4l2-ctl []\T1/
-lmr/m/n/10.95 (+20) un-ter-stützt
- []
+[82]
 
-
-Underfull \hbox (badness 5316) in paragraph at lines 434--435
-\T1/lmr/m/n/10.95 (+20) beim Auf-fin-den des ge-wünsch-ten Ge-räts
- []
-
-
+[83 <./images/Videobrille_mit_Videograbber.jpg>]
 
 [84])
 
@@ -2516,48 +2211,9 @@ Underfull \hbox (badness 5316) in paragraph at lines 434--435
 
 ]
 chapter 5.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 56--57
-[]\T1/lmr/m/n/10.95 (+20) Configuration is per-formed through the
- []
-
 [87]
-Underfull \hbox (badness 1622) in paragraph at lines 77--78
-[]\T1/lmr/m/n/10.95 (+20) Supported hard-ware in-cludes flight con-
- []
 
-
-Underfull \hbox (badness 2126) in paragraph at lines 89--90
-[]\T1/lmr/m/n/10.95 (+20) Die Kon-fi-gu-ra-ti-on er-folgt über den iN-
- []
-
-
-
-[88]
-Underfull \hbox (badness 4316) in paragraph at lines 139--140
-[]\T1/lmr/m/n/10.95 (+20) PX4 er-for-dert Hard-wa-re wie Pixhawk-
- []
-
-
-Underfull \hbox (badness 1540) in paragraph at lines 139--140
-\T1/lmr/m/n/10.95 (+20) Missi-ons-pla-nung er-folgt über die Soft-wa-re
- []
-
-)
+[88])
 
 [89]
 \openout2 = `chapter06.aux'.
@@ -2572,31 +2228,7 @@ Underfull \hbox (badness 1540) in paragraph at lines 139--140
 
 ]
 chapter 6.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[91]
-Underfull \hbox (badness 2111) in paragraph at lines 86--87
-\T1/lmr/m/n/10.95 (+20) Implementierung, die ex-ter-ne GPS-Geräte,
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 115--116
-\T1/lmr/m/n/10.95 (+20) der Über-tra-gung von Po-si-ti-ons-da-ten ei-nes
- []
-
-[92])
+[91] [92])
 
 [93]
 \openout2 = `chapter07.aux'.
@@ -2611,25 +2243,6 @@ Underfull \hbox (badness 1502) in paragraph at lines 115--116
 
 ]
 chapter 7.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 23--24
-[]\T1/lmr/m/n/10.95 (+20) Drop-Mechanismen er-mög-li-chen es ei-ner
- []
-
 <./images/Servomotor_IMG_5092.jpg, id=1337, 1720.4275pt x 1290.8225pt>
 File: ./images/Servomotor_IMG_5092.jpg Graphic file (type jpg)
 <use ./images/Servomotor_IMG_5092.jpg>
@@ -2647,17 +2260,13 @@ Package pdftex.def Info: ./images/Servomotor_IMG_5092.jpg  used on input line 5
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 29816 strings out of 469603
- 562699 string characters out of 5473551
- 1220285 words of memory out of 5000000
- 57030 multiletter control sequences out of 15000+600000
- 729848 words of font info for 241 fonts, out of 8000000 for 9000
+ 29882 strings out of 469603
+ 564469 string characters out of 5473551
+ 1222781 words of memory out of 5000000
+ 57076 multiletter control sequences out of 15000+600000
+ 736718 words of font info for 253 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
  108i,20n,122p,11207b,1283s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/s
@@ -2670,10 +2279,10 @@ usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (104 pages, 56820512 bytes).
+Output written on main.pdf (104 pages, 56821840 bytes).
 PDF statistics:
  1723 PDF objects out of 1728 (max. 8388607)
  1419 compressed objects within 15 object streams
  449 named destinations out of 1000 (max. 500000)
- 59266 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 63362 words of extra memory for PDF output out of 74296 (max. 10000000)
 

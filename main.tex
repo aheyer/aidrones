@@ -68,24 +68,30 @@
     bindingoffset=0mm
 ]{geometry}
 
-%Das ist wichtig für die Synchronisierung der Seitennummern mit dem PDF-Viewer
-\usepackage[hidelinks]{hyperref}
 \usepackage{booktabs}   % Das braucht man u.a. in Tabellen für \toprule, \midrule, \bottomrule
 \usepackage{colortbl}   % Das braucht man u.a. in Tabellen für \cellcolor{lightgray} 
-\usepackage{tocloft}
+\usepackage{tocloft}    % Das braucht man u.a. für \newlistof (deutsches TOC)
 \usepackage{paracol}
 \usepackage{fancyvrb}  % Das braucht man für die Umgebung Verbatim
 \usepackage{needspace}
 \usepackage{longtable}
 \usepackage{float}      % Für den Positionsierungsparameter H
 \usepackage{verbatimbox} % Center verbatim
-\usepackage{microtype}% Verbesserter Randausgleich (wichtig bei 2-Spalten-Formatierung!)
+\usepackage[protrusion=true,expansion=true,spacing=false,kerning=true,tracking=true]{microtype}
+% Verbesserter Randausgleich (wichtig bei 2-Spalten-Formatierung!)
 % \usepackage{pdfcolparallel} % 2-Spalten-Formatierung ermöglichen!
 \usepackage{textcase}
 \usepackage{calc}%
 % \RequirePackage[bottom]{footmisc}
-\RequirePackage{ragged2e}%
-\RequirePackage[singlelinecheck=false,listof=true]{caption}%
+\usepackage{ragged2e}%
+\usepackage{caption}
+\captionsetup{
+  format=plain,
+  labelfont=bf,
+  font=small,
+  justification=justified,
+  singlelinecheck=false
+}
 \usepackage[leftcaption,raggedright]{sidecap}
 \RequirePackage[numbers]{natbib}
 % \RequirePackage{multicol}
@@ -103,6 +109,9 @@
 \usepackage{spreadtab,booktabs,numprint}  % Für spreadtab Tabellen
 \npthousandsep{,}\npdecimalsign{.} % Zahlenformat
 
+%Das ist wichtig für die Synchronisierung der Seitennummern mit dem PDF-Viewer
+\usepackage[hidelinks]{hyperref}
+
 % \setlength{\textwidth}{10.8cm}
 % \setlength{\textheight}{15.7cm}
 
@@ -116,6 +125,9 @@
 \let\upmu\umu
 \let\nohline\relax
 \sloppy
+\hbadness=10000      % Unterdrückt Underfull \hbox bis Badness 10000
+\vbadness=10000      % Unterdrückt Underfull \vbox
+\emergencystretch=2em % Das gibt LaTeX etwas “Notfall-Dehnung” => weniger Underfulls, ohne sichtbar anders zu setzen.
 
 \newcommand{\colger}{%
 \switchcolumn%
@@ -137,7 +149,6 @@
 }
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}%
-\newcolumntype{Z}{>{\hfill\arraybackslash}X}%
 
 %%% Trennungsregeln für das gesamte Dokument.
 %

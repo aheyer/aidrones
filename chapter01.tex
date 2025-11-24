@@ -4,7 +4,8 @@
 % Das vspace fügt im Inhaltsverzeichnis einen kleinen Abstand unter dem Kapiteleintrag ein.
 % Beim deutschen Inhaltsverzeichnis ist es im book.tex an nur einer Stelle in der Zeile 
 % \addcontentsline{deutschestoc}{chapter}{\protect{\vspace{2pt}\thechapter}~#1}}
-\chapter[\protect{\vspace{2pt}\englischertitel}]{}
+\chapter[\texorpdfstring{\protect{\vspace{2pt}\englischertitel}}{\englischertitel}]{}
+
 \kapitel{\deutschertitel}
 \thispagestyle{empty}
 
@@ -846,11 +847,11 @@ Ein GPS-Modul mit sechs Anschlüssen (Lötpads oder Kabeln) verfügt in der Rege
 
 \coleng
 
-Common GPS modules (see Figure~\ref{AbbildungLiPoAkku}) with an integrated magnetic compass are typically between 20\(\times\)20 mm and 25\(\times\)25 mm in size.
+Common GPS modules (see Figure~\ref{AbbildungGPSModuleM1005883}) with an integrated magnetic compass are typically between 20\(\times\)20 mm and 25\(\times\)25 mm in size.
 
 \colger
 
-Gängige GPS-Module (siehe Abbildung~\ref{AbbildungLiPoAkku}) mit integriertem magnetischem Kompass sind in der Regel zwischen 20\(\times\)20 mm und 25\(\times\)25 mm groß.
+Gängige GPS-Module (siehe Abbildung~\ref{AbbildungGPSModuleM1005883}) mit integriertem magnetischem Kompass sind in der Regel zwischen 20\(\times\)20 mm und 25\(\times\)25 mm groß.
 
 \colende
 
@@ -867,7 +868,7 @@ Gängige GPS-Module (siehe Abbildung~\ref{AbbildungLiPoAkku}) mit integriertem m
     \vspace{0pt}
   \end{minipage}
   \caption{HGLRC M100-5883 M10 GPS Module 21x21\,mm with built-in magnetic Compass (Front and Back)}
-  \label{AbbildungLiPoAkku}
+  \label{AbbildungGPSModuleM1005883}
 \end{figure}
 \FloatBarrier
 
