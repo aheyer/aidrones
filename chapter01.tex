@@ -664,11 +664,11 @@ Akkus bestehen aus einer oder mehreren in Reihe geschalteten Zellen. FPV-Drohnen
 
 \coleng
 
-For example, a 1500 mAh LiPo battery (see Figure~\ref{AbbildungLiPoAkku}) with a C-rate of 100 can deliver \(1.5 A \times 100 = 150 A\) of continuous current.
+For example, a 1500 mAh LiPo battery (see Figure~\ref{AbbildungLiPoAkku}) with a C-rate of 100 can deliver \(1.5\,\mbox{Ah} \times 100 = 150\,\mbox{A}\) of continuous current.
 
 \colger
 
-Ein 1500 mAh LiPo-Akku (siehe Abbildung~\ref{AbbildungLiPoAkku}) mit einem C-Wert von 100 kann somit \(1{,}5 A \times 100 = 150 A\) Dauerstrom liefern.
+Ein 1500 mAh LiPo-Akku (siehe Abbildung~\ref{AbbildungLiPoAkku}) mit einem C-Wert von 100 kann somit \(1{,}5\,\mbox{Ah} \times 100 = 150\,\mbox{A}\) Dauerstrom liefern.
 
 \colende
 
@@ -706,6 +706,24 @@ LiPo batteries have several disadvantages. They can be easily over-discharged, w
 LiPo-Akkus haben mehrere Nachteile. Sie können leicht tiefentladen werden, was sie dauerhaft beschädigt oder zerstört. Abstürze führen häufig zu Beschädigungen, und bei unsachgemäßer Handhabung -- etwa durch zu schnelles Laden oder den Betrieb trotz beschädigter Außenhülle -- besteht ein latentes Brandrisiko. Eine deutlich robustere Alternative zu LiPo-Akkus sind Lithium-Ionen-Akkus, die allerdings wesentlich geringere C-Werte bieten.
 
 \coleng
+
+For example, a 2500 mAh Li-Ion battery (see Figure~\ref{AbbildungLiIonAkku12C}) with a C-rate of 12 can deliver \(2.5\,\mbox{Ah} \times 12 = 30\,\mbox{A}\) of continuous current.
+
+\colger
+
+Ein 2500 mAh Li-Ion-Akku (siehe Abbildung~\ref{AbbildungLiIonAkku12C}) mit einem C-Wert von 12 kann somit \(2{,}5\,\mbox{Ah} \times 12 = 30\,\mbox{A}\) Dauerstrom liefern.
+
+\colende
+
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=\linewidth]{GAONENG_LiIon_2500mAh_4S_4S1P_12C_front_crop.png}
+  \caption{4S Lithium-Ion Battery with 2500\,mAh Capacity and 12\,C Capacity Rate}
+  \label{AbbildungLiIonAkku12C}
+\end{figure}
+\FloatBarrier
+
+\colstart
 
 Li-Ion batteries are ideal for scenarios where long flight times, smooth flight behavior, and extended range are desired. LiPo batteries, on the other hand, are better suited for fast flight maneuvers and racing applications.
 
@@ -748,7 +766,7 @@ Die gängigsten Akkutypen sind 4S und 6S. Bei einem 4S-Akku sind vier Zellen in 
 \centering
 \captionabove{Overview of Lithium-Polymere (LiPo) and Lithium-Ion (Li-Ion) Batteries}
 \label{TabelleAkkus}
-\begin{tabular}{l@{\hskip 8mm}l@{\hskip 8mm}r@{\hskip 8mm}r@{\hskip 8mm}r}
+\begin{tabularx}{\textwidth}{X@{\hskip 8mm}X@{\hskip 8mm}r@{\hskip 8mm}r@{\hskip 8mm}r}
 \toprule
 Battery Type  & Cells & Nominal Voltage  & Fully Charged & Discharged   \\
 \midrule
@@ -759,7 +777,7 @@ S4            & 4     & 14.8\,V          & 16.8,V       & 12.0\,V        \\
 S5            & 5     & 18.5\,V          & 21.0,V       & 15.0\,V        \\
 S6            & 6     & 22.2\,V          & 25.2,V       & 18.0\,V        \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 \FloatBarrier
 
@@ -773,15 +791,57 @@ Bei höherer Spannung benötigt ein Motor bei gleicher Leistung weniger Strom un
 
 \coleng
 
-As battery capacity increases, not only does flight time improve, but total weight also increases. Very small 4S batteries with a capacity of 450 mAh weigh around 60 g, while the battery shown in Figure~\ref{AbbildungLiPoAkku} with a capacity of 1500 mAh weighs about 185 g. Higher total weight also affects flight characteristics.
+As battery capacity increases, not only does flight time improve, but total weight also increases (see Table~\ref{TabelleAkkusGewicht}). Very small 4S batteries with a capacity of 450 mAh weigh around 60 g, while the battery shown in Figure~\ref{AbbildungLiPoAkku} with a capacity of 1500 mAh weighs about 185 g. Higher total weight also affects flight characteristics.
 
 \colger
 
-Mit steigender Kapazität eines Akkus erhöht sich nicht nur die Flugdauer, sondern auch das Gesamtgewicht. Sehr kleine 4S-Akkus mit 450 mAh Kapazität wiegen etwa 60 g, während der in Abbildung~\ref{AbbildungLiPoAkku} gezeigte Akku mit 1500 mAh rund 185 g wiegt. Ein höheres Gesamtgewicht beeinflusst auch das Flugverhalten.
+Mit steigender Kapazität eines Akkus erhöht sich nicht nur die Flugdauer, sondern auch das Gesamtgewicht (siehe Tabelle~\ref{TabelleAkkusGewicht}). Sehr kleine 4S-Akkus mit 450 mAh Kapazität wiegen etwa 60 g, während der in Abbildung~\ref{AbbildungLiPoAkku} gezeigte Akku mit 1500 mAh rund 185 g wiegt. Ein höheres Gesamtgewicht beeinflusst auch das Flugverhalten.
 
-\coleng
 
-Li-Ion batteries typically consist of 18650 cells connected in series. The capacity of individual cells depends on the manufacturer and cell quality, typically ranging from 2500 mAh to 3500 mAh. To achieve higher capacity, additional cells must be connected in parallel. The number of cells and their configuration are indicated on the Li-Ion battery using the letters S (series) and P (parallel). Common Li-Ion battery configurations on the market include 3S1P, 4S1P, 4S2P, 6S1P, and 6S2P.
+\colende
+
+\begin{table}[htb!]
+\centering
+\captionabove{Weight of some Lithium-Polymere (LiPo) and Lithium-Ion (Li-Ion) Batteries}
+\label{TabelleAkkusGewicht}
+\begin{tabularx}{\textwidth}{Xllrrrlr}
+\toprule
+Technology & Type & Vendor & Capacity & C-rate & Voltage & Connector & weight   \\
+\midrule
+LiPo   & 4S & Tattu              & 450mAh   & 75C  & 14.8V & XT30 & \(\sim\) 55 g   \\
+LiPo   & 4S & Gaoneng            & 650mAh   & 120C & 15.2V & XT30 & \(\sim\) 70 g   \\
+LiPo   & 4S & Tattu              & 650mAh   & 95C  & 14,8V & XT30 & \(\sim\) 80 g   \\
+LiPo   & 4S & Tattu              & 750mAh   & 95C  & 14,8V & XT30 & \(\sim\) 85 g   \\
+LiPo   & 4S & Gaoneng            & 850mAh   & 120C & 15.2V & XT30 & \(\sim\) 90 g   \\
+LiPo   & 4S & Tattu              & 850mAh   & 95C  & 14.8V & XT30 & \(\sim\) 110 g   \\
+LiPo   & 4S & Tattu Funfly       & 1300mAh  & 100C & 14.8V & XT60 & \(\sim\) 150 g   \\
+LiPo   & 4S & CNHL               & 1500mAh  & 100C & 14.8V & XT60 & \(\sim\) 185 g   \\
+LiPo   & 4S & CNHL               & 2000mAh  & 100C & 14.8V & XT60 & \(\sim\) 235 g   \\
+\midrule
+LiPo   & 6S & Tattu R-Line       & 650mAh   & 95C  & 22.2V & XT30 & \(\sim\) 120 g   \\
+LiPo   & 6S & CNHL               & 1200mAh  & 120C & 22.2V & XT60 & \(\sim\) 210 g   \\
+LiPo   & 6S & Tattu Funfly       & 1300mAh  & 100C & 22.2V & XT60 & \(\sim\) 220 g   \\
+LiPo   & 6S & CNHL               & 1300mAh  & 130C & 22.2V & XT60 & \(\sim\) 230 g   \\
+LiPo   & 6S & CNHL               & 1500mAh  & 130C & 22.2V & XT60 & \(\sim\) 265 g   \\
+\midrule
+Li-Ion & 4S (4S1P) & Gaoneng     & 2500mAh  & 12C  & 14.8V & XT60  & \(\sim\) 200 g   \\
+Li-Ion & 4S (4S1P) & GEPRC       & 3000mAh  & 15C  & 14.8V & XT60  & \(\sim\) 200 g   \\
+Li-Ion & 4S (4S1P) & RACEpow     & 4000mAh  & 10C  & 14.8V & XT60  & \(\sim\) 290 g   \\
+Li-Ion & 4S (4S2P) & RACEpow     & 10000mAh & 10C  & 14.8V & XT60 & \(\sim\) 600 g   \\
+\midrule 
+Li-Ion & 6S (6S1P) & RACEpow     & 4000mAh  & 10C  & 22.2V & XT60 & \(\sim\) 430 g   \\
+Li-Ion & 6S (6S1P) & GEPRC       & 4000mAh  & 15C  & 22.2V & XT60 & \(\sim\) 445 g   \\
+Li-Ion & 6S (6S2P) & RACEpow     & 8000mAh  & 10C  & 22.2V & XT60 & \(\sim\) 860 g   \\
+Li-Ion & 6S (6S2P) & GEPRC       & 8000mAh  & 15C  & 22.2V & XT60 & \(\sim\) 890 g   \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\FloatBarrier
+
+\colstart
+
+
+Li-Ion batteries typically consist of 18650 cells connected in series. The capacity of individual cells depends on the manufacturer and cell quality, typically ranging from 2500\,mAh to 3500\,mAh. To achieve higher capacity, additional cells must be connected in parallel. The number of cells and their configuration are indicated on the Li-Ion battery using the letters S (series) and P (parallel). Common Li-Ion battery configurations on the market include 3S1P, 4S1P, 4S2P, 6S1P, and 6S2P.
 
 \colger
 
@@ -1246,35 +1306,45 @@ Die am Markt verfügbaren Videobrillen unterscheiden sich in erster Linie hinsic
 
 \begin{table}[htb!]
 \centering
+\setlength{\tabcolsep}{4pt}       % Default value: 6pt
+\renewcommand{\arraystretch}{1} % Default value: 1
+\begin{threeparttable}
 \captionabove{Overview about analog FPV Goggles}
 \label{TabelleVideobrillen}
 \begin{tabular}{l@{\hskip 8mm}r@{\hskip 8mm}l@{\hskip 8mm}l}
 \toprule
-Goggle (Product)        & Resolution    & Display  & Video Output    \\
+Goggle (Product)                      & Resolution    & Display & Video Output             \\
 \midrule
-Skyzone Cobra X V4      & 1280x720\,px  & LCD  & analog A/V          \\
-Skyzone SKY04X Pro      & 1920x1080\,px & OLED & analog A/V          \\
-Skyzone SKY04O Pro      & 1280x720\,px  & OLED & analog A/V          \\
-Skyzone SKY02O          & 640x400\,px   & LCD  & analog A/V          \\
-FatShark Dominator      & 1920x1080\,px & OLED & USB-C video output  \\
-FatShark Dominator HDO+ & 1920x1080\,px & OLED & analog A/V          \\
-FatShark Recon HD       & 1920x1080\,px & LCD  & USB-C video output  \\
-Fat Shark Echo          & 800x480\,px   & LCD  & no video output     \\
-Eachine EV300O          & 1024x768\,px  & OLED & analog A/V          \\ 
-Eachine EV300D          & 1280x960\,px  & LCD  & analog A/V          \\ 
-Rotorama 800D           & 800x480\,px   & LCD  & no video output     \\
+Skyzone Cobra X V4                    & 1280x720\,px  & LCD     & analog A/V               \\
+Skyzone SKY04X Pro                    & 1920x1080\,px & OLED    & analog A/V               \\
+Skyzone SKY04O Pro                    & 1280x720\,px  & OLED    & analog A/V               \\
+Skyzone SKY02O                        & 640x400\,px   & LCD     & analog A/V               \\
+FatShark Dominator                    & 1920x1080\,px & OLED    & USB-C video output       \\
+FatShark Dominator HDO+               & 1920x1080\,px & OLED    & analog A/V               \\
+FatShark Recon HD                     & 1920x1080\,px & LCD     & USB-C video output       \\
+Fat Shark Echo                        & 800x480\,px   & LCD     & no video output          \\
+Eachine EV300O                        & 1024x768\,px  & OLED    & analog A/V               \\ 
+Eachine EV300D                        & 1280x960\,px  & LCD     & analog A/V               \\
+HDZero Goggle 2\textsuperscript{a}    & 1920x1080\,px & OLED    & analog A/V + HDMI output \\
+HDZero BoxPro\textsuperscript{a}      & 1280x720\,px  & LCD     & analog A/V + HDMI output \\
+Rotorama 800D                         & 800x480\,px   & LCD     & no video output          \\
 \bottomrule
 \end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item[a] HDZero goggles are designed for the digital HDZero video system, but also include an analog receiver
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 \FloatBarrier
 
 \colstart
 
-The ability to output the video signal through an interface and process it in real time on another device is particularly interesting for many potential AI projects. Although numerous FPV goggles feature an HDMI port, it is typically used only for playing back video from external sources. No common FPV goggle currently supports video output via HDMI.
+The ability to output the video signal through an interface and process it in real time on another device is particularly interesting for many potential AI projects. Although numerous FPV goggles feature an HDMI port, it is typically used only for playing back video from external sources. Only few FPV goggles currently support video output via HDMI.
 
 \colger
 
-Besonders die Möglichkeit, das Videosignal über eine Schnittstelle auszugeben und in einem anderen Gerät in Echtzeit zu verarbeiten, ist für viele denkbare KI-Projekte eine interessante Option. Zahlreiche Videobrillen verfügen zwar über einen HDMI-Port, dieser dient jedoch ausschließlich zum Abspielen von Videos von externen Quellen. Eine Ausgabe des Videosignals über HDMI wird von keiner gängigen FPV-Brille unterstützt.
+Besonders die Möglichkeit, das Videosignal über eine Schnittstelle auszugeben und in einem anderen Gerät in Echtzeit zu verarbeiten, ist für viele denkbare KI-Projekte eine interessante Option. Zahlreiche Videobrillen verfügen zwar über einen HDMI-Port, dieser dient jedoch ausschließlich zum Abspielen von Videos von externen Quellen. Eine Ausgabe des Videosignals über HDMI unterstützen nur wenige gängigen FPV-Brillen.
 
 \coleng
 
