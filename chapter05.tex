@@ -116,11 +116,45 @@ Im INAV-Konfigurator werden die autonomen Modi konfiguriert. Nicht alle dieser M
 
 Dieses Unterkapitel dient dazu die Vorbereitungen einer Wegpunktmission umfassender zu beschreiben. Nachdem der Modus auf einen entsprechenden Switch konfiguriert ist, sind noch einige Optionen im Advanced Tuning-Tab unter den Reitern Multirotor Navigaton Settings, General Navigation Settings und Waypoint Navigation Settings zu konfigurieren. Was diese Optionen bewirken wird im Reiter selbst erläutert und hier nicht noch einmal ausgeführt.
 
-Nach der Konfiguration des Advanced Tuning Tabs kommt es nun zum eigentlichen Setzen der Wegpunkte. Hierzu wird eine Beispielhafte Route im Mission Control Tab im INAV Configurator eingerichtet. Diese geht vom Hochschulcampus zur Eissporthalle. Die Wegpunkte können durch einfaches Klicken auf der Karte gesetzt und aneinander gereiht werden.
+Nach der Konfiguration des Advanced Tuning Tabs kommt es nun zum eigentlichen Setzen der Wegpunkte. Die Wegpunkte können durch einfaches Klicken auf der Karte gesetzt und aneinander gereiht werden.
 
-Durch erneutes klicken auf einen jeweiligen Wegpunkt kann dieser editiert werden. Längen- und Breitengrade können über das Nummernfeld verfeinert werden und es ist darüber hinaus möglich den Wegpunkttypen zu konfigurieren und Actions zu definieren. Beim Wegpunkttypen besteht die Auswahl zwischen Waypoint, Position-Hold (PH), Point-of-Interest (POI) und Land. Der Waypoint beschreibt einen einfachen Wegpunkt, durch den die Drohne hindurch fliegt. PH beschreibt einen Wegpunkt an dem die Drohne für eine bestimmte Zeit anhält, welche im Feld Wait time konfiguriert wird. POI ist Punkt in der Mission an dem sich die Ausrichtung der Drohne im Flug orientiert. Wird ein Wegpunkt als POI definiert, orientiert sich die Kamera an diesem anstatt sich am Weg auszurichten, während sie zum nächsten Wegpunkt fliegt. Land definiert einen Wegpunkt an dem die Drohne landet, statt die Mission fortzuführen.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Mission_Control_Demo_Example.png}
+	\caption{Example of a waypoint mission}
+	\label{INAV_Mission_Control_Demo_Example}
+\end{figure}
 
-Bei den Actions hat man JUMP, SET HEAD und RTH zur Verfügung.
+Durch erneutes klicken auf einen jeweiligen Wegpunkt kann dieser editiert werden. Längen- und Breitengrade können über das Nummernfeld verfeinert werden und es ist darüber hinaus möglich den Wegpunkttypen zu konfigurieren und Actions zu definieren.
+
+Beim Wegpunkttypen besteht die Auswahl zwischen Waypoint, Position-Hold (PH), Point-of-Interest (POI) und Land. Der Waypoint beschreibt einen einfachen Wegpunkt, durch den die Drohne hindurch fliegt. PH beschreibt einen Wegpunkt an dem die Drohne für eine bestimmte Zeit anhält, welche im Feld Wait time konfiguriert wird. POI ist Punkt in der Mission an dem sich die Ausrichtung der Drohne im Flug orientiert. Wird ein Wegpunkt als POI definiert, orientiert sich die Kamera an diesem anstatt sich am Weg auszurichten, während sie zum nächsten Wegpunkt fliegt. Land definiert einen Wegpunkt an dem die Drohne landet, statt die Mission fortzuführen.
+
+Bei den Actions hat man JUMP, SET HEAD und RTH zur Verfügung. Mit Jump kann zu einem anderen Wegpunkt gesprungen werden, als dem mit der nächstgrößeren Nummer. In P1 kommt dazu die Nummer des anzufliegenden Wegpunkts und in P2 die Anzahl der Wiederholungen.
+Mit SET HEAD kann die Ausrichtung der Drohne gesteuert werden, sobald sie einen gewissen Wegpunkt erreicht. RTH lässt die Drohne zum konfigurierten Safehome zurückfliegen, sobald die Drohne am Wegpunkt angekommen ist.
+
+Darüber hinaus kann die Höhe eingestellt werden. Über den Button MP Elevation kann das Höhenprofil für die Mission, mit dem Höhenprofil der Umgebung verglichen werden. Damit kann vermieden werden, dass die Drohne während der Mission mit dem Boden kollidiert. Um diesen Vergleich zu ermöglichen, muss jedoch eine Form von Take-Off-Location vorhanden werden.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Mission_Control_Elevation_Profile.png}
+	\caption{Mission Control Example Elevation Profile}
+	\label{INAV_Mission_Control_Elevation_Profile}
+\end{figure}
+
+Ist die Wegpunkt-Mission fertig konfiguriert bestehen insgesamt drei Optionen zum Speichern. Die erste ist das Speichern in eine Datei auf dem Computer und die zweite ist das Speichern in den volatilen Speicher des Flugcontrollers (FC). Dies ist nur geeignet, wenn die Mission sofort gefolgen werden soll, da sie bei einem Neustart verloren geht. Soll die Mission dauerhaft gespeichert werden, so eignet sich die dritte Option, das Speichern in den EEPROM des FC.
+
+Insofern die Mission in den EEPROM geschrieben wurde, muss sie in den volatilen Speicher des FC geladen werden. Dies kann ebenfalls im Mission Control Tab erfolgen, über den Button Load from EEPROM. Sollte kein Computer vorhanden sein, kann das automatische Laden beim Boot im Advanced Tuning Tab konfiguriert werden.
+
+Alternativ kann die Mission auch mit einem entsprechenden Stick-Command geladen werden. Stick-Commands sind verschiedene Kombinationen der beiden Sticks, welche normalerweise zum Fliegen benutzt werden. Sie können eine Reihe verschiedener Funktionen aktivieren wie beispielsweise das OSD-Menü. Abbildung X zeigt die Stick-Commands, welche es in INAV gibt.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_Stick_Commands.png}
+	\caption{Stick Commands in INAV, Source: https://raw.githubusercontent.com/iNavFlight/inav/refs/heads/master/docs/assets/images/StickPositions.png}
+	\label{INAV_Stick_Commands}
+\end{figure}
+
+
 % NAV WP
 % 1. NAV WP muss konfiguriert werden.
 % 2. Advanced tuning options (incl. 1-2 examples)
