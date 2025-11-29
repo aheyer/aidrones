@@ -77,10 +77,10 @@ Supported hardware includes flight controllers with gyroscope, accelerometer, ba
 
 \colger
 
-Hierfür ist es erforderlich, dass der Beschleunigungssensor und das GPS konfiguriert sind.
+Hierfür ist es erforderlich, dass der Beschleunigungssensor und die GPS-Antenne konfiguriert sind.
 Außerdem muss ein Barometer für die Höhenmessung vorhanden sein. Ein Kompass (Magnetometer) ist nicht zwingend erforderlich ab INAV-Version 7.1, jedoch dringend empfohlen für bessere Performance.
 
-Insofern ein Kompass vorhanden ist, sollte dieser korrekt ausgerichtet und kalibriert werden, sowie idealerweise mindestens 10cm von den Motoren und anderen elektrischen Komponenten entfernt sein. Auch Fluggeschwindigkeitssensoren werden von iNAV unterstützt.
+Insofern ein Kompass vorhanden ist, sollte dieser korrekt ausgerichtet und kalibriert werden sowie idealerweise mindestens 10 cm von den Motoren und anderen elektrischen Komponenten entfernt sein. Auch Fluggeschwindigkeitssensoren werden von INAV unterstützt.
  
 \coleng
 
@@ -88,35 +88,49 @@ The iNAV Configurator is used to configure sensors, calibrate the magnetic compa
 
 \colger
 
-Im INAV-Konfigurator werden die autonomen Modi konfiguriert. Nicht alle dieser Modi sind eigenständig. Einige verändern lediglich Eigenschaften des Flugverhaltens und müssen in Kombination mit anderen Modi verwendet werden. Zu diesen modi gehören die folgenden:
+Zur Konfiguration der Autopilotfunktionalitäten genügt der INAV Configurator. In diesem können sämtliche Flugmodi und Tuningeinstellungen getätigt werden. Nicht alle der folgend erläuterten Modi sind vollwertige Flugmodi. Einige verändern lediglich Eigenschaften des Flugverhaltens und müssen in Kombination mit anderen Modi verwendet werden.
 
 \begin{description}
-	\item[NAV ALTHOLD] ist ein solcher Modus. Dieser setzt lediglich die Flughöhe fest und muss in Kombination mit einem manuellen Flugmodus verwendet werden. Hierbei ist ANGLE empflohlen, da ALTHOLD nicht für Überkopf-Maneuver geeignet ist. Im "Advanced Tuning" Tab kann mit "Max. Alt-hold climb rate" der Spielraum konfiguriert werden, mit welchem der Pilot die Höhe manuell nach oben und unten variieren kann.
+	\item[NAV ALTHOLD] ist ein solcher Modus. Dieser setzt lediglich die Flughöhe fest und muss in Kombination mit einem manuellen Flugmodus verwendet werden. Hierbei ist ANGLE empfohlen, da ALTHOLD nicht für Überkopf-Maneuver geeignet ist. Im "Advanced Tuning" Tab kann mit "Max. Alt-hold climb rate" der Spielraum konfiguriert werden, mit welchem der Pilot die Höhe manuell nach oben und unten variieren kann.
 
-	\item[NAV GCS] ist ein weiterer uneigenständiger Modus. Dieser erlaubt es einer verbundenen Ground-Control-Station (GCS) die Position der Drohne zu kontrollieren. Dies kann für die Follow-Me-Funktion verwendet werden.
+	\item[NAV GCS] ist ein weiterer unterstützender Modus. Dieser erlaubt es einer verbundenen Ground-Control-Station (GCS) die Position der Drohne zu kontrollieren. Dies kann für die Follow-Me-Funktion verwendet werden.
 \end{description}
 
 \begin{description}
 	\item[NAV POSHOLD] ist ein eigenständiger Modus, welcher die Drohne die Position halten lässt. Durch anpassen der Throttle-, Pitch- und Roll-Sticks kann die Position verändert werden. Sobald die jeweiligen Sticks in die Ausgangsposition versetzt werden, hält die Drohne die neue Position.
 
-	\item[MC BRAKING] fällt unter den NAV POSHOLD Modus und wird zusammen mit diesem verwendet. Der Unterschied liegt im Bremsverhalten bei Positionsanpassungen. Beim einfachen POSHOLD kehrt die Drohne nach Abschluss des Bremsvorgangs an den Ort zurück an dem die Sticks losgelassen wurden. Mit MC BRAKING bremst die Drohne stärker und hält die Position an dem Ort an welchem sie zum Stillstand kommt.
+	\item[MC BRAKING] unterstützt den NAV POSHOLD Modus und wird zusammen mit diesem verwendet. Der Unterschied liegt im Bremsverhalten bei Positionsanpassungen. Beim einfachen POSHOLD kehrt die Drohne nach Abschluss des Bremsvorgangs an den Ort zurück, an dem die Sticks losgelassen wurden. Mit MC BRAKING bremst die Drohne stärker und hält die Position an dem Ort an welchem sie zum Stillstand kommt.
 
 	\item[NAV COURSE HOLD] versucht die Drohne den derzeitigen Kurs zu halten. Die Geschwindigkeit kann in diesem Modus mithilfe des Pitch-Sticks angepasst werden. Der Flugcontroller passt die Geschwindigkeit proportional zur Stellung des Pitch-Sticks an.
 
 	\item[NAV CRUISE] entspricht einer Kombination aus NAV COURSE HOLD und NAV ALTHOLD.
 
-	\item[NAV RTH] ist der Return-To-Home (RTH)-Modus, welcher auch als Failsafe konfiguriert werden kann. Es wird jedoch dringend davon abgeraten, den Failsafe für ein kontrolliertes RTH zu verwenden. Ist die Drohne mehr als 10 Meter von der Arming-Location oder dem konfigurierten Safehome entfernt klettert sie erst auf eine konfigurierte Höhe und fliegt dann in Richtung Home und landet dort, sobald sie dort im Radius von einem Meter ist. Im Advanced-Tuning-Tab kann das RTH-Verhalten mit vielen Einstellungen weitreichend modifiziert werden.
+	\item[NAV RTH] ist der Return-To-Home (RTH)-Modus, welcher auch als Failsafe konfiguriert werden kann. Failsafe sollte jedoch nicht für ein kontrolliertes RTH aktiviert werden. Unter Umständen kann es zu unerwartetem Verhalten kommen. Ist die Drohne mehr als 10 Meter von der Arming-Location oder dem konfigurierten Safehome entfernt, klettert sie erst auf eine konfigurierte Höhe und fliegt dann in Richtung Home und landet dort, sobald sie dort im Radius von einem Meter ist. Im Advanced-Tuning-Tab kann das RTH-Verhalten mit vielen Einstellungen weitreichend modifiziert werden.
 
-	\item[HOME RESET] ist ein komplementärer Modus zu NAV RTH. Dieser sollte auf einen RC-Switch gelegt werden, welcher nach dem Drücken auf die Ursprungsposition zurückkehrt. Dies ermöglicht es während des Fluges die aktuelle Safehome-Location zu überschreiben. Standardmäßig ist die letzte Arming-Location das Safehome, jedoch können auch bis zu acht unterschiedliche Safehomes manuell konfiguriert werden, wovon dann jeweils das nächste angeflogen wird, wenn sich dieses innerhalb der maximalen Distanz befindet die ein solches Safehome entfernt sein darf.
+	\item[HOME RESET] ist ein komplementärer Modus zu NAV RTH. Dieser sollte auf einen RC-Switch gelegt werden, welcher nach dem Drücken auf die Ursprungsposition zurückkehrt. Dadurch wird es ermöglicht während des Fluges die aktuelle Safehome-Location zu überschreiben. Standardmäßig ist die letzte Arming-Location das Safehome, jedoch können auch bis zu acht unterschiedliche Safehomes manuell konfiguriert werden, wovon dann jeweils das nächste angeflogen wird, wenn sich dieses innerhalb der maximalen Distanz befindet, die ein solches Safehome entfernt sein darf.
 
-	\item[NAV WP] erlaubt es der Drohne autonom an einer vordefinierten Sequenz von Wegpunkten entlangzufliegen. Diese Wegpunkte können entweder manuell vor Ablug definiert werden, beispielsweise über den Mission Control Tab im INAV Configurator oder mithilfe des Modus WP PLANNER während dem manuellen Flug.
+	\item[NAV WP] erlaubt es der Drohne, autonom an einer vordefinierten Sequenz von Wegpunkten entlangzufliegen. Diese Wegpunkte können entweder manuell vor Ablug definiert werden, beispielsweise über den Mission Control Tab im INAV Configurator oder mithilfe des Modus WP PLANNER während dem manuellen Flug.
 
-	\item[WP PLANNER] ist kein eigenständiger Flugmodus, sondern dient dazu Wegpunkte während des manuellen Flugs zu definieren. WP darf nicht aktiviert sein, sonst kann kein Wegpunkt gespeichert werden. Darüber hinaus muss der Block MISSION INFO im OSD aktiviert werden. Dieser Block zeigt die für den Planner notwendigen Informationen an. Um einen Wegpunkt zu speichern, muss die Drohne an den gewünschten Ort bewegt und der Switch auf dem WP PLANNER konfiguriert ist betätigt werden. Hierbei ist zu beachten, dass die Höhe entsprechend mitgespeichert wird. Dies ist wichtig, da ein Wegpunkt der ebenerdig gespeichert wurde auch entsprechend angeflogen wird. Um die so konfigurierte Mission zu fliegen, genügt es PLANNER zu deaktivieren und WP zu aktivieren. Alternative kann die Mission auch mit Stick-Commands gespeichert werden (siehe Kapitel xxx)
+	\item[WP PLANNER] ist kein eigenständiger Flugmodus, sondern dient dazu, Wegpunkte während des manuellen Flugs zu definieren. Wichtig ist, dass WP nicht aktiviert sein darf, sonst kann kein Wegpunkt gespeichert werden. Darüber hinaus muss der Block MISSION INFO im OSD aktiviert werden. Dieser Block zeigt die für den Planner notwendigen Informationen an. Um einen Wegpunkt zu speichern, muss die Drohne an den gewünschten Ort bewegt und der Switch, auf dem WP PLANNER konfiguriert ist, betätigt werden. Sobald der Speichervorgang abgeschlossen ist, wird eine entsprechende Mitteilung im OSD zu sehen sein. Beim Speichern ist zu beachten, dass die Höhe entsprechend mitgespeichert wird. Dies ist wichtig, da ein Wegpunkt, der ebenerdig gespeichert wurde, entsprechend angeflogen wird. Um die so konfigurierte Mission zu fliegen, genügt es PLANNER zu deaktivieren und WP zu aktivieren. Alternative kann die Mission auch mit Stick-Commands gespeichert werden (siehe Kapitel xxx).
+
 \end{description}
 
-Dieses Unterkapitel dient dazu die Vorbereitungen einer Wegpunktmission umfassender zu beschreiben. Nachdem der Modus auf einen entsprechenden Switch konfiguriert ist, sind noch einige Optionen im Advanced Tuning-Tab unter den Reitern Multirotor Navigaton Settings, General Navigation Settings und Waypoint Navigation Settings zu konfigurieren. Was diese Optionen bewirken wird im Reiter selbst erläutert und hier nicht noch einmal ausgeführt.
+ \colende
 
-Nach der Konfiguration des Advanced Tuning Tabs kommt es nun zum eigentlichen Setzen der Wegpunkte. Die Wegpunkte können durch einfaches Klicken auf der Karte gesetzt und aneinander gereiht werden.
+\renewcommand{\deutschertitel}{Wegpunktmissionen mit INAV}
+\renewcommand{\englischertitel}{Waypoint Missions with INAV}
+\makrounterabschnitt
+\label{INAVWaypoint}
+
+Test
+
+\colger
+
+Dieses Unterkapitel dient dazu, die Vorbereitungen einer Wegpunktmission umfassender zu beschreiben. Nachdem der Modus auf einen entsprechenden Switch konfiguriert ist, sind noch einige Optionen im Advanced-Tuning-Tab unter den Reitern Multirotor Navigaton Settings, General Navigation Settings und Waypoint Navigation Settings zu konfigurieren. Was diese Optionen bewirken, wird im Reiter selbst erläutert und hier nicht noch einmal ausgeführt.
+
+Nach der Konfiguration des Advanced Tuning Tabs kommt es nun zum eigentlichen Setzen der Wegpunkte. Die Wegpunkte können durch einfaches Klicken auf der Karte gesetzt und aneinandergereiht werden.
+
+\colende
 
 \begin{figure}[htb!]
 	\centering
@@ -125,14 +139,27 @@ Nach der Konfiguration des Advanced Tuning Tabs kommt es nun zum eigentlichen Se
 	\label{INAV_Mission_Control_Demo_Example}
 \end{figure}
 
-Durch erneutes klicken auf einen jeweiligen Wegpunkt kann dieser editiert werden. Längen- und Breitengrade können über das Nummernfeld verfeinert werden und es ist darüber hinaus möglich den Wegpunkttypen zu konfigurieren und Actions zu definieren.
+\colstart
 
-Beim Wegpunkttypen besteht die Auswahl zwischen Waypoint, Position-Hold (PH), Point-of-Interest (POI) und Land. Der Waypoint beschreibt einen einfachen Wegpunkt, durch den die Drohne hindurch fliegt. PH beschreibt einen Wegpunkt an dem die Drohne für eine bestimmte Zeit anhält, welche im Feld Wait time konfiguriert wird. POI ist Punkt in der Mission an dem sich die Ausrichtung der Drohne im Flug orientiert. Wird ein Wegpunkt als POI definiert, orientiert sich die Kamera an diesem anstatt sich am Weg auszurichten, während sie zum nächsten Wegpunkt fliegt. Land definiert einen Wegpunkt an dem die Drohne landet, statt die Mission fortzuführen.
+Bumms - auf der Fahrbahn...
 
-Bei den Actions hat man JUMP, SET HEAD und RTH zur Verfügung. Mit Jump kann zu einem anderen Wegpunkt gesprungen werden, als dem mit der nächstgrößeren Nummer. In P1 kommt dazu die Nummer des anzufliegenden Wegpunkts und in P2 die Anzahl der Wiederholungen.
-Mit SET HEAD kann die Ausrichtung der Drohne gesteuert werden, sobald sie einen gewissen Wegpunkt erreicht. RTH lässt die Drohne zum konfigurierten Safehome zurückfliegen, sobald die Drohne am Wegpunkt angekommen ist.
+\colger
 
-Darüber hinaus kann die Höhe eingestellt werden. Über den Button MP Elevation kann das Höhenprofil für die Mission, mit dem Höhenprofil der Umgebung verglichen werden. Damit kann vermieden werden, dass die Drohne während der Mission mit dem Boden kollidiert. Um diesen Vergleich zu ermöglichen, muss jedoch eine Form von Take-Off-Location vorhanden werden.
+Durch erneutes Klicken auf einen jeweiligen Wegpunkt kann dieser editiert werden. Längen- und Breitengrade können über das Nummernfeld verfeinert werden und es ist darüber hinaus möglich, den Wegpunkttypen zu konfigurieren und Actions zu definieren.
+
+Beim Wegpunkttypen besteht die Auswahl zwischen Waypoint, Position-Hold (PH), Point-of-Interest (POI) und Land. Der Waypoint beschreibt einen einfachen Wegpunkt, durch den die Drohne hindurch fliegt. PH beschreibt einen Wegpunkt an dem die Drohne für eine bestimmte Zeit anhält, welche im Feld Wait time konfiguriert wird. POI ist ein Punkt in der Mission an dem sich die Ausrichtung der Drohne im Flug orientiert. Wird ein Wegpunkt als POI definiert, richtet sich die Kamera nach diesem, anstatt sich am Weg auszurichten, während sie zum nächsten Wegpunkt fliegt. Land lässt die Drohne landen, sobald der Punkt erreicht wurde, anstatt die Mission fortzuführen.
+
+Bei den Actions hat man JUMP, SET HEAD und RTH zur Verfügung. Mit Jump kann zu einem anderen Wegpunkt gesprungen werden, als dem mit der nächstgrößeren Nummer. In P1 wird die ID des anzufliegenden Wegpunkts eingetragen und in P2 die Anzahl der Jump-Wiederholungen.
+
+ Mit SET HEAD kann die Ausrichtung der Drohne gesteuert werden. Dazur wird die entsprechende Gradzahl zwischen 0 und 359 in das Feld P1 eingetragen (Kommazahlen sind möglich). Sobald die Drohne den Wegpunkt erreicht hat wird die Kamera entsprechend ausgerichtet für den weiteren Flug.
+
+ RTH lässt die Drohne zum konfigurierten Safehome zurückfliegen, sobald sie am jeweiligen Wegpunkt angekommen ist. Dies eignet sich besonders für das Ende von Missionen.
+
+Ein weiterer wichtiger Punkt ist die jeweilige Höhe, an der ein Wegpunkt angeflogen wird. Hier muss sichergestellt sein, dass die in der EU vorgeschriebene Maximalhöhe von 120 Metern nicht überschritten wird. Außerdem ist darauf zu achten, dass die Drohne an jedem Wegpunkt die entsprechende Höhe hat, gemessen am Umgebungsprofil. Dazu kann die Option Sea Level Ref herangezogen werden, wenn die Höhe konfiguriert wird.
+
+Über den Button MP Elevation am kann das Höhenprofil für die Mission, mit dem Höhenprofil der Umgebung verglichen werden. Damit kann vermieden werden, dass die Drohne während der Mission mit dem Boden kollidiert. Um diesen Vergleich zu ermöglichen, muss jedoch eine Form von Take-off-Location vorhanden werden.
+
+\colende
 
 \begin{figure}[htb!]
 	\centering
@@ -141,34 +168,39 @@ Darüber hinaus kann die Höhe eingestellt werden. Über den Button MP Elevation
 	\label{INAV_Mission_Control_Elevation_Profile}
 \end{figure}
 
-Ist die Wegpunkt-Mission fertig konfiguriert bestehen insgesamt drei Optionen zum Speichern. Die erste ist das Speichern in eine Datei auf dem Computer und die zweite ist das Speichern in den volatilen Speicher des Flugcontrollers (FC). Dies ist nur geeignet, wenn die Mission sofort gefolgen werden soll, da sie bei einem Neustart verloren geht. Soll die Mission dauerhaft gespeichert werden, so eignet sich die dritte Option, das Speichern in den EEPROM des FC.
+\colstart
 
-Insofern die Mission in den EEPROM geschrieben wurde, muss sie in den volatilen Speicher des FC geladen werden. Dies kann ebenfalls im Mission Control Tab erfolgen, über den Button Load from EEPROM. Sollte kein Computer vorhanden sein, kann das automatische Laden beim Boot im Advanced Tuning Tab konfiguriert werden.
+Test
 
-Alternativ kann die Mission auch mit einem entsprechenden Stick-Command geladen werden. Stick-Commands sind verschiedene Kombinationen der beiden Sticks, welche normalerweise zum Fliegen benutzt werden. Sie können eine Reihe verschiedener Funktionen aktivieren wie beispielsweise das OSD-Menü. Abbildung X zeigt die Stick-Commands, welche es in INAV gibt.
+\colger
+
+Ist die Wegpunkt-Mission fertig konfiguriert bestehen insgesamt drei Optionen zum Speichern. Die erste ist das Speichern in eine Datei auf dem Computer und die zweite ist das Speichern in den volatilen Speicher des Flugcontrollers (FC). Letzteres ist nur geeignet, wenn die Mission sofort gefolgen werden soll, da sie bei einem Neustart verloren geht. Soll die Mission dauerhaft gespeichert werden, so eignet sich die dritte Option, das Speichern in den EEPROM des FC.
+
+\colende
+
+
+\renewcommand{\deutschertitel}{Laden von Missionen und INAV Stickbefehle}
+\renewcommand{\englischertitel}{Loading Missions and INAV Stick Commands}
+\makrounterabschnitt
+\label{INAVStickCommands}
+
+Test
+
+\colger
+
+Insofern die Mission in den EEPROM geschrieben wurde, muss sie in den volatilen Speicher des FC geladen werden. Dies kann ebenfalls im Mission Control Tab erfolgen, über den Button Load from EEPROM. Sollte kein Computer vorhanden sein, kann das automatische Laden einer Mission beim Boot im Advanced Tuning Tab konfiguriert werden.
+
+Alternativ kann die Mission auch mit einem entsprechenden Stick-Command geladen werden. Stick-Commands sind verschiedene Kombinationen der beiden Sticks, welche normalerweise zum Fliegen benutzt werden. Sie können eine Reihe verschiedener Funktionen aktivieren, wie beispielsweise das OSD-Menü. Abbildung X zeigt die Stick-Commands, welche es in INAV gibt.
+
+\colende
 
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\linewidth]{INAV_Stick_Commands.png}
-	\caption{Stick Commands in INAV, Source: https://raw.githubusercontent.com/iNavFlight/inav/refs/heads/master/docs/assets/images/StickPositions.png}
+	\caption{Stick Commands in INAV}
 	\label{INAV_Stick_Commands}
+	% Source: https://raw.githubusercontent.com/iNavFlight/inav/refs/heads/master/docs/assets/images/StickPositions.png
 \end{figure}
-
-
-% NAV WP
-% 1. NAV WP muss konfiguriert werden.
-% 2. Advanced tuning options (incl. 1-2 examples)
-% 3. Creating the Mission in Mission Control
-%   1. Setting the Waypoints
-%   2. Setting the altitude in accordance with ground level
-%   3. Setting the waypoint type 
-% 4. Saving and Loading the Missions 
-% 5. Flying the missions
-
-
-% Do own subsection for NAV WP, WP PLANNER, MISSION CHANGE
-
-\colende
 
 \renewcommand{\deutschertitel}{Autopilot mit ArduPilot}
 \renewcommand{\englischertitel}{Autopilot with ArduPilot}
