@@ -20,11 +20,17 @@ Test Eng
 
 \colger
 
-1. Warum Stereo Vision und was kann man damit machen.  
-2. Warum Raspberry Pi 5 (2 RPi-Cams (platzsparend) die gleichzeitig Bilder machen.)
-3. Was für ein RPi 5 für die Tests, welche RPi-Cam wurde verwendet (Bild der Konstruktion)
-4. Ist nur für große Drohnen geeignet, wegen des hohen Stromverbrauchs.
-5. Alternativ gibt es auch dedizierte Stereokameramodule.
+Stereokameras sind ein klassisches Werkzeug, um Tiefenerkennung durchzuführen. Der Vorteil gegenüber einem einfachen Kamerasetup, ist das kein Modell trainiert werden muss, um die Tiefenerkennung zu konfigurieren. 
+
+Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechtigungen durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.  
+
+Der folgende Guide basiert auf einem Raspberry Pi 5 mit 8 GB Arbeitsspeicher und zwei Kameramodulen vom Modell: (MODEL-NR). Der Grund hierfür ist, dass nur das Raspberry Pi 5 zwei Kameramodule mit paralleler Nutzung ermöglicht. Vorangegangene Modelle würden einen Adapter benötigen, welcher keine parallele Nutzung beider Kameras zulässt. 
+
+% Hier das Bild der Konstruktion einfügen
+
+Die Kameras werden nebeneinander montiert, und mit zwei Minikabeln angeschlossen. Die Kameras sollten möglichst parallel montiert werden, da es jedoch nicht möglich ist dies perfekt zu machen wird es später softwareseitig korrigiert.
+
+Ein solches Setup ist jedoch nur für größere Drohnen geeignet, welche große Batterikapazitäten tragen können. Bei kleineren Drohnen würde das Raspberry Pi 5 die Flugzeit sehr stark reduzieren würde. Für kleinere Drohnen, sollte mit einem einfachen Kamerasetup und einem Modell gearbeitet werden. 
 
 \colende
 
