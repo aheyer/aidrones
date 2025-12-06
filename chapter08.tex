@@ -1,0 +1,63 @@
+\renewcommand{\deutschertitel}{Stereokameras mit einem Raspberry Pi 5}
+\renewcommand{\englischertitel}{Stereo camera setup with a Raspberry Pi 5}
+\chapter[\texorpdfstring{\protect{\vspace{2pt}\englischertitel}}{\englischertitel}]{}
+\kapitel{\deutschertitel}
+\thispagestyle{empty}
+
+\label{KapitelStereoVision}
+
+\begin{paracol}{2}[]
+
+{\raggedright\huge\bfseries\sffamily \englischertitel \par\ } \\[1.8ex]
+
+\switchcolumn
+
+{\raggedright\huge\bfseries\sffamily \deutschertitel \par\ } \\[1.8ex]
+
+\coleng
+
+Test Eng
+
+\colger
+
+1. Warum Stereo Vision und was kann man damit machen.  
+2. Warum Raspberry Pi 5 (2 RPi-Cams (platzsparend) die gleichzeitig Bilder machen.)
+3. Was für ein RPi 5 für die Tests, welche RPi-Cam wurde verwendet (Bild der Konstruktion)
+4. Ist nur für große Drohnen geeignet, wegen des hohen Stromverbrauchs.
+5. Alternativ gibt es auch dedizierte Stereokameramodule.
+
+\colende
+
+\renewcommand{\deutschertitel}{Camera Calibration}
+\renewcommand{\englischertitel}{Kamerakalibrierung}
+\makroabschnitt
+\label{AbschnittStereoVisionKalibrierung}
+
+Test Eng
+
+\colger
+
+1. Wozu dient die Kamerakalibrierung?
+2. Wie läuft die Kalibrierung eines Stereokamerasetups ab (erst Single-Cam dann Stereo)?
+3. Was ist dabei zu beachten (Kalibrierungsmuster, Distanz, Auflösung)
+4. Wie erstelle ich ein Kalibrierungsmuster und warum ChAruCo?
+5. Kalibrierung der individuellen Kameras (+ test mit individuellem entzerren.)
+6. Stereo Kalibrierung
+7. Undistort Rectify Map 
+8. Speichern der Kalibrierungseinstellungen
+
+\colende
+
+\renewcommand{\deutschertitel}{Depth Estimation}
+\renewcommand{\englischertitel}{Tiefenerkennung}
+\makroabschnitt
+\label{AbschnittStereoVisionTiefenerkennung}
+
+Test Eng
+
+\colger
+
+1. Creating a disparity map and tuning it with Block Matching and Semi Global Block Matching
+2. From disparity map to depth map.
+
+\colende
