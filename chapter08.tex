@@ -22,15 +22,28 @@ Test Eng
 
 Stereokameras sind ein klassisches Werkzeug, um Tiefenerkennung durchzuführen. Der Vorteil gegenüber einem einfachen Kamerasetup, ist das kein Modell trainiert werden muss, um die Tiefenerkennung zu konfigurieren. 
 
-Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechtigungen durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.  
+Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechtigungen durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.
 
-Der folgende Guide basiert auf einem Raspberry Pi 5 mit 8 GB Arbeitsspeicher und zwei Kameramodulen vom Modell: (MODEL-NR). Der Grund hierfür ist, dass nur das Raspberry Pi 5 zwei Kameramodule mit paralleler Nutzung ermöglicht. Vorangegangene Modelle würden einen Adapter benötigen, welcher keine parallele Nutzung beider Kameras zulässt. 
+Der folgende Guide basiert auf einem Raspberry Pi 5 mit 8 GB Arbeitsspeicher und zwei Kameramodulen vom Modell: RB-CAMERA-JT-V2-120. Der Grund hierfür ist, dass nur das Raspberry Pi 5 zwei Kameramodule mit paralleler Nutzung ermöglicht. Vorangegangene Modelle würden einen Adapter benötigen, welcher keine parallele Nutzung beider Kameras zulässt.
 
-% Hier das Bild der Konstruktion einfügen
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{StereoVision_Contraption.jpg}
+	\caption{Stereo Vision Contraption}
+	\label{StereoVisionContraption}
+\end{figure}
+
+\colstart
+
+Test Eng
+
+\colger
 
 Die Kameras werden nebeneinander montiert, und mit zwei Minikabeln angeschlossen. Die Kameras sollten möglichst parallel montiert werden, da es jedoch nicht möglich ist dies perfekt zu machen wird es später softwareseitig korrigiert.
 
-Ein solches Setup ist jedoch nur für größere Drohnen geeignet, welche große Batterikapazitäten tragen können. Bei kleineren Drohnen würde das Raspberry Pi 5 die Flugzeit sehr stark reduzieren würde. Für kleinere Drohnen, sollte mit einem einfachen Kamerasetup und einem Modell gearbeitet werden. 
+Ein solches Setup ist jedoch nur für größere Drohnen geeignet, welche große Batterikapazitäten tragen können. Bei kleineren Drohnen würde das Raspberry Pi 5 die Flugzeit sehr stark reduzieren würde. Für kleinere Drohnen, sollte mit einem einfachen Kamerasetup und einem Modell gearbeitet werden.
 
 \colende
 
@@ -43,11 +56,35 @@ Test Eng
 
 \colger
 
-1. Wozu dient die Kamerakalibrierung?
-2. Wie läuft die Kalibrierung eines Stereokamerasetups ab (erst Single-Cam dann Stereo)?
-3. Was ist dabei zu beachten (Kalibrierungsmuster, Distanz, Auflösung)
-4. Wie erstelle ich ein Kalibrierungsmuster und warum ChAruCo?
-5. Kalibrierung der individuellen Kameras (+ test mit individuellem entzerren.)
+Die Notwendigkeit der Kamerakalibrierung ergibt sich aus der Konstruktion (Abbildung~\ref{StereoVisionContraption}), denn die beiden Kameras sind nicht exakt parallel montiert. Es wäre theoretisch möglich diese Konstruktion immer wieder iterativ anzupassen bis dies der Fall ist, jedoch ist es äußerst unwahrscheinlich, dass die Linsen der beiden Kameras exakt gleich sind.
+
+Das ist vor allem relevant für die Raspberry-Pi-Kameras, da es sich hier um sogenannte Pinhole-Kameras handelt. Solche Kameras haben häufig eine recht starke Radialverzerrung. Diese Art von Verzerrung lässt gerade Linien kurvig erscheinen. Eine weitere relevante Art der Verzerrung ist die Tangentialverzerrung. Diese entsteht, wenn die Linse der Kamera nicht komplett parallel zur Oberfläche ist, die sie aufnimmt. Dies ist ebenfalls äußerst schwierig zu bewerkstelligen, besonders mit zwei Kameras.
+
+Das bedeutet also, dass unabhängig von den verwendeten Kameramodulen (inkl. Stereomodulen) eine Kalibrierung notwenig ist. Dabei werden die beiden Kameras zunächst einzeln kalibriert und dann zusammen einer Stereokalibrierung unterzogen.
+
+Bei der Kalibrierung wird versucht diese sogenannten Verzerrungskoeffizienten zu finden.
+Diese werden durch $k_1$, $k_2$, $k_3$ für die Radialverzerrung und $p_1$ und $p_2$ für die Tangentialverzerrung.
+
+$$ dist = (k_1, k_2, k_3, p_1, p_2) $$
+
+Darüber hinaus werden intrinsischen und extrinsischen Kameraparameter berechnet. Die intrinsischen Parameter beziehen sich auf die Einstellungen der Kamera. Dabei handelt es sich um die Brennweite $(f_x, f_y)$ und die optischen Zentren $(c_x, c_y)$. Aus diesen beiden Parametern ergibt sich die Kameramatrix.
+
+$$ camMtx = \begin{bmatrix}
+	f_x & 0 & c_x \\
+	0 & f_y & c_y \\
+	0 & 0 & 1
+\end{bmatrix}$$
+
+Bei den extrinsischen Parametern handelt es sich um die Rotations- und Übersetzungsvektoren, welche benötigt werden, um den 3D-Punkt in der physischen Welt auf den 2D-Punkt in der Abbildung zu projizieren.
+
+% Latex Math für die Rotation und Translation-Vektoren.
+
+Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Dies ist ein wichtiger Zwischenschritt bei der Tiefenerkennung mit 2 Kameras.
+
+% Kalibrierung mit Kalibrierungsmuster + Code für ChAruCo Board + Bilder aufnehmen + Anmerkung, dass Kalibrierung in der Working-Distance erfolgen sollte.
+
+% Code für Kalirbierung anhand der Kalibrierungsbilder (+ Beispiel mit individuellem entzerren?)
+
 6. Stereo Kalibrierung
 7. Undistort Rectify Map 
 8. Speichern der Kalibrierungseinstellungen
