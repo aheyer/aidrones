@@ -22,7 +22,7 @@ Test Eng
 
 Stereokameras sind ein klassisches Werkzeug, um Tiefenerkennung durchzuführen. Der Vorteil gegenüber einem einfachen Kamerasetup, ist das kein Modell trainiert werden muss, um die Tiefenerkennung zu konfigurieren. 
 
-Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechtigungen durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.
+Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechnungen mithilfe von OpenCV durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.
 
 Der folgende Guide basiert auf einem Raspberry Pi 5 mit 8 GB Arbeitsspeicher und zwei Kameramodulen vom Modell: RB-CAMERA-JT-V2-120. Der Grund hierfür ist, dass nur das Raspberry Pi 5 zwei Kameramodule mit paralleler Nutzung ermöglicht. Vorangegangene Modelle würden einen Adapter benötigen, welcher keine parallele Nutzung beider Kameras zulässt.
 
@@ -88,17 +88,62 @@ Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht di
 
 % Bild aller drei Kalibrierungsmuster einfügen.
 
-Der Vorteil dieses ChAruco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster 
+Der Vorteil dieses ChAruco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster vorgezogen werden.
 
 Bei den anderen beiden Pattern müssen alle Ecken, bzw. Kreise im Bild zu sehen sein. Dies macht es besonders schwierig die Ecken abzudecken, welche oft kritisch sind für eine gute Genauigkeit. Des weiteren werden dabei mehr Bilder benötigt. Wie viele Bilder konkret benötigt werden, sollte im Einzelfall getestet werden. Zehn sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können gegebenenfalls auch mit weniger auskommen. 
 
-% Code-Snippet zur Erstellung des Kalibrierungsmusters
-
 Unabhängig vom gewählten Kalibrierungsmuster, sollte die Kalibrierung ungefähr in der Entfernung durchgeführt werden, in der die Kamera später eingesetzt wird. Darüber hinaus sollte das Muster mindestens die Hälfte des Bildes bedecken. Außerdem sollte es auf einer flachen Oberfläche abgebildet werden und hochauflösend sein. Es empfiehlt sich hier einen Bildschirm zu verwenden.
 
-Die Bilder sollten auch aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen gemacht werden. Auf eine gute Belichtung sollte auch geachtet werden, da ungleichmäßige Belichtung dafür sorgen kann, dass nicht alle Punkte auf jedem Bild erkannt werden. Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den Auslöser zu synchronisieren. 
+Die Bilder sollten auch aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen gemacht werden. Auf eine gute Belichtung sollte auch geachtet werden, da ungleichmäßige Belichtung dafür sorgen kann, dass nicht alle Punkte auf jedem Bild erkannt werden. 
 
-% Code-Snippet zum parallelen Aufnehmen von Bildern.
+Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den Auslöser zu synchronisieren. Im Falle von Python kann dazu \texttt{threading.Barrier()} verwendet werden (siehe Abbildung~\ref{ListingTakingCalibrationPictures}). 
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+from picamera2 import Picamera2
+from time import sleep
+import threading
+from libcamera import Transform
+
+cam_zero = Picamera2(0)
+cam_one = Picamera2(1)
+barrier = threading.Barrier(2)
+
+def capture_zero(index):
+	barrier.wait()
+	cam_zero.capture_file(f"/path/to/images_0/{index}.jpg")
+
+def capture_one(index):
+	barrier.wait()
+	cam_one.capture_file(f"/path/to/images_1/{index}.jpg")
+
+try:
+	while True:
+		print(counter)
+		pic_zero = threading.Thread(target=capture_zero, args=(counter,))
+		pic_one = threading.Thread(target=capture_one, args=(counter,))
+		pic_zero.start()
+		pic_one.start()
+		pic_zero.join()
+		pic_one.join()
+		counter += 1
+		sleep(3)
+
+except KeyboardInterrupt:
+	cam_zero.close()
+	cam_one.close()
+	\end{lstlisting}
+	\caption{Test Listing}
+	\label{ListingTakingCalibrationPictures}
+\end{figure}
+
+\colstart
+
+Test Eng
+
+\colger
 
 Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mit Hilfe von \texttt{cv2.aruco.CharucoDetector(board)}. Dieser wird verwendet, um die Ecken des Schachbretts und die entsprechnden Aruco-Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden dann als Input für \texttt{cv2.calibrateCamera()} verwendet.
 
@@ -106,7 +151,83 @@ Der Output dieser Funktion sind die intrinsischen und extrinsischen Kameraparame
 
 Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. 
 
-% Code-Snippet für das erkennen der Punkte und der Kalibrierung. 
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+import cv2
+import numpy as np
+import os
+from glob import glob
+
+ARUCO_DICT = cv2.aruco.DICT_4X4_100
+SQUARES_VERTICALLY = 7
+SQUARES_HORIZONTALLY = 5
+SQUARE_LENGTH = 0.04
+MARKER_LENGTH = 0.0275
+
+images_zero = "/home/pi/rpi-stereo-vision/calibration/camera0/*.jpg"
+images_one = "/home/pi/rpi-stereo-vision/calibration/camera1/*.jpg"
+
+def charuco_calibration(images_glob : str, cam : int):
+	dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
+	board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
+	params = cv2.aruco.DetectorParameters()
+	detector = cv2.aruco.CharucoDetector(board)
+	
+	image_paths = glob(images_glob)
+	
+	all_charuco_corners = []
+	all_charuco_ids = []
+	all_image_pts = []
+	all_object_pts = []
+	counter = 1
+	
+	for image_path in image_paths:
+		image = cv2.imread(image_path)
+		grayscaled = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+		
+		charuco_corners, charuco_ids, marker_corners, marker_ids = detector.detectBoard(image)
+		
+		# If at least one marker is detected
+		if charuco_corners is not None:   
+		
+			image = cv2.aruco.drawDetectedCornersCharuco(image, charuco_corners, charuco_ids)
+			
+			object_points, image_points = board.matchImagePoints(charuco_corners, charuco_ids)
+			
+			all_object_pts.append(object_points)
+			all_image_pts.append(image_points)
+			all_charuco_corners.append(charuco_corners)
+			all_charuco_ids.append(charuco_ids)
+	
+	if cam == 0:
+		cv2.imwrite(f"/home/pi/rpi-stereo-vision/calibration/camera0/opencv/{counter}.jpg", image)
+	else: 
+		cv2.imwrite(f"/home/pi/rpi-stereo-vision/calibration/camera1/opencv/{counter}.jpg", image)
+		
+	counter += 1
+	
+	image_height, image_width = image.shape[:2]
+
+	retval, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(all_object_pts, all_image_pts, (image_height, image_width), None, None)
+	return all_object_pts, all_image_pts, retval, camera_matrix, dist_coeffs, rvecs, tvecs, image_height, image_width
+
+# Calibrate Camera 1
+obj_pts_zero, img_pts_zero, ret_zero, mtx_zero, dist_zero, rvecs_zero, tvecs_zero, h_zero, w_zero = charuco_calibration(images_glob=images_zero, cam=0)
+
+# Calibrate Camera 1
+obj_pts_one, img_pts_one, ret_one, mtx_one, dist_one, rvecs_one, tvecs_one, h_one, w_one = charuco_calibration(images_one, 1)
+
+	\end{lstlisting}
+	\caption{Test Listing}
+\end{figure}
+
+\colstart
+
+Test Eng
+
+\colger
 
 
 6. Stereo Kalibrierung
