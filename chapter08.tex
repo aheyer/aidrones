@@ -67,7 +67,7 @@ Diese werden durch $k_1$, $k_2$, $k_3$ für die Radialverzerrung und $p_1$ und $
 
 $$ dist = (k_1, k_2, k_3, p_1, p_2) $$
 
-Darüber hinaus werden intrinsischen und extrinsischen Kameraparameter berechnet. Die intrinsischen Parameter beziehen sich auf die Einstellungen der Kamera. Dabei handelt es sich um die Brennweite $(f_x, f_y)$ und die optischen Zentren $(c_x, c_y)$. Aus diesen beiden Parametern ergibt sich die Kameramatrix.
+Darüber hinaus werden intrinsischen und extrinsischen Kameraparameter berechnet. Die intrinsischen Parameter beziehen sich auf die Einstellungen der Kamera. Dabei handelt es sich um die Brennweite $(f_x, f_y)$ und das optische Zentrum $(c_x, c_y)$. Aus diesen beiden Pixelwerten ergibt sich die Kameramatrix.
 
 $$ camMtx = \begin{bmatrix}
 	f_x & 0 & c_x \\
@@ -75,15 +75,39 @@ $$ camMtx = \begin{bmatrix}
 	0 & 0 & 1
 \end{bmatrix}$$
 
-Bei den extrinsischen Parametern handelt es sich um die Rotations- und Übersetzungsvektoren, welche benötigt werden, um den 3D-Punkt in der physischen Welt auf den 2D-Punkt in der Abbildung zu projizieren.
+Bei den extrinsischen Parametern handelt es sich um die Rotationsmatrix und den Übersetzungsvektor ($R$ und $t$), welche benötigt werden, um den 3D-Punkt in der physischen Welt auf den 2D-Punkt in der Abbildung zu projizieren. Diese können dann zu einer homogenen Transformation kombiniert werden, welche die Übersetzung des Punktes in der realen Welt ($P_w$) zu einem Punkt im Koordinatensystem der Kamera ($P_c$) beschreibt.
 
-% Latex Math für die Rotation und Translation-Vektoren.
+$$ P_c = \begin{bmatrix}
+	R & t \\
+	0 & 1
+\end{bmatrix} P_w$$ 
 
-Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Dies ist ein wichtiger Zwischenschritt bei der Tiefenerkennung mit 2 Kameras.
+Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden. 
 
-% Kalibrierung mit Kalibrierungsmuster + Code für ChAruCo Board + Bilder aufnehmen + Anmerkung, dass Kalibrierung in der Working-Distance erfolgen sollte.
+Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem Schachbrettmuster, einem Raster aus Kreisen und einem sogennanten ChAruco-Board. Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
 
-% Code für Kalirbierung anhand der Kalibrierungsbilder (+ Beispiel mit individuellem entzerren?)
+% Bild aller drei Kalibrierungsmuster einfügen.
+
+Der Vorteil dieses ChAruco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster 
+
+Bei den anderen beiden Pattern müssen alle Ecken, bzw. Kreise im Bild zu sehen sein. Dies macht es besonders schwierig die Ecken abzudecken, welche oft kritisch sind für eine gute Genauigkeit. Des weiteren werden dabei mehr Bilder benötigt. Wie viele Bilder konkret benötigt werden, sollte im Einzelfall getestet werden. Zehn sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können gegebenenfalls auch mit weniger auskommen. 
+
+% Code-Snippet zur Erstellung des Kalibrierungsmusters
+
+Unabhängig vom gewählten Kalibrierungsmuster, sollte die Kalibrierung ungefähr in der Entfernung durchgeführt werden, in der die Kamera später eingesetzt wird. Darüber hinaus sollte das Muster mindestens die Hälfte des Bildes bedecken. Außerdem sollte es auf einer flachen Oberfläche abgebildet werden und hochauflösend sein. Es empfiehlt sich hier einen Bildschirm zu verwenden.
+
+Die Bilder sollten auch aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen gemacht werden. Auf eine gute Belichtung sollte auch geachtet werden, da ungleichmäßige Belichtung dafür sorgen kann, dass nicht alle Punkte auf jedem Bild erkannt werden. Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den Auslöser zu synchronisieren. 
+
+% Code-Snippet zum parallelen Aufnehmen von Bildern.
+
+Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mit Hilfe von \texttt{cv2.aruco.CharucoDetector(board)}. Dieser wird verwendet, um die Ecken des Schachbretts und die entsprechnden Aruco-Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden dann als Input für \texttt{cv2.calibrateCamera()} verwendet.
+
+Der Output dieser Funktion sind die intrinsischen und extrinsischen Kameraparameter die Verzerrungskoeffizenten, die Rotationsmatrix und der Übersetzungsvektor, sowie die mittlere quadratische Abweichung zur Evaluation der Kalibrierung. Diese sollte idealerweise kleiner als 1 sein. Das ist jedoch noch keine Garantie für ein gutes Resultat. Sollte die Abweichung kleiner als 1 sein und die Bilder können nicht entzerrt werden, empfiehlt es sich die Abweichung der Bilder einzeln zu prüfen. 
+
+Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. 
+
+% Code-Snippet für das erkennen der Punkte und der Kalibrierung. 
+
 
 6. Stereo Kalibrierung
 7. Undistort Rectify Map 
