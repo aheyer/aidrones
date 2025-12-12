@@ -82,7 +82,7 @@ $$ P_c = \begin{bmatrix}
 	0 & 1
 \end{bmatrix} P_w$$ 
 
-Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden. 
+Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Dies ist ein Zwischenschritt bei der Aufnahmen von Stereobildern. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden. 
 
 Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem Schachbrettmuster, einem Raster aus Kreisen und einem sogennanten ChAruco-Board. Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
 
@@ -149,7 +149,9 @@ Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras a
 
 Der Output dieser Funktion sind die intrinsischen und extrinsischen Kameraparameter die Verzerrungskoeffizenten, die Rotationsmatrix und der Übersetzungsvektor, sowie die mittlere quadratische Abweichung zur Evaluation der Kalibrierung. Diese sollte idealerweise kleiner als 1 sein. Das ist jedoch noch keine Garantie für ein gutes Resultat. Sollte die Abweichung kleiner als 1 sein und die Bilder können nicht entzerrt werden, empfiehlt es sich die Abweichung der Bilder einzeln zu prüfen. 
 
-Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. 
+Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. Zu diesem Zweck können die mit \texttt{detector.detectBoard(image)} entdeckten Marker mit \texttt{cv2.aruco.drawDetectedCornersCharuco()} gezeichnet werden und dann mit \texttt{cv2.imwrite()} ausgegeben werden. 
+
+Durch visuelles inspizieren können Probleme mit den Kalibrierungsbildern einfacher erkannt werden. Dies ist vor Allem interessant für Schachbrettmuster, da nicht garantiert ist, dass die Ecken immer in der gleichen Reihenfolge erkannt werden. 
 
 \colende
 
@@ -160,23 +162,12 @@ import numpy as np
 import os
 from glob import glob
 
-ARUCO_DICT = cv2.aruco.DICT_4X4_100
-SQUARES_VERTICALLY = 7
-SQUARES_HORIZONTALLY = 5
-SQUARE_LENGTH = 0.04
-MARKER_LENGTH = 0.0275
-
-images_zero = "/home/pi/rpi-stereo-vision/calibration/camera0/*.jpg"
-images_one = "/home/pi/rpi-stereo-vision/calibration/camera1/*.jpg"
-
 def charuco_calibration(images_glob : str, cam : int):
 	dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
 	board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
 	params = cv2.aruco.DetectorParameters()
 	detector = cv2.aruco.CharucoDetector(board)
-	
 	image_paths = glob(images_glob)
-	
 	all_charuco_corners = []
 	all_charuco_ids = []
 	all_image_pts = []
@@ -186,41 +177,24 @@ def charuco_calibration(images_glob : str, cam : int):
 	for image_path in image_paths:
 		image = cv2.imread(image_path)
 		grayscaled = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-		
 		charuco_corners, charuco_ids, marker_corners, marker_ids = detector.detectBoard(image)
 		
-		# If at least one marker is detected
 		if charuco_corners is not None:   
-		
 			image = cv2.aruco.drawDetectedCornersCharuco(image, charuco_corners, charuco_ids)
-			
 			object_points, image_points = board.matchImagePoints(charuco_corners, charuco_ids)
-			
 			all_object_pts.append(object_points)
 			all_image_pts.append(image_points)
 			all_charuco_corners.append(charuco_corners)
 			all_charuco_ids.append(charuco_ids)
-	
-	if cam == 0:
-		cv2.imwrite(f"/home/pi/rpi-stereo-vision/calibration/camera0/opencv/{counter}.jpg", image)
-	else: 
-		cv2.imwrite(f"/home/pi/rpi-stereo-vision/calibration/camera1/opencv/{counter}.jpg", image)
-		
-	counter += 1
-	
+
+			counter += 1
+			
 	image_height, image_width = image.shape[:2]
 
 	retval, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(all_object_pts, all_image_pts, (image_height, image_width), None, None)
 	return all_object_pts, all_image_pts, retval, camera_matrix, dist_coeffs, rvecs, tvecs, image_height, image_width
-
-# Calibrate Camera 1
-obj_pts_zero, img_pts_zero, ret_zero, mtx_zero, dist_zero, rvecs_zero, tvecs_zero, h_zero, w_zero = charuco_calibration(images_glob=images_zero, cam=0)
-
-# Calibrate Camera 1
-obj_pts_one, img_pts_one, ret_one, mtx_one, dist_one, rvecs_one, tvecs_one, h_one, w_one = charuco_calibration(images_one, 1)
-
 	\end{lstlisting}
-	\caption{Test Listing}
+	\caption{Single Camera calibration}
 \end{figure}
 
 \colstart
@@ -228,6 +202,16 @@ obj_pts_one, img_pts_one, ret_one, mtx_one, dist_one, rvecs_one, tvecs_one, h_on
 Test Eng
 
 \colger
+
+% explain cv2.getOptimalCameraMatrix()
+% Insert calibration picture with drawn charuco points.
+
+Sollte das Ergebnis der einzelnen Kalibrierung gut genug sein, kann zum Nächsten Schritt übergegangen werden: Der eigentlichen Stereokalibrierung. Dies ist nötig, um die Bilder der beiden Kameras auf eine Linie zu bringen, auch wenn diese leicht unterschiedlich montiert sind. Das bedeutet, dass interessante Punkte in einem Bild die gleiche Y-Koordinate (Pixelwert) haben.
+
+Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet. Entscheidend ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden. 
+
+% Die Imagepoints und die Matrizen der einzelnen Kamers dienen dann als Input
+% mit CALIB_FIX_INTRINSIC werden die intrinsischen Matrizen festgesetzt. 
 
 
 6. Stereo Kalibrierung
