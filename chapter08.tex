@@ -84,11 +84,25 @@ $$ P_c = \begin{bmatrix}
 
 Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Dies ist ein Zwischenschritt bei der Aufnahmen von Stereobildern. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden. 
 
-Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem Schachbrettmuster, einem Raster aus Kreisen und einem sogennanten ChAruco-Board. Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
+Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem Schachbrettmuster, einem Raster aus Kreisen und einem sogennanten ChArUco-Board. Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
 
-% Bild aller drei Kalibrierungsmuster einfügen.
+\colende
 
-Der Vorteil dieses ChAruco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster vorgezogen werden.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Stereo_Vision_Charuco.png}
+	\caption{ChArUco Board Example}
+	\label{ImageStereoVisionCharucoBoard}
+	% Source: https://docs.opencv.org/4.x/df/d4a/tutorial_charuco_detection.html
+\end{figure}
+
+\colstart
+
+Eng
+
+\colger
+
+Der Vorteil dieses ChArUco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster vorgezogen werden.
 
 Bei den anderen beiden Pattern müssen alle Ecken, bzw. Kreise im Bild zu sehen sein. Dies macht es besonders schwierig die Ecken abzudecken, welche oft kritisch sind für eine gute Genauigkeit. Des weiteren werden dabei mehr Bilder benötigt. Wie viele Bilder konkret benötigt werden, sollte im Einzelfall getestet werden. Zehn sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können gegebenenfalls auch mit weniger auskommen. 
 
@@ -195,6 +209,7 @@ def charuco_calibration(images_glob : str, cam : int):
 	return all_object_pts, all_image_pts, retval, camera_matrix, dist_coeffs, rvecs, tvecs, image_height, image_width
 	\end{lstlisting}
 	\caption{Single Camera calibration}
+	\label{ListingCameraCalibration}
 \end{figure}
 
 \colstart
@@ -203,22 +218,91 @@ Test Eng
 
 \colger
 
-% explain cv2.getOptimalCameraMatrix()
-% Insert calibration picture with drawn charuco points.
+Nach der Kalibrierung kann die intrinsische Kameramatrix mit \texttt{cv2.getOptimalCameraMatrix()} verfeinert werden. Der dazu verwendete Skalierungsfaktor $\alpha = [0, 1] $ bestimmt wie viele ungewollte Pixel im Bild übrig bleiben. Wenn $\alpha = 1$ werden alle Pixel des ursprünglichen Bilds behalten. Dadurch entstehen jedoch einige Bereiche mit schwarzen Pixeln. Wenn $\alpha = 0$, dann werden diese Bereiche auf ein minimum reduziert, dadurch wird jedoch unter Umständen nicht die Vollständige Information des ursprünglichen Bilds bewahrt.
 
-Sollte das Ergebnis der einzelnen Kalibrierung gut genug sein, kann zum Nächsten Schritt übergegangen werden: Der eigentlichen Stereokalibrierung. Dies ist nötig, um die Bilder der beiden Kameras auf eine Linie zu bringen, auch wenn diese leicht unterschiedlich montiert sind. Das bedeutet, dass interessante Punkte in einem Bild die gleiche Y-Koordinate (Pixelwert) haben.
-
-Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet. Entscheidend ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden. 
-
-% Die Imagepoints und die Matrizen der einzelnen Kamers dienen dann als Input
-% mit CALIB_FIX_INTRINSIC werden die intrinsischen Matrizen festgesetzt. 
-
-
-6. Stereo Kalibrierung
-7. Undistort Rectify Map 
-8. Speichern der Kalibrierungseinstellungen
+Zum Testen kann die Funktion \texttt{cv2.undistort()} verwendet werden. Mit \texttt{cv2.imwrite()} kann das Bild dann ausgegeben werden. Sollten zu viele schwarze Pixel vorhanden sein und $\alpha = 0$ kann das Bild zusätzlich auf die \textsl{Region-of-Interest (ROI)} verkleinert werden. 
 
 \colende
+
+\renewcommand{\deutschertitel}{Stereo-Kalibrierung}
+\renewcommand{\englischertitel}{Stereo Calibration}
+\makroabschnitt
+\label{AbschnittStereoKalibrierung}
+
+Test Eng
+
+\colger
+
+Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D-Punkt auf ein 2D-Bild zu projizieren und damit zu entzerren. Um die 3D-Information wiederherzustellen muss berechnet werden, wie die beiden Kameras zueinanderstehen. 
+
+Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet (Abbildung \ref{ListingStereoCalibration}). Die Variable \texttt{criteria\_stereo} ermöglicht es die die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC} sorgt dafür, dass die intrinsischen Matrizen aus der einzelnen Kalibrierung nicht verändert werden, während dieses Prozesses.
+
+Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden. 
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+criteria_stereo = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.0001)
+retS, new_mtx_zero, dist_zero, new_mtx_one, dist_one, Rot, Trns, Emat, Fmat = cv2.stereoCalibrate(obj_pts_one, img_pts_zero, img_pts_one, mtx_zero, dist_zero, mtx_one, dist_one, (w_zero,h_zero), criteria_stereo, cv2.CALIB_FIX_INTRINSIC)
+	\end{lstlisting}
+	\caption{Single Camera calibration}
+	\label{ListingStereoCalibration}
+\end{figure}
+
+\colstart
+
+Test Eng
+
+\colger
+
+Das Ergebnis der Stereokalibrierung sind die Rotations- und Übersetzungsvektoren $R \text{und} t$ zwischen den beiden Kameras, sowie die essentielle ($E$) und fundamentale Matrix ($F$). Die Rotationsmatrix beschreibt die 3D-Rotation von Kamera 1 zu Kamera 2. Die Übersetzungsmatrix beschreibt die Verschiebung des Koordinatensystems der ersten Kamera gegenüber der zweiten Kamera.
+
+Die essentielle Matrix ergibt sich aus den beiden vorangegangenen Vektoren ($E = [t] \times R $). Mit dieser Matrix lässt sich bestimmen wo ein Punkt auf dem Koordinatensystem von Kamera 1 auf dem von Kamera 2 liegt. Die Linie zwischen diesen beiden Punkten wird als \textsl{epipolare Linie} bezeichnet. 
+
+Die fundamentale Matrix erfüllt den gleichen Zweck, jedoch mit Pixelwerten, anstatt normalisierter Koordinaten. Sie wird mithilfe der essentiellen Matrix und den beiden intrinsischen Matrizen der Kamera berechnet.
+
+$$ F = K'^{-\top} E K^{-1} $$ 
+
+Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal zu machen. Dadurch haben beide Bilder die gleichen Y-Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind und die Tiefenerkennung wird deutlich robuster. Sie wird robuster, da alle Punkte in Bild 1 auch in Bild 2 gefunden werden können.
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+rectify_scale = 0
+rect_zero, rect_one, proj_mat_zero, proj_mat_one, Q, roi_zero, roi_one = cv2.stereoRectify(new_mtx_zero, dist_zero, new_mtx_one, dist_one, (w_zero,h_zero), Rot, Trns, rectify_scale,(0,0))
+	\end{lstlisting}
+	\caption{Stereo Rectification}
+	\label{ListingStereoRectification}
+\end{figure}
+
+\colstart
+
+Test Eng
+
+\colger
+
+Da die beiden Kameras statisch montiert sind, genügt es die Rectification einmal zu berechnen und dann zu speichern. Dadurch kann viel Rechenzeit gespart werden, wodurch die Performance verbessert wird. Dazu kann die Funktion \texttt{cv2.initUndistortRectifyMap()} verwendet werden.
+Diese erstellt eine Mapping-Funktion zwischen den Kameras die immer wieder verwendet werden kann. 
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+Stereo_Map_Zero = cv2.initUndistortRectifyMap(new_mtx_zero, dist_zero, rect_zero, proj_mat_zero, (w_zero,h_zero), cv2.CV_16SC2)
+Stereo_Map_One = cv2.initUndistortRectifyMap(new_mtx_one, dist_one, rect_one, proj_mat_one, (w_zero,h_zero), cv2.CV_16SC2)
+
+cv_file = cv2.FileStorage("/path/to/stereo_maps.xml", cv2.FILE_STORAGE_WRITE)
+cv_file.write("Stereo_Map_Zero_x",Stereo_Map_Zero[0])
+cv_file.write("Stereo_Map_Zero_y",Stereo_Map_Zero[1])
+cv_file.write("Stereo_Map_One_x",Stereo_Map_One[0])
+cv_file.write("Stereo_Map_One_y",Stereo_Map_One[1])
+cv_file.release()
+	\end{lstlisting}
+	\caption{Initializing the stereo mapping function}
+	\label{ListingInitUndistortRectifyMap}
+\end{figure}
 
 \renewcommand{\deutschertitel}{Depth Estimation}
 \renewcommand{\englischertitel}{Tiefenerkennung}
@@ -229,7 +313,16 @@ Test Eng
 
 \colger
 
-1. Creating a disparity map and tuning it with Block Matching and Semi Global Block Matching
-2. From disparity map to depth map.
+Nun da die Bilder auf eine Y-Achse gebracht werden können gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block-Matching (BM)-Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke (z.B. 5x5 Pixel) auf und sucht nach korrespondierenden Blöcken entlang der Epipolaren Linie im Referenzbild. 
+
+Anhand unterschiedlicher Metriken wie die Sum of Absolute Differences (SAD), die Sum of Squared Differences (SSD) und Normalized Cross-Correlation (NCC) werden die Blöcke nacheinander verglichen und eine sogenannte Disparity-Map erstellt werden. 
+
+Diese Disparity-Map repräsentiert die Verschiebung zwischen den beiden Bildern (beispielsweise als Grauwert). OpenCV bietet die Klasse \texttt{cv2.StereoBM} an welche verwendet werden kann, um eine solche Disparity-Map zu erstellen.
+
+Alternativ kann auch Semi-Global-Block-Matching (SGBM) verwendet werden, um die Disparity-Map zu erstellen. Hierzu existiert ebenfalls eine OpenCV-Klasse. Diese trägt den Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Sub-Pixel-Berechnungen, welche Texturen schärfer erscheinen lassen können.
+
+Sowohl BM als auch SGBM können mit einer Vielzahl an Parametern verfeinert werden. Dies beinhaltet beispielsweise die Blockgröße die geprüft wird, oder ob ein Pre-Filter verwendet werden soll, um Texturen im Bild besser sichtbar zu machen. Die Methode \texttt{compute(img\_, img\_r)}, welche die tatsächliche Berechnung der Disparity durchführt gibt Werte zurück, die mit 16 skaliert wurden. Um die richtigen Disparity-Werte zu erhalten muss das Ergebnis durch 16 geteilt werden.
+
+Aus diesen Disparity-Werten kann können die Depth-Werte berechnet werden. To be continued...
 
 \colende
