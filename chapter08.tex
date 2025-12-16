@@ -20,7 +20,7 @@ Test Eng
 
 \colger
 
-Stereokameras sind ein klassisches Werkzeug, um Tiefenerkennung durchzuführen. Der Vorteil gegenüber einem einfachen Kamerasetup, ist das kein Modell trainiert werden muss, um die Tiefenerkennung zu konfigurieren. 
+Stereokameras sind ein klassisches Werkzeug, um Tiefenerkennung durchzuführen. Der Vorteil gegenüber einem einfachen Kamerasetup, ist das kein Modell trainiert werden muss, um die Tiefenerkennung zu konfigurieren.
 
 Alles was dafür benötigt wird sind zwei baugleiche Kameras und ein Computer, der die entsprechenden Berechnungen mithilfe von OpenCV durchführt. Alternativ kann auch ein Stereokameramodul verwendet werden, welches explizit für solche Anwendungsfälle gedacht ist. Diese sind meistens platzsparender und einfacher zu montieren/anzuschließen. Allerdings verursachen sie zusätzliche Kosten.
 
@@ -67,24 +67,28 @@ Diese werden durch $k_1$, $k_2$, $k_3$ für die Radialverzerrung und $p_1$ und $
 
 $$ dist = (k_1, k_2, k_3, p_1, p_2) $$
 
-Darüber hinaus werden intrinsischen und extrinsischen Kameraparameter berechnet. Die intrinsischen Parameter beziehen sich auf die Einstellungen der Kamera. Dabei handelt es sich um die Brennweite $(f_x, f_y)$ und das optische Zentrum $(c_x, c_y)$. Aus diesen beiden Pixelwerten ergibt sich die Kameramatrix.
+Darüber hinaus werden intrinsischen und extrinsischen Kameraparameter berechnet. Die intrinsischen Parameter beziehen sich auf die Einstellungen der Kamera ($K$). Diese sind unabhängig von der betrachteten Szenerie und können nach der ersten Berechnung wiederverwendet werden, solange mit diesen Einstellungen gearbeitet wird.  Bei den Einstellungen handelt es sich um die Brennweite $(f_x, f_y)$ und das optische Zentrum $(c_x, c_y)$, jeweils als Pixelwert.
 
-$$ camMtx = \begin{bmatrix}
+$$ K = \begin{bmatrix}
 	f_x & 0 & c_x \\
 	0 & f_y & c_y \\
 	0 & 0 & 1
 \end{bmatrix}$$
 
-Bei den extrinsischen Parametern handelt es sich um die Rotationsmatrix und den Übersetzungsvektor ($R$ und $t$), welche benötigt werden, um den 3D-Punkt in der physischen Welt auf den 2D-Punkt in der Abbildung zu projizieren. Diese können dann zu einer homogenen Transformation kombiniert werden, welche die Übersetzung des Punktes in der realen Welt ($P_w$) zu einem Punkt im Koordinatensystem der Kamera ($P_c$) beschreibt.
+Bei den extrinsischen Parametern handelt es sich um die 3x3 Rotationsmatrix und den dreidimensionalen Übersetzungsvektor ($R$ und $t$), welche die Rotation und Position der Kamera in der Umwelt beschreiben. Diese können dann zu einer homogenen Transformation kombiniert werden, welche die Übersetzung des Punktes in der realen Welt ($P_w$) zu einem Punkt im Koordinatensystem der Kamera ($P_c$) beschreibt.
 
 $$ P_c = \begin{bmatrix}
 	R & t \\
 	0 & 1
-\end{bmatrix} P_w$$ 
+\end{bmatrix} P_w $$
 
-Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Dies ist ein Zwischenschritt bei der Aufnahmen von Stereobildern. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden. 
+Um zu beschreiben wo der Punkt auf dem Bild ($P_i$) liegt und nicht nur auf dem Koordinatensystem der Kamera ($P_c$) muss dieser auch mit der intrinsischen Kameramatrix $K$ multipliziert werden.
 
-Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem Schachbrettmuster, einem Raster aus Kreisen und einem sogennanten ChArUco-Board. Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
+$$ P_i = K \times P_c $$
+
+Mithilfe dieser Parameter ist es möglich ein Bild, was mit einer kalibrierten Kamera aufgenommen wurde zu entzerren. Wichtig ist dabei, dass das Bild mit der gleichen Auflösung aufgenommen werden muss, mit der die Kamera kalibriert wurde. Sollte das Bild skaliert werden, müssen zumindest die intrinsischen Kameraparameter um den selben Faktor skaliert werden.
+
+Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Hierbei besteht die Auswahl zwischen einem \textsl{Schachbrettmuster}, einem \textsl{Raster aus Kreisen} und einem sogennanten \textsl{ChArUco-Board} (Abbildung~\ref{ImageStereoVisionCharucoBoard}). Letzteres ist ein Schachbrettmuster, welches mit Aruco-Markierungen versehen wurde.
 
 \colende
 
@@ -104,13 +108,28 @@ Eng
 
 Der Vorteil dieses ChArUco-Patterns ist, dass die Aruco-Markierungen einzigartig sind und individuell zugeordnet werden können. Dies ermöglicht es Kalibrierungsbilder aufzunehmen, die teilweise bedeckt sind oder auf denen nicht alle Ecken des Schachbretts zu sehen sind. Dies verspricht in der Regel eine höhere Genauigkeit und sollte, wenn möglich einem Schachbrettmuster vorgezogen werden.
 
-Bei den anderen beiden Pattern müssen alle Ecken, bzw. Kreise im Bild zu sehen sein. Dies macht es besonders schwierig die Ecken abzudecken, welche oft kritisch sind für eine gute Genauigkeit. Des weiteren werden dabei mehr Bilder benötigt. Wie viele Bilder konkret benötigt werden, sollte im Einzelfall getestet werden. Zehn sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können gegebenenfalls auch mit weniger auskommen. 
+Bei den anderen beiden Pattern müssen alle Ecken, bzw. Kreise im Bild zu sehen sein. Dies macht es besonders schwierig die Ecken der Aufnahmen abzudecken, welche oft kritisch sind für eine gute Genauigkeit. Des weiteren werden dabei mehr Bilder benötigt. Wie viele Bilder konkret benötigt werden, sollte im Einzelfall getestet werden. \textsl{Zehn} sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können gegebenenfalls auch mit weniger auskommen.
 
-Unabhängig vom gewählten Kalibrierungsmuster, sollte die Kalibrierung ungefähr in der Entfernung durchgeführt werden, in der die Kamera später eingesetzt wird. Darüber hinaus sollte das Muster mindestens die Hälfte des Bildes bedecken. Außerdem sollte es auf einer flachen Oberfläche abgebildet werden und hochauflösend sein. Es empfiehlt sich hier einen Bildschirm zu verwenden.
+\colende
 
-Die Bilder sollten auch aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen gemacht werden. Auf eine gute Belichtung sollte auch geachtet werden, da ungleichmäßige Belichtung dafür sorgen kann, dass nicht alle Punkte auf jedem Bild erkannt werden. 
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Stereo_Vision_Detected_ChArUco.jpg}
+	\caption{ChArUco Board Detections}
+	\label{ImageStereoVisionCharucoDetections}
+\end{figure}
 
-Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den Auslöser zu synchronisieren. Im Falle von Python kann dazu \texttt{threading.Barrier()} verwendet werden (siehe Abbildung~\ref{ListingTakingCalibrationPictures}). 
+\colstart
+
+Eng
+
+\colger
+
+Unabhängig vom gewählten Kalibrierungsmuster, sollte die Kalibrierung ungefähr \textsl{in der Entfernung durchgeführt werden, in der die Kamera später eingesetzt wird}. Darüber hinaus sollte das Muster mindestens die Hälfte des Bildes bedecken. Außerdem sollte es auf einer flachen Oberfläche abgebildet werden und hochauflösend sein. Es empfiehlt sich hier einen Bildschirm zu verwenden.
+
+Die Bilder sollten auch aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen gemacht werden. Auf eine gute Belichtung sollte auch geachtet werden, da ungleichmäßige Belichtung dafür sorgen kann, dass nicht alle Punkte auf jedem Bild erkannt werden.
+
+Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den Auslöser zu synchronisieren. Im Falle von Python kann dazu \texttt{threading.Barrier()} verwendet werden (siehe Abbildung~\ref{ListingTakingCalibrationPictures}).
 
 \colende
 
@@ -119,7 +138,6 @@ Für das Aufnehmen der Bilder in einem Dual-Camera-Setup empfiehlt es sich den A
 from picamera2 import Picamera2
 from time import sleep
 import threading
-from libcamera import Transform
 
 cam_zero = Picamera2(0)
 cam_one = Picamera2(1)
@@ -159,13 +177,13 @@ Test Eng
 
 \colger
 
-Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mit Hilfe von \texttt{cv2.aruco.CharucoDetector(board)}. Dieser wird verwendet, um die Ecken des Schachbretts und die entsprechnden Aruco-Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden dann als Input für \texttt{cv2.calibrateCamera()} verwendet.
+Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mit Hilfe von \texttt{cv2.aruco.CharucoDetector(board)} (Abbildung~\ref{ImageStereoVisionCharucoDetections}). Dieser wird verwendet, um die Ecken des Schachbretts und die entsprechnden Aruco-Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden dann als Input für \texttt{cv2.calibrateCamera()} verwendet (Abbildung~\ref{ListingCornerDetection}).
 
-Der Output dieser Funktion sind die intrinsischen und extrinsischen Kameraparameter die Verzerrungskoeffizenten, die Rotationsmatrix und der Übersetzungsvektor, sowie die mittlere quadratische Abweichung zur Evaluation der Kalibrierung. Diese sollte idealerweise kleiner als 1 sein. Das ist jedoch noch keine Garantie für ein gutes Resultat. Sollte die Abweichung kleiner als 1 sein und die Bilder können nicht entzerrt werden, empfiehlt es sich die Abweichung der Bilder einzeln zu prüfen. 
+Der Output dieser Funktion sind die intrinsischen und extrinsischen Kameraparameter die Verzerrungskoeffizenten, die Rotationsmatrix und der Übersetzungsvektor, sowie die mittlere quadratische Abweichung zur Evaluation der Kalibrierung. Diese sollte idealerweise kleiner als 1 sein. Das ist jedoch noch keine Garantie für ein gutes Resultat. Sollte die Abweichung kleiner als 1 sein und die Bilder können nicht entzerrt werden, empfiehlt es sich die Abweichung der Bilder einzeln zu prüfen.
 
-Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. Zu diesem Zweck können die mit \texttt{detector.detectBoard(image)} entdeckten Marker mit \texttt{cv2.aruco.drawDetectedCornersCharuco()} gezeichnet werden und dann mit \texttt{cv2.imwrite()} ausgegeben werden. 
+Nicht immer erkennt der Detector alle relevanten Punkte, unabhängig von gutem Licht. Durch das löschen schlechter Bilder kann das Resultat weiter verbessert werden. Zu diesem Zweck können die mit \texttt{detector.detectBoard(image)} entdeckten Marker mit \texttt{cv2.aruco.drawDetectedCornersCharuco()} gezeichnet werden und dann mit \texttt{cv2.imwrite()} ausgegeben werden.
 
-Durch visuelles inspizieren können Probleme mit den Kalibrierungsbildern einfacher erkannt werden. Dies ist vor Allem interessant für Schachbrettmuster, da nicht garantiert ist, dass die Ecken immer in der gleichen Reihenfolge erkannt werden. 
+Durch visuelles Inspizieren können Probleme mit den Kalibrierungsbildern einfacher erkannt werden. Dies ist vor Allem interessant für Schachbrettmuster, da nicht garantiert ist, dass die Ecken immer in der gleichen Reihenfolge erkannt werden.
 
 \colende
 
@@ -187,12 +205,13 @@ def charuco_calibration(images_glob : str, cam : int):
 	all_image_pts = []
 	all_object_pts = []
 	counter = 1
-	
+
 	for image_path in image_paths:
 		image = cv2.imread(image_path)
 		grayscaled = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 		charuco_corners, charuco_ids, marker_corners, marker_ids = detector.detectBoard(image)
-		
+
+
 		if charuco_corners is not None:   
 			image = cv2.aruco.drawDetectedCornersCharuco(image, charuco_corners, charuco_ids)
 			object_points, image_points = board.matchImagePoints(charuco_corners, charuco_ids)
@@ -200,16 +219,14 @@ def charuco_calibration(images_glob : str, cam : int):
 			all_image_pts.append(image_points)
 			all_charuco_corners.append(charuco_corners)
 			all_charuco_ids.append(charuco_ids)
-
 			counter += 1
-			
-	image_height, image_width = image.shape[:2]
 
+	image_height, image_width = image.shape[:2]
 	retval, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(all_object_pts, all_image_pts, (image_height, image_width), None, None)
 	return all_object_pts, all_image_pts, retval, camera_matrix, dist_coeffs, rvecs, tvecs, image_height, image_width
 	\end{lstlisting}
-	\caption{Single Camera calibration}
-	\label{ListingCameraCalibration}
+	\caption{ChArUco Board Corner Detection}
+	\label{ListingCornerDetection}
 \end{figure}
 
 \colstart
@@ -218,9 +235,29 @@ Test Eng
 
 \colger
 
-Nach der Kalibrierung kann die intrinsische Kameramatrix mit \texttt{cv2.getOptimalCameraMatrix()} verfeinert werden. Der dazu verwendete Skalierungsfaktor $\alpha = [0, 1] $ bestimmt wie viele ungewollte Pixel im Bild übrig bleiben. Wenn $\alpha = 1$ werden alle Pixel des ursprünglichen Bilds behalten. Dadurch entstehen jedoch einige Bereiche mit schwarzen Pixeln. Wenn $\alpha = 0$, dann werden diese Bereiche auf ein minimum reduziert, dadurch wird jedoch unter Umständen nicht die Vollständige Information des ursprünglichen Bilds bewahrt.
+Nach der Kalibrierung kann die intrinsische Kameramatrix mit \texttt{cv2.getOptimalCameraMatrix()} verfeinert werden (Abbildung~\ref{ListingCameraCalibration}). Der dazu verwendete Skalierungsfaktor $\alpha = [0, 1]$ bestimmt wie viele ungewollte Pixel im Bild übrig bleiben. Wenn $\alpha = 1$ werden alle Pixel des ursprünglichen Bilds behalten. Dadurch entstehen jedoch einige Bereiche mit schwarzen Pixeln. Wenn $\alpha = 0$, dann werden diese Bereiche auf ein minimum reduziert, dadurch wird jedoch unter Umständen nicht die Vollständige Information des ursprünglichen Bilds bewahrt.
 
-Zum Testen kann die Funktion \texttt{cv2.undistort()} verwendet werden. Mit \texttt{cv2.imwrite()} kann das Bild dann ausgegeben werden. Sollten zu viele schwarze Pixel vorhanden sein und $\alpha = 0$ kann das Bild zusätzlich auf die \textsl{Region-of-Interest (ROI)} verkleinert werden. 
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+obj_pts_zero, img_pts_zero, ret_zero, mtx_zero, dist_zero, rvecs_zero, tvecs_zero, h_zero, w_zero = charuco_calibration(images_glob=images_zero, cam=0)
+new_mtx_zero, roi_zero = cv2.getOptimalNewCameraMatrix(mtx_zero, dist_zero, (w_zero,h_zero), 0, (w_zero,h_zero))
+
+obj_pts_one, img_pts_one, ret_one, mtx_one, dist_one, rvecs_one, tvecs_one, h_one, w_one = charuco_calibration(images_one, 1)
+new_mtx_one, roi_one = cv2.getOptimalNewCameraMatrix(mtx_one, dist_one, (w_one,h_one), 0, (w_one,h_one))
+	\end{lstlisting}
+	\caption{Single Camera Calibration \& Optimal Camera Matrix}
+	\label{ListingCameraCalibration}
+\end{figure}
+
+\colstart
+
+Eng
+
+\colger
+
+Zum Testen kann die Funktion \texttt{cv2.undistort()} verwendet werden. Mit \texttt{cv2.imwrite()} kann das Bild dann ausgegeben werden. Sollten zu viele schwarze Pixel vorhanden sein und $\alpha = 0$ kann das Bild zusätzlich auf die \textsl{Region-of-Interest (ROI)} verkleinert werden.
 
 \colende
 
@@ -233,11 +270,11 @@ Test Eng
 
 \colger
 
-Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D-Punkt auf ein 2D-Bild zu projizieren und damit zu entzerren. Um die 3D-Information wiederherzustellen muss berechnet werden, wie die beiden Kameras zueinanderstehen. 
+Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D-Punkt auf ein 2D-Bild zu projizieren und damit zu entzerren. Um die 3D-Information wiederherzustellen muss berechnet werden, wie die beiden Kameras zueinanderstehen.
 
-Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet (Abbildung \ref{ListingStereoCalibration}). Die Variable \texttt{criteria\_stereo} ermöglicht es die die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC\_GUESS} sorgt dafür, dass die intrinsischen Matrizen aus der einzelnen Kalibrierung nicht verändert werden, während dieses Prozesses.
+Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet (Abbildung \ref{ListingStereoCalibration}). Die Variable \texttt{criteria\_stereo} ermöglicht es die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC\_GUESS} sorgt dafür, dass die intrinsischen Matrizen aus der einzelnen Kalibrierung nicht verändert werden, während dieses Prozesses (Abbildung~\ref{ListingStereoCalibration}).
 
-Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden. 
+Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden.
 
 \colende
 
@@ -256,29 +293,27 @@ Test Eng
 
 \colger
 
-Das Ergebnis der Stereokalibrierung sind die Rotations- und Übersetzungsvektoren $R \text{und} t$ zwischen den beiden Kameras, sowie die essentielle ($E$) und fundamentale Matrix ($F$). Die Rotationsmatrix beschreibt die 3D-Rotation von Kamera 1 zu Kamera 2. Die Übersetzungsmatrix beschreibt die Verschiebung des Koordinatensystems der ersten Kamera gegenüber der zweiten Kamera.
+Das Ergebnis der Stereokalibrierung sind die Rotations- und Übersetzungsvektoren $R \text{und} t$ zwischen den beiden Kameras, sowie die essentielle ($E$) und fundamentale Matrix ($F$). Die Rotationsmatrix beschreibt die 3D-Rotation von Kamera 1 zu Kamera 2. Die Übersetzungsmatrix beschreibt die Verschiebung des Koordinatensystems der ersten Kamera gegenüber der zweiten Kamera. Darüber hinaus wird die \textsl{mittlere quadratische Abweichung} zurückgegeben, welche idealerweise auch kleiner als 3 sein sollte.
 
-Die essentielle Matrix ergibt sich aus den beiden vorangegangenen Vektoren ($E = [t] \times R $). Mit dieser Matrix lässt sich bestimmen wo ein Punkt auf dem Koordinatensystem von Kamera 1 auf dem von Kamera 2 liegt. Die Linie zwischen diesen beiden Punkten wird als \textsl{epipolare Linie} bezeichnet. 
+Die essentielle Matrix ergibt sich aus den beiden vorangegangenen Vektoren ($E = [t] \times R $). Mit dieser Matrix lässt sich bestimmen wo ein Punkt auf dem Koordinatensystem von Kamera 1 auf dem von Kamera 2 liegt. Die Linie zwischen diesen beiden Punkten wird als \textsl{epipolare Linie} bezeichnet.
 
 Die fundamentale Matrix erfüllt den gleichen Zweck, jedoch mit Pixelwerten, anstatt normalisierter Koordinaten. Sie wird mithilfe der essentiellen Matrix und den beiden intrinsischen Matrizen der Kamera berechnet.
 
 $$ F = K'^{-\top} E K^{-1} $$ 
 
-Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal zu machen. Dadurch haben beide Bilder die gleichen Y-Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind und die Tiefenerkennung wird deutlich robuster. Sie wird robuster, da alle Punkte in Bild 1 auch in Bild 2 gefunden werden können. Die Resultate beinhalten die Korrektur- und Projektionsmatrizen, sowie die Matrix $Q$ und die jeweilige ROI der beiden Bilder.
+Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal zu machen (Abbildung ~\ref{ListingStereoRectification}). Dadurch haben beide Bilder die gleichen Y-Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind. Dadurch wird die Tiefenerkennung deutlich robuster, da alle Punkte in Bild 1 auch in Bild 2 gefunden werden können. Die Resultate der Korrektur beinhalten die Korrektur- und Projektionsmatrizen, sowie die Matrix $Q$ und die jeweilige ROI der beiden Bilder.
 
-% Read over Kamerakalibrierung and correct projection from 3D to 2D.
-
-In diesem Fall beschreibt die ROI einen Bereich im Bild, in welchem alle Pixel valide sind. Die Korrekturmatrizen beschreiben, wie die jeweiligen Bilder angepasst werden müssen, um horizontale Epipolarlinien zu erhalten. Die Projektionsmatrizen ($P_0, P_1$) beschreiben die notwendige Transformation, um einen 3D-Punkt auf das jeweilige 2D-Koordinatensystem zu projizieren. Diese erweitern die ursprüngliche intrinsische Kameramatrix $camMtx$ um eine Spalte:
+In diesem Fall beschreibt die ROI einen Bereich im Bild, in welchem alle Pixel valide sind. Die Korrekturmatrizen beschreiben, wie die jeweiligen Bilder angepasst werden müssen, um horizontale Epipolarlinien zu erhalten. Die Projektionsmatrizen ($P_0, P_1$) beschreiben die notwendige Transformation, um einen 3D-Punkt auf das jeweils andere 2D-Koordinatensystem zu projizieren, unabhängig der Szenerie. Diese stellen sich dar, wie eine Erweiterung der intrinsischen Kameramatrix $K$.
 
 $$ P_0, P_1 = \begin{bmatrix}
 	f_x & 0 & c_x & t_x \\
 	0 & f_y & c_y & 0 \\
 	0 & 0 & 1 & 0
-\end{bmatrix}$$
+\end{bmatrix}· $$
 
 Der hinzugefügte Wert $t_x$ beschreibt den Horizontalen Versatz zwischen den beiden Bildern als Pixelwert. $f$ und $c$ beschreiben weiterhin die Brennweite und das optische Zentrum. Normalerweise sollte nach Verwendung von \texttt{cv2.stereoRectify()} $f_x = f_y$ gelten.
 
-Die Matrix $Q$ beschreibt eine \textsl{Disparity-to-Depth-Matrix}. Wie diese verwendet werden kann, wird in Abschnitt \ref{AbschnittStereoVisionTiefenerkennung} erläutert.
+Die Matrix $Q$ beschreibt eine \textsl{Reprojizierungsmatrix}. Wie diese verwendet werden kann, wird in Abschnitt \ref{AbschnittStereoVisionTiefenerkennung} erläutert.
 
 \colende
 
@@ -297,7 +332,7 @@ Test Eng
 
 \colger
 
-Da die beiden Kameras statisch montiert sind, genügt es die Rectification einmal zu berechnen und dann zu speichern. Dadurch kann viel Rechenzeit gespart werden, wodurch die Performance verbessert wird. Dazu kann die Funktion \texttt{cv2.initUndistortRectifyMap()} verwendet werden.
+Da die beiden Kameras statisch montiert sind, genügt es die Rectification einmal zu berechnen und dann zu speichern. Dadurch kann viel Rechenzeit gespart werden, wodurch die Performance verbessert wird. Dazu kann die Funktion \texttt{cv2.initUndistortRectifyMap()} verwendet werden (Abbildung~\ref{ListingInitUndistortRectifyMap}).
 Diese erstellt eine Mapping-Funktion zwischen den Kameras die immer wieder verwendet werden kann. 
 
 \colende
@@ -327,15 +362,15 @@ Test Eng
 
 \colger
 
-Nun da die Bilder auf eine Y-Achse gebracht werden können gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block-Matching (BM)-Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke (z.B. 5x5 Pixel) auf und sucht nach korrespondierenden Blöcken entlang der Epipolaren Linie im Referenzbild.
+Nun da die Bilder auf eine Y-Achse gebracht werden können gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der \textsl{Block-Matching (BM)-Algorithmus} verwendet. Dieser teilt das Bild in kleinere Blöcke (z.B. 5x5 Pixel) auf und sucht nach korrespondierenden Blöcken entlang der Epipolaren Linie im Referenzbild.
 
-Anhand unterschiedlicher Metriken wie die Sum of Absolute Differences (SAD), die Sum of Squared Differences (SSD) und Normalized Cross-Correlation (NCC) werden die Blöcke nacheinander verglichen und eine sogenannte Disparity-Map erstellt werden.
+Anhand unterschiedlicher konfigurierbarer Metriken wie die Summe der absoluten Differenzen, die Summe der quadrierten Differenzen oder der normalisierten Kreuzkorrelation werden die Blöcke nacheinander verglichen und eine sogenannte \textsl{Disparity-Map} erstellt werden.
 
-Diese Disparity-Map repräsentiert die Verschiebung zwischen den beiden Bildern (beispielsweise als Grauwert). OpenCV bietet die Klasse \texttt{cv2.StereoBM} an welche verwendet werden kann, um eine solche Disparity-Map zu erstellen.
+Diese Disparity-Map repräsentiert die Verschiebung zwischen den beiden Bildern innerhalb dieser Blöcke (beispielsweise als Grauwert). OpenCV bietet die Klasse \texttt{cv2.StereoBM} an welche verwendet werden kann, um eine solche Disparity-Map zu erstellen.
 
-Alternativ kann auch Semi-Global-Block-Matching (SGBM) verwendet werden, um die Disparity-Map zu erstellen. Hierzu existiert ebenfalls eine OpenCV-Klasse. Diese trägt den Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Sub-Pixel-Berechnungen, welche Texturen schärfer erscheinen lassen können.
+Alternativ kann auch \textsl{Semi-Global-Block-Matching (SGBM)} verwendet werden, um die Disparity-Map zu erstellen. Hierzu existiert ebenfalls eine OpenCV-Klasse. Diese trägt den Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Sub-Pixel-Berechnungen, welche Texturen schärfer erscheinen lassen können.
 
-Sowohl BM als auch SGBM können mit einer Vielzahl an Parametern verfeinert werden. Dies beinhaltet beispielsweise die Blockgröße die geprüft wird, oder ob ein Pre-Filter verwendet werden soll, um Texturen im Bild besser sichtbar zu machen. Die Methode \texttt{compute(img\_, img\_r)}, welche die tatsächliche Berechnung der Disparity durchführt gibt Werte zurück, die mit 16 skaliert wurden. Um die tatsächlichen Disparity-Werte zu erhalten muss das Ergebnis durch 16 geteilt werden.
+Sowohl BM als auch SGBM können mit einer Vielzahl an Parametern verfeinert werden. Dies beinhaltet beispielsweise die Blockgröße die geprüft wird, oder ob ein Pre-Filter verwendet werden soll, um Texturen im Bild besser sichtbar zu machen. Die Methode \texttt{compute(img\_l, img\_r)}, welche die tatsächliche Berechnung der Disparity durchführt gibt Werte zurück, die mit 16 skaliert wurden. Um die tatsächlichen Disparity-Werte zu erhalten muss das Ergebnis durch 16 geteilt werden.
 
 Aus diesen Disparity-Werten ($D$) kann können die Tiefenwerte ($Z$) berechnet werden. Dazu werden auch die Brennweite ($f$) und die Grundlinie ($B$) benötigt. Die entsprechenden Werte werden nicht aus de ursprünglichen Kalibrierung entnommen, sondern aus den Ergebnissen von \texttt{cv2.stereoCalibrate()} und \texttt{cv2.stereoRectify()}. $B$ ist der erste Wert aus dem Übersetzungsvektor aus der Kalibrierung und die Brennweite kann aus der Projektionsmatrix von Kamera 1 entnommen werden, da nach der Korrektur normalerweise $f_x = f_y$ gilt. Um einen Tiefenwert für einen gegebenen Punkt zu erhalten, muss folgende Berechnung durchgeführt werden.
 
