@@ -235,7 +235,7 @@ Test Eng
 
 Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D-Punkt auf ein 2D-Bild zu projizieren und damit zu entzerren. Um die 3D-Information wiederherzustellen muss berechnet werden, wie die beiden Kameras zueinanderstehen. 
 
-Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet (Abbildung \ref{ListingStereoCalibration}). Die Variable \texttt{criteria\_stereo} ermöglicht es die die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC} sorgt dafür, dass die intrinsischen Matrizen aus der einzelnen Kalibrierung nicht verändert werden, während dieses Prozesses.
+Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet (Abbildung \ref{ListingStereoCalibration}). Die Variable \texttt{criteria\_stereo} ermöglicht es die die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC\_GUESS} sorgt dafür, dass die intrinsischen Matrizen aus der einzelnen Kalibrierung nicht verändert werden, während dieses Prozesses.
 
 Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird mit dem Code in Abbildung \ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann allerdings auch ein zweiter Satz Kalibrierungsbilder angefertigt werden. In diesen müssen dann die Punkte erneut entdeckt werden. 
 
@@ -244,7 +244,7 @@ Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird m
 \begin{figure}
 	\begin{lstlisting}[style=shell]
 criteria_stereo = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.0001)
-retS, new_mtx_zero, dist_zero, new_mtx_one, dist_one, Rot, Trns, Emat, Fmat = cv2.stereoCalibrate(obj_pts_one, img_pts_zero, img_pts_one, mtx_zero, dist_zero, mtx_one, dist_one, (w_zero,h_zero), criteria_stereo, cv2.CALIB_FIX_INTRINSIC)
+retS, new_mtx_zero, dist_zero, new_mtx_one, dist_one, Rot, Trns, Emat, Fmat = cv2.stereoCalibrate(obj_pts_one, img_pts_zero, img_pts_one, mtx_zero, dist_zero, mtx_one, dist_one, (w_zero,h_zero), criteria_stereo, cv2.CALIB_FIX_INTRINSIC_GUESS)
 	\end{lstlisting}
 	\caption{Single Camera calibration}
 	\label{ListingStereoCalibration}
@@ -264,7 +264,21 @@ Die fundamentale Matrix erfüllt den gleichen Zweck, jedoch mit Pixelwerten, ans
 
 $$ F = K'^{-\top} E K^{-1} $$ 
 
-Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal zu machen. Dadurch haben beide Bilder die gleichen Y-Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind und die Tiefenerkennung wird deutlich robuster. Sie wird robuster, da alle Punkte in Bild 1 auch in Bild 2 gefunden werden können.
+Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal zu machen. Dadurch haben beide Bilder die gleichen Y-Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind und die Tiefenerkennung wird deutlich robuster. Sie wird robuster, da alle Punkte in Bild 1 auch in Bild 2 gefunden werden können. Die Resultate beinhalten die Korrektur- und Projektionsmatrizen, sowie die Matrix $Q$ und die jeweilige ROI der beiden Bilder.
+
+% Read over Kamerakalibrierung and correct projection from 3D to 2D.
+
+In diesem Fall beschreibt die ROI einen Bereich im Bild, in welchem alle Pixel valide sind. Die Korrekturmatrizen beschreiben, wie die jeweiligen Bilder angepasst werden müssen, um horizontale Epipolarlinien zu erhalten. Die Projektionsmatrizen ($P_0, P_1$) beschreiben die notwendige Transformation, um einen 3D-Punkt auf das jeweilige 2D-Koordinatensystem zu projizieren. Diese erweitern die ursprüngliche intrinsische Kameramatrix $camMtx$ um eine Spalte:
+
+$$ P_0, P_1 = \begin{bmatrix}
+	f_x & 0 & c_x & t_x \\
+	0 & f_y & c_y & 0 \\
+	0 & 0 & 1 & 0
+\end{bmatrix}$$
+
+Der hinzugefügte Wert $t_x$ beschreibt den Horizontalen Versatz zwischen den beiden Bildern als Pixelwert. $f$ und $c$ beschreiben weiterhin die Brennweite und das optische Zentrum. Normalerweise sollte nach Verwendung von \texttt{cv2.stereoRectify()} $f_x = f_y$ gelten.
+
+Die Matrix $Q$ beschreibt eine \textsl{Disparity-to-Depth-Matrix}. Wie diese verwendet werden kann, wird in Abschnitt \ref{AbschnittStereoVisionTiefenerkennung} erläutert.
 
 \colende
 
@@ -313,16 +327,24 @@ Test Eng
 
 \colger
 
-Nun da die Bilder auf eine Y-Achse gebracht werden können gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block-Matching (BM)-Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke (z.B. 5x5 Pixel) auf und sucht nach korrespondierenden Blöcken entlang der Epipolaren Linie im Referenzbild. 
+Nun da die Bilder auf eine Y-Achse gebracht werden können gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block-Matching (BM)-Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke (z.B. 5x5 Pixel) auf und sucht nach korrespondierenden Blöcken entlang der Epipolaren Linie im Referenzbild.
 
-Anhand unterschiedlicher Metriken wie die Sum of Absolute Differences (SAD), die Sum of Squared Differences (SSD) und Normalized Cross-Correlation (NCC) werden die Blöcke nacheinander verglichen und eine sogenannte Disparity-Map erstellt werden. 
+Anhand unterschiedlicher Metriken wie die Sum of Absolute Differences (SAD), die Sum of Squared Differences (SSD) und Normalized Cross-Correlation (NCC) werden die Blöcke nacheinander verglichen und eine sogenannte Disparity-Map erstellt werden.
 
 Diese Disparity-Map repräsentiert die Verschiebung zwischen den beiden Bildern (beispielsweise als Grauwert). OpenCV bietet die Klasse \texttt{cv2.StereoBM} an welche verwendet werden kann, um eine solche Disparity-Map zu erstellen.
 
 Alternativ kann auch Semi-Global-Block-Matching (SGBM) verwendet werden, um die Disparity-Map zu erstellen. Hierzu existiert ebenfalls eine OpenCV-Klasse. Diese trägt den Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Sub-Pixel-Berechnungen, welche Texturen schärfer erscheinen lassen können.
 
-Sowohl BM als auch SGBM können mit einer Vielzahl an Parametern verfeinert werden. Dies beinhaltet beispielsweise die Blockgröße die geprüft wird, oder ob ein Pre-Filter verwendet werden soll, um Texturen im Bild besser sichtbar zu machen. Die Methode \texttt{compute(img\_, img\_r)}, welche die tatsächliche Berechnung der Disparity durchführt gibt Werte zurück, die mit 16 skaliert wurden. Um die richtigen Disparity-Werte zu erhalten muss das Ergebnis durch 16 geteilt werden.
+Sowohl BM als auch SGBM können mit einer Vielzahl an Parametern verfeinert werden. Dies beinhaltet beispielsweise die Blockgröße die geprüft wird, oder ob ein Pre-Filter verwendet werden soll, um Texturen im Bild besser sichtbar zu machen. Die Methode \texttt{compute(img\_, img\_r)}, welche die tatsächliche Berechnung der Disparity durchführt gibt Werte zurück, die mit 16 skaliert wurden. Um die tatsächlichen Disparity-Werte zu erhalten muss das Ergebnis durch 16 geteilt werden.
 
-Aus diesen Disparity-Werten kann können die Depth-Werte berechnet werden. To be continued...
+Aus diesen Disparity-Werten ($D$) kann können die Tiefenwerte ($Z$) berechnet werden. Dazu werden auch die Brennweite ($f$) und die Grundlinie ($B$) benötigt. Die entsprechenden Werte werden nicht aus de ursprünglichen Kalibrierung entnommen, sondern aus den Ergebnissen von \texttt{cv2.stereoCalibrate()} und \texttt{cv2.stereoRectify()}. $B$ ist der erste Wert aus dem Übersetzungsvektor aus der Kalibrierung und die Brennweite kann aus der Projektionsmatrix von Kamera 1 entnommen werden, da nach der Korrektur normalerweise $f_x = f_y$ gilt. Um einen Tiefenwert für einen gegebenen Punkt zu erhalten, muss folgende Berechnung durchgeführt werden.
+
+$$ Z = \frac{Bf}{D} $$
+
+Diese Berechnung muss allerdings nicht als solche durchgeführt werden. Die Matrix $Q$, welche von \texttt{cv2.stereoRectify()} zurückgegeben wurde kann in Verbindung mit der Methode \texttt{reprojectImageTo3D} verwendet werden, um die Tiefenwerte zu erhalten. Diese werden im \texttt{im3d(x, y, ch)} ausgegeben und enthalten die 3D-Koordinaten für einen jeweiligen Punkt $(x, y)$.
+
+Sollte die Berechnung dennoch als solche durchgeführt werden, empfiehlt es sich die Disparity zu normalisieren. Des weiteren muss darauf geachtet werden, dass $D > 0$ für jeden Punkt im Bild, da sonst falsche Tiefenwerte errechnet werden. Dies kann dafür sorgen, dass die resultierenden Tiefenwerte verzerrt wirken.
+
+Ein möglicher Nutzen dieser konkreten Berechnung wäre es, nicht alle Tiefenwerte berechnen zu müssen, sondern nur für interessante Regionen. Dies ließe sich in Verbindung mit einer Objekterkennung realisieren und wäre für höhere Auflösungen interessant. Grundsätzlich ist auf die Limitationen des Raspberry Pi zu achten. Bei einer Auflösung 640x480 ist das Pi in der Lage die Disparity mit einer nutzbaren Framerate zu produzieren. Höhere Auflösungen müssen im Einzelfall geprüft werden.
 
 \colende
