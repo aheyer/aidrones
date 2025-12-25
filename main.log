@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.10.8)  28 NOV 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.12.22)  25 DEC 2025 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2025/09/09 v3.48 KOMA-Script document class (book)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -204,29 +204,29 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count285
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2045.
+ne 2050.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2047.
+ne 2052.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2049.
+e 2054.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2050.
+e 2055.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2051.
+on input line 2056.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2053.
+on input line 2058.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2078.
+on input line 2083.
 \U@D=\dimen151
 \l@unhyphenated=\language12
 
@@ -234,26 +234,26 @@ on input line 2078.
 \bbl@readstream=\read2
 \bbl@dirlevel=\count286
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/invalid/babel-ngerman.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 4298.
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2024/12/10 v2.15 German support for babel (post-1996 orthogra
 phy)
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
-Package babel Info: Importing font and identification data for ngerman
-(babel)             from babel-de.ini. Reported on input line 12.
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
 ))
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4298.
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 12.
-)
 Package babel Info: Hyphen rules for 'british' set to \l@english
 (babel)             (\language0). Reported on input line 82.
 Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
@@ -264,8 +264,9 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 (babel)             (\language0). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
@@ -273,7 +274,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@posthook=\toks19
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/06/16 v2.17y AMS math features
+Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
@@ -337,8 +338,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \multlinegap=\skip67
 \multlinetaggap=\skip68
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2949.
-LaTeX Info: Redefining \] on input line 2950.
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -355,7 +356,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen161
 \ar@mcellbox=\box57
 \extrarowheight=\dimen162
@@ -440,7 +441,7 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count300
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
@@ -600,7 +601,7 @@ Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip108
 \LTright=\skip109
 \LTpre=\skip110
@@ -832,19 +833,25 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 \lst@maxwidth=\dimen277
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count357
 \lst@skipnumbers=\count358
 \lst@framebox=\box80
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
@@ -878,12 +885,13 @@ Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
+\XKV@tempb@toks=\toks43
 )
 \XKV@depth=\count360
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -895,7 +903,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count361
 \mult@box=\box82
 \multicol@leftmargin=\dimen278
@@ -1002,9 +1010,9 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 \nprt@sepwidth=\skip142
 \nprt@decimalwidth=\skip143
 \nprt@blockwidth=\skip144
-\nprt@digittoks=\toks43
-\nprt@pretoks=\toks44
-\nprt@posttoks=\toks45
+\nprt@digittoks=\toks44
+\nprt@pretoks=\toks45
+\nprt@posttoks=\toks46
 \nprt@thisdigit=\count384
 \nprt@curpos=\count385
 \nprt@rndpos=\count386
@@ -1168,7 +1176,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 26
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count404
 )
 (./main.aux (./chapter00.aux
@@ -1176,7 +1184,7 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 9.
 ) (./chapter01.aux) (./chapter02.aux)
 (./chapter03.aux) (./chapter04.aux) (./chapter05.aux) (./chapter06.aux)
-(./chapter07.aux))
+(./chapter07.aux) (./chapter08.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 260.
@@ -1215,12 +1223,12 @@ Package scrbase Info: activating english \indexname on input line 260.
 \scratchbox=\box128
 \nofMPsegments=\count406
 \nofMParguments=\count407
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count408
 \MPscratchDim=\dimen294
 \MPnumerator=\count409
 \makeMPintoPDFobject=\count410
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1297,9 +1305,7 @@ Package caption Info: End \AtBeginDocument code.
 Package tocbasic Info: setting babel extension for `lol' on input line 260.
 \scr@dte@lstlisting@maxnumwidth=\skip151
 Package hyperref Info: Link coloring OFF on input line 260.
-
-
-[1
+ [1
 
 
 
@@ -1312,8 +1318,7 @@ dvips/lm/lm-ec.enc}]
  (./chapter00.tex
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
 .
-
-(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1374,11 +1379,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 98.
-)
-
-[6] (./main.toc
-
-[7
+) [6]
+(./main.toc [7
 
 
 
@@ -1387,25 +1389,19 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-
-[8] (./main.deutschestoc
-
-[9
+ [8] (./main.deutschestoc [9
 
 
 ])
 \tf@deutschestoc=\write7
 \openout7 = `main.deutschestoc'.
 
-
-
-[10]
+ [10]
 \openout2 = `chapter01.aux'.
 
  (./chapter01.tex
 chapter 1.
-<./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf, id=246, 2873.73625pt 
+<./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf, id=267, 2873.73625pt 
 x 1885.0425pt>
 File: ./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf Graphic file (typ
 e pdf)
@@ -1413,8 +1409,6 @@ e pdf)
 Package pdftex.def Info: ./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pd
 f  used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 298.5928pt.
-
-
 [1
 
 
@@ -1423,19 +1417,15 @@ f  used on input line 51.
 
 
 
-]
-
-[2 <./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf>]
+] [2 <./images/Komponenten_einer_FPV_Drohne_ohne_KI_v1_en.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 19.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-[3{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-mathsy.enc}] [4]
-<./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg, id=311, 1003.75p
+) [3{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc
+/dvips/lm/lm-mathsy.enc}] [4]
+<./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg, id=332, 1003.75p
 t x 1003.75pt>
 File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg Graphic file
  (type jpg)
@@ -1443,7 +1433,7 @@ File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg Graphic file
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_cr
 op.jpg  used on input line 264.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
-<./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg, id=312, 1003.75pt
+<./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg, id=333, 1003.75pt
  x 1003.75pt>
 File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg Graphic file 
 (type jpg)
@@ -1451,17 +1441,15 @@ File: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg Graphic file
 Package pdftex.def Info: ./images/SpeedyBee_F405_AIO_40A_Bluejay_rueckseite_cro
 p.jpg  used on input line 269.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
-<./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg, id=319, 2007.5pt x 1003.75pt>
+<./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg, id=340, 2007.5pt x 1003.75pt>
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg  used o
 n input line 289.
 (pdftex.def)             Requested size: 455.24411pt x 227.61066pt.
-
-
-[5 <./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg> <./images/Spe
-edyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>]
-<./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg, id=330, 2007.5pt x 1003.75pt>
+ [5 <./images/SpeedyBee_F405_AIO_40A_Bluejay_vorderseite_crop.jpg> <./images/Sp
+eedyBee_F405_AIO_40A_Bluejay_rueckseite_crop.jpg>]
+<./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg, id=351, 2007.5pt x 1003.75pt>
 File: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg Graphic file (type jpg)
 <use ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg>
 Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg  used on
@@ -1469,7 +1457,7 @@ Package pdftex.def Info: ./images/SpeedyBee_F405_Mini_BLS_35A_back.jpg  used on
 (pdftex.def)             Requested size: 455.24411pt x 227.61066pt.
  [6 <./images/SpeedyBee_F405_Mini_BLS_35A_front.jpg> <./images/SpeedyBee_F405_M
 ini_BLS_35A_back.jpg>]
-<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg, id=344, 1003.75pt x 1003.7
+<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg, id=365, 1003.75pt x 1003.7
 5pt>
 File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg Graphic file (type jpg
 )
@@ -1477,7 +1465,7 @@ File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg Graphic file (type jpg
 Package pdftex.def Info: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg  us
 ed on input line 333.
 (pdftex.def)             Requested size: 218.51521pt x 218.51297pt.
-<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg, id=345, 1003.75pt x 1003.75
+<./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg, id=366, 1003.75pt x 1003.75
 pt>
 File: ./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_back.jpg Graphic file (type jpg)
 
@@ -1502,12 +1490,10 @@ Overfull \hbox (3.14168pt too wide) in paragraph at lines 381--381
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 384.
-
-
 [7 <./images/FLYWOO_GOKU_GN745_45A_AIO_V3_FC_front.jpg> <./images/FLYWOO_GOKU_G
 N745_45A_AIO_V3_FC_back.jpg>] [8] [9{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.
 enc}]
-<./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png, id=385, 1027.84pt x 770
+<./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png, id=406, 1027.84pt x 770
 .88pt>
 File: ./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png Graphic file (type 
 png)
@@ -1515,7 +1501,7 @@ png)
 Package pdftex.def Info: ./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png 
  used on input line 518.
 (pdftex.def)             Requested size: 218.51521pt x 163.87747pt.
-<./images/TMotor_V2306_KV2400_White_Silver_4S_unten.png, id=386, 1027.84pt x 77
+<./images/TMotor_V2306_KV2400_White_Silver_4S_unten.png, id=407, 1027.84pt x 77
 0.88pt>
 File: ./images/TMotor_V2306_KV2400_White_Silver_4S_unten.png Graphic file (type
  png)
@@ -1523,7 +1509,7 @@ File: ./images/TMotor_V2306_KV2400_White_Silver_4S_unten.png Graphic file (type
 Package pdftex.def Info: ./images/TMotor_V2306_KV2400_White_Silver_4S_unten.png
   used on input line 523.
 (pdftex.def)             Requested size: 218.51521pt x 163.87747pt.
-<./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_oben.png, id=387, 1
+<./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_oben.png, id=408, 1
 027.84pt x 770.88pt>
 File: ./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_oben.png Graph
 ic file (type png)
@@ -1531,7 +1517,7 @@ ic file (type png)
 Package pdftex.def Info: ./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_M
 otor_oben.png  used on input line 536.
 (pdftex.def)             Requested size: 218.51521pt x 163.87747pt.
-<./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_unten.png, id=388, 
+<./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_unten.png, id=409, 
 1027.84pt x 770.88pt>
 File: ./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_unten.png Grap
 hic file (type png)
@@ -1539,18 +1525,12 @@ hic file (type png)
 Package pdftex.def Info: ./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_M
 otor_unten.png  used on input line 541.
 (pdftex.def)             Requested size: 218.51521pt x 163.87747pt.
-
-
-[10 <./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png> <./images/TMotor_V2
-306_KV2400_White_Silver_4S_unten.png>]
-
-[11 <./images/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_oben.png> <./im
-ages/TMotor_Pacer_P1604_KV2850_4S_6S_Silver_Blue_Motor_unten.png>]
-
-[12]
-
-[13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
-<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg, id=432, 3468.96pt x 2312.64
+ [10 <./images/TMotor_V2306_KV2400_White_Silver_4S_oben.png> <./images/TMotor_V
+2306_KV2400_White_Silver_4S_unten.png>] [11 <./images/TMotor_Pacer_P1604_KV2850
+_4S_6S_Silver_Blue_Motor_oben.png> <./images/TMotor_Pacer_P1604_KV2850_4S_6S_Si
+lver_Blue_Motor_unten.png>] [12] [13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mat
+hit.enc}]
+<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg, id=453, 3468.96pt x 2312.64
 pt>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg Graphic file (type jpg)
 
@@ -1558,7 +1538,7 @@ File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg  use
 d on input line 730.
 (pdftex.def)             Requested size: 218.51521pt x 145.66885pt.
-<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=433, 3468.96pt x 2312.64p
+<./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg, id=454, 3468.96pt x 2312.64p
 t>
 File: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg Graphic file (type jpg)
 <use ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg>
@@ -1567,7 +1547,7 @@ Package pdftex.def Info: ./images/CNHL_1500mAh_100C_4S_XT60_Lipo_back.jpg  used
 (pdftex.def)             Requested size: 218.51521pt x 145.66885pt.
  [14 <./images/CNHL_1500mAh_100C_4S_XT60_Lipo_front.jpg> <./images/CNHL_1500mAh
 _100C_4S_XT60_Lipo_back.jpg>]
-<./images/GAONENG_LiIon_2500mAh_4S_4S1P_12C_front_crop.png, id=443, 1104.125pt 
+<./images/GAONENG_LiIon_2500mAh_4S_4S1P_12C_front_crop.png, id=464, 1104.125pt 
 x 401.5pt>
 File: ./images/GAONENG_LiIon_2500mAh_4S_4S1P_12C_front_crop.png Graphic file (t
 ype png)
@@ -1580,16 +1560,14 @@ Overfull \hbox (9.1249pt too wide) in paragraph at lines 888--888
 []|\T1/lmr/m/n/10.95 (-20) Technology| 
  []
 
-
-
 [16] [17] [18]
-<./images/HGLRS_GPS_M100_PRO_front.jpg, id=480, 702.625pt x 702.625pt>
+<./images/HGLRS_GPS_M100_PRO_front.jpg, id=501, 702.625pt x 702.625pt>
 File: ./images/HGLRS_GPS_M100_PRO_front.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_front.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_front.jpg  used on input l
 ine 981.
 (pdftex.def)             Requested size: 218.51521pt x 218.51909pt.
-<./images/HGLRS_GPS_M100_PRO_back.jpg, id=481, 752.8125pt x 752.8125pt>
+<./images/HGLRS_GPS_M100_PRO_back.jpg, id=502, 752.8125pt x 752.8125pt>
 File: ./images/HGLRS_GPS_M100_PRO_back.jpg Graphic file (type jpg)
 <use ./images/HGLRS_GPS_M100_PRO_back.jpg>
 Package pdftex.def Info: ./images/HGLRS_GPS_M100_PRO_back.jpg  used on input li
@@ -1597,39 +1575,37 @@ ne 986.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
  [19 <./images/HGLRS_GPS_M100_PRO_front.jpg> <./images/HGLRS_GPS_M100_PRO_back.
 jpg>]
-<./images/RadioMaster_RP2_Receiver_ELRS_front.jpg, id=493, 352.31625pt x 439.64
+<./images/RadioMaster_RP2_Receiver_ELRS_front.jpg, id=514, 352.31625pt x 439.64
 25pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_front.jpg  used
  on input line 1035.
 (pdftex.def)             Requested size: 109.2576pt x 136.33472pt.
-<./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=494, 351.3125pt x 439.6425
+<./images/RadioMaster_RP2_Receiver_ELRS_back.jpg, id=515, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP2_Receiver_ELRS_back.jpg  used 
 on input line 1040.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
-<./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=495, 351.3125pt x 439.642
+<./images/RadioMaster_RP1_Receiver_ELRS_front.jpg, id=516, 351.3125pt x 439.642
 5pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_front.jpg  used
  on input line 1052.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
-<./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=496, 351.3125pt x 439.6425
+<./images/RadioMaster_RP1_Receiver_ELRS_back.jpg, id=517, 351.3125pt x 439.6425
 pt>
 File: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg Graphic file (type jpg)
 <use ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg>
 Package pdftex.def Info: ./images/RadioMaster_RP1_Receiver_ELRS_back.jpg  used 
 on input line 1057.
 (pdftex.def)             Requested size: 109.2576pt x 136.73051pt.
-
-
-[20 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg> <./images/RadioMaster_RP
-2_Receiver_ELRS_back.jpg>]
-<./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg, id=505, 853.1875pt x 85
+ [20 <./images/RadioMaster_RP2_Receiver_ELRS_front.jpg> <./images/RadioMaster_R
+P2_Receiver_ELRS_back.jpg>]
+<./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg, id=526, 853.1875pt x 85
 3.1875pt>
 File: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg Graphic file (type 
 jpg)
@@ -1637,7 +1613,7 @@ jpg)
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg 
  used on input line 1103.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
-<./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=506, 853.1875pt x 853
+<./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg, id=527, 853.1875pt x 853
 .1875pt>
 File: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg Graphic file (type j
 pg)
@@ -1645,17 +1621,15 @@ pg)
 Package pdftex.def Info: ./images/SpeedyBee_TX800_FPV_VTX_rueckseite_crop.jpg  
 used on input line 1108.
 (pdftex.def)             Requested size: 218.51521pt x 218.5168pt.
-
-
-[21 <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg> <./images/RadioMaster_RP
-1_Receiver_ELRS_back.jpg>]
+ [21 <./images/RadioMaster_RP1_Receiver_ELRS_front.jpg> <./images/RadioMaster_R
+P1_Receiver_ELRS_back.jpg>]
 Overfull \hbox (4.59229pt too wide) in paragraph at lines 1130--1141
  [][] 
  []
 
 [22 <./images/SpeedyBee_TX800_FPV_VTX_vorderseite_crop.jpg> <./images/SpeedyBee
 _TX800_FPV_VTX_rueckseite_crop.jpg>] [23]
-<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg, id=535, 552.0625pt x 552.
+<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg, id=557, 552.0625pt x 552.
 0625pt>
 File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg Graphic file (type jp
 g)
@@ -1663,7 +1637,7 @@ g)
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg  u
 sed on input line 1289.
 (pdftex.def)             Requested size: 109.2576pt x 109.25648pt.
-<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=536, 552.0625pt x 552
+<./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg, id=558, 552.0625pt x 552
 .0625pt>
 File: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg Graphic file (type j
 pg)
@@ -1671,7 +1645,7 @@ pg)
 Package pdftex.def Info: ./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_back.jpg  
 used on input line 1294.
 (pdftex.def)             Requested size: 109.2576pt x 109.25648pt.
-<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=537, 752.8125pt x 75
+<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg, id=559, 752.8125pt x 75
 2.8125pt>
 File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg Graphic file (type 
 jpg)
@@ -1679,7 +1653,7 @@ jpg)
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg 
  used on input line 1306.
 (pdftex.def)             Requested size: 109.2576pt x 109.25266pt.
-<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=538, 752.8125pt x 7
+<./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg, id=560, 752.8125pt x 7
 52.8125pt>
 File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg Graphic file (type
  jpg)
@@ -1687,29 +1661,20 @@ File: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg Graphic file (type
 Package pdftex.def Info: ./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_back.jpg
   used on input line 1311.
 (pdftex.def)             Requested size: 109.2576pt x 109.25266pt.
-
-
-[24 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_N
-ano_1200TVL_14mm_165FOV_back.jpg>]
-
+ [24 <./images/Caddx_ANT_Nano_1200TVL_14mm_165FOV_top.jpg> <./images/Caddx_ANT_
+Nano_1200TVL_14mm_165FOV_back.jpg>]
 [25 <./images/RunCam_Phoenix_2_1000TVL_19mm_155FOV_top.jpg> <./images/RunCam_Ph
 oenix_2_1000TVL_19mm_155FOV_back.jpg>]
-<./images/SKYZONE_04X_PRO_IMG_5179.png, id=558, 1661.20625pt x 868.24374pt>
+<./images/SKYZONE_04X_PRO_IMG_5179.png, id=579, 1661.20625pt x 868.24374pt>
 File: ./images/SKYZONE_04X_PRO_IMG_5179.png Graphic file (type png)
 <use ./images/SKYZONE_04X_PRO_IMG_5179.png>
 Package pdftex.def Info: ./images/SKYZONE_04X_PRO_IMG_5179.png  used on input l
 ine 1420.
 (pdftex.def)             Requested size: 455.24411pt x 237.9265pt.
-
-
-[26])
-
-[27 <./images/SKYZONE_04X_PRO_IMG_5179.png>]
+ [26]) [27 <./images/SKYZONE_04X_PRO_IMG_5179.png>]
 \openout2 = `chapter02.aux'.
 
- (./chapter02.tex
-
-[28
+ (./chapter02.tex [28
 
 
 
@@ -1728,7 +1693,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 <./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_app.p
-ng, id=585, 878.21773pt x 490.89056pt>
+ng, id=606, 878.21773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_
 app.png Graphic file (type png)
 <use ./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_a
@@ -1736,10 +1701,8 @@ pp.png>
 Package pdftex.def Info: ./images/Betaflight_4_5_3_installation_update_backup_f
 irmware_screenshot_app.png  used on input line 100.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[30]
-<./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png, id=597, 878.
+ [30]
+<./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png, id=618, 878.
 21773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png Graphic 
 file (type png)
@@ -1749,7 +1712,7 @@ ot_app.png  used on input line 108.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
  [31 <./images/Betaflight_4_5_3_installation_update_backup_firmware_screenshot_
 app.png> <./images/Betaflight_4_5_3_hauptseite_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png, id=611, 878.21773
+<./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png, id=632, 878.21773
 pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png Graphic file 
 (type png)
@@ -1757,7 +1720,7 @@ File: ./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png Graphic file
 Package pdftex.def Info: ./images/Betaflight_4_5_3_ports_firmware_screenshot_ap
 p.png  used on input line 134.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/Betaflight_4_5_3_configuration1_firmware_screenshot_app.png, id=616, 
+<./images/Betaflight_4_5_3_configuration1_firmware_screenshot_app.png, id=637, 
 878.21773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_configuration1_firmware_screenshot_app.png Grap
 hic file (type png)
@@ -1765,10 +1728,8 @@ hic file (type png)
 Package pdftex.def Info: ./images/Betaflight_4_5_3_configuration1_firmware_scre
 enshot_app.png  used on input line 152.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[32 <./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_configuration2_firmware_screenshot_app.png, id=627, 
+ [32 <./images/Betaflight_4_5_3_ports_firmware_screenshot_app.png>]
+<./images/Betaflight_4_5_3_configuration2_firmware_screenshot_app.png, id=648, 
 878.21773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_configuration2_firmware_screenshot_app.png Grap
 hic file (type png)
@@ -1776,11 +1737,9 @@ hic file (type png)
 Package pdftex.def Info: ./images/Betaflight_4_5_3_configuration2_firmware_scre
 enshot_app.png  used on input line 170.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[33 <./images/Betaflight_4_5_3_configuration1_firmware_screenshot_app.png>]
-[34 <./images/Betaflight_4_5_3_configuration2_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_receiver_firmware_screenshot_app.png, id=641, 878.21
+ [33 <./images/Betaflight_4_5_3_configuration1_firmware_screenshot_app.png>] [3
+4 <./images/Betaflight_4_5_3_configuration2_firmware_screenshot_app.png>]
+<./images/Betaflight_4_5_3_receiver_firmware_screenshot_app.png, id=662, 878.21
 773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_receiver_firmware_screenshot_app.png Graphic fi
 le (type png)
@@ -1788,7 +1747,7 @@ le (type png)
 Package pdftex.def Info: ./images/Betaflight_4_5_3_receiver_firmware_screenshot
 _app.png  used on input line 228.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/Betaflight_4_5_3_modes_firmware_screenshot_app.png, id=644, 878.21773
+<./images/Betaflight_4_5_3_modes_firmware_screenshot_app.png, id=665, 878.21773
 pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_modes_firmware_screenshot_app.png Graphic file 
 (type png)
@@ -1796,11 +1755,9 @@ File: ./images/Betaflight_4_5_3_modes_firmware_screenshot_app.png Graphic file
 Package pdftex.def Info: ./images/Betaflight_4_5_3_modes_firmware_screenshot_ap
 p.png  used on input line 246.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[35 <./images/Betaflight_4_5_3_receiver_firmware_screenshot_app.png>] [36 <./im
-ages/Betaflight_4_5_3_modes_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_motos_firmware_screenshot_app.png, id=661, 878.21773
+ [35 <./images/Betaflight_4_5_3_receiver_firmware_screenshot_app.png>] [36 <./i
+mages/Betaflight_4_5_3_modes_firmware_screenshot_app.png>]
+<./images/Betaflight_4_5_3_motos_firmware_screenshot_app.png, id=683, 878.21773
 pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_motos_firmware_screenshot_app.png Graphic file 
 (type png)
@@ -1809,15 +1766,15 @@ Package pdftex.def Info: ./images/Betaflight_4_5_3_motos_firmware_screenshot_ap
 p.png  used on input line 296.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
  [37 <./images/Betaflight_4_5_3_motos_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_video_transmitter_firmware_screenshot_app.png, id=67
-3, 1445.4pt x 813.0375pt>
+<./images/Betaflight_4_5_3_video_transmitter_firmware_screenshot_app.png, id=69
+4, 1445.4pt x 813.0375pt>
 File: ./images/Betaflight_4_5_3_video_transmitter_firmware_screenshot_app.png G
 raphic file (type png)
 <use ./images/Betaflight_4_5_3_video_transmitter_firmware_screenshot_app.png>
 Package pdftex.def Info: ./images/Betaflight_4_5_3_video_transmitter_firmware_s
 creenshot_app.png  used on input line 330.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
-<./images/Betaflight_4_5_3_sensors_firmware_screenshot_app.png, id=676, 878.217
+<./images/Betaflight_4_5_3_sensors_firmware_screenshot_app.png, id=697, 878.217
 73pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_sensors_firmware_screenshot_app.png Graphic fil
 e (type png)
@@ -1826,10 +1783,9 @@ Package pdftex.def Info: ./images/Betaflight_4_5_3_sensors_firmware_screenshot_
 app.png  used on input line 348.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
 
-
 [38 <./images/Betaflight_4_5_3_video_transmitter_firmware_screenshot_app.png>]
 [39 <./images/Betaflight_4_5_3_sensors_firmware_screenshot_app.png>]
-<./images/Betaflight_4_5_3_blackbox_firmware_screenshot_app.png, id=692, 878.21
+<./images/Betaflight_4_5_3_blackbox_firmware_screenshot_app.png, id=713, 878.21
 773pt x 490.89056pt>
 File: ./images/Betaflight_4_5_3_blackbox_firmware_screenshot_app.png Graphic fi
 le (type png)
@@ -1837,7 +1793,7 @@ le (type png)
 Package pdftex.def Info: ./images/Betaflight_4_5_3_blackbox_firmware_screenshot
 _app.png  used on input line 374.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/Betaflight_4_5_3_cli_firmware_screenshot_app.png, id=695, 878.21773pt
+<./images/Betaflight_4_5_3_cli_firmware_screenshot_app.png, id=716, 878.21773pt
  x 490.89056pt>
 File: ./images/Betaflight_4_5_3_cli_firmware_screenshot_app.png Graphic file (t
 ype png)
@@ -1845,296 +1801,280 @@ ype png)
 Package pdftex.def Info: ./images/Betaflight_4_5_3_cli_firmware_screenshot_app.
 png  used on input line 392.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[40 <./images/Betaflight_4_5_3_blackbox_firmware_screenshot_app.png>] [41 <./im
-ages/Betaflight_4_5_3_cli_firmware_screenshot_app.png>]
-<./images/INAV_Firmware_Flasher.png, id=710, 1927.2pt x 1051.93pt>
+ [40 <./images/Betaflight_4_5_3_blackbox_firmware_screenshot_app.png>] [41 <./i
+mages/Betaflight_4_5_3_cli_firmware_screenshot_app.png>]
+<./images/INAV_Firmware_Flasher.png, id=731, 1927.2pt x 1051.93pt>
 File: ./images/INAV_Firmware_Flasher.png Graphic file (type png)
 <use ./images/INAV_Firmware_Flasher.png>
 Package pdftex.def Info: ./images/INAV_Firmware_Flasher.png  used on input line
  460.
 (pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
  [42 <./images/INAV_Firmware_Flasher.png>] [43]
-<./images/INAV_Calibration_Tab.png, id=736, 1927.2pt x 1084.05pt>
+<./images/INAV_Calibration_Tab.png, id=757, 1927.2pt x 1084.05pt>
 File: ./images/INAV_Calibration_Tab.png Graphic file (type png)
 <use ./images/INAV_Calibration_Tab.png>
 Package pdftex.def Info: ./images/INAV_Calibration_Tab.png  used on input line 
 629.
 (pdftex.def)             Requested size: 455.24411pt x 256.07509pt.
-
-
-[44] [45 <./images/INAV_Calibration_Tab.png>]
-<./images/INAV_Failsafe_Tab.png, id=765, 1927.2pt x 1051.93pt>
+ [44]
+<./images/INAV_8_0_1_Outputs_FLYWOOF745_INAV_Configurator.png, id=773, 878.2177
+3pt x 490.89056pt>
+File: ./images/INAV_8_0_1_Outputs_FLYWOOF745_INAV_Configurator.png Graphic file
+ (type png)
+<use ./images/INAV_8_0_1_Outputs_FLYWOOF745_INAV_Configurator.png>
+Package pdftex.def Info: ./images/INAV_8_0_1_Outputs_FLYWOOF745_INAV_Configurat
+or.png  used on input line 671.
+(pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
+ [45 <./images/INAV_Calibration_Tab.png>] [46 <./images/INAV_8_0_1_Outputs_FLYW
+OOF745_INAV_Configurator.png>]
+<./images/INAV_Failsafe_Tab.png, id=801, 1927.2pt x 1051.93pt>
 File: ./images/INAV_Failsafe_Tab.png Graphic file (type png)
 <use ./images/INAV_Failsafe_Tab.png>
-Package pdftex.def Info: ./images/INAV_Failsafe_Tab.png  used on input line 720
+Package pdftex.def Info: ./images/INAV_Failsafe_Tab.png  used on input line 730
 .
 (pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
- [46 <./images/INAV_Failsafe_Tab.png>]
-<./images/INAV_OSD_Tab.png, id=782, 1927.2pt x 1051.93pt>
+ [47 <./images/INAV_Failsafe_Tab.png>]
+<./images/INAV_OSD_Tab.png, id=817, 1927.2pt x 1051.93pt>
 File: ./images/INAV_OSD_Tab.png Graphic file (type png)
 <use ./images/INAV_OSD_Tab.png>
-Package pdftex.def Info: ./images/INAV_OSD_Tab.png  used on input line 789.
+Package pdftex.def Info: ./images/INAV_OSD_Tab.png  used on input line 799.
 (pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
-
-
-[47] [48 <./images/INAV_OSD_Tab.png>]
-<./images/STM32CubeProgrammerConnect.png, id=806, 1445.4pt x 818.05624pt>
+ [48 <./images/INAV_OSD_Tab.png>]
+<./images/STM32CubeProgrammerConnect.png, id=830, 1445.4pt x 818.05624pt>
 File: ./images/STM32CubeProgrammerConnect.png Graphic file (type png)
 <use ./images/STM32CubeProgrammerConnect.png>
 Package pdftex.def Info: ./images/STM32CubeProgrammerConnect.png  used on input
- line 848.
+ line 858.
 (pdftex.def)             Requested size: 455.24411pt x 257.65163pt.
- [49 <./images/STM32CubeProgrammerConnect.png>]
-<./images/STM32CubeProgrammerFullChipErase.png, id=817, 1445.4pt x 818.05624pt>
+ [49]
+<./images/STM32CubeProgrammerFullChipErase.png, id=841, 1445.4pt x 818.05624pt>
 
 File: ./images/STM32CubeProgrammerFullChipErase.png Graphic file (type png)
 <use ./images/STM32CubeProgrammerFullChipErase.png>
 Package pdftex.def Info: ./images/STM32CubeProgrammerFullChipErase.png  used on
- input line 866.
+ input line 876.
 (pdftex.def)             Requested size: 455.24411pt x 257.65163pt.
-<./images/STM32CubeProgrammerFirmwareFlashing.png, id=818, 1445.4pt x 818.05624
+ [50 <./images/STM32CubeProgrammerConnect.png>]
+<./images/STM32CubeProgrammerFirmwareFlashing.png, id=848, 1445.4pt x 818.05624
 pt>
 File: ./images/STM32CubeProgrammerFirmwareFlashing.png Graphic file (type png)
 <use ./images/STM32CubeProgrammerFirmwareFlashing.png>
 Package pdftex.def Info: ./images/STM32CubeProgrammerFirmwareFlashing.png  used
- on input line 874.
+ on input line 884.
 (pdftex.def)             Requested size: 455.24411pt x 257.65163pt.
-
-
-[50 <./images/STM32CubeProgrammerFullChipErase.png>]
-<./images/Mission_Planneer_1.3.83_connect_screenshot.png, id=829, 1154.51324pt 
+ [51 <./images/STM32CubeProgrammerFullChipErase.png> <./images/STM32CubeProgram
+merFirmwareFlashing.png>]
+<./images/Mission_Planneer_1.3.83_connect_screenshot.png, id=861, 1154.51324pt 
 x 612.48825pt>
 File: ./images/Mission_Planneer_1.3.83_connect_screenshot.png Graphic file (typ
 e png)
 <use ./images/Mission_Planneer_1.3.83_connect_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_connect_screenshot.pn
-g  used on input line 905.
+g  used on input line 915.
 (pdftex.def)             Requested size: 455.24411pt x 241.51431pt.
-
-
-[51 <./images/STM32CubeProgrammerFirmwareFlashing.png>]
-<./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png, id=840, 1444.6471
+<./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png, id=864, 1444.6471
 9pt x 777.65532pt>
 File: ./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png Graphic file 
 (type png)
 <use ./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_frame_setup_screensho
-t.png  used on input line 923.
+t.png  used on input line 933.
 (pdftex.def)             Requested size: 455.24411pt x 245.05765pt.
- [52 <./images/Mission_Planneer_1.3.83_connect_screenshot.png> <./images/Missio
-n_Planneer_1.3.83_frame_setup_screenshot.png>]
-<./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png, id=851, 115
+ [52 <./images/Mission_Planneer_1.3.83_connect_screenshot.png>]
+<./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png, id=875, 115
 5.1155pt x 611.886pt>
 File: ./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png Graphic
  file (type png)
 <use ./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_board_orientation_scr
-eenshot.png  used on input line 949.
+eenshot.png  used on input line 959.
 (pdftex.def)             Requested size: 455.24411pt x 241.14612pt.
- [53 <./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png>]
-<./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png, id=860, 1015.544
+ [53 <./images/Mission_Planneer_1.3.83_frame_setup_screenshot.png>]
+<./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png, id=884, 1015.544
 07pt x 428.35031pt>
 File: ./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png Graphic file
  (type png)
 <use ./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Serial_Ports_screensh
-ot.png  used on input line 983.
+ot.png  used on input line 993.
 (pdftex.def)             Requested size: 455.24411pt x 192.01727pt.
+ [54 <./images/Mission_Planneer_1.3.83_board_orientation_screenshot.png>]
 <./images/Mission_Planneer_1.3.83_board_accelerometer_calibration_screenshot.pn
-g, id=865, 1444.64719pt x 438.13687pt>
+g, id=896, 1444.64719pt x 438.13687pt>
 File: ./images/Mission_Planneer_1.3.83_board_accelerometer_calibration_screensh
 ot.png Graphic file (type png)
 <use ./images/Mission_Planneer_1.3.83_board_accelerometer_calibration_screensho
 t.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_board_accelerometer_c
-alibration_screenshot.png  used on input line 1001.
+alibration_screenshot.png  used on input line 1011.
 (pdftex.def)             Requested size: 455.24411pt x 138.06732pt.
- [54 <./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png> <./images/M
+ [55 <./images/Mission_Planneer_1.3.83_Serial_Ports_screenshot.png> <./images/M
 ission_Planneer_1.3.83_board_accelerometer_calibration_screenshot.png>]
 <./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png, id=
-877, 823.57687pt x 397.485pt>
+907, 823.57687pt x 397.485pt>
 File: ./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png
  Graphic file (type png)
 <use ./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png>
 
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_board_compass_calibra
-tion_screenshot.png  used on input line 1027.
+tion_screenshot.png  used on input line 1037.
 (pdftex.def)             Requested size: 455.24411pt x 219.71521pt.
- [55 <./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png
->]
-<./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png, id=886, 101
+
+[56 <./images/Mission_Planneer_1.3.83_board_compass_calibration_screenshot.png>
+]
+<./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png, id=916, 101
 7.04968pt x 468.24937pt>
 File: ./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png Graphic
  file (type png)
 <use ./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Radio_Calibration_scr
-eenshot.png  used on input line 1069.
+eenshot.png  used on input line 1079.
 (pdftex.def)             Requested size: 455.24411pt x 209.59566pt.
- [56 <./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png>]
 <./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_screensho
-t.png, id=895, 1016.29688pt x 563.85657pt>
+t.png, id=919, 1016.29688pt x 563.85657pt>
 File: ./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scre
 enshot.png Graphic file (type png)
 <use ./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scree
 nshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Motor_Test_with_Direc
-tion_Reference_screenshot.png  used on input line 1088.
+tion_Reference_screenshot.png  used on input line 1098.
 (pdftex.def)             Requested size: 455.24411pt x 252.57161pt.
-<./images/Mission_Planneer_1.3.83_Servo_Output_screenshot.png, id=896, 1015.544
+ [57 <./images/Mission_Planneer_1.3.83_Radio_Calibration_screenshot.png>]
+<./images/Mission_Planneer_1.3.83_Servo_Output_screenshot.png, id=926, 1015.544
 07pt x 447.92343pt>
 File: ./images/Mission_Planneer_1.3.83_Servo_Output_screenshot.png Graphic file
  (type png)
 <use ./images/Mission_Planneer_1.3.83_Servo_Output_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Servo_Output_screensh
-ot.png  used on input line 1096.
+ot.png  used on input line 1106.
 (pdftex.def)             Requested size: 455.24411pt x 200.79135pt.
- [57 <./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scre
-enshot.png (PNG copy)> <./images/Mission_Planneer_1.3.83_Servo_Output_screensho
-t.png>]
-<./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png, id=910, 1444.
+
+[58 <./images/Mission_Planneer_1.3.83_Motor_Test_with_Direction_Reference_scree
+nshot.png (PNG copy)> <./images/Mission_Planneer_1.3.83_Servo_Output_screenshot
+.png>]
+<./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png, id=941, 1444.
 64719pt x 428.35031pt>
 File: ./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png Graphic f
 ile (type png)
 <use ./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_ESC_Calibration_scree
-nshot.png  used on input line 1114.
+nshot.png  used on input line 1124.
 (pdftex.def)             Requested size: 455.24411pt x 134.98334pt.
-<./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png, id=913, 1444.647
+<./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png, id=944, 1444.647
 19pt x 426.84468pt>
 File: ./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png Graphic file
  (type png)
 <use ./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Flight_modes_screensh
-ot.png  used on input line 1132.
+ot.png  used on input line 1142.
 (pdftex.def)             Requested size: 455.24411pt x 134.50888pt.
-
-
-[58 <./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png>]
-<./images/Mission_Planneer_1.3.83_failsafe_screenshot.png, id=924, 1142.46825pt
+ [59 <./images/Mission_Planneer_1.3.83_ESC_Calibration_screenshot.png> <./image
+s/Mission_Planneer_1.3.83_Flight_modes_screenshot.png>]
+<./images/Mission_Planneer_1.3.83_failsafe_screenshot.png, id=957, 1142.46825pt
  x 501.072pt>
 File: ./images/Mission_Planneer_1.3.83_failsafe_screenshot.png Graphic file (ty
 pe png)
 <use ./images/Mission_Planneer_1.3.83_failsafe_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_failsafe_screenshot.p
-ng  used on input line 1150.
+ng  used on input line 1160.
 (pdftex.def)             Requested size: 455.24411pt x 199.66832pt.
- [59 <./images/Mission_Planneer_1.3.83_Flight_modes_screenshot.png> <./images/M
-ission_Planneer_1.3.83_failsafe_screenshot.png>]
-<./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png, id=935, 11
+<./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png, id=960, 11
 55.1155pt x 603.4545pt>
 File: ./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png Graphi
 c file (type png)
 <use ./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_sc
-reenshot.png  used on input line 1168.
+reenshot.png  used on input line 1178.
 (pdftex.def)             Requested size: 455.24411pt x 237.82324pt.
- [60 <./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png>]
-<./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png, id=949, 1444.647
+ [60 <./images/Mission_Planneer_1.3.83_failsafe_screenshot.png>]
+<./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png, id=972, 1444.647
 19pt x 773.13844pt>
 File: ./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png Graphic file
  (type png)
 <use ./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png>
 Package pdftex.def Info: ./images/Mission_Planneer_1.3.83_OSD_Settings_screensh
-ot.png  used on input line 1194.
+ot.png  used on input line 1204.
 (pdftex.def)             Requested size: 455.24411pt x 243.63428pt.
-
-
-[61 <./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png>] [62]
-<./images/edgetx_installation_1.png, id=971, 878.21773pt x 490.89056pt>
+ [61 <./images/Mission_Planneer_1.3.83_Initial_Tupe_Param_screenshot.png>] [62 
+<./images/Mission_Planneer_1.3.83_OSD_Settings_screenshot.png>] [63]
+<./images/edgetx_installation_1.png, id=1002, 878.21773pt x 490.89056pt>
 File: ./images/edgetx_installation_1.png Graphic file (type png)
 <use ./images/edgetx_installation_1.png>
 Package pdftex.def Info: ./images/edgetx_installation_1.png  used on input line
- 1281.
+ 1291.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/edgetx_installation_2.png, id=972, 878.21773pt x 490.89056pt>
+<./images/edgetx_installation_2.png, id=1003, 878.21773pt x 490.89056pt>
 File: ./images/edgetx_installation_2.png Graphic file (type png)
 <use ./images/edgetx_installation_2.png>
 Package pdftex.def Info: ./images/edgetx_installation_2.png  used on input line
- 1289.
+ 1299.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[63 <./images/edgetx_installation_1.png>]
-<./images/edgetx_installation_3.png, id=986, 878.21773pt x 490.89056pt>
+ [64 <./images/edgetx_installation_1.png> <./images/edgetx_installation_2.png>]
+<./images/edgetx_installation_3.png, id=1018, 878.21773pt x 490.89056pt>
 File: ./images/edgetx_installation_3.png Graphic file (type png)
 <use ./images/edgetx_installation_3.png>
 Package pdftex.def Info: ./images/edgetx_installation_3.png  used on input line
- 1315.
+ 1325.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/edgetx_installation_4.png, id=987, 878.21773pt x 490.89056pt>
+<./images/edgetx_installation_4.png, id=1019, 878.21773pt x 490.89056pt>
 File: ./images/edgetx_installation_4.png Graphic file (type png)
 <use ./images/edgetx_installation_4.png>
 Package pdftex.def Info: ./images/edgetx_installation_4.png  used on input line
- 1323.
+ 1333.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[64 <./images/edgetx_installation_2.png> <./images/edgetx_installation_3.png>]
-<./images/ExpressLRS_Installation_1.png, id=1000, 878.21773pt x 490.89056pt>
+ [65 <./images/edgetx_installation_3.png> <./images/edgetx_installation_4.png>]
+<./images/ExpressLRS_Installation_1.png, id=1031, 878.21773pt x 490.89056pt>
 File: ./images/ExpressLRS_Installation_1.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_1.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_1.png  used on input 
-line 1366.
+line 1376.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[65 <./images/edgetx_installation_4.png>]
-<./images/ExpressLRS_Installation_2.png, id=1010, 878.21773pt x 490.89056pt>
+ [66 <./images/ExpressLRS_Installation_1.png>]
+<./images/ExpressLRS_Installation_2.png, id=1042, 878.21773pt x 490.89056pt>
 File: ./images/ExpressLRS_Installation_2.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_2.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_2.png  used on input 
-line 1384.
+line 1394.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/ExpressLRS_Installation_3.png, id=1011, 878.21773pt x 490.89056pt>
+<./images/ExpressLRS_Installation_3.png, id=1043, 878.21773pt x 490.89056pt>
 File: ./images/ExpressLRS_Installation_3.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_3.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_3.png  used on input 
-line 1392.
+line 1402.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[66 <./images/ExpressLRS_Installation_1.png> <./images/ExpressLRS_Installation_
-2.png>]
-<./images/ExpressLRS_Installation_4.png, id=1024, 878.21773pt x 490.89056pt>
+ [67 <./images/ExpressLRS_Installation_2.png> <./images/ExpressLRS_Installation
+_3.png>]
+<./images/ExpressLRS_Installation_4.png, id=1056, 878.21773pt x 490.89056pt>
 File: ./images/ExpressLRS_Installation_4.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_4.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_4.png  used on input 
-line 1418.
+line 1428.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[67 <./images/ExpressLRS_Installation_3.png>]
-<./images/ExpressLRS_Installation_RX_1.png, id=1036, 878.21773pt x 490.89056pt>
+<./images/ExpressLRS_Installation_RX_1.png, id=1061, 878.21773pt x 490.89056pt>
 
 File: ./images/ExpressLRS_Installation_RX_1.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_RX_1.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_RX_1.png  used on inp
-ut line 1436.
+ut line 1446.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-<./images/ExpressLRS_Installation_RX_2.png, id=1037, 878.21773pt x 490.89056pt>
+ [68 <./images/ExpressLRS_Installation_4.png>]
+<./images/ExpressLRS_Installation_RX_2.png, id=1070, 878.21773pt x 490.89056pt>
 
 File: ./images/ExpressLRS_Installation_RX_2.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_RX_2.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_RX_2.png  used on inp
-ut line 1444.
+ut line 1454.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[68 <./images/ExpressLRS_Installation_4.png> <./images/ExpressLRS_Installation_
-RX_1.png>]
-<./images/ExpressLRS_Installation_RX_3.png, id=1048, 878.21773pt x 490.89056pt>
+ [69 <./images/ExpressLRS_Installation_RX_1.png> <./images/ExpressLRS_Installat
+ion_RX_2.png>]
+<./images/ExpressLRS_Installation_RX_3.png, id=1080, 878.21773pt x 490.89056pt>
 
 File: ./images/ExpressLRS_Installation_RX_3.png Graphic file (type png)
 <use ./images/ExpressLRS_Installation_RX_3.png>
 Package pdftex.def Info: ./images/ExpressLRS_Installation_RX_3.png  used on inp
-ut line 1462.
+ut line 1472.
 (pdftex.def)             Requested size: 455.24411pt x 254.47058pt.
-
-
-[69 <./images/ExpressLRS_Installation_RX_2.png>])
-
+)
 [70 <./images/ExpressLRS_Installation_RX_3.png>]
 \openout2 = `chapter03.aux'.
 
@@ -2147,15 +2087,13 @@ chapter 3.
 
 
 ]
-<./images/LiIo-Akku-laden.png, id=1077, 1647.15375pt x 1326.9575pt>
+<./images/LiIo-Akku-laden.png, id=1103, 1647.15375pt x 1326.9575pt>
 File: ./images/LiIo-Akku-laden.png Graphic file (type png)
 <use ./images/LiIo-Akku-laden.png>
 Package pdftex.def Info: ./images/LiIo-Akku-laden.png  used on input line 81.
 (pdftex.def)             Requested size: 455.24411pt x 366.74686pt.
-
-
-[72]
-<./images/LiPo_Akku_Schaden_durch_Propeller_crop.png, id=1088, 274.1442pt x 104
+ [72]
+<./images/LiPo_Akku_Schaden_durch_Propeller_crop.png, id=1114, 274.1442pt x 104
 .7915pt>
 File: ./images/LiPo_Akku_Schaden_durch_Propeller_crop.png Graphic file (type pn
 g)
@@ -2163,24 +2101,16 @@ g)
 Package pdftex.def Info: ./images/LiPo_Akku_Schaden_durch_Propeller_crop.png  u
 sed on input line 102.
 (pdftex.def)             Requested size: 455.24411pt x 174.02739pt.
-
-
-[73 <./images/LiIo-Akku-laden.png>] [74 <./images/LiPo_Akku_Schaden_durch_Prope
-ller_crop.png>]
+ [73 <./images/LiIo-Akku-laden.png>] [74 <./images/LiPo_Akku_Schaden_durch_Prop
+eller_crop.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 189.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 189.
- [75]
-
-[76])
-
-[77]
+ [75] [76]) [77]
 \openout2 = `chapter04.aux'.
 
- (./chapter04.tex
-
-[78
+ (./chapter04.tex [78
 
 
 
@@ -2189,13 +2119,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ]
 chapter 4.
 [79] [80]
-<./images/raspberry_pi_2_wh_front.png, id=1166, 1806.75pt x 903.375pt>
+<./images/raspberry_pi_2_wh_front.png, id=1193, 1806.75pt x 903.375pt>
 File: ./images/raspberry_pi_2_wh_front.png Graphic file (type png)
 <use ./images/raspberry_pi_2_wh_front.png>
 Package pdftex.def Info: ./images/raspberry_pi_2_wh_front.png  used on input li
 ne 108.
 (pdftex.def)             Requested size: 218.51521pt x 109.25494pt.
-<./images/raspberry_pi_2_wh_back.png, id=1167, 1806.75pt x 903.375pt>
+<./images/raspberry_pi_2_wh_back.png, id=1194, 1806.75pt x 903.375pt>
 File: ./images/raspberry_pi_2_wh_back.png Graphic file (type png)
 <use ./images/raspberry_pi_2_wh_back.png>
 Package pdftex.def Info: ./images/raspberry_pi_2_wh_back.png  used on input lin
@@ -2203,42 +2133,38 @@ e 113.
 (pdftex.def)             Requested size: 218.51521pt x 109.25494pt.
  [81 <./images/raspberry_pi_2_wh_front.png> <./images/raspberry_pi_2_wh_back.pn
 g>]
-<./images/Google_Coral_TPU_Accelerator_front.pdf, id=1184, 1298.8525pt x 687.56
+<./images/Google_Coral_TPU_Accelerator_front.pdf, id=1210, 1298.8525pt x 687.56
 876pt>
 File: ./images/Google_Coral_TPU_Accelerator_front.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_front.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_front.pdf  used 
 on input line 164.
 (pdftex.def)             Requested size: 218.51521pt x 115.66814pt.
-<./images/Google_Coral_TPU_Accelerator_back.pdf, id=1185, 1298.8525pt x 687.568
+<./images/Google_Coral_TPU_Accelerator_back.pdf, id=1211, 1298.8525pt x 687.568
 76pt>
 File: ./images/Google_Coral_TPU_Accelerator_back.pdf Graphic file (type pdf)
 <use ./images/Google_Coral_TPU_Accelerator_back.pdf>
 Package pdftex.def Info: ./images/Google_Coral_TPU_Accelerator_back.pdf  used o
 n input line 169.
 (pdftex.def)             Requested size: 218.51521pt x 115.66814pt.
-<./images/Intel_Neuronal_Compute_Stick2_front.png, id=1188, 1405.25pt x 702.625
+<./images/Intel_Neuronal_Compute_Stick2_front.png, id=1214, 1405.25pt x 702.625
 pt>
 File: ./images/Intel_Neuronal_Compute_Stick2_front.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_front.png>
 Package pdftex.def Info: ./images/Intel_Neuronal_Compute_Stick2_front.png  used
  on input line 191.
 (pdftex.def)             Requested size: 218.51521pt x 109.24883pt.
-<./images/Intel_Neuronal_Compute_Stick2_back.png, id=1189, 1505.625pt x 752.812
+<./images/Intel_Neuronal_Compute_Stick2_back.png, id=1215, 1505.625pt x 752.812
 5pt>
 File: ./images/Intel_Neuronal_Compute_Stick2_back.png Graphic file (type png)
 <use ./images/Intel_Neuronal_Compute_Stick2_back.png>
 Package pdftex.def Info: ./images/Intel_Neuronal_Compute_Stick2_back.png  used 
 on input line 196.
 (pdftex.def)             Requested size: 218.51521pt x 109.25266pt.
-
-
-[82 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_TP
-U_Accelerator_back.pdf>]
-
-[83 <./images/Intel_Neuronal_Compute_Stick2_front.png> <./images/Intel_Neuronal
-_Compute_Stick2_back.png>] [84]
-<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=1217, 4076.22874pt x 18
+ [82 <./images/Google_Coral_TPU_Accelerator_front.pdf> <./images/Google_Coral_T
+PU_Accelerator_back.pdf>] [83 <./images/Intel_Neuronal_Compute_Stick2_front.png
+> <./images/Intel_Neuronal_Compute_Stick2_back.png>] [84]
+<./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf, id=1243, 4076.22874pt x 18
 85.0425pt>
 File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
 )
@@ -2246,29 +2172,17 @@ File: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf Graphic file (type pdf
 Package pdftex.def Info: ./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf  us
 ed on input line 282.
 (pdftex.def)             Requested size: 455.24411pt x 210.51929pt.
-
-
-[85 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>]
-<./images/Videobrille_mit_Videograbber.jpg, id=1257, 4111.36pt x 3083.52pt>
+ [85 <./images/Komponenten_der_Drohne_Diagramm_v1_en.pdf>]
+<./images/Videobrille_mit_Videograbber.jpg, id=1283, 4111.36pt x 3083.52pt>
 File: ./images/Videobrille_mit_Videograbber.jpg Graphic file (type jpg)
 <use ./images/Videobrille_mit_Videograbber.jpg>
 Package pdftex.def Info: ./images/Videobrille_mit_Videograbber.jpg  used on inp
 ut line 361.
 (pdftex.def)             Requested size: 455.24411pt x 341.39963pt.
-
-
-[86]
-
-[87 <./images/Videobrille_mit_Videograbber.jpg>]
-
-[88])
-
-[89]
+ [86] [87 <./images/Videobrille_mit_Videograbber.jpg>] [88]) [89]
 \openout2 = `chapter05.aux'.
 
- (./chapter05.tex
-
-[90
+ (./chapter05.tex [90
 
 
 
@@ -2276,16 +2190,35 @@ ut line 361.
 
 ]
 chapter 5.
-[91]
+[91] [92] [93] [94]
+<./images/INAV_Mission_Control_Demo_Example.png, id=1375, 1927.2pt x 1051.93pt>
 
-[92])
-
-[93]
+File: ./images/INAV_Mission_Control_Demo_Example.png Graphic file (type png)
+<use ./images/INAV_Mission_Control_Demo_Example.png>
+Package pdftex.def Info: ./images/INAV_Mission_Control_Demo_Example.png  used o
+n input line 251.
+(pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
+ [95 <./images/INAV_Mission_Control_Demo_Example.png>]
+[96]
+<./images/INAV_Mission_Control_Elevation_Profile.png, id=1389, 1927.2pt x 1051.
+93pt>
+File: ./images/INAV_Mission_Control_Elevation_Profile.png Graphic file (type pn
+g)
+<use ./images/INAV_Mission_Control_Elevation_Profile.png>
+Package pdftex.def Info: ./images/INAV_Mission_Control_Elevation_Profile.png  u
+sed on input line 332.
+(pdftex.def)             Requested size: 455.24411pt x 248.48767pt.
+ [97 <./images/INAV_Mission_Control_Elevation_Profile.png>]
+<./images/INAV_Stick_Commands.png, id=1399, 8221.71625pt x 5155.26pt>
+File: ./images/INAV_Stick_Commands.png Graphic file (type png)
+<use ./images/INAV_Stick_Commands.png>
+Package pdftex.def Info: ./images/INAV_Stick_Commands.png  used on input line 3
+70.
+(pdftex.def)             Requested size: 455.24411pt x 285.38875pt.
+ [98 <./images/INAV_Stick_Commands.png>]) [99]
 \openout2 = `chapter06.aux'.
 
- (./chapter06.tex
-
-[94
+ (./chapter06.tex [100
 
 
 
@@ -2293,14 +2226,10 @@ chapter 5.
 
 ]
 chapter 6.
-[95] [96])
-
-[97]
+[101] [102]) [103]
 \openout2 = `chapter07.aux'.
 
- (./chapter07.tex
-
-[98
+ (./chapter07.tex [104
 
 
 
@@ -2308,46 +2237,100 @@ chapter 6.
 
 ]
 chapter 7.
-<./images/Servomotor_IMG_5092.jpg, id=1376, 1720.4275pt x 1290.8225pt>
+<./images/Servomotor_IMG_5092.jpg, id=1451, 1720.4275pt x 1290.8225pt>
 File: ./images/Servomotor_IMG_5092.jpg Graphic file (type jpg)
 <use ./images/Servomotor_IMG_5092.jpg>
 Package pdftex.def Info: ./images/Servomotor_IMG_5092.jpg  used on input line 5
 0.
 (pdftex.def)             Requested size: 455.24411pt x 341.55423pt.
+[105] [106 <./images/Servomotor_IMG_5092.jpg>]) [107]
+\openout2 = `chapter08.aux'.
+
+ (./chapter08.tex [108
 
 
-[99] [100 <./images/Servomotor_IMG_5092.jpg>])
 
-[101] (./main.aux (./chapter00.aux) (./chapter01.aux) (./chapter02.aux)
-(./chapter03.aux) (./chapter04.aux) (./chapter05.aux) (./chapter06.aux)
-(./chapter07.aux))
+
+
+]
+chapter 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.82538pt
+(hyperref)                removed on input line 3.
+
+<./images/StereoVision_Contraption.jpg, id=1476, 815.9283pt x 611.886pt>
+File: ./images/StereoVision_Contraption.jpg Graphic file (type jpg)
+<use ./images/StereoVision_Contraption.jpg>
+Package pdftex.def Info: ./images/StereoVision_Contraption.jpg  used on input l
+ine 45.
+(pdftex.def)             Requested size: 455.24411pt x 341.40271pt.
+[109] [110 <./images/StereoVision_Contraption.JPG>] [111{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-mathex.enc}]
+<./images/Stereo_Vision_Charuco.png, id=1499, 749.80125pt x 339.2675pt>
+File: ./images/Stereo_Vision_Charuco.png Graphic file (type png)
+<use ./images/Stereo_Vision_Charuco.png>
+Package pdftex.def Info: ./images/Stereo_Vision_Charuco.png  used on input line
+ 170.
+(pdftex.def)             Requested size: 455.24411pt x 205.98997pt.
+<./images/Stereo_Vision_Detected_ChArUco.jpg, id=1501, 642.4pt x 481.8pt>
+File: ./images/Stereo_Vision_Detected_ChArUco.jpg Graphic file (type jpg)
+<use ./images/Stereo_Vision_Detected_ChArUco.jpg>
+Package pdftex.def Info: ./images/Stereo_Vision_Detected_ChArUco.jpg  used on i
+nput line 196.
+(pdftex.def)             Requested size: 455.24411pt x 341.4408pt.
+ [112 <./images/Stereo_Vision_Charuco.png (PNG copy)>] [113 <./images/Stereo_Vi
+sion_Detected_ChArUco.jpg>] [114]
+Overfull \hbox (10.57149pt too wide) in paragraph at lines 325--326
+[][][][][][][][][][][] 
+ []
+
+[115] [116] [117]
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+61.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+61.
+
+[118] [119] [120]) [121] (./main.aux (./chapter00.aux) (./chapter01.aux)
+(./chapter02.aux) (./chapter03.aux) (./chapter04.aux) (./chapter05.aux)
+(./chapter06.aux) (./chapter07.aux) (./chapter08.aux))
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29944 strings out of 469603
- 567628 string characters out of 5473551
- 1223159 words of memory out of 5000000
- 57125 multiletter control sequences out of 15000+600000
- 736895 words of font info for 255 fonts, out of 8000000 for 9000
+ 30219 strings out of 469393
+ 574252 string characters out of 5466137
+ 1288648 words of memory out of 5000000
+ 57442 multiletter control sequences out of 15000+600000
+ 738005 words of font info for 264 fonts, out of 8000000 for 9000
  64 hyphenation exceptions out of 8191
- 108i,20n,122p,11207b,1283s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,122p,11207b,1423s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (108 pages, 64632497 bytes).
+c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmtto10.pfb>
+Output written on main.pdf (128 pages, 70144597 bytes).
 PDF statistics:
- 1763 PDF objects out of 2073 (max. 8388607)
- 1450 compressed objects within 15 object streams
- 458 named destinations out of 1000 (max. 500000)
- 63387 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2102 PDF objects out of 2487 (max. 8388607)
+ 1746 compressed objects within 18 object streams
+ 600 named destinations out of 1000 (max. 500000)
+ 63990 words of extra memory for PDF output out of 74296 (max. 10000000)
 

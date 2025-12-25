@@ -653,7 +653,7 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 \begin{enumerate}
 	\setcounter{enumi}{3}
 
-	\item In the \textsl{Outputs tab}, the motors are activated with the \textsl{Enable motor and servo output} option. You should also ensure that \texttt{DSHOT300} is used as the \textsl{ESC protocol}. In addition, the \textsl{Motors IDLE power} can be set to 5\% if a multirotor drone is used.
+	\item In the \textsl{Outputs tab}, the motors are activated with the \textsl{Enable motor and servo output} option (see Figure~\ref{AbbildungINAVOutputsTab}). You should also ensure that \texttt{DSHOT300} is used as the \textsl{ESC protocol}. In addition, the \textsl{Motors IDLE power} can be set to 5\% if a multirotor drone is used.
 \end{enumerate}
 
 \colger
@@ -661,15 +661,25 @@ Wird der Configurator zum ersten Mal nach der Installation aufgerufen, erscheine
 \begin{enumerate}
 	\setcounter{enumi}{3}
 
-	\item Im \textsl{Outputs-Tab} werden die Motoren aktiviert mit der Option \textsl{Enable motor and servo output}. Außerdem sollte sichergestellt werden, dass  \texttt{DSHOT300} als \textsl{ESC protocol} verwendet wird. Außerdem kann die \textsl{Motors IDLE power} auf 5\% gesetzt werden, wenn eine Multirotor-Drohne verwendet wird.
+	\item Im \textsl{Outputs-Tab} werden die Motoren aktiviert mit der Option \textsl{Enable motor and servo output} (siehe Abbildung~\ref{AbbildungINAVOutputsTab}). Außerdem sollte sichergestellt werden, dass  \texttt{DSHOT300} als \textsl{ESC protocol} verwendet wird. Außerdem kann die \textsl{Motors IDLE power} auf 5\% gesetzt werden, wenn eine Multirotor-Drohne verwendet wird.
 \end{enumerate}
 
-\coleng
+\colende
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{INAV_8_0_1_Outputs_FLYWOOF745_INAV_Configurator.png}
+	\caption{INAV Outputs Tab}
+	\label{AbbildungINAVOutputsTab}
+\end{figure}
+\FloatBarrier
+
+\colstart
 
 \begin{enumerate}
 	\setcounter{enumi}{4}
 
-	\item In the \textsl{Ports tab}, the peripheral devices are configured, unless this was done in the pop-up menu at the beginning. This looks very similar to the Ports tab of the Betaflight Configurator, with the difference that \textsl{USB VCP} is hidden instead of partially grayed out (Figure~\ref{AbbildungBetaflightAppPorts}).  How these are configured depends on the connected devices and the flight controller chip. In most cases, the configuration options for Betaflight (usually found in the respective device manuals) are transferable to INAV.
+	\item In the \textsl{Ports tab}, the peripheral devices are configured, unless this was done in the pop-up menu at the beginning. This looks very similar to the Ports tab of the Betaflight Configurator, with the difference that \textsl{USB VCP} is hidden instead of partially grayed out (see Figure~\ref{AbbildungBetaflightAppPorts}).  How these are configured depends on the connected devices and the flight controller chip. In most cases, the configuration options for Betaflight (usually found in the respective device manuals) are transferable to INAV.
 \end{enumerate}
 
 \colger
