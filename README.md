@@ -42,6 +42,7 @@ We greatly appreciate your comments and suggestions for improvement.
     ├── chapter05.tex       # Autopilot
     ├── chapter06.tex       # Follow-Me
     ├── chapter07.tex       # Drop-Mechanismen 
+    ├── chapter08.tex       # Stereokameras
     ├── main.toc            # Englisches Inhaltsverzeichnis 
     ├── main.deutschestoc   # Deutsches Inhaltsverzeichnis 
     ├── main.tex            # Haupt-LaTeX-Datei (zweisprachig)
