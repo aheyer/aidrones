@@ -478,13 +478,143 @@ There are also apps for the Android operating system that can display a video st
 
 Auch für das Betriebssystem Android gibt es Apps, die einen über die USB-Schnittstelle bereitgestellten Videostrom anzeigen können. Ein Beispiel ist USB Camera (Pro). 
 
-\coleng
+\colende
 
-If the video stream is to be used from within program source code, the Python library \verb!cv2! is recommended.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\linewidth]{Object_Detection_using_USB_video_grabber.png}
+	\caption{Object Detection using a USB Video Grabber connected to a FPV Goggles}
+	\label{ObjectDetectionDashboardUsingUSBVideoGrabber}
+\end{figure}
+\FloatBarrier
+
+\colstart
+
+Once the live analog video signal from the FPV goggles is digitized using a USB video grabber and transmitted to a ground-based computing system, a wide range of real-time video processing techniques can be applied. A practical and widely adopted solution for this purpose is the OpenCV (Open Source Computer Vision) library, which provides efficient tools for real-time image acquisition, processing, and analysis using Python.
 
 \colger
 
-Soll der Videostrom aus einem Programmquellcode heraus verwendet werden, bietet sich unter Python die Bibliothek \verb!cv2! an.
+TBD
+
+\coleng
+
+The digitized video feed is treated as a standard camera input by the operating system, allowing OpenCV to capture frames in real time. This approach makes the system platform-independent and suitable for Linux, macOS, and Windows environments.
+
+\colger
+
+TBD
+
+\coleng
+
+After acquiring the live video frames, various computer vision and object detection algorithms can be applied, including but not limited to:
+\begin{itemize}
+  \item Region or area-based detection.
+  \item Detection of other drones or aerial objects in the sky.
+  \item Obstacle detection and tracking
+  \item Motion analysis and situational awareness
+\end{itemize}
+
+\colger
+
+TBD
+
+\coleng
+
+In addition to visual data, FPV video streams can be embedded with telemetry information, such as altitude, speed, GPS coordinates, battery voltage, and flight mode. This telemetry data can be extracted and synchronized with visual detections, enabling more advanced applications such as geo-referenced object detection, threat assessment, and flight-state-aware decision making.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+  camera = cv2.VideoCapture(CAMERA_INDEX)  # Linux and macOS
+  camera = cv2.VideoCapture(CAMERA_INDEX, cv2.CAP_DSHOW)  # Windows
+
+  success, frame = camera.read()
+	\end{lstlisting}
+	\caption{Reading Video Stream from a Video Grabber using OpenCV in Python}
+	\label{ReadingUSBVideoStreamMitOpenCV}
+\end{figure}
+
+\colstart
+
+Figure~\ref{ReadingUSBVideoStreamMitOpenCV} shows an example of how to read a video stream from a USB video grabber using OpenCV in Python. The device index corresponds to the camera input number recognized by the operating system. Typically, index 0 is used when no other camera devices are present; however, systems with multiple cameras may require a different index. On Windows systems, it is recommended to explicitly use the DirectShow backend (cv2.CAP\_DSHOW) to ensure reliable access to USB video grabbers.
+
+\colger
+
+TBD
+
+\colende
+
+\begin{figure}
+	\begin{lstlisting}[style=shell]
+  import cv2
+  from ultralytics import YOLO
+
+  CAMERA_INDEX = 0         # SET YOUR CAMERA INDEX HERE
+  MODEL_PATH = "models/final_drone_model.pt"
+  IMG_SIZE = (640, 480)
+
+  # Open camera (DirectShow is REQUIRED on Windows)
+  # camera = cv2.VideoCapture(CAMERA_INDEX, cv2.CAP_DSHOW)
+  camera = cv2.VideoCapture(CAMERA_INDEX)
+  if not camera.isOpened():
+      raise RuntimeError("Could not open camera")
+
+  camera.set(cv2.CAP_PROP_FRAME_WIDTH, IMG_SIZE[0])
+  camera.set(cv2.CAP_PROP_FRAME_HEIGHT, IMG_SIZE[1])
+  model = YOLO(MODEL_PATH)
+  class_names = model.names
+
+  print("YOLO loaded. Press CRL + c to exit.")
+  while True:
+      ret, frame = camera.read()
+      if not ret:
+          print("Failed to grab frame")
+          break
+
+      frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+      results = model.predict(frame_rgb, verbose=False)[0]
+
+      if results.boxes is not None:
+          boxes = results.boxes.xyxy.cpu().numpy()
+          scores = results.boxes.conf.cpu().numpy()
+          classes = results.boxes.cls.cpu().numpy().astype(int)
+
+          for box, score, cls in zip(boxes, scores, classes):
+              x1, y1, x2, y2 = map(int, box)
+
+              cv2.rectangle(frame, (x1, y1), (x2, y2),
+                            (0, 255, 0), 2)
+
+              label = f"{class_names[cls]} {score:.2f}"
+              cv2.putText(frame, label,
+                          (x1, max(y1 - 10, 0)),
+                          cv2.FONT_HERSHEY_SIMPLEX,
+                          0.6, (0, 255, 0), 2)
+
+      cv2.imshow("Drone Detection", frame)
+      if cv2.waitKey(1) & 0xFF == 27:
+          break
+
+  camera.release()
+  cv2.destroyAllWindows()
+
+	\end{lstlisting}
+	\caption{Real-time drone detection using a USB video grabber on the ground system}
+	\label{DroneDetectionUSBVideoGrabber}
+\end{figure}
+
+\colstart
+
+Figure~\ref{DroneDetectionUSBVideoGrabber} is a minimal example demonstrates real-time drone detection using a USB video grabber and OpenCV. In this example, a pretrained YOLO model capable of detecting drones in aerial scenes is used. The model has been trained on a drone detection dataset and is publicly available here: \url{https://www.kaggle.com/code/zlatan599/drone-detection/output}. Once the live video frames are captured using OpenCV, they are passed to the YOLO model for inference, and detected objects are visualized using bounding boxes and confidence scores.
+
+\colger
+
+TBD
 
 \colende
 
