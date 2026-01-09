@@ -47,25 +47,25 @@
 \contentsline {subsection}{{4.1.2}~Aufbau und Implementierung}{84}{subsection.4.1.2}%
 \contentsline {subsection}{{4.1.3}~Gesamtgewicht und Anschaffungskosten}{85}{subsection.4.1.3}%
 \contentsline {section}{{4.2}~Objekterkennung durch Auswertung des Livebilds am Boden}{86}{section.4.2}%
-\contentsline {subsection}{{4.2.1}~Gesamtgewicht und Anschaffungskosten}{88}{subsection.4.2.1}%
-\contentsline {chapter}{{\vspace {2pt}5}~Autopilot}{91}{chapter.5}%
-\contentsline {section}{{5.1}~Autopilot mit Betaflight}{91}{section.5.1}%
-\contentsline {section}{{5.2}~Autopilot mit iNAV}{92}{section.5.2}%
-\contentsline {subsection}{{5.2.1}~Navigationsflugmodi in INAV}{92}{subsection.5.2.1}%
-\contentsline {subsection}{{5.2.2}~Wegpunktmissionen mit INAV konfigurieren}{95}{subsection.5.2.2}%
-\contentsline {subsection}{{5.2.3}~Laden von Missionen und INAV Stickbefehle}{97}{subsection.5.2.3}%
-\contentsline {section}{{5.3}~Autopilot mit ArduPilot}{98}{section.5.3}%
-\contentsline {section}{{5.4}~Autopilot mit PX4}{99}{section.5.4}%
-\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{101}{chapter.6}%
-\contentsline {section}{{6.1}~Follow-Me mit Betaflight}{101}{section.6.1}%
-\contentsline {section}{{6.2}~Follow-Me mit iNAV}{101}{section.6.2}%
-\contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{102}{section.6.3}%
-\contentsline {section}{{6.4}~Follow-Me mit PX4}{102}{section.6.4}%
-\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{105}{chapter.7}%
-\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{105}{section.7.1}%
-\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{106}{section.7.2}%
-\contentsline {section}{{7.3}~Ansteuerung und Integration}{106}{section.7.3}%
-\contentsline {chapter}{{\vspace {2pt}8}~Stereokameras mit einem Raspberry Pi\,5}{109}{chapter.8}%
-\contentsline {section}{{8.1}~Camera Calibration}{110}{section.8.1}%
-\contentsline {section}{{8.2}~Stereo-Kalibrierung}{117}{section.8.2}%
-\contentsline {section}{{8.3}~Depth Estimation}{119}{section.8.3}%
+\contentsline {subsection}{{4.2.1}~Gesamtgewicht und Anschaffungskosten}{90}{subsection.4.2.1}%
+\contentsline {chapter}{{\vspace {2pt}5}~Autopilot}{93}{chapter.5}%
+\contentsline {section}{{5.1}~Autopilot mit Betaflight}{93}{section.5.1}%
+\contentsline {section}{{5.2}~Autopilot mit iNAV}{94}{section.5.2}%
+\contentsline {subsection}{{5.2.1}~Navigationsflugmodi in INAV}{94}{subsection.5.2.1}%
+\contentsline {subsection}{{5.2.2}~Wegpunktmissionen mit INAV konfigurieren}{97}{subsection.5.2.2}%
+\contentsline {subsection}{{5.2.3}~Laden von Missionen und INAV Stickbefehle}{99}{subsection.5.2.3}%
+\contentsline {section}{{5.3}~Autopilot mit ArduPilot}{100}{section.5.3}%
+\contentsline {section}{{5.4}~Autopilot mit PX4}{101}{section.5.4}%
+\contentsline {chapter}{{\vspace {2pt}6}~Follow-Me-Funktion}{103}{chapter.6}%
+\contentsline {section}{{6.1}~Follow-Me mit Betaflight}{103}{section.6.1}%
+\contentsline {section}{{6.2}~Follow-Me mit iNAV}{103}{section.6.2}%
+\contentsline {section}{{6.3}~Follow-Me mit ArduPilot}{104}{section.6.3}%
+\contentsline {section}{{6.4}~Follow-Me mit PX4}{104}{section.6.4}%
+\contentsline {chapter}{{\vspace {2pt}7}~Drop-Mechanismen für FPV-Drohnen}{107}{chapter.7}%
+\contentsline {section}{{7.1}~Servo-basierte Abwurfmechanismen}{107}{section.7.1}%
+\contentsline {section}{{7.2}~Elektromagnetische Mechanismen}{108}{section.7.2}%
+\contentsline {section}{{7.3}~Ansteuerung und Integration}{108}{section.7.3}%
+\contentsline {chapter}{{\vspace {2pt}8}~Stereokameras mit einem Raspberry Pi\,5}{111}{chapter.8}%
+\contentsline {section}{{8.1}~Camera Calibration}{112}{section.8.1}%
+\contentsline {section}{{8.2}~Stereo-Kalibrierung}{119}{section.8.2}%
+\contentsline {section}{{8.3}~Depth Estimation}{121}{section.8.3}%
