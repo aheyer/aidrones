@@ -739,6 +739,10 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -893,37 +897,37 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {3}{\vspace {2pt}Important Things before the first Flight}}{73}{chapter.3}%
+\contentsline {chapter}{\numberline {3}{\vspace {2pt}Important Things before the first Flight}}{71}{chapter.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.1}Security during Flight}{73}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Security during Flight}{71}{section.3.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.2}Security before Flight}{73}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Security before Flight}{71}{section.3.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.3}Secure use of LiPo Batteries}{73}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Secure use of LiPo Batteries}{71}{section.3.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.4}Loading of Batteries}{74}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Loading of Batteries}{72}{section.3.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.5}Secure Attachment of loose Cables and other Components}{75}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Secure Attachment of loose Cables and other Components}{73}{section.3.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.6}Use the Appropriate Flight Mode}{76}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Use the Appropriate Flight Mode}{74}{section.3.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -944,7 +948,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.7}Reduce the Power of the Video Transmitter or Switch It Off}{77}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Reduce the Power of the Video Transmitter or Switch It Off}{75}{section.3.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -973,7 +977,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.8}Practice with a Simulator}{78}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Practice with a Simulator}{76}{section.3.8}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -982,12 +986,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.9}Automate the Pairing}{78}{section.3.9}%
+\contentsline {section}{\numberline {3.9}Automate the Pairing}{76}{section.3.9}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {3.10}Monitoring telemetry data with suitable tools}{79}{section.3.10}%
+\contentsline {section}{\numberline {3.10}Monitoring telemetry data with suitable tools}{77}{section.3.10}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -996,7 +1000,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {4}{\vspace {2pt}Object Detection}}{81}{chapter.4}%
+\contentsline {chapter}{\numberline {4}{\vspace {2pt}Object Detection}}{79}{chapter.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1013,7 +1017,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {4.1}Object Detection by additional Hardware on the Drone}{82}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Object Detection by additional Hardware on the Drone}{80}{section.4.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1030,7 +1034,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Comparison of AI Accelerators}{83}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Comparison of AI Accelerators}{81}{subsection.4.1.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1055,7 +1059,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Construction and Implementation}{86}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Construction and Implementation}{84}{subsection.4.1.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1068,7 +1072,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Total Weight and Purchase Cost}{87}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Total Weight and Purchase Cost}{85}{subsection.4.1.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1077,7 +1081,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {4.2}Object Detection by using the Live Image on the Ground}{88}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Object Detection by using the Live Image on the Ground}{86}{section.4.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1138,12 +1142,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Total Weight and Purchase Cost}{92}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Total Weight and Purchase Cost}{90}{subsection.4.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {5}{\vspace {2pt}Autopilot}}{95}{chapter.5}%
+\contentsline {chapter}{\numberline {5}{\vspace {2pt}Autopilot}}{93}{chapter.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1152,7 +1156,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {5.1}Autopilot with Betaflight}{95}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Autopilot with Betaflight}{93}{section.5.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1165,7 +1169,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {5.2}Autopilot with iNAV}{96}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Autopilot with iNAV}{94}{section.5.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1182,7 +1186,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Navigation Modes in INAV}{96}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Navigation Modes in INAV}{94}{subsection.5.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1223,7 +1227,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Configure Waypoint Missions with INAV}{99}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}Configure Waypoint Missions with INAV}{97}{subsection.5.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1272,7 +1276,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Loading Missions and INAV Stick Commands}{101}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}Loading Missions and INAV Stick Commands}{99}{subsection.5.2.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1281,7 +1285,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {5.3}Autopilot with ArduPilot}{102}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Autopilot with ArduPilot}{100}{section.5.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1294,7 +1298,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {5.4}Autopilot with PX4}{103}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Autopilot with PX4}{101}{section.5.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1307,7 +1311,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {6}{\vspace {2pt}Follow-Me Function}}{105}{chapter.6}%
+\contentsline {chapter}{\numberline {6}{\vspace {2pt}Follow-Me Function}}{103}{chapter.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1316,12 +1320,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {6.1}Follow-Me with Betaflight}{105}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Follow-Me with Betaflight}{103}{section.6.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {6.2}Follow-Me with iNAV}{105}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Follow-Me with iNAV}{103}{section.6.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1334,7 +1338,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {6.3}Follow-Me with ArduPilot}{106}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Follow-Me with ArduPilot}{104}{section.6.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1347,12 +1351,12 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {6.4}Follow-Me with PX4}{106}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Follow-Me with PX4}{104}{section.6.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {7}{\vspace {2pt}Drop Mechanisms for FPV Drones}}{109}{chapter.7}%
+\contentsline {chapter}{\numberline {7}{\vspace {2pt}Drop Mechanisms for FPV Drones}}{107}{chapter.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -1361,22 +1365,22 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {7.1}Servo-based release mechanisms}{109}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Servo-based release mechanisms}{107}{section.7.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {7.2}Electromagnetic mechanisms}{110}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Electromagnetic mechanisms}{108}{section.7.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {7.3}Control and Integration}{110}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Control and Integration}{108}{section.7.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {8}{\vspace {2pt}Stereo Camera Setup with a Raspberry Pi\,5}}{113}{chapter.8}%
+\contentsline {chapter}{\numberline {8}{\vspace {2pt}Stereo Camera Setup with a Raspberry Pi\,5}}{111}{chapter.8}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1397,7 +1401,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {8.1}Kamerakalibrierung}{114}{section.8.1}%
+\contentsline {section}{\numberline {8.1}Kamerakalibrierung}{112}{section.8.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1478,7 +1482,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {8.2}Stereo Calibration}{121}{section.8.2}%
+\contentsline {section}{\numberline {8.2}Stereo Calibration}{119}{section.8.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
@@ -1523,7 +1527,7 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {8.3}Tiefenerkennung}{123}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Tiefenerkennung}{121}{section.8.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
