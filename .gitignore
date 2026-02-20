@@ -25,6 +25,8 @@ Thumbs.db
 *.blg
 *.fdb_latexmk
 *.fls
+*.ilg
+*.ind
 *.log
 *.out
 *.run.xml
