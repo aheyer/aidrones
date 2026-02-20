@@ -15,7 +15,7 @@
 
 Dieses [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) bietet einen Einstieg in das komplexe Thema Drohnen mit künstlicher Intelligenz. Schwerpunkte sind die Entwicklung (einschließlich der Auswahl geeigneter Hard- und Softwarekomponenten), der Bau und der Betrieb von Drohnen in der Lehre sowie in Forschungsprojekten.
 
-Die in diesem [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) dargestellten Erkenntnisse stammen aus dem vom Connectom Vernetzungs- und Innovationsfonds des hessian.AI geförderten Forschungsprojekt *KI-gestützte Drohnenplattform* sowie aus der Lehrveranstaltung *Drohnen mit Künstlicher Intelligenz* an der Frankfurt University of Applied Sciences.
+Die in diesem [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) dargestellten Erkenntnisse stammen aus dem vom [Connectom Vernetzungs- und Innovationsfonds](https://hessian.ai/de/forschung/connectom-vernetzungsfonds/) des hessian.AI geförderten Forschungsprojekt *KI-gestützte Drohnenplattform* sowie aus der Lehrveranstaltung *Drohnen mit Künstlicher Intelligenz* ([WS2526](https://www.christianbaun.de/Master_Projekt_WS2526/index.html), [SS2025](https://www.christianbaun.de/Master_Projekt_SS2025/index.html)) an der Frankfurt University of Applied Sciences.
 
 Maßgebliche Kriterien bei der Auswahl der in diesem [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) vorgestellten Komponenten sind unter anderem die Anpassbarkeit an unterschiedliche Einsatzszenarien, die Anschaffungskosten, die Robustheit, die langfristige Marktverfügbarkeit sowie die Qualität der Dokumentation und des Hersteller-Supports.
 
@@ -27,7 +27,7 @@ Eine vollständige Abhandlung über Drohnen und KI ist nicht das Ziel dieses [Do
 
 This [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) provides an introduction to the complex topic of drones with artificial intelligence. Its focus is on the development (including the selection of suitable hardware and software components), construction, and operation of drones for teaching and research purposes.
 
-The insights presented in this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) stem from the research project *AI-Assisted Drone Platform*, funded by the Connectom Networking and Innovation Fund of hessian.AI, as well as from the course *Drones with Artificial Intelligence* at the Frankfurt University of Applied Sciences.
+The insights presented in this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) stem from the research project *AI-Assisted Drone Platform*, funded by the [Connectom Networking and Innovation Fund](https://hessian.ai/de/forschung/connectom-vernetzungsfonds/) of hessian.AI, as well as from the course *Drones with Artificial Intelligence* ([WS2526](https://www.christianbaun.de/Master_Projekt_WS2526/index.html), [SS2025](https://www.christianbaun.de/Master_Projekt_SS2025/index.html)) at the Frankfurt University of Applied Sciences.
 
 Key criteria for selecting the components presented in this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) include adaptability to different application scenarios, cost, robustness, long-term market availability, and the quality of documentation and manufacturer support.
 
