@@ -35,6 +35,7 @@ Thumbs.db
 *.toc
 *.lof
 *.lot
+*.deutschestoc
 
 ############################################
 # Logs & Runtime-Daten

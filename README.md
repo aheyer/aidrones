@@ -38,6 +38,7 @@ We greatly appreciate your comments and suggestions for improvement.
 ## Struktur des Repositories \| Repository Structure
 
     ├── images/
+    ├── AI_Drones.pdf       # Kompilierte Dokumentausgabe (PDF) zum Teilen
     ├── chapter00.tex       # Vorwort 
     ├── chapter01.tex       # Hardware
     ├── chapter02.tex       # Software
@@ -47,11 +48,8 @@ We greatly appreciate your comments and suggestions for improvement.
     ├── chapter06.tex       # Follow-Me
     ├── chapter07.tex       # Drop-Mechanismen 
     ├── chapter08.tex       # Stereokameras
-    ├── main.toc            # Englisches Inhaltsverzeichnis 
-    ├── main.deutschestoc   # Deutsches Inhaltsverzeichnis 
     ├── main.tex            # Haupt-LaTeX-Datei (zweisprachig)
     ├── Makefile            # Skript zur Erstellung des Handbuchs
-    ├── AI_Drones.pdf       # Kompilierte Dokumentausgabe (PDF) zum Teilen
     └── README.md           # Diese Datei / This file
 
 ## Nutzung \| Build Instructions
