@@ -3,3 +3,51 @@
 /main.fdb_latexmk
 /main.fls
 /main.synctex.gz
+
+############################################
+# Allgemein
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+############################################
+# LaTeX (Handbuch, Doku)
+############################################
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+############################################
+# Logs & Runtime-Daten
+############################################
+logs/
+*.log
+*.csv
+*.tmp
+
+############################################
+# Secrets / Credentials
+############################################
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+.env.local
+.env.production
