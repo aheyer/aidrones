@@ -5,11 +5,11 @@
 
 # AI‑Drones - A Bilingual Handbook on the Design, Construction, and Use of AI‑Enabled Drones
 
-**[Download the handbook as a PDF](AI_Drones.pdf)**
+**[Download the handbook as a PDF](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf)**
 
 # AI‑Drohnen - Ein zweisprachiges Handbuch zu Entwurf, Bau und Einsatz von KI‑fähigen Drohnen
 
-**[Handbuch als PDF herunterladen](AI_Drones.pdf)**
+**[Handbuch als PDF herunterladen](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf)**
 
 ## 🇩🇪
 
