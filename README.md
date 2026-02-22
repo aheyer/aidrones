@@ -5,33 +5,33 @@
 
 # AI‑Drones - A Bilingual Handbook on the Design, Construction, and Use of AI‑Enabled Drones
 
-**[Download the handbook as a PDF](AI_Drones.pdf)**
+**[Download the handbook as a PDF](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf)**
 
 # AI‑Drohnen - Ein zweisprachiges Handbuch zu Entwurf, Bau und Einsatz von KI‑fähigen Drohnen
 
-**[Handbuch als PDF herunterladen](AI_Drones.pdf)**
+**[Handbuch als PDF herunterladen](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf)**
 
 ## 🇩🇪
 
-Dieses [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) bietet einen Einstieg in das komplexe Thema Drohnen mit künstlicher Intelligenz. Schwerpunkte sind die Entwicklung (einschließlich der Auswahl geeigneter Hard- und Softwarekomponenten), der Bau und der Betrieb von Drohnen in der Lehre sowie in Forschungsprojekten.
+Dieses [Dokument](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) bietet einen Einstieg in das komplexe Thema Drohnen mit künstlicher Intelligenz. Schwerpunkte sind die Entwicklung (einschließlich der Auswahl geeigneter Hard- und Softwarekomponenten), der Bau und der Betrieb von Drohnen in der Lehre sowie in Forschungsprojekten.
 
-Die in diesem [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) dargestellten Erkenntnisse stammen aus dem vom Connectom Vernetzungs- und Innovationsfonds des hessian.AI geförderten Forschungsprojekt *KI-gestützte Drohnenplattform* sowie aus der Lehrveranstaltung *Drohnen mit Künstlicher Intelligenz* an der Frankfurt University of Applied Sciences.
+Die in diesem [Dokument](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) dargestellten Erkenntnisse stammen aus dem vom [Connectom Vernetzungs- und Innovationsfonds](https://hessian.ai/de/forschung/connectom-vernetzungsfonds/) des hessian.AI geförderten Forschungsprojekt *KI-gestützte Drohnenplattform* sowie aus der Lehrveranstaltung *Drohnen mit Künstlicher Intelligenz* ([WS2526](https://www.christianbaun.de/Master_Projekt_WS2526/index.html), [SS2025](https://www.christianbaun.de/Master_Projekt_SS2025/index.html)) an der Frankfurt University of Applied Sciences.
 
-Maßgebliche Kriterien bei der Auswahl der in diesem [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) vorgestellten Komponenten sind unter anderem die Anpassbarkeit an unterschiedliche Einsatzszenarien, die Anschaffungskosten, die Robustheit, die langfristige Marktverfügbarkeit sowie die Qualität der Dokumentation und des Hersteller-Supports.
+Maßgebliche Kriterien bei der Auswahl der in diesem [Dokument](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) vorgestellten Komponenten sind unter anderem die Anpassbarkeit an unterschiedliche Einsatzszenarien, die Anschaffungskosten, die Robustheit, die langfristige Marktverfügbarkeit sowie die Qualität der Dokumentation und des Hersteller-Supports.
 
-Eine vollständige Abhandlung über Drohnen und KI ist nicht das Ziel dieses [Dokument](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf). Der Fokus liegt auf den Technologien und Lösungen, die zum Zeitpunkt der Erstellung aktuell waren und mit denen im Studienfeld Informatik des Fachbereichs 2 (Informatik und Ingenieurwissenschaften) der Frankfurt University of Applied Sciences praktische Erfahrungen gesammelt wurden.
+Eine vollständige Abhandlung über Drohnen und KI ist nicht das Ziel dieses [Dokument](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf). Der Fokus liegt auf den Technologien und Lösungen, die zum Zeitpunkt der Erstellung aktuell waren und mit denen im Studienfeld Informatik des Fachbereichs 2 (Informatik und Ingenieurwissenschaften) der Frankfurt University of Applied Sciences praktische Erfahrungen gesammelt wurden.
 
 Über Ihre Kommentare und Verbesserungsvorschläge freuen wir uns sehr.
 
 ##  🇬🇧
 
-This [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) provides an introduction to the complex topic of drones with artificial intelligence. Its focus is on the development (including the selection of suitable hardware and software components), construction, and operation of drones for teaching and research purposes.
+This [document](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) provides an introduction to the complex topic of drones with artificial intelligence. Its focus is on the development (including the selection of suitable hardware and software components), construction, and operation of drones for teaching and research purposes.
 
-The insights presented in this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) stem from the research project *AI-Assisted Drone Platform*, funded by the Connectom Networking and Innovation Fund of hessian.AI, as well as from the course *Drones with Artificial Intelligence* at the Frankfurt University of Applied Sciences.
+The insights presented in this [document](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) stem from the research project *AI-Assisted Drone Platform*, funded by the [Connectom Networking and Innovation Fund](https://hessian.ai/de/forschung/connectom-vernetzungsfonds/) of hessian.AI, as well as from the course *Drones with Artificial Intelligence* ([WS2526](https://www.christianbaun.de/Master_Projekt_WS2526/index.html), [SS2025](https://www.christianbaun.de/Master_Projekt_SS2025/index_en.html)) at the Frankfurt University of Applied Sciences.
 
-Key criteria for selecting the components presented in this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) include adaptability to different application scenarios, cost, robustness, long-term market availability, and the quality of documentation and manufacturer support.
+Key criteria for selecting the components presented in this [document](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) include adaptability to different application scenarios, cost, robustness, long-term market availability, and the quality of documentation and manufacturer support.
 
-The goal of this [document](https://raw.githubusercontent.com/christianbaun/aidrones/main/AI_Drones.pdf) is not to provide an exhaustive treatment of drones and AI, but rather to focus on technologies and solutions that were current at the time of its creation and for which practical experience was gained in the Computer Science program of Faculty 2 (Computer Science and Engineering) at the Frankfurt University of Applied Sciences.
+The goal of this [document](https://github.com/christianbaun/aidrones/releases/latest/download/AI_Drones.pdf) is not to provide an exhaustive treatment of drones and AI, but rather to focus on technologies and solutions that were current at the time of its creation and for which practical experience was gained in the Computer Science program of Faculty 2 (Computer Science and Engineering) at the Frankfurt University of Applied Sciences.
 
 We greatly appreciate your comments and suggestions for improvement.
 
@@ -47,11 +47,8 @@ We greatly appreciate your comments and suggestions for improvement.
     ├── chapter06.tex       # Follow-Me
     ├── chapter07.tex       # Drop-Mechanismen 
     ├── chapter08.tex       # Stereokameras
-    ├── main.toc            # Englisches Inhaltsverzeichnis 
-    ├── main.deutschestoc   # Deutsches Inhaltsverzeichnis 
     ├── main.tex            # Haupt-LaTeX-Datei (zweisprachig)
     ├── Makefile            # Skript zur Erstellung des Handbuchs
-    ├── AI_Drones.pdf       # Kompilierte Dokumentausgabe (PDF) zum Teilen
     └── README.md           # Diese Datei / This file
 
 ## Nutzung \| Build Instructions

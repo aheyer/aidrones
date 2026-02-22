@@ -20,7 +20,7 @@ Stereo cameras are a well established tool for depth perception. The main advant
 
 \colger
 
-Stereokameras sind ein etabliertes Werkzeug zur Durchführung von Tiefenerkennung. Der Vorteil gegenüber einem einfachen Kamerasetup besteht darin dass kein Modell trainiert werden muss um die Tiefenerkennung zu realisieren.
+Stereokameras sind ein etabliertes Werkzeug zur Durchführung von Tiefenerkennung. Der Vorteil gegenüber einem einfachen Kamerasetup besteht darin, dass kein Modell trainiert werden muss, um die Tiefenerkennung zu realisieren.
 
 \coleng
 
@@ -65,8 +65,8 @@ Ein solches Setup ist jedoch nur für größere Drohnen geeignet die Batterien m
 
 \colende
 
-\renewcommand{\deutschertitel}{Camera Calibration}
-\renewcommand{\englischertitel}{Kamerakalibrierung}
+\renewcommand{\deutschertitel}{Kamerakalibrierung}
+\renewcommand{\englischertitel}{Camera Calibration}
 \makroabschnitt
 \label{AbschnittStereoVisionKalibrierung}
 
@@ -74,7 +74,7 @@ The need for camera calibration arises from the construction shown in Figure~\re
 
 \colger
 
-Die Notwendigkeit der Kamerakalibrierung ergibt sich aus der Konstruktion in Abbildung~\ref{StereoVisionContraption} da die beiden Kameras nicht exakt parallel montiert sind. Theoretisch wäre es möglich diese Konstruktion iterativ anzupassen bis dies der Fall ist. Allerdings ist es äußerst unwahrscheinlich dass die Linsen der beiden Kameras exakt identisch sind.
+Die Notwendigkeit der Kamerakalibrierung ergibt sich aus der Konstruktion in Abbildung~\ref{StereoVisionContraption}, da die beiden Kameras nicht exakt parallel montiert sind. Theoretisch wäre es möglich, diese Konstruktion iterativ anzupassen, bis dies der Fall ist. Allerdings ist es äußerst unwahrscheinlich, dass die Linsen der beiden Kameras exakt identisch sind.
 
 \coleng
 
@@ -82,7 +82,7 @@ This is particularly relevant for Raspberry Pi cameras because they are so calle
 
 \colger
 
-Dies ist insbesondere für Raspberry Pi Kameras relevant da es sich hierbei um sogenannte Pinhole Kameras handelt. Solche Kameras weisen häufig eine ausgeprägte radiale Verzerrung auf wodurch gerade Linien gekrümmt erscheinen. Eine weitere relevante Verzerrungsform ist die Tangentialverzerrung. Sie entsteht wenn die Kameralinse nicht vollständig parallel zur aufgenommenen Oberfläche ausgerichtet ist was insbesondere bei der Verwendung von zwei Kameras sehr schwierig zu realisieren ist.
+Dies ist insbesondere für Raspberry Pi Kameras relevant, da es sich hierbei um sogenannte Pinhole Kameras handelt. Solche Kameras weisen häufig eine ausgeprägte radiale Verzerrung auf, wodurch gerade Linien gekrümmt erscheinen. Eine weitere relevante Verzerrungsform ist die Tangentialverzerrung. Sie entsteht wenn die Kameralinse nicht vollständig parallel zur aufgenommenen Oberfläche ausgerichtet ist was insbesondere bei der Verwendung von zwei Kameras sehr schwierig zu realisieren ist.
 
 \coleng
 
@@ -90,7 +90,7 @@ This means that calibration is required regardless of the camera modules used in
 
 \colger
 
-Das bedeutet dass unabhängig von den verwendeten Kameramodulen einschließlich Stereomodulen eine Kalibrierung erforderlich ist. Dabei werden zunächst beide Kameras einzeln kalibriert und anschließend gemeinsam einer Stereokalibrierung unterzogen.
+Das bedeutet, dass unabhängig von den verwendeten Kameramodulen einschließlich Stereomodulen eine Kalibrierung erforderlich ist. Dabei werden zunächst beide Kameras einzeln kalibriert und anschließend gemeinsam einer Stereokalibrierung unterzogen.
 
 \coleng
 
@@ -126,7 +126,7 @@ The extrinsic parameters consist of the 3x3 rotation matrix and the three dimens
 
 \colger
 
-Bei den extrinsischen Parametern handelt es sich um die 3x3 Rotationsmatrix und den dreidimensionalen Translationsvektor bezeichnet durch $R$ und $t$ die die Orientierung und Position der Kamera in der Umwelt beschreiben. Diese Parameter können zu einer homogenen Transformation kombiniert werden die die Abbildung eines Punktes aus dem Koordinatensystem der realen Welt ($P_w$) in das Koordinatensystem der Kamera ($P_c$) beschreibt.
+Bei den extrinsischen Parametern handelt es sich um die 3x3 Rotationsmatrix und den dreidimensionalen Translationsvektor bezeichnet durch $R$ und $t$, die die Orientierung und Position der Kamera in der Umwelt beschreiben. Diese Parameter können zu einer homogenen Transformation kombiniert werden, die die Abbildung eines Punktes aus dem Koordinatensystem der realen Welt ($P_w$) in das Koordinatensystem der Kamera ($P_c$) beschreibt.
 
 \colende
 
@@ -153,7 +153,7 @@ Using these parameters it is possible to undistort an image that was captured wi
 
 \colger
 
-Mithilfe dieser Parameter ist es möglich ein Bild zu entzerren das mit einer kalibrierten Kamera aufgenommen wurde. Wichtig ist dabei dass das Bild mit derselben Auflösung aufgenommen wird mit der die Kamera kalibriert wurde. Wird das Bild skaliert müssen zumindest die intrinsischen Kameraparameter um denselben Faktor skaliert werden.
+Mithilfe dieser Parameter ist es möglich, ein Bild zu entzerren, das mit einer kalibrierten Kamera aufgenommen wurde. Wichtig ist dabei, dass das Bild mit derselben Auflösung aufgenommen wird, mit der die Kamera kalibriert wurde. Wird das Bild skaliert, müssen zumindest die intrinsischen Kameraparameter um denselben Faktor skaliert werden.
 
 \coleng
 
@@ -161,7 +161,7 @@ Calibration is performed using a calibration pattern. The available options incl
 
 \colger
 
-Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Zur Auswahl stehen ein \textsl{Schachbrettmuster} ein \textsl{Raster aus Kreisen} sowie ein sogenanntes \textsl{ChArUco Board} wie in Abbildung~\ref{ImageStereoVisionCharucoBoard} dargestellt. Letzteres ist ein Schachbrettmuster das mit ArUco Markierungen ergänzt wurde.
+Die Kalibrierung erfolgt mithilfe eines Kalibrierungsmusters. Zur Auswahl stehen ein \textsl{Schachbrettmuster} ein \textsl{Raster aus Kreisen} sowie ein sogenanntes \textsl{ChArUco Board} wie in Abbildung~\ref{ImageStereoVisionCharucoBoard} dargestellt. Letzteres ist ein Schachbrettmuster, das mit ArUco Markierungen ergänzt wurde.
 
 \colende
 
@@ -179,7 +179,7 @@ The advantage of the ChArUco pattern is that the ArUco markers are unique and ca
 
 \colger
 
-Der Vorteil dieses ChArUco Patterns besteht darin dass die ArUco Markierungen eindeutig sind und individuell zugeordnet werden können. Dadurch ist es möglich Kalibrierungsbilder aufzunehmen die teilweise verdeckt sind oder auf denen nicht alle Ecken des Schachbretts sichtbar sind. Dies führt in der Regel zu einer höheren Genauigkeit und sollte daher wenn möglich einem reinen Schachbrettmuster vorgezogen werden.
+Der Vorteil dieses ChArUco Patterns besteht darin, dass die ArUco Markierungen eindeutig sind und individuell zugeordnet werden können. Dadurch ist es möglich, Kalibrierungsbilder aufzunehmen, die teilweise verdeckt sind oder auf denen nicht alle Ecken des Schachbretts sichtbar sind. Dies führt in der Regel zu einer höheren Genauigkeit und sollte daher wenn möglich einem reinen Schachbrettmuster vorgezogen werden.
 
 \coleng
 
@@ -187,7 +187,7 @@ For the other two patterns all corners or circles must be visible in the image. 
 
 \colger
 
-Bei den beiden anderen Mustern müssen alle Ecken beziehungsweise alle Kreise im Bild sichtbar sein. Dies macht es besonders schwierig Randbereiche der Aufnahmen abzudecken die häufig kritisch für eine gute Genauigkeit sind. Darüber hinaus werden mehr Bilder benötigt. Wie viele Bilder konkret erforderlich sind sollte im Einzelfall getestet werden. Zehn Bilder sind grundsätzlich ein guter Startpunkt da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können unter Umständen auch mit weniger Bildern auskommen.
+Bei den beiden anderen Mustern müssen alle Ecken beziehungsweise alle Kreise im Bild sichtbar sein. Dies macht es besonders schwierig Randbereiche der Aufnahmen abzudecken die häufig kritisch für eine gute Genauigkeit sind. Darüber hinaus werden mehr Bilder benötigt. Wie viele Bilder konkret erforderlich sind sollte im Einzelfall getestet werden. Zehn Bilder sind grundsätzlich ein guter Startpunkt, da diese mindestens für die Kalibrierung mit einem Schachbrettmuster benötigt werden. Die anderen Muster können unter Umständen auch mit weniger Bildern auskommen.
 
 \colende
 
@@ -212,7 +212,7 @@ The images should also be captured from different angles and with varying inclin
 
 \colger
 
-Die Bilder sollten zudem aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen aufgenommen werden. Auf eine gute Belichtung sollte ebenfalls geachtet werden da eine ungleichmäßige Ausleuchtung dazu führen kann dass nicht alle Punkte auf jedem Bild erkannt werden.
+Die Bilder sollten zudem aus unterschiedlichen Winkeln und mit unterschiedlichen Neigungen aufgenommen werden. Auf eine gute Belichtung sollte ebenfalls geachtet werden, da eine ungleichmäßige Ausleuchtung dazu führen kann, dass nicht alle Punkte auf jedem Bild erkannt werden.
 
 \coleng
 
@@ -268,7 +268,7 @@ As the final step before calibration the images from both cameras must be evalua
 
 \colger
 
-Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mithilfe von \texttt{cv2.aruco.CharucoDetector(board)} wie in Abbildung~\ref{ImageStereoVisionCharucoDetections} dargestellt. Dieser wird verwendet um die Ecken des Schachbretts und die entsprechenden ArUco Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden anschließend als Input für \texttt{cv2.calibrateCamera()} verwendet wie in Abbildung~\ref{ListingCornerDetection} gezeigt.
+Als letzter Schritt vor der Kalibrierung müssen die Bilder der beiden Kameras ausgewertet werden. Dies geschieht mithilfe von \texttt{cv2.aruco.CharucoDetector(board)} wie in Abbildung~\ref{ImageStereoVisionCharucoDetections} dargestellt. Dieser wird verwendet, um die Ecken des Schachbretts und die entsprechenden ArUco Markierungen zu erkennen und als Zahlenwerte zu beschreiben. Diese Zahlenwerte werden anschließend als Input für \texttt{cv2.calibrateCamera()} verwendet wie in Abbildung~\ref{ListingCornerDetection} gezeigt.
 
 \coleng
 
@@ -292,7 +292,7 @@ Visual inspection makes it easier to identify problems with the calibration imag
 
 \colger
 
-Durch visuelles Inspizieren lassen sich Probleme mit den Kalibrierungsbildern einfacher erkennen. Dies ist insbesondere bei Schachbrettmustern relevant da nicht garantiert ist dass die Ecken immer in derselben Reihenfolge erkannt werden.
+Durch visuelles Inspizieren lassen sich Probleme mit den Kalibrierungsbildern einfacher erkennen. Dies ist insbesondere bei Schachbrettmustern relevant, da nicht garantiert ist, dass die Ecken immer in derselben Reihenfolge erkannt werden.
 
 \colende
 
@@ -366,7 +366,7 @@ For testing purposes the function \texttt{cv2.undistort()} can be used. The resu
 
 \colger
 
-Zum Testen kann die Funktion \texttt{cv2.undistort()} verwendet werden. Mit \texttt{cv2.imwrite()} kann das Bild anschließend ausgegeben werden. Sollten bei der Wahl von $\alpha = 0$ zu viele schwarze Pixel vorhanden sein kann das Bild zusätzlich auf die \textsl{Region of Interest ROI} zugeschnitten werden.
+Zum Testen kann die Funktion \texttt{cv2.undistort()} verwendet werden. Mit \texttt{cv2.imwrite()} kann das Bild anschließend ausgegeben werden. Sollten bei der Wahl von $\alpha = 0$ zu viele schwarze Pixel vorhanden sein, kann das Bild zusätzlich auf die \textsl{Region of Interest ROI} zugeschnitten werden.
 
 \colende
 
@@ -379,7 +379,7 @@ After successful calibration of the individual cameras it is possible to project
 
 \colger
 
-Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D Punkt auf ein 2D Bild zu projizieren und dieses zu entzerren. Um die dreidimensionale Information wiederherzustellen muss berechnet werden wie die beiden Kameras zueinander ausgerichtet sind.
+Nach einer erfolgreichen Kalibrierung der einzelnen Kameras ist es jeweils möglich einen 3D Punkt auf ein 2D Bild zu projizieren und dieses zu entzerren. Um die dreidimensionale Information wiederherzustellen, muss berechnet werden wie die beiden Kameras zueinander ausgerichtet sind.
 
 \coleng
 
@@ -387,7 +387,7 @@ For this purpose the function \texttt{cv2.stereoCalibrate} is used as shown in F
 
 \colger
 
-Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet wie in Abbildung~\ref{ListingStereoCalibration} gezeigt. Die Variable \texttt{criteria\_stereo} ermöglicht es die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC\_GUESS} stellt sicher dass die intrinsischen Matrizen aus der Einzelkalibrierung während dieses Prozesses nicht verändert werden.
+Hierfür wird die Funktion \texttt{cv2.stereoCalibrate} verwendet, wie in Abbildung~\ref{ListingStereoCalibration} gezeigt. Die Variable \texttt{criteria\_stereo} ermöglicht es, die Berechnung zu verfeinern. Die Flagge \texttt{cv2.CALIB\_FIX\_INTRINSIC\_GUESS} stellt sicher, dass die intrinsischen Matrizen aus der Einzelkalibrierung während dieses Prozesses nicht verändert werden.
 
 \coleng
 
@@ -395,7 +395,7 @@ It is important that the calibration images are synchronized. This is ensured by
 
 \colger
 
-Wichtig ist dabei dass die Kalibrierungsbilder synchronisiert sind. Dies wird durch den Code in Abbildung~\ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann jedoch auch ein zweiter Satz Kalibrierungsbilder erstellt werden. In diesem Fall müssen die Punkte erneut erkannt werden.
+Wichtig ist dabei, dass die Kalibrierungsbilder synchronisiert sind. Dies wird durch den Code in Abbildung~\ref{ListingTakingCalibrationPictures} sichergestellt. Bei Bedarf kann jedoch auch ein zweiter Satz Kalibrierungsbilder erstellt werden. In diesem Fall müssen die Punkte erneut erkannt werden.
 
 \colende
 
@@ -442,7 +442,7 @@ Using these matrices the function \texttt{cv2.stereoRectify()} can be applied to
 
 \colger
 
-Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden um die epipolaren Linien horizontal auszurichten wie in Abbildung~\ref{ListingStereoRectification} dargestellt. Dadurch besitzen beide Bilder die gleichen Y Koordinaten auch wenn sie nicht perfekt horizontal montiert sind. Dies macht die Tiefenerkennung deutlich robuster da alle Punkte in Bild eins auch in Bild zwei gefunden werden können. Die Resultate der Korrektur umfassen die Korrektur und Projektionsmatrizen sowie die Matrix $Q$ und die jeweilige ROI der beiden Bilder.
+Mithilfe dieser Matrizen kann die Funktion \texttt{cv2.stereoRectify()} angewendet werden, um die epipolaren Linien horizontal auszurichten wie in Abbildung~\ref{ListingStereoRectification} dargestellt. Dadurch besitzen beide Bilder die gleichen Y Koordinaten, auch wenn sie nicht perfekt horizontal montiert sind. Dies macht die Tiefenerkennung deutlich robuster, da alle Punkte in Bild eins auch in Bild zwei gefunden werden können. Die Resultate der Korrektur umfassen die Korrektur und Projektionsmatrizen sowie die Matrix $Q$ und die jeweilige ROI der beiden Bilder.
 
 \coleng
 
@@ -450,7 +450,7 @@ In this context the ROI describes an area within the image in which all pixels a
 
 \colger
 
-In diesem Zusammenhang beschreibt die ROI einen Bereich im Bild in dem alle Pixel valide sind. Die Korrekturmatrizen beschreiben wie die jeweiligen Bilder angepasst werden müssen um horizontale Epipolarlinien zu erhalten. Die Projektionsmatrizen ($P_0, P_1$) beschreiben die notwendige Transformation um einen dreidimensionalen Punkt in das jeweilige zweidimensionale Koordinatensystem zu projizieren unabhängig von der Szenerie. Sie können als Erweiterung der intrinsischen Kameramatrix $K$ interpretiert werden.
+In diesem Zusammenhang beschreibt die ROI einen Bereich im Bild in dem alle Pixel valide sind. Die Korrekturmatrizen beschreiben wie die jeweiligen Bilder angepasst werden müssen, um horizontale Epipolarlinien zu erhalten. Die Projektionsmatrizen ($P_0, P_1$) beschreiben die notwendige Transformation, um einen dreidimensionalen Punkt in das jeweilige zweidimensionale Koordinatensystem zu projizieren, unabhängig von der Szenerie. Sie können als Erweiterung der intrinsischen Kameramatrix $K$ interpretiert werden.
 
 \colende
 
@@ -513,8 +513,8 @@ cv_file.release()
 	\label{ListingInitUndistortRectifyMap}
 \end{figure}
 
-\renewcommand{\deutschertitel}{Depth Estimation}
-\renewcommand{\englischertitel}{Tiefenerkennung}
+\renewcommand{\deutschertitel}{Tiefenerkennung}
+\renewcommand{\englischertitel}{Depth Estimation}
 \makroabschnitt
 \label{AbschnittStereoVisionTiefenerkennung}
 
@@ -522,7 +522,7 @@ After the images have been aligned along the Y axis the differences between the 
 
 \colger
 
-Nun da die Bilder entlang einer gemeinsamen Y Achse ausgerichtet sind gilt es die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block Matching Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke wie beispielsweise 5x5 Pixel auf und sucht entlang der epipolaren Linie im Referenzbild nach korrespondierenden Blöcken.
+Nun, da die Bilder entlang einer gemeinsamen Y Achse ausgerichtet sind, gilt es, die Unterschiede zwischen den aufgenommenen Bildern zu berechnen. Hierzu wird der Block Matching Algorithmus verwendet. Dieser teilt das Bild in kleinere Blöcke wie beispielsweise 5x5 Pixel auf und sucht entlang der epipolaren Linie im Referenzbild nach korrespondierenden Blöcken.
 
 \coleng
 
@@ -546,7 +546,7 @@ Alternatively semi global block matching can be used to compute the disparity ma
 
 \colger
 
-Alternativ kann auch Semi Global Block Matching verwendet werden um die Disparity Map zu berechnen. Hierfür existiert ebenfalls eine OpenCV Klasse mit dem Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Subpixel Berechnungen wodurch Texturen schärfer dargestellt werden können.
+Alternativ kann auch Semi Global Block Matching verwendet werden, um die Disparity Map zu berechnen. Hierfür existiert ebenfalls eine OpenCV Klasse mit dem Namen \texttt{cv2.StereoSGBM}. SGBM ermöglicht Subpixel Berechnungen wodurch Texturen schärfer dargestellt werden können.
 
 \coleng
 
@@ -554,7 +554,7 @@ Both BM and SGBM can be refined using a wide range of parameters. This includes 
 
 \colger
 
-Sowohl BM als auch SGBM können mithilfe einer Vielzahl von Parametern verfeinert werden. Dazu zählen beispielsweise die zu prüfende Blockgröße oder die Verwendung eines Pre Filters um Texturen im Bild besser hervorzuheben. Die Methode \texttt{compute(img\_l, img\_r)} welche die eigentliche Disparity Berechnung durchführt liefert Werte zurück die mit dem Faktor sechzehn skaliert sind. Um die tatsächlichen Disparity Werte zu erhalten muss das Ergebnis durch sechzehn geteilt werden.
+Sowohl BM als auch SGBM können mithilfe einer Vielzahl von Parametern verfeinert werden. Dazu zählen beispielsweise die zu prüfende Blockgröße oder die Verwendung eines Pre Filters, um Texturen im Bild besser hervorzuheben. Die Methode \texttt{compute(img\_l, img\_r)} welche die eigentliche Disparity Berechnung durchführt liefert Werte zurück die mit dem Faktor sechzehn skaliert sind. Um die tatsächlichen Disparity Werte zu erhalten muss das Ergebnis durch sechzehn geteilt werden.
 
 \coleng
 
@@ -562,7 +562,7 @@ From these disparity values $D$ the depth values $Z$ can be computed. This requi
 
 \colger
 
-Aus diesen Disparity Werten $D$ können die Tiefenwerte $Z$ berechnet werden. Hierfür werden zusätzlich die Brennweite $f$ und die Grundlinie $B$ benötigt. Diese Werte werden nicht aus der ursprünglichen Kalibrierung entnommen sondern aus den Ergebnissen von \texttt{cv2.stereoCalibrate()} und \texttt{cv2.stereoRectify()}. Die Grundlinie entspricht der ersten Komponente des Übersetzungsvektors aus der Kalibrierung und die Brennweite kann aus der Projektionsmatrix von Kamera eins entnommen werden da nach der Korrektur in der Regel $f_x = f_y$ gilt. Um einen Tiefenwert für einen gegebenen Punkt zu berechnen muss folgende Berechnung durchgeführt werden.
+Aus diesen Disparity Werten $D$ können die Tiefenwerte $Z$ berechnet werden. Hierfür werden zusätzlich die Brennweite $f$ und die Grundlinie $B$ benötigt. Diese Werte werden nicht aus der ursprünglichen Kalibrierung entnommen, sondern aus den Ergebnissen von \texttt{cv2.stereoCalibrate()} und \texttt{cv2.stereoRectify()}. Die Grundlinie entspricht der ersten Komponente des Übersetzungsvektors aus der Kalibrierung und die Brennweite kann aus der Projektionsmatrix von Kamera eins entnommen werden, da nach der Korrektur in der Regel $f_x = f_y$ gilt. Um einen Tiefenwert für einen gegebenen Punkt zu berechnen muss folgende Berechnung durchgeführt werden.
 
 \colende
 
@@ -574,7 +574,7 @@ This computation does not necessarily have to be performed explicitly. The matri
 
 \colger
 
-Diese Berechnung muss jedoch nicht explizit durchgeführt werden. Die Matrix $Q$ die von \texttt{cv2.stereoRectify()} zurückgegeben wird kann in Verbindung mit der Methode \texttt{reprojectImageTo3D} verwendet werden um die Tiefenwerte zu bestimmen. Diese werden in \texttt{im3d(x, y, ch)} ausgegeben und enthalten die dreidimensionalen Koordinaten für den jeweiligen Punkt $(x, y)$.
+Diese Berechnung muss jedoch nicht explizit durchgeführt werden. Die Matrix $Q$ die von \texttt{cv2.stereoRectify()} zurückgegeben wird kann in Verbindung mit der Methode \texttt{reprojectImageTo3D} verwendet werden, um die Tiefenwerte zu bestimmen. Diese werden in \texttt{im3d(x, y, ch)} ausgegeben und enthalten die dreidimensionalen Koordinaten für den jeweiligen Punkt $(x, y)$.
 
 \coleng
 
@@ -582,7 +582,7 @@ If the computation is nevertheless performed explicitly it is recommended to nor
 
 \colger
 
-Sollte die Berechnung dennoch explizit durchgeführt werden empfiehlt es sich die Disparity zu normalisieren. Darüber hinaus muss darauf geachtet werden dass $D > 0$ für jeden Punkt im Bild gilt da andernfalls falsche Tiefenwerte berechnet werden. Dies kann dazu führen dass die resultierenden Tiefenwerte verzerrt wirken.
+Sollte die Berechnung dennoch explizit durchgeführt werden, empfiehlt es sich, die Disparity zu normalisieren. Darüber hinaus muss darauf geachtet werden, dass $D > 0$ für jeden Punkt im Bild gilt, da andernfalls falsche Tiefenwerte berechnet werden. Dies kann dazu führen, dass die resultierenden Tiefenwerte verzerrt wirken.
 
 \coleng
 
@@ -590,7 +590,7 @@ A potential benefit of this explicit computation is that it is not necessary to 
 
 \colger
 
-Ein möglicher Vorteil dieser expliziten Berechnung besteht darin dass nicht alle Tiefenwerte berechnet werden müssen sondern nur für relevante Regionen. Dies lässt sich in Verbindung mit einer Objekterkennung realisieren und ist insbesondere für höhere Auflösungen interessant. Grundsätzlich sind dabei die Limitierungen des Raspberry Pi zu berücksichtigen. Bei einer Auflösung von 640x480 ist das Raspberry Pi in der Lage die Disparity mit einer nutzbaren Framerate zu berechnen. Höhere Auflösungen müssen im Einzelfall geprüft werden.
+Ein möglicher Vorteil dieser expliziten Berechnung besteht darin, dass nicht alle Tiefenwerte berechnet werden müssen, sondern nur für relevante Regionen. Dies lässt sich in Verbindung mit einer Objekterkennung realisieren und ist insbesondere für höhere Auflösungen interessant. Grundsätzlich sind dabei die Limitierungen des Raspberry Pi zu berücksichtigen. Bei einer Auflösung von 640x480 ist das Raspberry Pi in der Lage, die Disparity mit einer nutzbaren Framerate zu berechnen. Höhere Auflösungen müssen im Einzelfall geprüft werden.
 
 \colende
 
