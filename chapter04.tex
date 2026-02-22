@@ -78,14 +78,14 @@ Es ist möglich, die zur Objekterkennung nötige Hard- und Software als zusätzl
 \renewcommand{\arraystretch}{1.0} % Default
 \begin{tabular}{lcrlrrr}
 \toprule
-Generation   & CPU Cores   & \multicolumn{1}{c}{RAM}       & \multicolumn{1}{c}{Size}    &  \multicolumn{1}{c}{Weight}  & \multicolumn{1}{c}{Power Usage} & \multicolumn{1}{c}{Power Usage} \\
+Generation   & CPU Cores   & \multicolumn{1}{c}{RAM}       & \multicolumn{1}{c}{Size}    &  \multicolumn{1}{c}{Weight}  & \multicolumn{1}{c}{Current Draw} & \multicolumn{1}{c}{Current Draw} \\
                        &               &     &      &      & \multicolumn{1}{c}{(idle)} &  \multicolumn{1}{c}{(peak)} \\
 \midrule
-Pi Zero W    & 1\,\(@\)\,1000\,MHz  & 512\,MB  & 65x30x5\,mm   & \(\sim 9\)\,g  & \(\sim\)\,120\,mAh & \(\sim\)\,350\,mAh \\
-Pi Zero 2 W  & 4\,\(@\)\,1000\,MHz  & 512\,MB  & 65x30x5\,mm   & \(\sim 10\)\,g & \(\sim\)\,140\,mAh & \(\sim\)\,600\,mAh \\
-Pi 3 B+      & 4\,\(@\)\,1200\,MHz  & 1\,GB    & 85x56x16\,mm  & \(\sim 50\)\,g & \(\sim\)\,500\,mAh & \(\sim\)\,1400\,mAh \\
-Pi 4 B       & 4\,\(@\)\,1500\,MHz  & 1-8\,GB  & 85x56x16\,mm  & \(\sim 50\)\,g & \(\sim\)\,600\,mAh & \(\sim\)\,1500\,mAh \\
-Pi 5         & 4\,\(@\)\,2400\,MHz  & 2-16\,GB & 85x56x16\,mm  & \(\sim 70\)\,g & \(\sim\)\,700\,mAh & \(\sim\)\,2500\,mAh \\
+Pi Zero W    & 1\,\(@\)\,1000\,MHz  & 512\,MB  & 65x30x5\,mm   & \(\sim 9\)\,g  & \(\sim\)\,120\,mA & \(\sim\)\,350\,mA \\
+Pi Zero 2 W  & 4\,\(@\)\,1000\,MHz  & 512\,MB  & 65x30x5\,mm   & \(\sim 10\)\,g & \(\sim\)\,140\,mA & \(\sim\)\,600\,mA \\
+Pi 3 B+      & 4\,\(@\)\,1200\,MHz  & 1\,GB    & 85x56x16\,mm  & \(\sim 50\)\,g & \(\sim\)\,500\,mA & \(\sim\)\,1400\,mA \\
+Pi 4 B       & 4\,\(@\)\,1500\,MHz  & 1-8\,GB  & 85x56x16\,mm  & \(\sim 50\)\,g & \(\sim\)\,600\,mA & \(\sim\)\,1500\,mA \\
+Pi 5         & 4\,\(@\)\,2400\,MHz  & 2-16\,GB & 85x56x16\,mm  & \(\sim 70\)\,g & \(\sim\)\,700\,mA & \(\sim\)\,2500\,mA \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -227,12 +227,12 @@ Neben der Raspberry Pi AI Camera, die sich ideal für den Einsatz mit dem Raspbe
 \renewcommand{\arraystretch}{1.0} % Default
 \begin{tabular}{llrrrrl}
 \toprule
-AI Hardware                     & Interface       & TOPS        & Weight           & Size [mm] & Power Usage  & \multicolumn{1}{c}{Support} \\
+AI Hardware                     & Interface       & TOPS        & Weight           & Size [mm] & Current Draw  & \multicolumn{1}{c}{Support} \\
 \midrule
-Google Coral TPU                & USB 3.0         & 4           & \(\sim\)\,20\,g  & 65x30x8   & 500-900\,mAh & Discontinued  \\
-Intel NCS\,2                    & USB 3.0         & 4           & \(\sim\)\,30\,g  & 73x28x14  & 200-500\,mAh & Discontinued  \\
-RPi AI Camera                   & CSI             & ?           & \(\sim\)\,6\,g   & 25x24x10  & 300-600\,mAh & Active  \\
-RPi AI\,Kit/HAT+                & HAT (PCIe)      & 13          & \(\sim\)\,40\,g  & 65x57x6   & 400-800\,mAh & Active  \\
+Google Coral TPU                & USB 3.0         & 4           & \(\sim\)\,20\,g  & 65x30x8   & 500-900\,mA & Discontinued  \\
+Intel NCS\,2                    & USB 3.0         & 4           & \(\sim\)\,30\,g  & 73x28x14  & 200-500\,mA & Discontinued  \\
+RPi AI Camera                   & CSI             & ?           & \(\sim\)\,6\,g   & 25x24x10  & 300-600\,mA & Active  \\
+RPi AI\,Kit/HAT+                & HAT (PCIe)      & 13          & \(\sim\)\,40\,g  & 65x57x6   & 400-800\,mA & Active  \\
 \bottomrule
 \end{tabular}
 \end{table}

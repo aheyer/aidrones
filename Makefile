@@ -1,15 +1,14 @@
 PDFLATEX = pdflatex
-BIBTEX = bibtex
-MAKEINDEX = makeindex
 DATEINAME = main
 
-all:
+all: $(DATEINAME).pdf clean
+	cp $(DATEINAME).pdf AI_Drones.pdf
+
+$(DATEINAME).pdf: $(DATEINAME).toc
 	$(PDFLATEX) $(DATEINAME).tex
-#	$(MAKEINDEX) $(DATEINAME).idx
-	cp main.pdf AI_Drones.pdf
+
+$(DATEINAME).toc: *.tex
+	$(PDFLATEX) $(DATEINAME).tex
 
 clean:
-	rm *.idx *.ilg *.ind *.log *.toc *.dvi *.aux
-
-
-
+	rm *.idx *.ilg *.ind *.log *.toc *.dvi *.aux *.out *toc 2>/dev/null || true
