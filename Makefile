@@ -3,13 +3,11 @@ BIBTEX = bibtex
 MAKEINDEX = makeindex
 DATEINAME = main
 
-all:
+all: AI_Drones.pdf clean
+
+AI_Drones.pdf: *.tex
 	$(PDFLATEX) $(DATEINAME).tex
-#	$(MAKEINDEX) $(DATEINAME).idx
-	cp main.pdf AI_Drones.pdf
+	mv main.pdf AI_Drones.pdf
 
 clean:
-	rm *.idx *.ilg *.ind *.log *.toc *.dvi *.aux
-
-
-
+	rm *.ilg *.ind *.idx *.log *.dvi *.aux *toc main.out main.pdf 2>/dev/null || true

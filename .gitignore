@@ -1,5 +1,8 @@
-/de.ilg
-/de.ind
-/main.fdb_latexmk
-/main.fls
-/main.synctex.gz
+*.ilg
+*.ind
+*.log
+*.dvi
+*.aux
+*.pdf
+*toc
+out.txt
