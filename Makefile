@@ -1,14 +1,17 @@
 PDFLATEX = pdflatex
 DATEINAME = main
 
-all: $(DATEINAME).pdf clean
-	cp $(DATEINAME).pdf AI_Drones.pdf
+all: AI_Drones.pdf
 
-$(DATEINAME).pdf: $(DATEINAME).toc
-	$(PDFLATEX) $(DATEINAME).tex
+AI_Drones.pdf: $(DATEINAME).pdf
+	cp main.pdf AI_Drones.pdf
 
-$(DATEINAME).toc: *.tex
-	$(PDFLATEX) $(DATEINAME).tex
+$(DATEINAME).pdf: $(wildcard *.tex) $(DATEINAME).tex
+	$(PDFLATEX) -interaction=nonstopmode $(DATEINAME).tex
+	$(PDFLATEX) -interaction=nonstopmode $(DATEINAME).tex
 
 clean:
-	rm *.idx *.ilg *.ind *.log *.toc *.dvi *.aux *.out *toc 2>/dev/null || true
+	rm -f *.idx *.ilg *.ind *.log *.toc *.dvi *.aux *.out
+
+distclean: clean
+	rm -f $(DATEINAME).pdf AI_Drones.pdf
